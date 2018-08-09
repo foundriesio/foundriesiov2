@@ -1,0 +1,623 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Using docker-compose.yml with Portainer | Foundries.io</title>
+
+  <link rel="shortcut icon" href="https://foundriesio.github.io/foundriesiov2/images/icons/favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/foundation.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/animate.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/morphext.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.carousel.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.theme.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.transitions.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/slicknav.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/style.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/style.default.css" />
+
+</head>
+
+
+<body>
+
+    
+    <header class="alt-6">
+
+        
+<div class="top sticky">
+    <div class="row">
+        <div class="small-12 large-3 medium-3 columns">
+            <div class="logo">
+                <a href="https://foundriesio.github.io/foundriesiov2/" title=""><img src="https://foundriesio.github.io/foundriesiov2//images/logo.png" alt="" title=""/></a>
+            </div>
+        </div>
+
+        <div class="small-12 large-9 medium-9 columns">
+
+            
+            <nav class="desktop-menu">
+                <ul class="sf-menu" id="navigation">
+                    <li ><a href="https://foundriesio.github.io/foundriesiov2/">HOME</a> </li>
+
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/products/" style="cursor:default">PRODUCTS</a>
+		 	            <ul>
+			                <li style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/products/"> MICROPLATFORMS</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/pricing/"> PRICING</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/hardware/"> HARDWARE</a></li>
+		                </ul>
+		            </li>
+                    
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/partners/">PARTNERS</a></li>
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/insights/">INSIGHTS</a></li>
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/company/">ABOUT</a>
+                        <ul>
+                            <li  style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/company/"> COMPANY</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/labs/"> LABS</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/careers/"> CAREERS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://app.foundries.io/login/?next=/ "> <i class="fa fa-cloud-upload"></i> ENGAGE</a>
+                        <ul>
+                            <li><a href="https://app.foundries.io/login/?next=/ "> DASHBOARD</a></li>
+                            <li><a href="https://forums.foundries.io"> FORUMS</a></li>
+                            <li><a href="https://support.foundries.io"> SUPPORT</a></li>
+                            <li><a href="https://join.slack.com/t/foundriesio/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE   "> SLACK</a></li>
+                            <li style="background: #ffaa00"><a href="https://app.foundries.io/login/?next=/ " style="color: #37485C"> GET STARTED</a></li>
+                        </ul>
+		            </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="message">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="message-intro">
+                        <span class="message-line"></span>
+                        <p>FOUNDRIES.IO INSIGHTS</p>
+                        <span class="message-line"></span>
+                    </div>
+                    <h1 style="color: white">Using docker-compose.yml with Portainer</h1>
+                    <p style="color: white" class="text-muted text-uppercase mb-small text-right">By <a style="color: white" href="#">Alan Bennett</a> | May 8, 2018</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div id="content">
+        <div class="container">
+
+            <div class="row">
+
+                
+
+                <div class="small-10 columns small-offset-1" id="insights-post">
+
+
+                    <div id="post-content">
+                        
+
+<p>Portainer has been a great asset and we have started to rely on it for single-container image management.  Unfortunately, Portainer has been designed for 2 key use-cases.  single containers and &ldquo;stacks&rdquo; that are meant to be deployed onto Kubernetes or Swarm orchestrators.  For many of our demos we want to manage a suite of containers and orchestrate their startup so we can manage large container suites like the 9+ container-based micro-services that comprise the Edge-X project.  For remote control we initially started with Ansible, and though it&rsquo;s great for a controlled container management system, it doesn&rsquo;t demo as well as Portainer does.  In this blog we&rsquo;ll describe about how we use Portainer and docker compose to deploy and coordinate multiple containers at Foundries.io.</p>
+
+<!-- More -->
+
+<h2 id="overview">Overview</h2>
+
+<ol>
+<li>Docker-compose in Docker</li>
+<li>Storing docker-compose compose files</li>
+<li>Custom launch scripts for docker-compose files</li>
+<li>Portainer templates</li>
+<li>See it all work</li>
+</ol>
+
+<p>For an introduction on running portainer on the microplatform, check out the <a href="/foundriesiov2/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/">How to run Portainer on the Linux microPlatform Blog</a>.</p>
+
+<h2 id="docker-compose-in-a-docker-container">Docker-compose in a docker container</h2>
+
+<p>I created a simple Docker container to run docker-compose.</p>
+
+<pre><code>FROM alpine
+RUN apk add --no-cache python3 py3-pip
+RUN pip3 install docker-compose
+</code></pre>
+
+<p>And to run docker-compose you simply bind-mount the docker lock file.</p>
+
+<pre><code>docker build -t simple-compose .
+docker run -v /var/lock/docker.sock:/var/lock/docker.sock simple-compose
+</code></pre>
+
+<p>Using this container we could now launch Portainer and launch docker-compose on a docker-compose file.  But how do we get the docker-compose file somewhere where it can be referenced by portainer.</p>
+
+<h2 id="where-do-we-store-compose-files">Where do we store compose files?</h2>
+
+<ol>
+<li>on the network (http?), using some fetch logic and use a environment variable to reference the URL?</li>
+<li>in git?, using git clone logic and use a environment variable to locate the git repo?</li>
+<li>in the container? 1 compose file and 1 container?</li>
+<li>put a suite of compose files in the container and just reference the one you want with an environment variable</li>
+</ol>
+
+<p>I&rsquo;m sure there could be a better option, but after a review, I opted to store all of my compose files into a single container and put some lose command scripts around them (more or less option 4).</p>
+
+<p>The container:</p>
+
+<pre><code>FROM alpine
+
+RUN apk add --no-cache python3-dev py3-pip docker git bash curl
+RUN pip3 install --upgrade pip docker-compose
+COPY compose-files/* /
+COPY compose-launcher/start.sh /
+RUN chmod +x /*.sh
+CMD /start.sh
+</code></pre>
+
+<p>And then by default I simply use the environment variable $TARGET to bring up the docker-compose services as daemons in the order they are written with no special logic.</p>
+
+<p>The start.sh script</p>
+
+<pre><code>#/bin/sh
+
+set -x
+
+docker-compose -H unix:///var/run/docker.sock -f /$TARGET up -d
+</code></pre>
+
+<p>So now I can describe a template process in Portainer, add an environment variable that points to a specific compose file that lives in our compose-launcher docker image(s).</p>
+
+<h2 id="docker-compose-custom-launch-scripts">Docker-compose custom launch scripts</h2>
+
+<p>Ah, but then there are challenges.  What about projects that mandate the order and timing that containers can come up in?  like Edge X.  There is promise in the future that the EdgeX micro-services will not be order dependent, but for now they still are, so we want to script the order the files are brought up.</p>
+
+<p>To do this, we add the use of Portainer&rsquo;s Container &ldquo;CMD&rdquo; override option to run a script that we can use to refine the deployment steps of a docker compose file.</p>
+
+<pre><code>set -x
+COMPOSE_FILE=/edgex.yml
+
+echo &quot;Starting mongo&quot;
+docker-compose -f $COMPOSE_FILE up -d mongo
+echo &quot;Starting consul&quot;
+docker-compose -f $COMPOSE_FILE up -d config-seed
+
+echo &quot;Sleeping before launching remaining services&quot;
+sleep 15
+
+echo &quot;Starting support-logging&quot;
+docker-compose -f $COMPOSE_FILE up -d logging
+echo &quot;Starting core-metadata&quot;
+docker-compose -f $COMPOSE_FILE up -d metadata
+echo &quot;Starting core-data&quot;
+docker-compose -f $COMPOSE_FILE up -d data
+echo &quot;Starting core-command&quot;
+docker-compose -f $COMPOSE_FILE up -d command
+echo &quot;Starting core-export-client&quot;
+docker-compose -f $COMPOSE_FILE up -d export-client
+echo &quot;Starting core-export-distro&quot;
+docker-compose -f $COMPOSE_FILE up -d export-distro
+
+echo &quot;Starting device-virtual&quot;
+docker-compose -f $COMPOSE_FILE up -d device-virtual
+</code></pre>
+
+<h2 id="the-portainer-template-samples">The Portainer template samples.</h2>
+
+<p>Here is a simple case.  just run all the containers described in a docker-compose file.</p>
+
+<pre><code>{
+    &quot;type&quot;: &quot;container&quot;,
+    &quot;title&quot;: &quot;The OSF Gateway&quot;,
+    &quot;description&quot;: &quot;A demonstration set of containers to create a BLE IoT gateway&quot;,
+    &quot;platform&quot;: &quot;linux&quot;,
+    &quot;restart_policy&quot;: &quot;no&quot;,
+    &quot;image&quot;: &quot;opensourcefoundries/compose-launcher:latest&quot;,
+    &quot;categories&quot;: [
+      &quot;IoT&quot;,
+      &quot;Gateway&quot;,
+      &quot;Demonstration&quot;
+    ],
+    &quot;env&quot;: [
+      {
+        &quot;name&quot;: &quot;TARGET&quot;,
+        &quot;description&quot;: &quot;Docker compose file to run&quot;,
+        &quot;set&quot;: &quot;simple-gateway.yml&quot;
+      },
+      {
+        &quot;name&quot;: &quot;ACCOUNT&quot;,
+        &quot;description&quot;: &quot;Docker hub account&quot;,
+        &quot;set&quot;: &quot;opensourcefoundries&quot;
+      }
+    ],
+    &quot;volumes&quot;: [
+      {
+        &quot;container&quot;: &quot;/var/run/docker.sock&quot;,
+        &quot;bind&quot;: &quot;/var/run/docker.sock&quot;
+      }
+    ]
+  },
+</code></pre>
+
+<p>Here we want to control the order that the docker compose files are being brought up and add a delay, so we create s simple bash script and execute it using the command override feature in Portainer.</p>
+
+<pre><code>{
+    &quot;type&quot;: &quot;container&quot;,
+    &quot;title&quot;: &quot;EdgeX pre-release&quot;,
+    &quot;description&quot;: &quot;EdgeX - x86 only - ALPHA quality, Work in progress upstream&quot;,
+    &quot;platform&quot;: &quot;linux&quot;,
+    &quot;image&quot;: &quot;opensourcefoundries/compose-launcher:latest&quot;,
+    &quot;restart_policy&quot;: &quot;no&quot;,
+    &quot;categories&quot;: [
+      &quot;IoT&quot;,
+      &quot;Gateway&quot;,
+      &quot;Demonstration&quot;
+    ],
+    &quot;command&quot;: &quot;/bin/bash -c /edgex-docker-launch.sh&quot;,
+    &quot;volumes&quot;: [
+      {
+        &quot;container&quot;: &quot;/var/run/docker.sock&quot;,
+        &quot;bind&quot;: &quot;/var/run/docker.sock&quot;
+      }
+    ]
+  }
+</code></pre>
+
+<h2 id="deploying-multiple-containers-in-only-a-few-clicks">Deploying multiple containers in only a few clicks</h2>
+
+<p>As an initial implementation there are likely many ways we can improve this scenario, but it works for now and we get to use Portainer and docker-compose to orchestrate single-node demos all with only a couple of button clicks.</p>
+
+<p><img src="/uploads/2018/05/09/Selecttemplate.png" alt="" /></p>
+
+<p><img src="/uploads/2018/05/09/deployIoTGateway.png" alt="" /></p>
+
+<p><img src="/uploads/2018/05/09/Itsagateway.png" alt="" /></p>
+
+                    </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
+
+                </div>
+                
+
+                
+
+                
+
+                <div class="small-12 large-3 medium-4 columns">
+
+                    
+
+                    
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/blockchain">blockchain (1)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/conferences">conferences (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/demos">demos (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/fota">fota (11)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/linux-mp">linux-mp (38)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/mp-containers">mp-containers (31)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/updates">updates (26)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr">zephyr (4)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-mp">zephyr-mp (36)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-news">zephyr-news (10)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/assistant"><i class="fa fa-tags"></i> assistant</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/att"><i class="fa fa-tags"></i> att</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ble"><i class="fa fa-tags"></i> ble</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/blockchain"><i class="fa fa-tags"></i> blockchain</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/bugs"><i class="fa fa-tags"></i> bugs</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/containers"><i class="fa fa-tags"></i> containers</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/crypto"><i class="fa fa-tags"></i> crypto</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/cve"><i class="fa fa-tags"></i> cve</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/decentralized"><i class="fa fa-tags"></i> decentralized</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker"><i class="fa fa-tags"></i> docker</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker-compose"><i class="fa fa-tags"></i> docker-compose</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/foundries.io"><i class="fa fa-tags"></i> foundries.io</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/google"><i class="fa fa-tags"></i> google</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/iot"><i class="fa fa-tags"></i> iot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/k8s"><i class="fa fa-tags"></i> k8s</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/keys"><i class="fa fa-tags"></i> keys</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/kubernetes"><i class="fa fa-tags"></i> kubernetes</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/linux"><i class="fa fa-tags"></i> linux</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lmp"><i class="fa fa-tags"></i> lmp</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lte"><i class="fa fa-tags"></i> lte</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lwm2m"><i class="fa fa-tags"></i> lwm2m</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/management"><i class="fa fa-tags"></i> management</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/mcuboot"><i class="fa fa-tags"></i> mcuboot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/microplatform"><i class="fa fa-tags"></i> microplatform</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/open-source"><i class="fa fa-tags"></i> open-source</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ota"><i class="fa fa-tags"></i> ota</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/portainer"><i class="fa fa-tags"></i> portainer</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/radio"><i class="fa fa-tags"></i> radio</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/resin"><i class="fa fa-tags"></i> resin</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/security"><i class="fa fa-tags"></i> security</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/update"><i class="fa fa-tags"></i> update</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zephyr"><i class="fa fa-tags"></i> zephyr</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zmp"><i class="fa fa-tags"></i> zmp</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                    
+
+                </div>
+                
+
+                
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+
+    
+<footer>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="contacts">
+                <div class="row">
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-map-marker"></i>
+                        CAMBRIDGE, UK
+                    </div>
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-image"></i>
+                        BOULDER, CO USA
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="footerlinks">
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>About Foundries.io</h2>
+                    <p>
+                        Foundries.io is changing the IoT landscape by delivering continuously
+                        updated software platforms for a secure, connected world.
+                    </p>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/company/">About</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/careers/">Careers</a></li>
+                        <li><a href="https://support.foundries.io/">Support</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/labs/">Labs</a></li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Connect</h2>
+                    <ul>
+    	                <li><a href="https://twitter.com/foundriesio"><i class="fa fa-twitter fa-2x"></i></a>
+    	                    <a href="https://www.facebook.com/foundriesio"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://github.com/foundriesio"><i class="fa fa-github fa-2x"></i></a>
+    	                    <a href="https://foundriesio.slack.com/join/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE"><i class="fa fa-slack fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns">
+                    <h2>Get Started Today</h2>
+                    <p>
+                        Get immediate access to microPlatform source and binary builds for
+                        today's most popular development boards by starting your evaluation subscription!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">Copyright 2018 Foundries.io All rights reserved</p>
+</footer>
+
+
+
+    </div>
+    
+
+    
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-111281311-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/what-input.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/foundation.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/hoverIntent.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/superfish.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/morphext.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/wow.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.slicknav.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/waypoints.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.animateNumber.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/owl.carousel.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.responsiveTabs.js"></script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/custom.js"></script>
+<script>
+jQuery(function($) {
+    
+    $('#responsiveTabsDemo').responsiveTabs({
+    startCollapsed: 'accordion'
+    });
+});
+</script>
+
+
+</body>
+
+</html>

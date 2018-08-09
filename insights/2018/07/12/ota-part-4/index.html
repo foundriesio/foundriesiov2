@@ -1,0 +1,584 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Securing OTA Community Edition | Foundries.io</title>
+
+  <link rel="shortcut icon" href="https://foundriesio.github.io/foundriesiov2/images/icons/favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/foundation.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/animate.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/morphext.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.carousel.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.theme.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.transitions.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/slicknav.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/style.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/style.default.css" />
+
+</head>
+
+
+<body>
+
+    
+    <header class="alt-6">
+
+        
+<div class="top sticky">
+    <div class="row">
+        <div class="small-12 large-3 medium-3 columns">
+            <div class="logo">
+                <a href="https://foundriesio.github.io/foundriesiov2/" title=""><img src="https://foundriesio.github.io/foundriesiov2//images/logo.png" alt="" title=""/></a>
+            </div>
+        </div>
+
+        <div class="small-12 large-9 medium-9 columns">
+
+            
+            <nav class="desktop-menu">
+                <ul class="sf-menu" id="navigation">
+                    <li ><a href="https://foundriesio.github.io/foundriesiov2/">HOME</a> </li>
+
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/products/" style="cursor:default">PRODUCTS</a>
+		 	            <ul>
+			                <li style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/products/"> MICROPLATFORMS</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/pricing/"> PRICING</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/hardware/"> HARDWARE</a></li>
+		                </ul>
+		            </li>
+                    
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/partners/">PARTNERS</a></li>
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/insights/">INSIGHTS</a></li>
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/company/">ABOUT</a>
+                        <ul>
+                            <li  style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/company/"> COMPANY</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/labs/"> LABS</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/careers/"> CAREERS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://app.foundries.io/login/?next=/ "> <i class="fa fa-cloud-upload"></i> ENGAGE</a>
+                        <ul>
+                            <li><a href="https://app.foundries.io/login/?next=/ "> DASHBOARD</a></li>
+                            <li><a href="https://forums.foundries.io"> FORUMS</a></li>
+                            <li><a href="https://support.foundries.io"> SUPPORT</a></li>
+                            <li><a href="https://join.slack.com/t/foundriesio/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE   "> SLACK</a></li>
+                            <li style="background: #ffaa00"><a href="https://app.foundries.io/login/?next=/ " style="color: #37485C"> GET STARTED</a></li>
+                        </ul>
+		            </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="message">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="message-intro">
+                        <span class="message-line"></span>
+                        <p>FOUNDRIES.IO INSIGHTS</p>
+                        <span class="message-line"></span>
+                    </div>
+                    <h1 style="color: white">Securing OTA Community Edition</h1>
+                    <p style="color: white" class="text-muted text-uppercase mb-small text-right">By <a style="color: white" href="#">Andy Doan</a> | July 12, 2018</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div id="content">
+        <div class="container">
+
+            <div class="row">
+
+                
+
+                <div class="small-10 columns small-offset-1" id="insights-post">
+
+
+                    <div id="post-content">
+                        <p><a href="https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/">Part three</a> of this blog series showed how to
+deploy an OTA Community Edition server in Google Kubernetes Engine that had
+a few security holes. This article will describe how to secure it.
+</p>
+
+<p>This is the final installment to a series of blogs about implementing OTA
+updates in the Linux microPlatform:</p>
+
+<ul>
+<li><a href="https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/">Part 1</a> - How we choose a software update system</li>
+<li><a href="https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/">Part 2</a> - What is OTA Community Edition</li>
+<li><a href="https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/">Part 3</a> - Deploying OTA Community Edition</li>
+</ul>
+
+<h3 id="requirements">Requirements</h3>
+
+<p>You&rsquo;ll need an OTA Community Edition server deployed into GKE as
+documented in <a href="https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/">part three</a> of the blog series.</p>
+
+<h3 id="overview">Overview</h3>
+
+<p>As diagrammed in <a href="https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/">part two</a> OTA Community
+Edition has four public entry points. The device gateway is the only
+one of those that is secured by default. The web app, repo server, and
+treehub all require custom code to be secured. There are many ways this
+can be done and they ultimately depend on how you authenticate and
+authorize users in your organization. The solution deployed here is done
+in the simplest manner possible so that it&rsquo;s easy for you to see exactly
+how and where to make your own customizations.</p>
+
+<h3 id="dns-updates">DNS Updates</h3>
+
+<p>This blog introduces a DNS change. The previous blog created a subdomain
+for both &ldquo;treehub&rdquo; and &ldquo;tuf-reposerver&rdquo;. This example uses a single
+subdomain called &ldquo;api&rdquo; and adds location paths for each service. This
+gives a single entry point to focus on for security. We also need a new
+entry for an &ldquo;oauth2&rdquo; server. In short:</p>
+
+<ul>
+<li>Create these records:
+
+<ul>
+<li><code>api.&lt;ingress_dns_name&gt;</code></li>
+<li><code>oauth2.&lt;ingress_dns_name&gt;</code></li>
+</ul></li>
+<li>Delete these records:
+
+<ul>
+<li><code>treehub.&lt;ingress_dns_name&gt;</code> <em>(now located at <code>api.&lt;ingress_dns_name&gt;/treehub</code>)</em></li>
+<li><code>tuf-reposerver.&lt;ingress_dns_name&gt;</code><em>(now located at <code>api.&lt;ingress_dns_name&gt;/repo</code>)</em></li>
+</ul></li>
+</ul>
+
+<h3 id="secure-the-reverse-proxy">Secure the Reverse Proxy</h3>
+
+<p>OTA Community Edition has no authentication support built into it, so
+securing it requires making changes to the reverse proxy we created in
+the previous blog. Nginx includes the
+<a href="http://nginx.org/en/docs/http/ngx_http_auth_request_module.html">ngx_http_auth_request_module</a>
+for securing calls to reverse proxy servers. The approach taken in this
+blog is to create an authentication service to handle <code>auth_requests</code>.</p>
+
+<p>The ota-blog-part4 GitHub
+<a href="https://github.com/OpenSourceFoundries/ota-community-edition/tree/ota-blog-part4">branch</a>
+includes a new service called <code>oauthful</code> (oauth + awful). It&rsquo;s
+<a href="https://github.com/OpenSourceFoundries/ota-community-edition/blob/ota-blog-part4/oauthful/app.py">terribly insecure</a>,
+but shows in the fewest lines of code possible what you need to secure
+in your deployment. Deploying this is easy:</p>
+
+<pre><code>  # Change directories to your ota-community-edition repo from part 3.
+  # Pull in changes from upstream repo:
+  git pull
+
+  # Check out the branch for this blog:
+  git checkout ota-blog-part4
+
+  # To look at the diffs between the 2 blogs visit:
+  # https://github.com/OpenSourceFoundries/ota-community-edition/compare/ota-blog-part3...ota-blog-part4
+
+  # Deploy changes with:
+  ./contrib/gke/make start-services
+
+  # At this point the new configuration is ready, but you'll have to restart
+  # the reverse-proxy to enable it:
+  ./contrib/gke/kubectl get pods | grep reverse-proxy | cut -f1 -d\  | xargs ./contrib/gke/kubectl delete pod
+</code></pre>
+
+<h3 id="verify-the-apis-are-secure">Verify the APIs Are Secure</h3>
+
+<pre><code>  # Set the URL below to match your domain, and verify you get HTTP 401 errors:
+  curl -v http://api.example.com/treehub/api/v3/config
+  curl -v http://api.example.com/repo/api/v1/user_repo/root.json
+
+  # Now make sure they work with the &quot;secure token&quot;:
+  curl -H &quot;Authorization: Bearer BadT0ken5&quot; http://api.example.com/treehub/api/v3/config
+  curl -H &quot;Authorization: Bearer BadT0ken5&quot; http://api.example.com/repo/api/v1/user_repo/root.json
+</code></pre>
+
+<p>The web interface will also now be secured with HTTP basic authentication.
+The username is ignored, so you can enter anything into that value. The
+password is <code>BadT0ken5</code>.
+<strong>NOTE</strong>: <em>This only works with Firefox. It seems like the Chrome browser
+doesn&rsquo;t want to send credentials over an insecure HTTP connection.</em></p>
+
+<h3 id="update-credentials-zip">Update credentials.zip</h3>
+
+<p>As a result of the URL changes, you now need to update your credentials.zip
+used for building and signing images. You&rsquo;ll need to update these files:</p>
+
+<pre><code>  cd generated/ota-ce*
+
+  # Be sure to set &lt;ingress_dns_name&gt; below to match your domain
+  # tufrepo.url becomes:
+  http://api.&lt;ingress_dns_name&gt;/repo/
+
+  # treehub.json becomes:
+  {
+    &quot;oauth2&quot;: {
+      &quot;server&quot;: &quot;http://oauth2.&lt;ingress_dns_name&gt;&quot;,
+      &quot;client_id&quot; : &quot;7a455f3b-2234-43b5-9d13-7d8823494f21&quot;,
+      &quot;client_secret&quot; : &quot;OTbGcZx6my&quot;
+    },
+    &quot;ostree&quot;: {
+        &quot;server&quot;: &quot;http://api.&lt;ingress_dns_name&gt;/treehub/api/v3/&quot;
+    }
+  }
+
+  # You can then update your credentials.zip with:
+  zip -u credentials.zip treehub.json tufrepo.url
+</code></pre>
+
+<h3 id="next-steps">Next Steps</h3>
+
+<p>The remaining steps towards an actual secure server are organization
+specific. You&rsquo;ll need to first update your Nginx configuration to use
+HTTPS and deploy it with matching SSL certificates. Then you&rsquo;ll need
+replace the &ldquo;oauthful&rdquo; service with your own OAuth2 implementation.</p>
+                    </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
+
+                </div>
+                
+
+                
+
+                
+
+                <div class="small-12 large-3 medium-4 columns">
+
+                    
+
+                    
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/blockchain">blockchain (1)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/conferences">conferences (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/demos">demos (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/fota">fota (11)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/linux-mp">linux-mp (38)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/mp-containers">mp-containers (31)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/updates">updates (26)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr">zephyr (4)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-mp">zephyr-mp (36)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-news">zephyr-news (10)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/assistant"><i class="fa fa-tags"></i> assistant</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/att"><i class="fa fa-tags"></i> att</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ble"><i class="fa fa-tags"></i> ble</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/blockchain"><i class="fa fa-tags"></i> blockchain</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/bugs"><i class="fa fa-tags"></i> bugs</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/containers"><i class="fa fa-tags"></i> containers</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/crypto"><i class="fa fa-tags"></i> crypto</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/cve"><i class="fa fa-tags"></i> cve</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/decentralized"><i class="fa fa-tags"></i> decentralized</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker"><i class="fa fa-tags"></i> docker</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker-compose"><i class="fa fa-tags"></i> docker-compose</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/foundries.io"><i class="fa fa-tags"></i> foundries.io</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/google"><i class="fa fa-tags"></i> google</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/iot"><i class="fa fa-tags"></i> iot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/k8s"><i class="fa fa-tags"></i> k8s</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/keys"><i class="fa fa-tags"></i> keys</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/kubernetes"><i class="fa fa-tags"></i> kubernetes</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/linux"><i class="fa fa-tags"></i> linux</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lmp"><i class="fa fa-tags"></i> lmp</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lte"><i class="fa fa-tags"></i> lte</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lwm2m"><i class="fa fa-tags"></i> lwm2m</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/management"><i class="fa fa-tags"></i> management</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/mcuboot"><i class="fa fa-tags"></i> mcuboot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/microplatform"><i class="fa fa-tags"></i> microplatform</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/open-source"><i class="fa fa-tags"></i> open-source</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ota"><i class="fa fa-tags"></i> ota</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/portainer"><i class="fa fa-tags"></i> portainer</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/radio"><i class="fa fa-tags"></i> radio</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/resin"><i class="fa fa-tags"></i> resin</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/security"><i class="fa fa-tags"></i> security</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/update"><i class="fa fa-tags"></i> update</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zephyr"><i class="fa fa-tags"></i> zephyr</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zmp"><i class="fa fa-tags"></i> zmp</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                    
+
+                </div>
+                
+
+                
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+
+    
+<footer>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="contacts">
+                <div class="row">
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-map-marker"></i>
+                        CAMBRIDGE, UK
+                    </div>
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-image"></i>
+                        BOULDER, CO USA
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="footerlinks">
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>About Foundries.io</h2>
+                    <p>
+                        Foundries.io is changing the IoT landscape by delivering continuously
+                        updated software platforms for a secure, connected world.
+                    </p>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/company/">About</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/careers/">Careers</a></li>
+                        <li><a href="https://support.foundries.io/">Support</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/labs/">Labs</a></li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Connect</h2>
+                    <ul>
+    	                <li><a href="https://twitter.com/foundriesio"><i class="fa fa-twitter fa-2x"></i></a>
+    	                    <a href="https://www.facebook.com/foundriesio"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://github.com/foundriesio"><i class="fa fa-github fa-2x"></i></a>
+    	                    <a href="https://foundriesio.slack.com/join/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE"><i class="fa fa-slack fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns">
+                    <h2>Get Started Today</h2>
+                    <p>
+                        Get immediate access to microPlatform source and binary builds for
+                        today's most popular development boards by starting your evaluation subscription!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">Copyright 2018 Foundries.io All rights reserved</p>
+</footer>
+
+
+
+    </div>
+    
+
+    
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-111281311-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/what-input.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/foundation.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/hoverIntent.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/superfish.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/morphext.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/wow.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.slicknav.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/waypoints.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.animateNumber.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/owl.carousel.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.responsiveTabs.js"></script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/custom.js"></script>
+<script>
+jQuery(function($) {
+    
+    $('#responsiveTabsDemo').responsiveTabs({
+    startCollapsed: 'accordion'
+    });
+});
+</script>
+
+
+</body>
+
+</html>

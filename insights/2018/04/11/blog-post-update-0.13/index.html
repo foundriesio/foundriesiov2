@@ -1,0 +1,978 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>microPlatform update 0.13 | Foundries.io</title>
+
+  <link rel="shortcut icon" href="https://foundriesio.github.io/foundriesiov2/images/icons/favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/foundation.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/animate.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/morphext.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.carousel.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.theme.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.transitions.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/slicknav.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/style.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/style.default.css" />
+
+</head>
+
+
+<body>
+
+    
+    <header class="alt-6">
+
+        
+<div class="top sticky">
+    <div class="row">
+        <div class="small-12 large-3 medium-3 columns">
+            <div class="logo">
+                <a href="https://foundriesio.github.io/foundriesiov2/" title=""><img src="https://foundriesio.github.io/foundriesiov2//images/logo.png" alt="" title=""/></a>
+            </div>
+        </div>
+
+        <div class="small-12 large-9 medium-9 columns">
+
+            
+            <nav class="desktop-menu">
+                <ul class="sf-menu" id="navigation">
+                    <li ><a href="https://foundriesio.github.io/foundriesiov2/">HOME</a> </li>
+
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/products/" style="cursor:default">PRODUCTS</a>
+		 	            <ul>
+			                <li style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/products/"> MICROPLATFORMS</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/pricing/"> PRICING</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/hardware/"> HARDWARE</a></li>
+		                </ul>
+		            </li>
+                    
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/partners/">PARTNERS</a></li>
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/insights/">INSIGHTS</a></li>
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/company/">ABOUT</a>
+                        <ul>
+                            <li  style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/company/"> COMPANY</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/labs/"> LABS</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/careers/"> CAREERS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://app.foundries.io/login/?next=/ "> <i class="fa fa-cloud-upload"></i> ENGAGE</a>
+                        <ul>
+                            <li><a href="https://app.foundries.io/login/?next=/ "> DASHBOARD</a></li>
+                            <li><a href="https://forums.foundries.io"> FORUMS</a></li>
+                            <li><a href="https://support.foundries.io"> SUPPORT</a></li>
+                            <li><a href="https://join.slack.com/t/foundriesio/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE   "> SLACK</a></li>
+                            <li style="background: #ffaa00"><a href="https://app.foundries.io/login/?next=/ " style="color: #37485C"> GET STARTED</a></li>
+                        </ul>
+		            </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="message">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="message-intro">
+                        <span class="message-line"></span>
+                        <p>FOUNDRIES.IO INSIGHTS</p>
+                        <span class="message-line"></span>
+                    </div>
+                    <h1 style="color: white">microPlatform update 0.13</h1>
+                    <p style="color: white" class="text-muted text-uppercase mb-small text-right">April 11, 2018</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div id="content">
+        <div class="container">
+
+            <div class="row">
+
+                
+
+                <div class="small-10 columns small-offset-1" id="insights-post">
+
+
+                    <div id="post-content">
+                        <h1 id="summary">Summary</h1>
+
+<h2 id="zephyr-microplatform-changes-for-0-13">Zephyr microPlatform changes for 0.13</h2>
+
+<p>Zephyr tree with new networking features, driver updates, and bug
+fixes, among other improvements.</p>
+
+<p>A new zmp tool build option, &ndash;overlay-config, makes it easier to
+mix-in configuration fragments when building.</p>
+
+<p>Experimental support for the Wistron WCN14A2A LTE-M Modem is
+provided in Zephyr microPlatform specific patches provided by Open
+Source Foundries.</p>
+
+<h2 id="linux-microplatform-changes-for-0-13">Linux microPlatform changes for 0.13</h2>
+
+<p>OSF Unified Linux Kernel updated to the 4.14.26 stable release.
+Support for OTA software updates is now enabled by default in the Linux
+microPlatform, supporting OSTree with TUF and compatible with the ATS
+Garage and ATS OTA Community Edition services.</p>
+
+<p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="summary-1">Summary</h2>
+
+<p>Zephyr tree with new networking features, driver updates, and bug
+fixes, among other improvements.</p>
+
+<p>A new zmp tool build option, &ndash;overlay-config, makes it easier to
+mix-in configuration fragments when building.</p>
+
+<p>Experimental support for the Wistron WCN14A2A LTE-M Modem is
+provided in Zephyr microPlatform specific patches provided by Open
+Source Foundries.</p>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Zephyr tree from the v1.12 merge window</li>
+<li>A small set of MCUboot changes</li>
+<li>OSF samples with updates for Zephyr API changes and a new zmp feature</li>
+<li>OSF initial support for LTE-M</li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<h5 id="logging-on-mynewt">Logging on MyNewt:</h5>
+
+<ul>
+<li>The MyNewt port supports logging.</li>
+</ul>
+
+<h5 id="switch-to-base64-library-for-zephyr-port">Switch to base64 library for Zephyr port:</h5>
+
+<ul>
+<li>The Zephyr serial boot target now uses the base64
+library provided by the RTOS instead of linking in
+mbedTLS just for this feature.</li>
+</ul>
+
+<h5 id="sample-application-improvement">Sample application improvement:</h5>
+
+<ul>
+<li>The sample application now uses BOOTLOADER_MCUBOOT
+instead of configuring MCUboot-related options by
+hand.</li>
+</ul>
+
+<h4 id="bugs">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="arduino-101-ble-removal">arduino_101_ble removal:</h5>
+
+<ul>
+<li>The duplicated arduino_101_ble board was removed.
+Users should use the curie_ble board name instead.</li>
+</ul>
+
+<h5 id="non-volatile-configuration-system">Non-volatile configuration system:</h5>
+
+<ul>
+<li>The Apache MyNewt non-volatile configuration system
+was ported to Zephyr. The purpose of this subsystem is
+to allow storage and retrieval of persistent values to
+flash or other storage media. Storage access is either
+via a file system or the lower-resource but less
+featureful Flash Circular Buffer (FCB) framework,
+which was also adapted from MyNewt.</li>
+</ul>
+
+<h5 id="network-interface-re-work">Network interface re-work:</h5>
+
+<ul>
+<li>The net_if structure, which represents a network
+interface, was radically altered to move almost all of
+its fields in preparation for VLAN support. Much of
+the information is still available via the net_if
+structure with additional indirection; for example,
+the \&ldquo;-&gt;ipv4\&rdquo; structure is now in
+\&ldquo;-&gt;config.ip.ipv4\&ldquo;. Users accessing fields through
+the convenience functions in net_if.h may not need
+code changes, but code which accessed fields directly
+will need updates.</li>
+</ul>
+
+<h5 id="config-knobs-for-allocating-ip-addresses">Config knobs for allocating IP addresses:</h5>
+
+<ul>
+<li>This initial work was followed up by static
+declaration of the number of IP addresses desired on
+the device, via new CONFIG_NET_IF_MAX_IPV4_COUNT and
+CONFIG_NET_IF_MAX_IPV6_COUNT knobs and APIs for
+allocating structures like net_if_config_ipv4_get().
+This saves memory when the user specifies the number
+and type of IP addresses to suit their application.</li>
+</ul>
+
+<h5 id="options-and-priority-for-network-contexts">Options and priority for network contexts:</h5>
+
+<ul>
+<li>Network contexts (Zephyr&rsquo;s internal, socket-like
+structure) now support setting and getting options.
+The initial supported option is a priority value,
+which allows classifying traffic flows by priority.
+The new APIs are available as net_context_set_option()
+and net_context_get_option(), with NET_OPT_PRIORITY
+the only value.</li>
+</ul>
+
+<h5 id="network-flow-traffic-class-support">Network flow traffic class support:</h5>
+
+<ul>
+<li>This is meant to be combined with traffic class
+support controlled by a new CONFIG_NET_TC_COUNT
+option, which allocates work queues meant for handling
+flows within a certain traffic class. Independent
+support for transmit and receive traffic classes is
+supported.</li>
+</ul>
+
+<h5 id="networking-refactoring">Networking refactoring:</h5>
+
+<ul>
+<li>Numerous other under-the-hood changes and refactoring
+commits were merged affecting various networking
+areas.</li>
+</ul>
+
+<h5 id="message-queues-for-posix">Message queues for POSIX:</h5>
+
+<ul>
+<li>The POSIX target now has a message queue compatibility
+API.</li>
+</ul>
+
+<h5 id="nordic-hal-and-svd-updates">Nordic HAL and SVD updates:</h5>
+
+<ul>
+<li>The Nordic HAL was updated to version 1.0.0, and SVD
+(system view description) files were merged for nRF5
+SoCs. These files provide a structured representation,
+in XML format, for all of the peripherals, registers,
+and register fields available on an SoC. They are
+commonly used by embedded IDE debuggers and other
+libraries which interact with registers on a running
+target, etc.</li>
+</ul>
+
+<h5 id="documentation-improvements">Documentation improvements:</h5>
+
+<ul>
+<li>Various documentation improvements were made,
+affecting Bluetooth, web sockets, and the display of
+Kconfig symbols.</li>
+</ul>
+
+<h5 id="new-drivers">New drivers:</h5>
+
+<ul>
+<li>New driver support includes GPIO P1 port on nRF52840,
+sample support for USB HID composite configurations,
+SPI master suport for lsm6dsl
+accelerometer/gyroscopes, and improved temperature
+sensor reporting.</li>
+</ul>
+
+<h5 id="new-samples">New samples:</h5>
+
+<ul>
+<li>New sample features include custom board definitions,
+networking traffic classes, USB HID mouse support, and
+CoAP PUT and POST methods.</li>
+</ul>
+
+<h5 id="foundries-io-initial-support-for-lte-m">Foundries.io initial support for LTE-M:</h5>
+
+<ul>
+<li>A number of Foundries.io-specific patches
+were merged to enable the Wistron WCN14A2A LTE-M
+Modem. These are being targeted for upstream merge,
+but have been included here for subscriber access in
+the meantime.</li>
+</ul>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="user-mode-security-fix-for-arm">User-mode security fix for ARM:</h5>
+
+<ul>
+<li>User mode code can no longer access PPB/IO regions on
+ARM targets with MPUs.</li>
+</ul>
+
+<h5 id="bluetooth-fixes">Bluetooth fixes:</h5>
+
+<ul>
+<li>A Bluetooth fix for an assert in use cases when
+whitelists were used was merged, among other fixes and
+simplifications.</li>
+</ul>
+
+<h5 id="nrf-dk-board-switch-fixes">nRF DK board switch fixes:</h5>
+
+<ul>
+<li>nRF DK boards now correctly have pull-up modes
+configured on GPIOs connected to switches.</li>
+</ul>
+
+<h5 id="usb-fixes">USB fixes:</h5>
+
+<ul>
+<li>USB bugs causing random address access and unaligned
+access faults in netusb and various CDC ACM issues were
+fixed.</li>
+</ul>
+
+<h5 id="lis3dh-accelerometer-fix">lis3dh accelerometer fix:</h5>
+
+<ul>
+<li>A bug affecting I2C burst read on the lis3dh
+accelerometer was fixed.</li>
+</ul>
+
+<h5 id="stack-pointer-randomization-fix">Stack pointer randomization fix:</h5>
+
+<ul>
+<li>An arithmetic underflow when stack pointer
+randomization is enabled was fixed.</li>
+</ul>
+
+<h5 id="networking-fixes">Networking fixes:</h5>
+
+<ul>
+<li>Various fixes to the network management layer, as well
+as protocols such as DNS, TCP, and UDP, were merged.</li>
+</ul>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<h5 id="dtls-specific-settings-in-a-conf-overlay">DTLS specific settings in a .conf overlay:</h5>
+
+<ul>
+<li>The DTLS-specific configuration file, prj_dtls.conf,
+contained duplicated configuration with prj.conf, the
+non-DTLS configuration. This duplication was
+eliminated and the resulting fragment has been renamed
+to overlay-dtls.conf. The sample can now be built with
+DTLS support using zmp with \&ldquo;./zmp build
+&ndash;overlay-config overlay-dtls.conf
+zephyr-fota-samples/dm-lwm2m\&ldquo;.</li>
+</ul>
+
+<h5 id="temperature-sensor-changes">Temperature sensor changes:</h5>
+
+<ul>
+<li>The temperature driver usage was updated to follow
+upstream Zephyr API deprecation of the single
+temperature sensor channel in favor of separate
+ambient and die temperature sensor channels.</li>
+</ul>
+
+<p>This also resulted in a JSON schema change for the
+data reported via MQTT.</p>
+
+<h5 id="network-interface-changes">Network interface changes:</h5>
+
+<ul>
+<li>Some network interface management code was updated to
+keep up with upstream API changes.</li>
+</ul>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<h5 id="temperature-sensor-changes-1">Temperature sensor changes:</h5>
+
+<ul>
+<li>The temperature driver usage was updated to follow
+upstream Zephyr API deprecation of the single
+temperature sensor channel in favor of separate
+ambient and die temperature sensor channels.</li>
+</ul>
+
+<p>The temperature sensing LWM2M interface was not
+affected.</p>
+
+<h5 id="network-interface-changes-1">Network interface changes:</h5>
+
+<ul>
+<li>Some network interface management code was updated to
+keep up with upstream API changes.</li>
+</ul>
+
+<h5 id="initial-lte-m-support">Initial LTE-M support:</h5>
+
+<ul>
+<li>Initial support for the Wistron WCN14A2A LTE-M Modem
+was merged. This can be used with the frdm_k64f board.</li>
+</ul>
+
+<p>See the commit log in f8a19f23 (&ldquo;dm-lwm2m: add LTE-M
+Modem WCN14A2A .conf fragment&rdquo;) for usage
+instructions.</p>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<ul>
+<li><p>Not addressed in this update</p>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1></li>
+</ul>
+
+<h2 id="summary-2">Summary</h2>
+
+<p>OSF Unified Linux Kernel updated to the 4.14.26 stable release.
+Support for OTA software updates is now enabled by default in the Linux
+microPlatform, supporting OSTree with TUF and compatible with the ATS
+Garage and ATS OTA Community Edition services.</p>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<ul>
+<li>OSF Unified Linux Kernel updated to 4.14.26.</li>
+<li>New layer Meta Updater added to LMP (provides SOTA support).</li>
+<li>U-Boot support for Dragonboard 410c and 820c.</li>
+<li>VMDK and VDI images are now available for the intel-corei7-64 target.</li>
+<li>Support for OTA software updates using OSTree and TUF.</li>
+<li>OTA compatibility with ATS Garage and ATS OTA Community Edition.</li>
+</ul>
+
+<h2 id="components-1">Components</h2>
+
+<h3 id="meta-osf-layer">Meta OSF Layer</h3>
+
+<h4 id="features-4">Features</h4>
+
+<h5 id="layer-update">Layer Update:</h5>
+
+<ul>
+<li>OSF Unified Linux Kernel updated to 4.14.26.
+New u-boot-script-toradex recipe added.
+U-Boot-Compulab updated to the 2017.07-cl-som-imx7-1.1 release.
+New u-boot-ostree-src recipe added.
+Python3-docker updated to 2.7.0.
+Python3-docker-compose updated to 1.19.0.
+Docker-compose is now installed by default in lmp-gateway-image.
+New lshw recipe added based on latest upstream git snapshot.</li>
+</ul>
+
+<h5 id="u-boot-support-for-db410c-and-db820c-targets">U-Boot support for DB410c and DB820c targets:</h5>
+
+<ul>
+<li>Default LMP image now ships with u-boot support for the DB410c
+and DB820c targets (requirement for OTA+ support).</li>
+</ul>
+
+<h5 id="ostree-support">OSTree support:</h5>
+
+<ul>
+<li>Root filesystem is now OSTree-based. Please check
+<a href="https://ostree.readthedocs.io">https://ostree.readthedocs.io</a> for the upstream OSTree documentation.</li>
+</ul>
+
+<h4 id="bugs-4">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+
+<h3 id="openembedded-core-layer">OpenEmbedded-Core Layer</h3>
+
+<h4 id="features-5">Features</h4>
+
+<h5 id="layer-update-1">Layer Update:</h5>
+
+<ul>
+<li>Musl updated to the latest upstream master.
+Python 3 target and native recipes updated to 3.5.4.
+Ncurses updated to 6.0+20171125.
+Tar updated to 1.30.
+Pigz updated to 2.4.
+Wget updated to 1.19.4.
+Rsync updated to 3.1.3.
+Ninja updated to 1.8.2 (major release update).
+RPM updated to 4.14.1.
+Openssl updated to 1.0.2n.
+Libnl updated to 3.4.0.
+Boost updated to 1.66.0.
+Iputils updated to 20161105.
+Linux-libc-headers updated to v4.15.
+Ccache updated to 3.3.5.
+Libva updated to 2.0.0.
+Strace updated to 4.20.</li>
+</ul>
+
+<h4 id="bugs-5">Bugs</h4>
+
+<h5 id="qemu">qemu:</h5>
+
+<ul>
+<li><p>VNC server implementation in QEMU was found to be vulnerable to
+an unbounded memory allocation issue.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-15124">CVE-2017-15124</a></li>
+</ul></li>
+</ul>
+
+<h3 id="meta-virtualization">Meta Virtualization</h3>
+
+<h4 id="features-6">Features</h4>
+
+<h5 id="layer-update-2">Layer Update:</h5>
+
+<ul>
+<li>Fixes required by latest OE-Core update.</li>
+</ul>
+
+<h4 id="bugs-6">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+
+<h3 id="meta-openembedded-layer">Meta OpenEmbedded Layer</h3>
+
+<h4 id="features-7">Features</h4>
+
+<h5 id="layer-update-3">Layer Update:</h5>
+
+<ul>
+<li>Python-ndg-httpsclient updated to 0.4.4.
+Python 3 depends on python3-misc removed due missing _pydecimal.py.</li>
+</ul>
+
+<h4 id="bugs-7">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+
+<h3 id="meta-yocto">Meta Yocto</h3>
+
+<h4 id="features-8">Features</h4>
+
+<h5 id="layer-update-4">Layer Update:</h5>
+
+<ul>
+<li>Fixes required by latest OE-Core update.</li>
+</ul>
+
+<h4 id="bugs-8">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+
+<h3 id="meta-freescale">Meta Freescale</h3>
+
+<h4 id="features-9">Features</h4>
+
+<h5 id="layer-update-5">Layer Update:</h5>
+
+<ul>
+<li>U-boot-fw-utils added to u-boot-fslc-fw-utils provides.</li>
+</ul>
+
+<h4 id="bugs-9">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+
+<h3 id="meta-freescale-3rdparty">Meta Freescale 3rdparty</h3>
+
+<h4 id="features-10">Features</h4>
+
+<h5 id="layer-update-6">Layer Update:</h5>
+
+<ul>
+<li>broadcom-nvram-config changed to use nonarch_base_libdir
+instead of /lib.</li>
+</ul>
+
+<h4 id="bugs-10">Bugs</h4>
+
+<ul>
+<li>Not addressed in this update</li>
+</ul>
+                    </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
+
+                </div>
+                
+
+                
+
+                
+
+                <div class="small-12 large-3 medium-4 columns">
+
+                    
+
+                    
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/blockchain">blockchain (1)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/conferences">conferences (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/demos">demos (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/fota">fota (11)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/linux-mp">linux-mp (38)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/mp-containers">mp-containers (31)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/updates">updates (26)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr">zephyr (4)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-mp">zephyr-mp (36)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-news">zephyr-news (10)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/assistant"><i class="fa fa-tags"></i> assistant</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/att"><i class="fa fa-tags"></i> att</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ble"><i class="fa fa-tags"></i> ble</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/blockchain"><i class="fa fa-tags"></i> blockchain</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/bugs"><i class="fa fa-tags"></i> bugs</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/containers"><i class="fa fa-tags"></i> containers</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/crypto"><i class="fa fa-tags"></i> crypto</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/cve"><i class="fa fa-tags"></i> cve</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/decentralized"><i class="fa fa-tags"></i> decentralized</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker"><i class="fa fa-tags"></i> docker</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker-compose"><i class="fa fa-tags"></i> docker-compose</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/foundries.io"><i class="fa fa-tags"></i> foundries.io</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/google"><i class="fa fa-tags"></i> google</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/iot"><i class="fa fa-tags"></i> iot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/k8s"><i class="fa fa-tags"></i> k8s</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/keys"><i class="fa fa-tags"></i> keys</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/kubernetes"><i class="fa fa-tags"></i> kubernetes</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/linux"><i class="fa fa-tags"></i> linux</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lmp"><i class="fa fa-tags"></i> lmp</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lte"><i class="fa fa-tags"></i> lte</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lwm2m"><i class="fa fa-tags"></i> lwm2m</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/management"><i class="fa fa-tags"></i> management</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/mcuboot"><i class="fa fa-tags"></i> mcuboot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/microplatform"><i class="fa fa-tags"></i> microplatform</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/open-source"><i class="fa fa-tags"></i> open-source</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ota"><i class="fa fa-tags"></i> ota</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/portainer"><i class="fa fa-tags"></i> portainer</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/radio"><i class="fa fa-tags"></i> radio</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/resin"><i class="fa fa-tags"></i> resin</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/security"><i class="fa fa-tags"></i> security</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/update"><i class="fa fa-tags"></i> update</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zephyr"><i class="fa fa-tags"></i> zephyr</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zmp"><i class="fa fa-tags"></i> zmp</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                    
+
+                </div>
+                
+
+                
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+
+    
+<footer>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="contacts">
+                <div class="row">
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-map-marker"></i>
+                        CAMBRIDGE, UK
+                    </div>
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-image"></i>
+                        BOULDER, CO USA
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="footerlinks">
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>About Foundries.io</h2>
+                    <p>
+                        Foundries.io is changing the IoT landscape by delivering continuously
+                        updated software platforms for a secure, connected world.
+                    </p>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/company/">About</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/careers/">Careers</a></li>
+                        <li><a href="https://support.foundries.io/">Support</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/labs/">Labs</a></li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Connect</h2>
+                    <ul>
+    	                <li><a href="https://twitter.com/foundriesio"><i class="fa fa-twitter fa-2x"></i></a>
+    	                    <a href="https://www.facebook.com/foundriesio"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://github.com/foundriesio"><i class="fa fa-github fa-2x"></i></a>
+    	                    <a href="https://foundriesio.slack.com/join/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE"><i class="fa fa-slack fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns">
+                    <h2>Get Started Today</h2>
+                    <p>
+                        Get immediate access to microPlatform source and binary builds for
+                        today's most popular development boards by starting your evaluation subscription!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">Copyright 2018 Foundries.io All rights reserved</p>
+</footer>
+
+
+
+    </div>
+    
+
+    
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-111281311-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/what-input.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/foundation.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/hoverIntent.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/superfish.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/morphext.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/wow.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.slicknav.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/waypoints.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.animateNumber.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/owl.carousel.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.responsiveTabs.js"></script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/custom.js"></script>
+<script>
+jQuery(function($) {
+    
+    $('#responsiveTabsDemo').responsiveTabs({
+    startCollapsed: 'accordion'
+    });
+});
+</script>
+
+
+</body>
+
+</html>

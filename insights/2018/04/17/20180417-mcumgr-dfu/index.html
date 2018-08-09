@@ -1,0 +1,670 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Zephyr microPlatform, Zephyr OTA via DFU/mcumgr | Foundries.io</title>
+
+  <link rel="shortcut icon" href="https://foundriesio.github.io/foundriesiov2/images/icons/favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/foundation.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/animate.min.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/morphext.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.carousel.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.theme.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/owl.transitions.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/slicknav.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/style.css" />
+  <link rel="stylesheet" href="https://foundriesio.github.io/foundriesiov2/css/style.default.css" />
+
+</head>
+
+
+<body>
+
+    
+    <header class="alt-6">
+
+        
+<div class="top sticky">
+    <div class="row">
+        <div class="small-12 large-3 medium-3 columns">
+            <div class="logo">
+                <a href="https://foundriesio.github.io/foundriesiov2/" title=""><img src="https://foundriesio.github.io/foundriesiov2//images/logo.png" alt="" title=""/></a>
+            </div>
+        </div>
+
+        <div class="small-12 large-9 medium-9 columns">
+
+            
+            <nav class="desktop-menu">
+                <ul class="sf-menu" id="navigation">
+                    <li ><a href="https://foundriesio.github.io/foundriesiov2/">HOME</a> </li>
+
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/products/" style="cursor:default">PRODUCTS</a>
+		 	            <ul>
+			                <li style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/products/"> MICROPLATFORMS</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/pricing/"> PRICING</a></li>
+			                <li><a href="https://foundriesio.github.io/foundriesiov2/hardware/"> HARDWARE</a></li>
+		                </ul>
+		            </li>
+                    
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/partners/">PARTNERS</a></li>
+		            <li><a href="https://foundriesio.github.io/foundriesiov2/insights/">INSIGHTS</a></li>
+                    <li><a href="https://foundriesio.github.io/foundriesiov2/company/">ABOUT</a>
+                        <ul>
+                            <li  style="background: #ffaa00"><a href="https://foundriesio.github.io/foundriesiov2/company/"> COMPANY</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/labs/"> LABS</a></li>
+                            <li><a href="https://foundriesio.github.io/foundriesiov2/careers/"> CAREERS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://app.foundries.io/login/?next=/ "> <i class="fa fa-cloud-upload"></i> ENGAGE</a>
+                        <ul>
+                            <li><a href="https://app.foundries.io/login/?next=/ "> DASHBOARD</a></li>
+                            <li><a href="https://forums.foundries.io"> FORUMS</a></li>
+                            <li><a href="https://support.foundries.io"> SUPPORT</a></li>
+                            <li><a href="https://join.slack.com/t/foundriesio/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE   "> SLACK</a></li>
+                            <li style="background: #ffaa00"><a href="https://app.foundries.io/login/?next=/ " style="color: #37485C"> GET STARTED</a></li>
+                        </ul>
+		            </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+</div>
+
+
+
+        <div class="message">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="message-intro">
+                        <span class="message-line"></span>
+                        <p>FOUNDRIES.IO INSIGHTS</p>
+                        <span class="message-line"></span>
+                    </div>
+                    <h1 style="color: white">Zephyr microPlatform, Zephyr OTA via DFU/mcumgr</h1>
+                    <p style="color: white" class="text-muted text-uppercase mb-small text-right">April 17, 2018</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div id="content">
+        <div class="container">
+
+            <div class="row">
+
+                
+
+                <div class="small-10 columns small-offset-1" id="insights-post">
+
+
+                    <div id="post-content">
+                        <p>In this blog we describe how to use the Zephyr microPlatform and the in-tree
+Zephyr samples to build, flash and perform an over the air (OTA) update of a
+Zephyr application over Bluetooth Low Energy (BLE).  This demonstration uses the
+DFU support within Zephyr provided by
+<a href="http://docs.zephyrproject.org/subsystems/mgmt.html">mcumgr</a>.</p>
+
+<p></p>
+
+<h1 id="overview">Overview</h1>
+
+<p>Before getting started, some of the features described in this blog require
+accessing features released to subscribers of the Zephyr microPlatform.  You can
+find out more about subscriptions at:
+<a href="https://app.foundries.io">https://app.foundries.io</a>.</p>
+
+<p>In this blog, we will prepare will prepare developer&rsquo;s workstation to use the
+Zephyr microPlatform; deploy our initial code to an
+<a href="https://www.nordicsemi.com/eng/Products/nRF52840-DK">nRF52840-DK</a> dev board,
+and then deploy new code to the device using an OTA update.</p>
+
+<h2 id="install-the-zephyr-microplatform">Install the Zephyr microPlatform:</h2>
+
+<p>Please refer to our documentation to install the Zephyr microPlatform at:
+   <a href="https://app.foundries.io/mp/zmp/latest/docs/tutorial/installation-zephyr.html">https://app.foundries.io/mp/zmp/latest/docs/tutorial/installation-zephyr.html</a></p>
+
+<p><strong>NOTE:</strong> in this blog, we use the nRF52840-DK board instead of the BLE Nano
+   2 used by default in the documentation. To use the nRF52840-DK, the following
+   changes are needed:</p>
+
+<ul>
+<li><p>Use &ldquo;-b nrf52840_pca10056&rdquo; instead of &ldquo;-b nrf52_blenano2&rdquo; when running ZMP</p></li>
+
+<li><p>Install the <a href="http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.tools%2Fdita%2Ftools%2Fnrf5x_command_line_tools%2Fnrf5x_nrfjprogexe.html">nRF5x command line
+ tools</a>,
+ instead of PyOCD.</p></li>
+</ul>
+
+<h2 id="install-mcumgr-on-your-development-workstation">Install mcumgr on your development workstation</h2>
+
+<p>Install the mcumgr application using &ldquo;go get&rdquo; (requires Go 1.7 or later):</p>
+
+<pre><code> $ go get github.com/apache/mynewt-mcumgr-cli/mcumgr
+</code></pre>
+
+<p>Make sure ~/go/bin is on the PATH of the user that runs the &ldquo;mcumgr&rdquo;
+   commands.</p>
+
+<h2 id="build-and-flash-the-smp-svr-application">Build and flash the smp_svr application</h2>
+
+<p>With your device console connected (115200 baud, 8N1), build and flash the
+   smp_svr application, which allows DFU firmware update via BLE:</p>
+
+<pre><code> $ ./zmp build -b nrf52840_pca10056 zephyr/samples/subsys/mgmt/mcumgr/smp_svr/
+ $ ./zmp flash -b nrf52840_pca10056 zephyr/samples/subsys/mgmt/mcumgr/smp_svr/
+</code></pre>
+
+<p>If the flash step fails, make sure your NRF52840-DK is connected via USB. One
+   way to check is to make sure running &ldquo;nrfjprog &ndash;ids&rdquo; lists the board&rsquo;s ID.</p>
+
+<p>The console output should look like this:</p>
+
+<pre><code>   ***** Booting Zephyr OS v1.1.0-52-g5bac42f *****
+   [MCUBOOT] [INF] main: Starting bootloader
+   [MCUBOOT] [INF] boot_status_source: Image 0: magic=unset, copy_done=0xff, image_ok=0xff
+   [MCUBOOT] [INF] boot_status_source: Scratch: magic=unset, copy_done=0x0, image_ok=0xff
+   [MCUBOOT] [INF] boot_status_source: Boot source: slot 0
+   [MCUBOOT] [INF] boot_swap_type: Swap type: none
+   [MCUBOOT] [ERR] main: Unable to find bootable image
+   ***** Booting Zephyr OS v1.1.0-52-g5bac42f *****
+   [MCUBOOT] [INF] main: Starting bootloader
+   [MCUBOOT] [INF] boot_status_source: Image 0: magic=unset, copy_done=0xff, image_ok=0xff
+   [MCUBOOT] [INF] boot_status_source: Scratch: magic=unset, copy_done=0x0, image_ok=0xff
+   [MCUBOOT] [INF] boot_status_source: Boot source: slot 0
+   [MCUBOOT] [INF] boot_swap_type: Swap type: none
+   [MCUBOOT] [INF] main: Bootloader chainload address offset: 0xc000
+   [MCUBOOT] [INF] main: Jumping to the first image slot
+   ***** Booting Zephyr OS v1.11.0-633-g973b01a68 *****
+   Zephyr Shell, Zephyr version: 1.11.99
+   Type 'help' for a list of available commands
+   shell&gt; Bluetooth initialized
+   Advertising successfully started
+</code></pre>
+
+<h2 id="manage-the-device-using-mcumgr">Manage the device using mcumgr</h2>
+
+<p>In this section you will connect, update and query the device using mcumgr.</p>
+
+<p><strong>Connect to the device using mcumgr</strong></p>
+
+<p>These commands generally have to be run as root (commands run as root instead
+   of your normal user are prefixed with <code>#</code> instead of <code>$</code> in this blog post).
+   First make sure mcumgr is in root&rsquo;s PATH.</p>
+
+<pre><code> $ sudo -s
+ # export PATH=$PATH:/home/YOUR_USERNAME/go/bin
+</code></pre>
+
+<p>Now verify you can connect to your device.</p>
+
+<p><strong>Note:</strong> In this demo we are referencing hci0 which may be different on
+   your system.  For the demo to work, you will need a Bluetooth 4.0
+   compatible adapter and a recent Linux distribution (we performed this demo
+   with Ubuntu 17.10) with &lsquo;bluez&rsquo; installed.  Once you install bluez, you can
+   identify your device using the &lsquo;hciconfig&rsquo; utility.</p>
+
+<pre><code> # mcumgr --conntype ble --connstring ctlr_name=hci0,peer_name='Zephyr' echo hello
+ hello
+</code></pre>
+
+<p>If that doesn&rsquo;t work, make sure a &lsquo;Zephyr&rsquo; device shows up in your &lsquo;hcitool
+   lescan&rsquo; output and try again.</p>
+
+<p>If you get errors like &ldquo;Error: NMP timeout&rdquo; when running mcumgr, reset your
+   device and try again using nrfjprog:</p>
+
+<pre><code> $ nrfjprog --reset
+</code></pre>
+
+<p><strong>Verify that only one application image is installed.</strong></p>
+
+<p>Use the following command to check the set of available Zephyr images on your
+   device.</p>
+
+<pre><code># mcumgr --conntype ble --connstring ctlr_name=hci0,peer_name='Zephyr' image list
+Images:
+slot=0
+   version: 0.0.0
+   bootable: true
+   flags: active confirmed
+   hash: c7567dd9b84d15ddb4345e38435822ef102f5d1683e8425d5447bafd5cb15c11
+</code></pre>
+
+<p><strong>Modify the sample application and perform an OTA update</strong></p>
+
+<p>Edit the file zephyr/samples/subsys/mgmt/mcumgr/smp_svr/src/main.c, adding
+   a printline to the main() function:</p>
+
+<pre><code>printk(&quot;This application has been updated\n&quot;);
+</code></pre>
+
+<p>Now re-build it with a different version number using zmp.</p>
+
+<p><em>Important: do this from a <strong>non-root</strong> shell</em>:</p>
+
+<pre><code>$ ./zmp build -b nrf52840_pca10056 --imgtool-version 0.1.0 zephyr/samples/subsys/mgmt/mcumgr/smp_svr
+</code></pre>
+
+<p>From the root shell, upload the modified image to your device:</p>
+
+<pre><code># mcumgr --conntype ble --connstring ctlr_name=hci0,peer_name='Zephyr' image upload outdir/zephyr/samples/subsys/mgmt/mcumgr/smp_svr/nrf52840_pca10056/app/zephyr/smp_svr-nrf52840_pca10056-signed.bin
+</code></pre>
+
+<p><strong>Query the device and make sure 0.1.0 is visible:</strong></p>
+
+<pre><code># mcumgr --conntype ble --connstring ctlr_name=hci0,peer_name='Zephyr' image list
+Images:
+slot=0
+   version: 0.0.0
+   bootable: true
+   flags: active confirmed
+   hash: c7567dd9b84d15ddb4345e38435822ef102f5d1683e8425d5447bafd5cb15c11
+slot=1
+   version: 0.1.0
+   bootable: true
+   flags:
+   hash: 7806e0a1239aa772f3c1c9ea121c8c95d485fc38b2b3bb930275b63a7962f938
+Split status: N/A (0)
+</code></pre>
+
+<p>Note the presence of an update image in slot 1 with updated image version
+   <code>0.1.0</code>, which corresponds to the value of the <code>--imgtool-version</code> argument
+   you passed to <code>zmp build</code> earlier.</p>
+
+<p><strong>Confirm the update</strong></p>
+
+<p>&ldquo;Confirm&rdquo; the slot 1 image by SHA. This will make the bootloader, MCUboot,
+   install it during the next boot. From the above example,</p>
+
+<pre><code># mcumgr --conntype ble --connstring ctlr_name=hci0,peer_name='Zephyr' image test 7806e0a1239aa772f3c1c9ea121c8c95d485fc38b2b3bb930275b63a7962f938
+Images:
+slot=0
+   version: 0.0.0
+   bootable: true
+   flags: active confirmed
+   hash: c7567dd9b84d15ddb4345e38435822ef102f5d1683e8425d5447bafd5cb15c11
+slot=1
+   version: 0.1.0
+   bootable: true
+   flags: pending
+   hash: 7806e0a1239aa772f3c1c9ea121c8c95d485fc38b2b3bb930275b63a7962f938
+Split status: N/A (0)
+</code></pre>
+
+<p>Note how the <code>flags</code> field now says <code>pending</code>. This means the update image
+   will be used at the next device reset.</p>
+
+<p><strong>Reboot the device using DFU:</strong></p>
+
+<pre><code># mcumgr --conntype ble --connstring ctlr_name=hci0,peer_name='Zephyr' reset
+</code></pre>
+
+<p>You will see bootloader output confirming MCUboot is swapping into the new
+   image, then see the new printline with the string <code>This application has been
+   updated</code>:</p>
+
+<pre><code> ***** Booting Zephyr OS v1.1.0-52-g5bac42f *****
+ [MCUBOOT] [INF] main: Starting bootloader
+ [MCUBOOT] [INF] boot_status_source: Image 0: magic=unset, copy_done=0xff, image_ok=0xff
+ [MCUBOOT] [INF] boot_status_source: Scratch: magic=unset, copy_done=0x0, image_ok=0xff
+ [MCUBOOT] [INF] boot_status_source: Boot source: slot 0
+ [MCUBOOT] [INF] boot_swap_type: Swap type: test
+ [MCUBOOT] [INF] main: Bootloader chainload address offset: 0xc000
+ [MCUBOOT] [INF] main: Jumping to the first image slot
+ ***** Booting Zephyr OS v1.11.0-633-g973b01a68 *****
+ Zephyr Shell, Zephyr version: 1.11.99
+ Type 'help' for a list of available commands
+ shell&gt; This application has been updated
+ Bluetooth initialized
+ Advertising successfully started
+</code></pre>
+
+<p>Since the updated application also supports the mcumgr protocol, you can make
+   additional changes and update it with a third version using the above steps.</p>
+                    </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
+
+                </div>
+                
+
+                
+
+                
+
+                <div class="small-12 large-3 medium-4 columns">
+
+                    
+
+                    
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/blockchain">blockchain (1)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/conferences">conferences (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/demos">demos (3)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/fota">fota (11)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/linux-mp">linux-mp (38)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/mp-containers">mp-containers (31)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/updates">updates (26)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr">zephyr (4)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-mp">zephyr-mp (36)</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/categories/zephyr-news">zephyr-news (10)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+      <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/assistant"><i class="fa fa-tags"></i> assistant</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/att"><i class="fa fa-tags"></i> att</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ble"><i class="fa fa-tags"></i> ble</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/blockchain"><i class="fa fa-tags"></i> blockchain</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/bugs"><i class="fa fa-tags"></i> bugs</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/containers"><i class="fa fa-tags"></i> containers</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/crypto"><i class="fa fa-tags"></i> crypto</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/cve"><i class="fa fa-tags"></i> cve</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/decentralized"><i class="fa fa-tags"></i> decentralized</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker"><i class="fa fa-tags"></i> docker</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/docker-compose"><i class="fa fa-tags"></i> docker-compose</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/foundries.io"><i class="fa fa-tags"></i> foundries.io</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/google"><i class="fa fa-tags"></i> google</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/iot"><i class="fa fa-tags"></i> iot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/k8s"><i class="fa fa-tags"></i> k8s</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/keys"><i class="fa fa-tags"></i> keys</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/kubernetes"><i class="fa fa-tags"></i> kubernetes</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/linux"><i class="fa fa-tags"></i> linux</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lmp"><i class="fa fa-tags"></i> lmp</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lte"><i class="fa fa-tags"></i> lte</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/lwm2m"><i class="fa fa-tags"></i> lwm2m</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/management"><i class="fa fa-tags"></i> management</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/mcuboot"><i class="fa fa-tags"></i> mcuboot</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/microplatform"><i class="fa fa-tags"></i> microplatform</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/open-source"><i class="fa fa-tags"></i> open-source</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/ota"><i class="fa fa-tags"></i> ota</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/portainer"><i class="fa fa-tags"></i> portainer</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/radio"><i class="fa fa-tags"></i> radio</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/resin"><i class="fa fa-tags"></i> resin</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/security"><i class="fa fa-tags"></i> security</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/update"><i class="fa fa-tags"></i> update</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zephyr"><i class="fa fa-tags"></i> zephyr</a>
+            </li>
+            
+            <li><a href="https://foundriesio.github.io/foundriesiov2/tags/zmp"><i class="fa fa-tags"></i> zmp</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                    
+
+                </div>
+                
+
+                
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+
+    
+<footer>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="contacts">
+                <div class="row">
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-map-marker"></i>
+                        CAMBRIDGE, UK
+                    </div>
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-image"></i>
+                        BOULDER, CO USA
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="footerlinks">
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>About Foundries.io</h2>
+                    <p>
+                        Foundries.io is changing the IoT landscape by delivering continuously
+                        updated software platforms for a secure, connected world.
+                    </p>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/company/">About</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/careers/">Careers</a></li>
+                        <li><a href="https://support.foundries.io/">Support</a></li>
+                        <li><a href="https://foundriesio.github.io/foundriesiov2/labs/">Labs</a></li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right">
+                    <h2>Connect</h2>
+                    <ul>
+    	                <li><a href="https://twitter.com/foundriesio"><i class="fa fa-twitter fa-2x"></i></a>
+    	                    <a href="https://www.facebook.com/foundriesio"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://github.com/foundriesio"><i class="fa fa-github fa-2x"></i></a>
+    	                    <a href="https://foundriesio.slack.com/join/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE"><i class="fa fa-slack fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns">
+                    <h2>Get Started Today</h2>
+                    <p>
+                        Get immediate access to microPlatform source and binary builds for
+                        today's most popular development boards by starting your evaluation subscription!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">Copyright 2018 Foundries.io All rights reserved</p>
+</footer>
+
+
+
+    </div>
+    
+
+    
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-111281311-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/what-input.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/foundation.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/hoverIntent.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/superfish.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/morphext.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/wow.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.slicknav.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/waypoints.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.animateNumber.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/owl.carousel.min.js"></script>
+<script src="https://foundriesio.github.io/foundriesiov2/js/vendor/jquery.responsiveTabs.js"></script>
+
+<script src="https://foundriesio.github.io/foundriesiov2/js/custom.js"></script>
+<script>
+jQuery(function($) {
+    
+    $('#responsiveTabsDemo').responsiveTabs({
+    startCollapsed: 'accordion'
+    });
+});
+</script>
+
+
+</body>
+
+</html>

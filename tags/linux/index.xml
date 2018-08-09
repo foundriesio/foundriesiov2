@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Foundries.io</title>
+    <link>https://foundriesio.github.io/foundriesiov2/tags/linux/</link>
+    <description>Recent content in Linux on Foundries.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>microPlatform update 0.25</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/27/blog-post-update-0.25/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/27/blog-post-update-0.25/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-25&#34;&gt;Zephyr microPlatform changes for 0.25&lt;/h2&gt;
+
+&lt;p&gt;MCUboot 1.2.0 contains mostly fixes around the serial
+bootloader. The Zephyr tree from the v1.13 development cycle
+contains several significant improvements and new features.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-25&#34;&gt;Linux microPlatform changes for 0.25&lt;/h2&gt;
+
+&lt;p&gt;Linux microPlatform meta-osf layer was renamed to meta-lmp.
+Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.24</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/blog-post-update-0.24/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/blog-post-update-0.24/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-24&#34;&gt;Zephyr microPlatform changes for 0.24&lt;/h2&gt;
+
+&lt;p&gt;New console and logging implementations for Zephyr, and an MCUboot
+heading to v1.2.0.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-24&#34;&gt;Linux microPlatform changes for 0.24&lt;/h2&gt;
+
+&lt;p&gt;No significant changes have gone into this update. The previous update
+included updates to containers and the sources weren&amp;rsquo;t published. The
+URL used for authentication in lmp-device-register was updated.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.23</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/29/blog-post-update-0.23/</link>
+      <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/29/blog-post-update-0.23/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-23&#34;&gt;Zephyr microPlatform changes for 0.23&lt;/h2&gt;
+
+&lt;p&gt;Zephyr&amp;rsquo;s first batch of v1.13 patches; code cleanups to the sample
+applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-23&#34;&gt;Linux microPlatform changes for 0.23&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.16.18 stable release.
+Default GCC version was updated to the latest upstream 8.1 release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.22</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/21/blog-post-update-0.22/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/21/blog-post-update-0.22/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-22&#34;&gt;Zephyr microPlatform changes for 0.22&lt;/h2&gt;
+
+&lt;p&gt;The Zephyr tree&amp;rsquo;s history has been rewritten on top of the final
+v1.12 release, beginning the v1.13 development branch. The new
+Zephyr starting point is 4640305; this replaces f77bb75 from
+Zephyr microPlatform update 0.21.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-22&#34;&gt;Linux microPlatform changes for 0.22&lt;/h2&gt;
+
+&lt;p&gt;Core layer updates based on the latest Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.21</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/18/blog-post-update-0.21/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/18/blog-post-update-0.21/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-21&#34;&gt;Zephyr microPlatform changes for 0.21&lt;/h2&gt;
+
+&lt;p&gt;Zephyr v1.12, MCUboot changes for v1.2.0, minor sample adjustments&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-21&#34;&gt;Linux microPlatform changes for 0.21&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.16.15 stable release.
+U-Boot-Fslc updated to the 2018.05-based release.
+Core layer updates based on the latest Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.20</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/08/blog-post-update-0.20/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/08/blog-post-update-0.20/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-20&#34;&gt;Zephyr microPlatform changes for 0.20&lt;/h2&gt;
+
+&lt;p&gt;Zephyr v1.12 rc2, sample support for nRF52832 DK.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-20&#34;&gt;Linux microPlatform changes for 0.20&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.16.12 stable release.
+Initial support for QEMU RISC-V 64 and SiFive Freedom Unleashed U540 targets.
+New image lmp-mini-image for minimal OTA+ compatible images, currently used
+by RISC-V targets due lack of Golang support.
+Core layer updates based on the latest changes for the Yocto Thud (2.6) release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.19</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/blog-post-update-0.19/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/blog-post-update-0.19/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-19&#34;&gt;Zephyr microPlatform changes for 0.19&lt;/h2&gt;
+
+&lt;p&gt;Zephyr hits 1.12 feature freeze; this will not be the LTS, but
+carries many important new features.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-19&#34;&gt;Linux microPlatform changes for 0.19&lt;/h2&gt;
+
+&lt;p&gt;No changes have gone into the LMP since 0.18.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.18</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/18/blog-post-update-0.18/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/18/blog-post-update-0.18/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-18&#34;&gt;Zephyr microPlatform changes for 0.18&lt;/h2&gt;
+
+&lt;p&gt;Zephyr from near the end of the v1.12 cycle, minor application
+updates for new Bluetooth APIs.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-18&#34;&gt;Linux microPlatform changes for 0.18&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.16.8 stable release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.17</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/10/blog-post-update-0.17/</link>
+      <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/10/blog-post-update-0.17/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-17&#34;&gt;Zephyr microPlatform changes for 0.17&lt;/h2&gt;
+
+&lt;p&gt;Zephyr heading towards end of v1.12 development cycle, MCUboot
+heading towards 1.2.0 release, samples compatibility updates.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-17&#34;&gt;Linux microPlatform changes for 0.17&lt;/h2&gt;
+
+&lt;p&gt;No changes have gone into the LMP since 0.16.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.16</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/04/blog-post-update-0.16/</link>
+      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/04/blog-post-update-0.16/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-16&#34;&gt;Zephyr microPlatform changes for 0.16&lt;/h2&gt;
+
+&lt;p&gt;No changes have gone into the ZMP since 0.15.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-16&#34;&gt;Linux microPlatform changes for 0.16&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.16.6 stable release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.15</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/26/blog-post-update-0.15/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/26/blog-post-update-0.15/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-15&#34;&gt;Zephyr microPlatform changes for 0.15&lt;/h2&gt;
+
+&lt;p&gt;Zephyr with improved network logging and initial WiFi, MCUboot
+headed towards 1.2.0, LWM2M usability improvements.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-15&#34;&gt;Linux microPlatform changes for 0.15&lt;/h2&gt;
+
+&lt;p&gt;Core layer updates based on the latest sumo changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.14</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/18/blog-post-update-0.14/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/18/blog-post-update-0.14/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-14&#34;&gt;Zephyr microPlatform changes for 0.14&lt;/h2&gt;
+
+&lt;p&gt;Zephyr updates from 0.12 cycle, no MCUboot changes&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-14&#34;&gt;Linux microPlatform changes for 0.14&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.14.33 stable release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.13</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/blog-post-update-0.13/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/blog-post-update-0.13/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-13&#34;&gt;Zephyr microPlatform changes for 0.13&lt;/h2&gt;
+
+&lt;p&gt;Zephyr tree with new networking features, driver updates, and bug
+fixes, among other improvements.&lt;/p&gt;
+
+&lt;p&gt;A new zmp tool build option, &amp;ndash;overlay-config, makes it easier to
+mix-in configuration fragments when building.&lt;/p&gt;
+
+&lt;p&gt;Experimental support for the Wistron WCN14A2A LTE-M Modem is
+provided in Zephyr microPlatform specific patches provided by Open
+Source Foundries.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-13&#34;&gt;Linux microPlatform changes for 0.13&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.14.26 stable release.
+Support for OTA software updates is now enabled by default in the Linux
+microPlatform, supporting OSTree with TUF and compatible with the ATS
+Garage and ATS OTA Community Edition services.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.12</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/27/blog-post-update-0.12/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/27/blog-post-update-0.12/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-12&#34;&gt;Zephyr microPlatform changes for 0.12&lt;/h2&gt;
+
+&lt;p&gt;The Zephyr tree incorporates significant changes from the v1.12
+merge window, including virtual file system support, websockets,
+network logging, and more.&lt;/p&gt;
+
+&lt;p&gt;The MCUboot tree includes a single new feature, allowing users to
+set device tree overlays.&lt;/p&gt;
+
+&lt;p&gt;The zmp tool includes several new features, which are taken
+advantage of in the reference applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-12&#34;&gt;Linux microPlatform changes for 0.12&lt;/h2&gt;
+
+&lt;p&gt;No changes have gone into the LMP since 0.11.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.11</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/20/blog-post-update-0.11/</link>
+      <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/20/blog-post-update-0.11/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-11&#34;&gt;Zephyr microPlatform changes for 0.11&lt;/h2&gt;
+
+&lt;p&gt;This update includes Zephyr&amp;rsquo;s official v1.11 release, along with
+some MCUboot changes which are required to keep compatibility with
+a Zephyr API change.&lt;/p&gt;
+
+&lt;p&gt;The sample applications have turned off some unnecessary Bluetooth
+options, saving approximately 4 KB.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-11&#34;&gt;Linux microPlatform changes for 0.11&lt;/h2&gt;
+
+&lt;p&gt;No changes have gone into the LMP since 0.10.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ELC / Open IoT Summit 2018 Slides now available</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</guid>
+      <description>&lt;p&gt;Foundries.io presented 4 sessions at this year&amp;rsquo;s IoT Summit and Embedded
+Linux Conference and the slides are now available.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.10</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/13/blog-post-update-0.10/</link>
+      <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/13/blog-post-update-0.10/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-10&#34;&gt;Zephyr microPlatform changes for 0.10&lt;/h2&gt;
+
+&lt;p&gt;Zephyr tree from the 1.11 stabilization process, related
+MCUboot updates for CVE-2018-0488 and CVE-2018-0487.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-10&#34;&gt;Linux microPlatform changes for 0.10&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.14.19 stable release.
+UsrMerge (&lt;a href=&#34;https://www.freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge/&#34;&gt;https://www.freedesktop.org/wiki/Software/systemd/TheCaseForTheUsrMerge/&lt;/a&gt;)
+is now enabled by default in LMP.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.9</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/02/21/blog-post-update-0.9/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/02/21/blog-post-update-0.9/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-9&#34;&gt;Zephyr microPlatform changes for 0.9&lt;/h2&gt;
+
+&lt;p&gt;MCUboot history was rewritten following v1.1.0 release. Zephyr
+integrates OpenThread support, and has the usual set of
+incompatible changes.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-9&#34;&gt;Linux microPlatform changes for 0.9&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.14.17 stable release.
+Default GCC version was updated to the latest upstream 7.3 release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.8</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/02/02/blog-post-update-0.8/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/02/02/blog-post-update-0.8/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-8&#34;&gt;Zephyr microPlatform changes for 0.8&lt;/h2&gt;
+
+&lt;p&gt;This is a new MCUBoot release, and an incremental merge of the
+Zephyr development branch.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-8&#34;&gt;Linux microPlatform changes for 0.8&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.14.15 stable release.
+Default GCC version was changed from the 7.1-Linaro to the latest OpenEmbedded 7.2 release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Foundries.io at Embedded World 2018</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/27/20180127-embeddedworld/</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/27/20180127-embeddedworld/</guid>
+      <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
+our end to end IoT microPlatforms at this years Embedded World conference in
+Nuremburg, Germany.  The Embedded World conference takes place between
+February 27th-March 1st at the Embedded World conference Center.
+OSF will be presenting in the Zephyr booth, located in
+&lt;a href=&#34;https://www.embedded-world.de/en/exhibitors/participation/floor-plan&#34;&gt;Hall 4, booth number: 4-680&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Foundries.io at ELC / Open IoT Summit 2018</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</link>
+      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</guid>
+      <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
+our end to end IoT microPlatforms at this years Embedded Linux Conference and
+the Open IoT Summit alongside the Zephry project.&lt;/p&gt;
+
+&lt;p&gt;This year, the events will take place in Portland Oregon, at the downtown
+Portland Hilton from March 12-15.  Foundries.io will be presenting
+on 4 topics at this year&amp;rsquo;s IoT Summit.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.7</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/25/blog-post-update-0.7/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/25/blog-post-update-0.7/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-7&#34;&gt;Zephyr microPlatform changes for 0.7&lt;/h2&gt;
+
+&lt;p&gt;The most significant change in this update follows the Linux
+microPlatform switch to a Linux v4.14-based tree. This impacts
+compatibility with any gateways relying on the old Bluetooth
+behavior, and also will cause changes to the MAC addresses reported
+by the Zephyr microPlatform sample applications. Users of the
+bt-joiner container whitelist feature in the Linux microPlatform
+will need to update their whitelists. Specifically, the leading
+D6:E7 in the MAC addresses must be changed to D4:E7.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-7&#34;&gt;Linux microPlatform changes for 0.7&lt;/h2&gt;
+
+&lt;p&gt;This kernel update includes x86 support for kernel page-table isolation
+(KPTI), which mitigates the recent meltdown security vulnerability.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How To Manage LMP Containers</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-container-management/</link>
+      <pubDate>Wed, 17 Jan 2018 13:50:46 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-container-management/</guid>
+      <description>&lt;p&gt;The Linux microPlatform uses a set of Docker containers to provide end-to-end
+services used by the Zephyr microPlatform. The containers and their
+configurations are deployed using a simple &lt;a href=&#34;https://github.com/OpenSourceFoundries/gateway-ansible&#34;&gt;shell script&lt;/a&gt; that wraps
+&lt;a href=&#34;https://www.ansible.com/&#34;&gt;Ansible&lt;/a&gt;. The scripts require a version of Ansible
+with Docker support. Some distro packages such as Ubuntu 16.04 don&amp;rsquo;t have this,
+so make sure you install Ansible from a &lt;a href=&#34;http://docs.ansible.com/ansible/latest/intro_installation.html&#34;&gt;proper source&lt;/a&gt;
+before continuing.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.6</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/10/blog-post-update-0.6/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/10/blog-post-update-0.6/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-6&#34;&gt;Zephyr microPlatform changes for 0.6&lt;/h2&gt;
+
+&lt;p&gt;The most significant change in this update follows the Linux
+microPlatform switch to a Linux v4.14-based tree. This impacts
+compatibility with any gateways relying on the old Bluetooth
+behavior, and also will cause changes to the MAC addresses reported
+by the Zephyr microPlatform sample applications. Users of the
+bt-joiner container whitelist feature in the Linux microPlatform
+will need to update their whitelists. Specifically, the leading
+D6:E7 in the MAC addresses must be changed to D4:E7.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-6&#34;&gt;Linux microPlatform changes for 0.6&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel was updated to the 4.14 series. The Linux Kernel
+update also includes changes required to properly implement RFC 766 (IPv6 over
+Bluetooth Low Energy), causing incompatibilities with Zephyr devices using the
+NET_L2_BT_ZEP1656 Zephyr workaround (required for kernels older than 4.12).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.5</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/04/blog-post-update-0.5/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/04/blog-post-update-0.5/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-5&#34;&gt;Zephyr microPlatform changes for 0.5&lt;/h2&gt;
+
+&lt;p&gt;The major change in this update is a non-fast-forward Zephyr
+repository tree based on the upstream 1.11 development tree.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-5&#34;&gt;Linux microPlatform changes for 0.5&lt;/h2&gt;
+
+&lt;p&gt;Raspberry Pi 3 kernel was updated to use the same OSF distro configuration
+fragment as used by the other machines.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.4</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/12/13/blog-post-update-0.4/</link>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/12/13/blog-post-update-0.4/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-4&#34;&gt;Zephyr microPlatform changes for 0.4&lt;/h2&gt;
+
+&lt;p&gt;This is the final update for the Zephyr v1.10 development cycle.&lt;/p&gt;
+
+&lt;p&gt;The next update will be non-fast-forward update to the Zephyr
+repository, to begin development based on the v1.11 master branch.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-4&#34;&gt;Linux microPlatform changes for 0.4&lt;/h2&gt;
+
+&lt;p&gt;No changes have gone into the LMP since 0.3.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.3</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/12/07/blog-post-update-0.3/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/12/07/blog-post-update-0.3/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-3&#34;&gt;Zephyr microPlatform changes for 0.3&lt;/h2&gt;
+
+&lt;p&gt;This is the first Zephyr microPlatform update which uses the new CMake
+build system, which has replaced the use of Kbuild.&lt;/p&gt;
+
+&lt;p&gt;As described in the summary from &lt;a href=&#34;https://app.foundries.io/mp/zmp/0.2&#34;&gt;https://app.foundries.io/mp/zmp/0.2&lt;/a&gt;, all
+users will need to update any out of tree application build systems.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-3&#34;&gt;Linux microPlatform changes for 0.3&lt;/h2&gt;
+
+&lt;p&gt;Linux microPlatform add supports for generic 64bit Intel targets.
+Validated with Minnowboard Turbot and NUC variants.&lt;/p&gt;
+
+&lt;p&gt;Layer updates for meta-osf, and meta-intel.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.2</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/11/16/blog-post-update-0.2/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/11/16/blog-post-update-0.2/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-2&#34;&gt;Zephyr microPlatform changes for 0.2&lt;/h2&gt;
+
+&lt;p&gt;&amp;ldquo;This is the final release which uses the Linux kernel Kbuild
+build system. The next release will have a CMake-based build
+system. &lt;strong&gt;All out of tree applications will need updates&lt;/strong&gt; to
+their build systems to move to CMake. Refer to the Zephyr
+Application Development Primer for details:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://docs.zephyrproject.org/application/application.html&amp;quot;&#34;&gt;http://docs.zephyrproject.org/application/application.html&amp;quot;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-2&#34;&gt;Linux microPlatform changes for 0.2&lt;/h2&gt;
+
+&lt;p&gt;Linux microPlatform build system improvements to easy the platform build process
+in docker containers.&lt;/p&gt;
+
+&lt;p&gt;Layer updates for meta-osf, meta-freescale-3rdparty meta-qcom, meta-raspberrypi
+and openembedded-core and meta-linaro.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.1</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/11/08/blog-post-update-0.1/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/11/08/blog-post-update-0.1/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-1&#34;&gt;Zephyr microPlatform changes for 0.1&lt;/h2&gt;
+
+&lt;p&gt;This release includes a Zephyr tree from the the 1.10 development
+cycle. This tree does not yet include the conversion of the build
+system to CMake.&lt;/p&gt;
+
+&lt;p&gt;It includes an MCUBoot tree based on work done in the master
+branch following the v1.0.0 tag, which includes some work making it
+easier to port new boards to the bootloader than it was in that
+release.&lt;/p&gt;
+
+&lt;p&gt;Finally, several sample applications are included, with numerous
+improvements from publicly released versions.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-1&#34;&gt;Linux microPlatform changes for 0.1&lt;/h2&gt;
+
+&lt;p&gt;This release includes a major OpenEmbedded / Yocto update, which is now based
+on the latest Rocko (2.4) baseline (which is in the process to be released).&lt;/p&gt;
+
+&lt;p&gt;Go was updated to 1.9 and Docker was updated to the CE 17.06 release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 17.10.1</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/10/13/blog-post-update-17.10.1/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/10/13/blog-post-update-17.10.1/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-17-10-1&#34;&gt;Zephyr microPlatform changes for 17.10.1&lt;/h2&gt;
+
+&lt;p&gt;This release includes MCUBoot version 1.0.0, and a Zephyr tree that
+is based on 1.10. It also includes a new IoT Foundry application.&lt;/p&gt;
+
+&lt;p&gt;The Zephyr tree includes many new features and bug fixes. Notable
+improvements for the Zephyr microPlatform include LWM2M protocol
+support, mainline support for 96Boards Carbon networking, DTLS
+support for the net_app library, and various Bluetooth and networking
+fixes.&lt;/p&gt;
+
+&lt;p&gt;A new IoT Foundry application was added for a demonstration system
+providing firmware update and device communication via LWM2M.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-17-10-1&#34;&gt;Linux microPlatform changes for 17.10.1&lt;/h2&gt;
+
+&lt;p&gt;This is the first Linux microPlatform release created by Foundries.io.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

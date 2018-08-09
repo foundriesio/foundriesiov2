@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ble on Foundries.io</title>
+    <link>https://foundriesio.github.io/foundriesiov2/tags/ble/</link>
+    <description>Recent content in Ble on Foundries.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/ble/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Open Source Bluetooth Low Energy (BLE) USB dongle</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/08/20180110-ble-dongle/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/08/20180110-ble-dongle/</guid>
+      <description>&lt;p&gt;Foundries.io has released binaries and source code for a Zephyr-based Bluetooth Low Energy USB dongle to the public.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

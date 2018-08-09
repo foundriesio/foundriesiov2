@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Foundries.io</title>
+    <link>https://foundriesio.github.io/foundriesiov2/tags/</link>
+    <description>Recent content in Tags on Foundries.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 May 2018 19:48:23 +0000</lastBuildDate>
+    
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assistant</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/assistant/</link>
+      <pubDate>Wed, 09 May 2018 19:48:23 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/assistant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Att</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/att/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/att/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ble</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/ble/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/ble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blockchain</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/blockchain/</link>
+      <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bugs</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/bugs/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/bugs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Containers</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/containers/</link>
+      <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crypto</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/crypto/</link>
+      <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/crypto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cve</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/cve/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/cve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Decentralized</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/decentralized/</link>
+      <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/decentralized/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/docker/</link>
+      <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker Compose</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/docker-compose/</link>
+      <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/docker-compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foundries.io</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/foundries.io/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/foundries.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/google/</link>
+      <pubDate>Wed, 09 May 2018 19:48:23 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iot</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/iot/</link>
+      <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/iot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K8s</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/k8s/</link>
+      <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keys</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/keys/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/keys/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/kubernetes/</link>
+      <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/linux/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lmp</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/lmp/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/lmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lte</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/lte/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/lte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lwm2m</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/lwm2m/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/lwm2m/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/management/</link>
+      <pubDate>Mon, 07 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mcuboot</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/mcuboot/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/mcuboot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microplatform</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/microplatform/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/microplatform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/open-source/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ota</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/ota/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/ota/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portainer</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/portainer/</link>
+      <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/portainer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Radio</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/radio/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/radio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resin</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/resin/</link>
+      <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/resin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/security/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Update</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/update/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zephyr</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/zephyr/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/zephyr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zmp</title>
+      <link>https://foundriesio.github.io/foundriesiov2/tags/zmp/</link>
+      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/tags/zmp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

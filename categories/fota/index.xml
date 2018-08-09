@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fota on Foundries.io</title>
+    <link>https://foundriesio.github.io/foundriesiov2/categories/fota/</link>
+    <description>Recent content in Fota on Foundries.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/categories/fota/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Securing OTA Community Edition</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/ota-part-4/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/ota-part-4/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/&#34;&gt;Part three&lt;/a&gt; of this blog series showed how to
+deploy an OTA Community Edition server in Google Kubernetes Engine that had
+a few security holes. This article will describe how to secure it.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deploying OTA Community Edition</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/</link>
+      <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/</guid>
+      <description>&lt;p&gt;Continuing with the OTA blog series &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/&#34;&gt;part one&lt;/a&gt; and &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/&#34;&gt;part two&lt;/a&gt;, this article shows you how to deploy OTA Community Edition inside Google&amp;rsquo;s Kubernetes Engine (GKE). After completion of these instructions, you&amp;rsquo;ll have an OTA server available on the internet with a single QEMU device registered to it.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What Is OTA Community Edition</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/</link>
+      <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/</guid>
+      <description>&lt;p&gt;Continuing with the &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/&#34;&gt;OTA blog series&lt;/a&gt;, this article will explain what &lt;a href=&#34;https://github.com/advancedtelematic/ota-community-edition&#34;&gt;OTA Community Edition&lt;/a&gt; is and how it implements the TUF/Uptane/OSTree specifications.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How We Chose a Software Update System</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/</guid>
+      <description>&lt;p&gt;One of the first big decisions we had to make for the Linux microPlatform was our Over-The-Air Update (OTA) strategy. This decision required a lot of time, meetings, beer, and coffee. This article is the first of a small series explaining our recommended approach to OTA for the LMP. This article explains how and why we ultimately chose &lt;a href=&#34;https://github.com/advancedtelematic/ota-community-edition&#34;&gt;OTA Community Edition&lt;/a&gt;.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zephyr microPlatform, Zephyr OTA via DFU/mcumgr</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/17/20180417-mcumgr-dfu/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/17/20180417-mcumgr-dfu/</guid>
+      <description>&lt;p&gt;In this blog we describe how to use the Zephyr microPlatform and the in-tree
+Zephyr samples to build, flash and perform an over the air (OTA) update of a
+Zephyr application over Bluetooth Low Energy (BLE).  This demonstration uses the
+DFU support within Zephyr provided by
+&lt;a href=&#34;http://docs.zephyrproject.org/subsystems/mgmt.html&#34;&gt;mcumgr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux microPlatform, now with OTA updates (beta)</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-over-the-air/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-over-the-air/</guid>
+      <description>&lt;p&gt;Starting with Linux microPlatform update 0.13, we are including support for over-the-air (OTA) updates.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using AT&amp;T&#39;s IoT Dev Kit</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-iot-dev-kit/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-iot-dev-kit/</guid>
+      <description>&lt;p&gt;In the Zephyr microPlatform update 0.13, we have released support for the
+&lt;a href=&#34;https://marketplace.att.com/products/att-iot-starter-kit-lte-m&#34;&gt;AT&amp;amp;T IoT Starter Kit (LTE-M)&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;With the following instructions, you can start using Zephyr and the IoT Starter Kit with LWM2M in a matter of minutes.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ELC / Open IoT Summit 2018 Slides now available</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</guid>
+      <description>&lt;p&gt;Foundries.io presented 4 sessions at this year&amp;rsquo;s IoT Summit and Embedded
+Linux Conference and the slides are now available.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Foundries.io at ELC / Open IoT Summit 2018</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</link>
+      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</guid>
+      <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
+our end to end IoT microPlatforms at this years Embedded Linux Conference and
+the Open IoT Summit alongside the Zephry project.&lt;/p&gt;
+
+&lt;p&gt;This year, the events will take place in Portland Oregon, at the downtown
+Portland Hilton from March 12-15.  Foundries.io will be presenting
+on 4 topics at this year&amp;rsquo;s IoT Summit.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Update an embedded device with LwM2M</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-lwm2m-update/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-lwm2m-update/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://openmobilealliance.org/iot/lightweight-m2m-lwm2m&#34;&gt;OMA Lightweight M2M&lt;/a&gt; (LWM2M) offers a firmware object interface for directing client devices to download and apply firmware updates.  Using the Zephyr microPlaform and Eclipse&amp;rsquo;s &lt;a href=&#34;https://www.eclipse.org/leshan/&#34;&gt;Leshan Demo Server&lt;/a&gt;, this seemingly complex process can be demonstrated in a few easy steps.&lt;/p&gt;
+
+&lt;p&gt;To illustrate how a firmware update is delivered via LwM2M, you will make a small change to the Zephyr microPlatform (ZMP) LwM2M sample project which disables the Light Control object.  When flashed to an embedded device, the Leshan UI will be missing the &amp;ldquo;Light Control&amp;rdquo; portion near the bottom of the client detail page.  Once this &amp;ldquo;bug&amp;rdquo; is found, you will fix the LwM2M sample, recompile and deliver your updated firmware as an over the air (OTA) update.  The new firmware can be confirmed by locating the &amp;ldquo;Light Control&amp;rdquo; object in the Leshan UI.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using your own firmware signing keys with MCUBoot</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-mcuboot-keys/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-mcuboot-keys/</guid>
+      <description>&lt;p&gt;Secure firmware over the air (FOTA) updates are a key &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/products/&#34;&gt;Zephyr microPlatform&lt;/a&gt; feature. This post explains how to use your own firmware signing key pair to secure the boot process on your devices.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
