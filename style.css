@@ -17,7 +17,7 @@
    1 = Global
    ============ */
 body {font-family: 'Lato', Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 16px; line-height: 1.4; color: #5A5A5A; position: relative; -webkit-font-smoothing: antialiased; background: #fff; margin:0;}
-body.login-page {background:url(/images/login_page_bg.jpg);}
+body.login-page {background:url(images/login_page_bg.jpg);}
 
 .row {max-width:1170px;}
 iframe {margin: 0 0 40px; border:0; width:100%;}
@@ -65,7 +65,7 @@ select { background-color: white; font-family: inherit; border: 0; -webkit-box-s
 /* ==================
    3 = Header
    ================== */
-header {background:url(/images/header_bg.png) bottom center no-repeat; min-height:880px; position: relative;}
+header {background:url(images/header_bg.png) bottom center no-repeat; min-height:880px; position: relative;}
 header .message {position: absolute; top:125px; left:1%; right:1%; margin:0 auto; text-align: center;}
 .message-intro {display:table-row;line-height:1.5em;font-size:2em;white-space:nowrap;margin-bottom:2em;}
 .message-intro p{font-size:inherit;overflow:hidden; display:table-cell;vertical-align:middle;padding-bottom:30px;color:#fff;font-size:22px;font-weight:400; letter-spacing: 2px;}
@@ -83,12 +83,12 @@ header .message .button:hover {background:#65464c; border-color:#65464c; text-de
 header h2 {padding:45px 0 25px; font-size:42px; color:#fff; text-align: center; font-weight: 100;}
 #js-rotating {display: none;}
 
-header.alt-1 {background:url(/images/header_alt-1_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
-header.alt-2 {background:url(/images/header_hardware_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
-header.alt-3 {background:url(/images/header_pricing_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
-header.alt-4 {background:url(/images/header_partner_bg.jpg) bottom center no-repeat; min-height:580px; position: relative;}
-header.alt-5 {background:url(/images/header_labs_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
-header.alt-6 {background:url(/images/header_insights_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
+header.alt-1 {background:url(images/header_alt-1_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
+header.alt-2 {background:url(images/header_hardware_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
+header.alt-3 {background:url(images/header_pricing_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
+header.alt-4 {background:url(images/header_partner_bg.jpg) bottom center no-repeat; min-height:580px; position: relative;}
+header.alt-5 {background:url(images/header_labs_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
+header.alt-6 {background:url(images/header_insights_bg.jpg) bottom center no-repeat; min-height:490px; position: relative;}
 header.login {background:transparent; min-height:1px;}
 
 header.alt-1 .message h1, header.alt-2 .message h1, header.alt-3 .message h1, header.alt-4 .message h1, header.alt-5 .message h1, header.alt-6 .message h1 {color: #D7D7D7;}
@@ -99,7 +99,7 @@ header.video .message {top:35%; z-index:2;}
 header.video .message h1 {color:#fff;}
 header.video .message .button:hover {background:#ffaa00;}
 #video-container {width: 100%;    display: block;  position: relative; margin:0; padding:0; }
-#video-container:after {  content: "";    background: url(/images/video_bg_pattern.png) repeat;    top: 0;    left: 0;    bottom: 5px;    right: 0;    position: absolute;    z-index: 1;   }
+#video-container:after {  content: "";    background: url(images/video_bg_pattern.png) repeat;    top: 0;    left: 0;    bottom: 5px;    right: 0;    position: absolute;    z-index: 1;   }
 video { width: 100%;}
 
 /* Slider Header */
@@ -262,7 +262,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top:
 .testimonialimg img { width: 104px; margin-top:12px;  height: 104px;  border-radius: 50px;  -webkit-border-radius:50px;  -moz-border-radius: 50px;  box-shadow: 1px 1px rgb(50, 65, 83), 2px 2px rgb(50, 65, 83), 3px 3px rgb(50, 65, 83), 4px 4px rgb(50, 65, 83), 5px 5px rgb(50, 65, 83), 6px 6px rgb(50, 65, 83), 7px 7px rgb(50, 65, 83), 8px 8px rgb(50, 65, 83), 9px 9px rgb(50, 65, 83), 10px 10px rgb(50, 65, 83), 11px 11px rgb(50, 65, 83), 12px 12px rgb(50, 65, 83), 13px 13px rgb(50, 65, 83), 14px 14px rgb(50, 65, 83), 15px 15px rgb(50, 65, 83), 16px 16px rgb(50, 65, 83), 17px 17px rgb(50, 65, 83), 18px 18px rgb(50, 65, 83), 19px 19px rgb(50, 65, 83), 20px 20px rgb(50, 65, 83), 21px 21px rgb(50, 65, 83), 22px 22px rgb(50, 65, 83), 23px 23px rgb(50, 65, 83), 24px 24px rgb(50, 65, 83), 25px 25px rgb(50, 65, 83), 26px 26px rgb(50, 65, 83), 27px 27px rgb(50, 65, 84), 28px 28px rgb(50, 65, 84), 29px 29px rgb(50, 66, 84), 30px 30px rgb(50, 66, 84), 31px 31px rgb(51, 66, 85), 32px 32px rgb(51, 66, 85), 33px 33px rgb(51, 66, 85), 34px 34px rgb(51, 67, 85), 35px 35px rgb(51, 67, 86), 36px 36px rgb(51, 67, 86), 37px 37px rgb(51, 67, 86), 38px 38px rgb(52, 67, 86), 39px 39px rgb(52, 68, 87), 40px 40px rgb(52, 68, 87), 41px 41px rgb(52, 68, 87), 42px 42px rgb(52, 68, 87), 43px 43px rgb(52, 68, 88), 44px 44px rgb(52, 69, 88), 45px 45px rgb(53, 69, 88), 46px 46px rgb(53, 69, 88), 47px 47px rgb(53, 69, 89), 48px 48px rgb(53, 69, 89), 49px 49px rgb(53, 70, 89), 50px 50px rgb(53, 70, 89), 51px 51px rgb(53, 70, 90), 52px 52px rgb(54, 70, 90), 53px 53px rgb(54, 70, 90), 54px 54px rgb(54, 71, 90), 55px 55px rgb(54, 71, 91), 56px 56px rgb(54, 71, 91), 57px 57px rgb(54, 71, 91), 58px 58px rgb(54, 71, 91), 59px 59px rgb(55, 72, 92);}
 
 /* Monitoring */
-.monitoring {padding:50px 0 0; overflow:hidden; background: #fafafa url(/images/monitoring_bg.jpg) repeat-x center bottom;}
+.monitoring {padding:50px 0 0; overflow:hidden; background: #fafafa url(images/monitoring_bg.jpg) repeat-x center bottom;}
 .monitoring h2 {font-weight:900;text-align: center; margin-bottom: 12px;}
 
 /* ==================
@@ -625,9 +625,9 @@ form#commentform input#submit:hover, .wpcf7-submit:hover {  background: #303038;
 .vps-prices-panel { float: left; width: 100%;  }
 .vps-prices-container #vps-slider { background: #bbbbbb; border-radius: 3px; float: left; height:7px; margin: 0 0 15px; width: 100%;  padding:0; box-shadow: 0 13px 16px rgba(0,0,0,0.16), 0 13px 16px rgba(0,0,0,0.23); cursor:pointer;}
 
-.vps-prices-container #sliderlines { background: url(/images/lines1.png) center top; display: table; height: 10px; margin: 0 auto; width: 100%; opacity:.4;  }
+.vps-prices-container #sliderlines { background: url(/mages/lines1.png) center top; display: table; height: 10px; margin: 0 auto; width: 100%; opacity:.4;  }
 .vps-prices-container #vps-slider .ui-slider-range { background:#CB6D63; border-radius: 3px; }
-.vps-prices-container #vps-slider .ui-slider-handle { background: url(/images/slider_range.png) no-repeat left top; border: 0; border-radius: 0; height: 25px; margin-left: -15px; margin-top:-5px; outline: none; width: 25px; }
+.vps-prices-container #vps-slider .ui-slider-handle { background: url(images/slider_range.png) no-repeat left top; border: 0; border-radius: 0; height: 25px; margin-left: -15px; margin-top:-5px; outline: none; width: 25px; }
 .vps-prices-container #vps-slider .ui-slider-handle:hover { cursor: pointer; }
 
 #vps_name_option h3 span {font-size:18px; display:table; border-bottom:0; padding:10px 20px; margin:0 auto; margin-top:-12px; margin-bottom:20px; letter-spacing:.05em; color:#fff; background:#c44747; font-weight:900; position: relative;}
@@ -699,7 +699,7 @@ p.copyright {font-size:12px; text-align:center; padding:35px 0 0; margin:0; colo
 .slicknav_nav a:hover { -webkit-border-radius: 0!important;-moz-border-radius: 0!important; border-radius: 0!important; background: #222D3A!important; color: #fff; }
 .slicknav_nav a { font-size: 13px!important;color: #fff!important; }
 .slicknav_nav a:hover { text-decoration: none; }
-header.alt-3.order-slider {background:url(/images/header_alt-3_bg.jpg) bottom center no-repeat; min-height:10px; background-size:cover; position: relative;}
+header.alt-3.order-slider {background:url(images/header_alt-3_bg.jpg) bottom center no-repeat; min-height:10px; background-size:cover; position: relative;}
 header .message {top:100px;}
 header.video .message, header.theslider .message {display:none;}
 header.video .top, header.theslider .top {position: relative;}
