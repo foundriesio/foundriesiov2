@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foundriesio.github.io/foundriesiov2/insights/2018/08/14/zephyr-logging-part-2/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://foundriesio.github.io/foundriesiov2/insights/2018/08/09/ota-api/</loc>
     <lastmod>2018-08-09T00:00:00+00:00</lastmod>
   </url>
@@ -427,7 +422,7 @@
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -445,7 +440,7 @@
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/insights/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -596,13 +591,13 @@
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/tags/zephyr/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/categories/zephyr/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -620,7 +615,7 @@
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/tags/zmp/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
