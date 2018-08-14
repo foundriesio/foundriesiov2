@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>microPlatform update 0.19 | Foundries.io</title>
+  <title>Adding a REST API to OTA Community Edition | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundriesio.github.io/foundriesiov2/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -87,8 +87,8 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1 style="color: white">microPlatform update 0.19</h1>
-                    <p style="color: white" class="text-muted text-uppercase mb-small text-right">May 25, 2018</p>
+                    <h1 style="color: white">Adding a REST API to OTA Community Edition</h1>
+                    <p style="color: white" class="text-muted text-uppercase mb-small text-right">By <a style="color: white" href="#">Andy Doan</a> | August 9, 2018</p>
 
                 </div>
             </div>
@@ -106,483 +106,68 @@
                 <div class="small-12 columns" id="insights-post">
 
                     <div id="post-content">
-                        <h1 id="summary">Summary</h1>
+                        <p>The <a href="https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/ota-part-4/">OTA blog series</a> left users with a secured
+OTA Community Edition server. This article will describe how you can deploy
+an easy-to-use REST API to manage your devices.</p>
 
-<h2 id="zephyr-microplatform-changes-for-0-19">Zephyr microPlatform changes for 0.19</h2>
+<p></p>
 
-<p>Zephyr hits 1.12 feature freeze; this will not be the LTS, but
-carries many important new features.</p>
+<h3 id="requirements">Requirements</h3>
 
-<h2 id="linux-microplatform-changes-for-0-19">Linux microPlatform changes for 0.19</h2>
+<p>You&rsquo;ll need an OTA Community Edition server deployed into GKE as
+documented in <a href="https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/ota-part-4/">part four</a> of the blog series.</p>
 
-<p>No changes have gone into the LMP since 0.18.
-</p>
+<h3 id="overview">Overview</h3>
 
-<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+<p>While OTA Community Edition is built around a set of backend REST APIs,
+they don&rsquo;t include a unified front-end API designed for public facing usage.
+We created the <a href="https://github.com/foundriesio/ota-api">OTA API</a> with the
+goal of making a project that handled all the generic aspects of OTA
+device management while leaving room for people to implement their own
+management policies.</p>
 
-<h2 id="summary-1">Summary</h2>
+<p>The OTA API is easy to try out locally. Follow along with the
+<a href="https://github.com/foundriesio/ota-api/blob/master/README.md">README</a>
+to test things out before deploying to production.</p>
 
-<p>Zephyr hits 1.12 feature freeze; this will not be the LTS, but
-carries many important new features.</p>
+<h3 id="deploying">Deploying</h3>
 
-<h2 id="highlights">Highlights</h2>
+<p>Go to your OTA Community Edition repository that should be on the
+<code>ota-blog-part4</code> branch and checkout the <code>ota-api-1</code> branch:</p>
 
-<ul>
-<li>Zephyr 1.12 rc 1</li>
-<li>No MCUboot changes</li>
-<li>Minor application updates</li>
-</ul>
+<pre><code>  # https://github.com/foundriesio/ota-community-edition/tree/ota-api-1
+  cd &lt;repo&gt;
+  git fetch
+  git checkout ota-api-1
+</code></pre>
 
-<h2 id="components">Components</h2>
+<p>The interesting changes to enable the API are in a
+<a href="https://github.com/foundriesio/ota-community-edition/commit/639f8b23e082a315d1865bfe5a28f03eb2a0c5bc">single commit</a>.
+It creates a new &ldquo;api.example.com/devices/&rdquo; endpoint that requires the
+<code>BadT0ken5</code> used in the &ldquo;oauthful&rdquo; container. It can be deployed by running:</p>
 
-<h3 id="mcuboot">MCUboot</h3>
+<pre><code>  ./contrib/gke/make SERVER_NAME=ota-ce.example.com DNS_NAME=example.com start-services
+</code></pre>
 
-<h4 id="features">Features</h4>
+<p>You can then validate the API is running with:</p>
 
-<ul>
-<li>Not addressed in this update</li>
-</ul>
+<pre><code>  curl -H &quot;OTA-TOKEN: BadT0ken5&quot; http://api.example.com/devices/
+</code></pre>
 
-<h4 id="bugs">Bugs</h4>
+<h3 id="next-steps">Next Steps</h3>
 
-<ul>
-<li>Not addressed in this update</li>
-</ul>
+<p>You&rsquo;ll probably want to customize things to match your organization&rsquo;s
+requirements. For example, limit how many devices a user can create or which
+devices a user can see. The ota-api-1 branch includes
+<a href="https://github.com/foundriesio/ota-community-edition/commit/296bba8f3fb2050461de5d0f0ad41ab596808066">a commit</a>
+to give you some ideas about what to change. As your complexity increases, you&rsquo;ll
+likely want to build your own OTA API container. There are different
+approaches that work. Here at Foundries.io, we extend the &ldquo;foundries/ota-api&rdquo;
+container and add our private implementation sources to produce a customized
+container.</p>
 
-<h3 id="zephyr">Zephyr</h3>
-
-<h4 id="features-1">Features</h4>
-
-<h5 id="openamp">OpenAMP:</h5>
-
-<ul>
-<li>OpenAMP (and its libmetal dependency) was merged to
-enable message-based cross-core communication. This
-carries BSD-3-Clause and BSD-2-Clause licenses.</li>
-</ul>
-
-<p>A usage sample is in samples/subsys/openamp:</p>
-
-<p><a href="http://docs.zephyrproject.org/samples/subsys/ipc/openamp/README.html">http://docs.zephyrproject.org/samples/subsys/ipc/openamp/README.html</a></p>
-
-<h5 id="new-zephyr-sdk">New Zephyr SDK:</h5>
-
-<ul>
-<li>Zephyr SDK version 0.9.3 has been released. Linux
-users should upgrade using the updated installation
-instructions:</li>
-</ul>
-
-<p><a href="http://docs.zephyrproject.org/getting_started/installation_linux.html">http://docs.zephyrproject.org/getting_started/installation_linux.html</a></p>
-
-<h5 id="non-volatile-storage-nvs">Non-volatile Storage (NVS):</h5>
-
-<ul>
-<li>A long-running pull request to add a new storage
-mechanism for persistent data was merged. The new Non-
-Volatile Storage (NVS) subsystem is meant as an
-alternative to the existing FAT and NFFS file systems,
-as well as the Flash Circular Buffer (FCB) library
-which was ported to Zephyr from the MyNewt RTOS.</li>
-</ul>
-
-<p>For more details, refer to the NVS subsystem documentation:</p>
-
-<p><a href="http://docs.zephyrproject.org/subsystems/nvs/nvs.html">http://docs.zephyrproject.org/subsystems/nvs/nvs.html</a></p>
-
-<p>This would seem to pair well with the storage API
-changes discussed in the previous newsletter, which
-introduced greater abstraction over the storage
-backend.</p>
-
-<h5 id="k-call-stacks-analyze-deprecated">k_call_stacks_analyze() deprecated:</h5>
-
-<ul>
-<li>The k_call_stacks_analyze() API was deprecated. Users
-are recommended to switch to using k_thread_foreach():</li>
-</ul>
-
-<p><a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv216k_thread_foreach18k_thread_user_cb_tPv">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv216k_thread_foreach18k_thread_user_cb_tPv</a></p>
-
-<p>(Perhaps re-implementing or calling into a stack usage
-dumping routine for each thread.)</p>
-
-<h5 id="userspace-changes">Userspace changes:</h5>
-
-<ul>
-<li>Numerous userspace-related features and optimizations
-were merged.</li>
-</ul>
-
-<p>New API was merged for memory management from
-specified memory pools. The main functions are:</p>
-
-<ul>
-<li>k_mem_pool_malloc():
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv217k_mem_pool_mallocP10k_mem_pool6size_t">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv217k_mem_pool_mallocP10k_mem_pool6size_t</a></li>
-<li>k_mem_pool_free():
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv215k_mem_pool_freeP11k_mem_block">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv215k_mem_pool_freeP11k_mem_block</a></li>
-</ul>
-
-<p>This is used to allow dynamic allocation of kernel
-objects from userspace.</p>
-
-<p>Cleanup functions defined on a per-kernel-object-type
-basis can now be invoked when an object loses all
-permissions. This is used as a framework for automatic
-resource release for dynamically-allocated userspace
-objects.</p>
-
-<p>New APIs were added for userspace allocation and
-freeing of kernel objects of various types:</p>
-
-<ul>
-<li>k_pipe_alloc_init() and k_pipe_cleanup() for pipes:
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv217k_pipe_alloc_initP6k_pipe6size_t">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv217k_pipe_alloc_initP6k_pipe6size_t</a>
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv214k_pipe_cleanupP6k_pipe">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv214k_pipe_cleanupP6k_pipe</a></li>
-<li>k_msgq_alloc_init() and k_msgq_cleanup() for message queues:
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv217k_msgq_alloc_initP6k_msgq6size_t5u32_t">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv217k_msgq_alloc_initP6k_msgq6size_t5u32_t</a>
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv214k_msgq_cleanupP6k_msgq">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv214k_msgq_cleanupP6k_msgq</a></li>
-<li>k_stack_alloc_init() and k_stack_cleanup() for stack objects:
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv218k_stack_alloc_initP7k_stackj">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv218k_stack_alloc_initP7k_stackj</a>
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv215k_stack_cleanupP7k_stack">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv215k_stack_cleanupP7k_stack</a></li>
-</ul>
-
-<p>Additional APIs for allowing userspace access to queues includes:</p>
-
-<ul>
-<li>k_queue_alloc_append() and k_queue_alloc_prepend()
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv220k_queue_alloc_appendP7k_queuePv">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv220k_queue_alloc_appendP7k_queuePv</a>
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv221k_queue_alloc_prependP7k_queuePv">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv221k_queue_alloc_prependP7k_queuePv</a></li>
-<li>k_fifo_alloc_put():
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#c.k_fifo_alloc_put">http://docs.zephyrproject.org/api/kernel_api.html#c.k_fifo_alloc_put</a></li>
-<li>k_lifo_alloc_put():
-<a href="http://docs.zephyrproject.org/api/kernel_api.html#c.k_lifo_alloc_put">http://docs.zephyrproject.org/api/kernel_api.html#c.k_lifo_alloc_put</a></li>
-</ul>
-
-<p>The k_poll Polling API is now also accessible from user mode:</p>
-
-<p><a href="http://docs.zephyrproject.org/kernel/other/polling.html">http://docs.zephyrproject.org/kernel/other/polling.html</a></p>
-
-<p>An optimization was merged which avoids executing
-user/supervisor boundary checks when invoking system
-calls from privileged code in translation units
-defined under arch/.</p>
-
-<p>Access to the k_object_access_revoke() routine from
-userspace was itself revoked, closing a hole where one
-thread could inappropriately revoke another&rsquo;s access
-to a kernel object. Userspace threads may revoke
-access to their own objects with k_object_release().</p>
-
-<h5 id="tcp-time-wait-config-changes">TCP TIME_WAIT config changes:</h5>
-
-<ul>
-<li>Configuration for how long the Zephyr TCP stack remains
-in the TIME_WAIT state during connection closure is
-now managed through the single
-CONFIG_NET_TCP_TIME_WAIT_DELAY option:</li>
-</ul>
-
-<p><a href="http://docs.zephyrproject.org/reference/kconfig/CONFIG_NET_TCP_TIME_WAIT_DELAY.html">http://docs.zephyrproject.org/reference/kconfig/CONFIG_NET_TCP_TIME_WAIT_DELAY.html</a></p>
-
-<p>This replaces the previous CONFIG_NET_TCP_TIME_WAIT
-and CONFIG_NET_TCP_2MSL_TIME options. Applications
-using the old options will need updates.</p>
-
-<h5 id="architectures">Architectures:</h5>
-
-<ul>
-<li>Support for Arm&rsquo;s v8-M cores continues, with support
-for secure fault handling on Cortex-M23 along with
-other behind-the-scenes work on memory access
-privilege checks.</li>
-</ul>
-
-<p>There is a new CONFIG_PLATFORM_SPECIFIC_INIT available
-on Arm targets. When enabled, the user must provide a
-_PlatformInit routine, which will be called at Zephyr
-startup before anything else happens.</p>
-
-<p>Support was added to enable a Zephyr image running on
-an NXP LPC-based SoC to boot a slave Cortex M0+ core.
-(Board support was added for the slave core as
-lpcxpresso54114_m0.)</p>
-
-<h5 id="bluetooth">Bluetooth:</h5>
-
-<ul>
-<li>The Mesh shell now supports the recently-merged
-persistent storage mechanism.</li>
-</ul>
-
-<h5 id="device-tree-and-drivers">Device Tree and Drivers:</h5>
-
-<ul>
-<li>Zephyr now supports the automobile Controller Area
-Network (CAN) protocol. The API is specified in
-include/can.h. The new API is userspace-aware.
-GPIO bindings were added for QMSI (Intel Quark) based
-devices, with nodes added for quark_se_c1000_ss.</li>
-</ul>
-
-<p>Device tree bindings were added for real-time clocks
-(RTCs), as well as NXP Kinetis and QMSI based RTCs.
-SoC support was added for KW41Z and quark_se_c1000_ss.</p>
-
-<p>Additional patches continuing the work migrating LED
-and buttons definitions to device tree were merged for
-mimxrt1050_evk and lpcxpresso54114. Device tree
-support for sensors on the argonkey board was also
-merged, along with em_starterkit device tree
-optimizations, and bindings for LSM6DSL sensors and
-Kinetis watchdogs.</p>
-
-<p>A shim driver using the newly-stabilized watchdog API
-was added for NXP MCUx devices. SOC support is
-provided for K64 and KW2XD.</p>
-
-<p>USBD (USB device) and USBFSOTG (USB full-speed On-the-
-Go) support was added for NXP Kinetis SoCs. USB
-support was also enabled for STMicro nucleo_f413zh.</p>
-
-<p>WiFi support for the WINC1500 network controller was
-merged. This chip can be used to add networking via
-SPI. This is the first user of the new WiFi API which
-was merged during the v1.12 development cycle. Support
-can be enabled using CONFIG_WIFI_WINC1500.  A driver
-was added for ILI9340 LCD displays.</p>
-
-<h5 id="external-libraries">External Libraries:</h5>
-
-<ul>
-<li>The OpenThread library version was bumped to db4759cc,
-to pull in some bug fixes.</li>
-</ul>
-
-<p>The Atmel WINC1500 WiFi driver was merged as part of
-enabling WiFI on that chip. This is a BSD-3-Clause
-licensed HAL.</p>
-
-<h5 id="kernel">Kernel:</h5>
-
-<ul>
-<li>In a highly significant but (hopefully mostly) behind-
-the-scenes change, the scheduler was rewritten:</li>
-</ul>
-
-<p><a href="https://github.com/zephyrproject-rtos/zephyr/commit/1acd8c2996c3a1ae0691247deff8c32519307f17">https://github.com/zephyrproject-rtos/zephyr/commit/1acd8c2996c3a1ae0691247deff8c32519307f17</a></p>
-
-<p>A new k_thread_foreach() API was merged, which allows
-iterating over threads:</p>
-
-<p><a href="http://docs.zephyrproject.org/api/kernel_api.html#_CPPv216k_thread_foreach18k_thread_user_cb_tPv">http://docs.zephyrproject.org/api/kernel_api.html#_CPPv216k_thread_foreach18k_thread_user_cb_tPv</a></p>
-
-<p>This requires CONFIG_THREAD_MONITOR to be enabled.
-Creation and termination of existing threads is
-blocked via irq_lock() while the routine is executing.</p>
-
-<h5 id="libraries">Libraries:</h5>
-
-<ul>
-<li>The red-black tree implementation in include/misc/rb.h
-now has RB_FOR_EACH() and RB_FOR_EACH_CONTAINER()
-macros, for iterating over red-black tree nodes and
-the structs which contain them.</li>
-</ul>
-
-<p>The POSIX compatibility layer has additional file
-system support APIs. Pulling in the POSIX headers
-defines macros which map POSIX names to Zephyr-
-specific file system APIs appropriately. This includes
-support for basic syscalls such as open(), read(),
-write(), close(), and friends, and also allows for
-directory operations such as rename(), stat(), and
-mkdir(). Refer to the headers in include/posix for
-more information.</p>
-
-<p>There is also now support for the POSIX mutex APIs.</p>
-
-<h5 id="miscellaneous">Miscellaneous:</h5>
-
-<ul>
-<li>A new API was added for a singly-linked-list like type
-which allows storing two flags in each node, by
-relying on 4-byte pointer aligment. For details, refer
-to include/misc/sflist.h.</li>
-</ul>
-
-<h5 id="networking">Networking:</h5>
-
-<ul>
-<li>The LWM2M subsystem now includes support for marking
-resources as optional. Any resources so marked are not
-initialized by the core LWM2M subsystem; applications
-must initialize them using lwm2m_engine_set_res_data()
-and lwm2m_engine_get_res_data(). This enables
-remote administration of these resources by the LWM2M
-server through CREATE operations. It also enables
-future work where BOOTSTRAP operations will behave
-differently when encountering optional resources. As
-part of these changes, various object resources
-throughout the LWM2M core and in supported IPSO
-objects were marked optional appropriately.</li>
-</ul>
-
-<p>The 802.15.4 subsystem now supports source address
-filtering and performing energy detection scans when
-OpenThread is in use.</p>
-
-<h5 id="samples">Samples:</h5>
-
-<ul>
-<li><p>New samples include:</p></li>
-
-<li><p>a RPL border router application, samples/net/rpl_border_router:
-<a href="http://docs.zephyrproject.org/samples/net/rpl_border_router/README.html">http://docs.zephyrproject.org/samples/net/rpl_border_router/README.html</a></p></li>
-
-<li><p>A WiFi shell sample, samples/net/wifi:
-<a href="http://docs.zephyrproject.org/samples/net/wifi/README.html">http://docs.zephyrproject.org/samples/net/wifi/README.html</a></p></li>
-
-<li><p>An OpenAMP usage sample, samples/subsys/openamp:
-<a href="http://docs.zephyrproject.org/samples/subsys/ipc/openamp/README.html">http://docs.zephyrproject.org/samples/subsys/ipc/openamp/README.html</a></p></li>
-
-<li><p>An MCUX IPM mailbox example, samples/subsys/ipc/ipm_mcux:
-<a href="http://docs.zephyrproject.org/samples/subsys/ipc/ipm_mcux/README.html">http://docs.zephyrproject.org/samples/subsys/ipc/ipm_mcux/README.html</a></p></li>
-
-<li><p>A sample for the 96Boards ArgonKey, samples/boards/96b_argonkey:
-<a href="http://docs.zephyrproject.org/samples/boards/96b_argonkey/README.html">http://docs.zephyrproject.org/samples/boards/96b_argonkey/README.html</a></p></li>
-
-<li><p>A CAN sample, samples/can, tested on stm32f072b_disco:
-<a href="http://docs.zephyrproject.org/samples/can/README.html">http://docs.zephyrproject.org/samples/can/README.html</a></p></li>
-</ul>
-
-<h5 id="scripts">Scripts:</h5>
-
-<ul>
-<li>The flash, debug, and debugserver handlers now use a
-new meta-tool called &ldquo;west&rdquo;. This is still a behind-
-the-scenes change; further work expected before the
-v1.12 release will add documentation for this tool.</li>
-</ul>
-
-<h5 id="testing">Testing:</h5>
-
-<ul>
-<li>The effort adding descriptions, cleanups, and other
-improvements to Zephyr&rsquo;s test cases to use them from a
-higher-level test management system continues.</li>
-</ul>
-
-<h4 id="bugs-1">Bugs</h4>
-
-<h5 id="drivers">Drivers:</h5>
-
-<ul>
-<li>Numerous drivers cleanups and bug fixes went in,
-affecting various devices.</li>
-</ul>
-
-<h5 id="arm-socs">ARM SoCs:</h5>
-
-<ul>
-<li>Various Arm-specific fixes went in as part of the v8-M
-work.</li>
-</ul>
-
-<h5 id="bluetooth-1">Bluetooth:</h5>
-
-<ul>
-<li>A new CONFIG_BT_MESH_IVU_DIVIDER went in, which fixes
-an issue related to re-initializing initialization
-vectors. Various other Bluetooth cleanups and fixes
-went in, including removals of deprecated APIs and
-unused variables and documentation fixes.</li>
-</ul>
-
-<h5 id="documentation">Documentation:</h5>
-
-<ul>
-<li>Numerous fixes and additional Doxygen descriptions
-went into the test cases.</li>
-</ul>
-
-<h5 id="networking-1">Networking:</h5>
-
-<ul>
-<li>Networking fixes include net-app fixes for TLS
-warnings, source IPv4 address selection, build fixes
-with TCP disabled, and byte order handling; ethernet
-MAC address setting; LWM2M port handling fixes;
-dropping of invalid packets; and a couple of ICMPv6
-fixes.</li>
-</ul>
-
-<h5 id="build-system">Build system:</h5>
-
-<ul>
-<li>Various build fixes, error handling and Kconfig
-dependency management improvements,
-k_call_stacks_analyze() removals, and more were added
-to the samples.</li>
-</ul>
-
-<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
-
-<h4 id="features-2">Features</h4>
-
-<h5 id="minor-kconfig-updates">Minor Kconfig updates:</h5>
-
-<ul>
-<li>The application-specific Kconfig file was updated to
-follow along with upstream changes removing &lsquo;option
-env&rsquo; symbols.</li>
-</ul>
-
-<h4 id="bugs-2">Bugs</h4>
-
-<ul>
-<li>Not addressed in this update</li>
-</ul>
-
-<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
-
-<h4 id="features-3">Features</h4>
-
-<h5 id="minor-kconfig-updates-1">Minor Kconfig updates:</h5>
-
-<ul>
-<li>The application-specific Kconfig file was updated to
-follow along with upstream changes removing &lsquo;option
-env&rsquo; symbols.</li>
-</ul>
-
-<h5 id="optional-values-changes">Optional values changes:</h5>
-
-<ul>
-<li>Minor changes were made following upstream API breaks
-which added optional resources to LWM2M objects.</li>
-</ul>
-
-<h4 id="bugs-3">Bugs</h4>
-
-<ul>
-<li><p>Not addressed in this update</p>
-
-<h1 id="linux-microplatform">Linux microPlatform</h1></li>
-</ul>
-
-<h2 id="summary-2">Summary</h2>
-
-<p>No changes have gone into the LMP since 0.18.</p>
-
-<h2 id="highlights-1">Highlights</h2>
-
-<ul>
-<li>No changes have gone into the LMP since 0.18.</li>
-</ul>
-
-<h2 id="components-1">Components</h2>
+<p>Lastly, I&rsquo;ll be creating a follow-up blog to this to demonstrate how
+to streamline device registration by extending this API.</p>
                     </div>
                     
                     

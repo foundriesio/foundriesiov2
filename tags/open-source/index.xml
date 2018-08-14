@@ -6,10 +6,23 @@
     <description>Recent content in Open Source on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Adding a REST API to OTA Community Edition</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/08/09/ota-api/</link>
+      <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/08/09/ota-api/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/ota-part-4/&#34;&gt;OTA blog series&lt;/a&gt; left users with a secured
+OTA Community Edition server. This article will describe how you can deploy
+an easy-to-use REST API to manage your devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Securing OTA Community Edition</title>

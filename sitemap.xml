@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foundriesio.github.io/foundriesiov2/insights/2018/08/09/ota-api/</loc>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://foundriesio.github.io/foundriesiov2/insights/2018/07/27/blog-post-update-0.25/</loc>
     <lastmod>2018-07-27T00:00:00+00:00</lastmod>
   </url>
@@ -411,13 +416,13 @@
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/categories/fota/</loc>
-    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/</loc>
-    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -435,7 +440,7 @@
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/insights/</loc>
-    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -528,13 +533,13 @@
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/tags/open-source/</loc>
-    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://foundriesio.github.io/foundriesiov2/tags/ota/</loc>
-    <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

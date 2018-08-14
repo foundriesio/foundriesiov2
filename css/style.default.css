@@ -15,46 +15,61 @@ pre code{
     color:#303038;
     /*color:#c7254e;*/
     border: 1px solid #ccc;
-    border-radius:4px;}
-
+    border-radius:4px;
+}
 
 code {
-        padding: 0;
-        font-size: inherit;
-        color:#8e2742;
-        white-space: pre-wrap;
-        background-color: transparent;
-        border-radius: 0;
-        border: 0;
-        display: unset;
-    }}
+    padding: 0;
+    font-size: inherit;
+    color:#8e2742;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    display: unset;
+}
 /*  ---akb---  */
 
-/* pager*/
-.pager {
-  margin: 20px;
-  padding-top: 20px;
-  border-top: solid 1px #c5c5c5;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  text-align: center;
 
+/* pager */
+
+.pager {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.08em;
+    text-align: center;
+    list-style: none;
 }
+
 .pager li {
-  display: inline;
+    display: inline;
 }
+
+div.previous {
+    float: left;
+    margin-bottom: 60px;
+}
+
+div.next {
+    float: right;
+    margin-bottom: 60px;
+}
+
 .pager li > a,
 .pager li > span {
-  background-color: #ffffff;
-  border: 1px solid #000;
-  border-radius: 0;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0;
 }
+
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   background-color: #c5c5c5;
 }
+
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
@@ -63,7 +78,9 @@ code {
   background-color: #ffffff;
   border-color: #ddd;
 }
+
 /* pagination */
+
 .pagination {
   margin: 20px 0;
   border-radius: 0;
@@ -192,16 +209,24 @@ code {
          min-width: 100%;
     }
 }
- #blog-listing-big .post .video, #blog-homepage .post .video {
+
+#blog-categories {
+    margin-top: 60px;
+}
+
+#blog-listing-big .post .video, #blog-homepage .post .video {
      margin-bottom: 10px;
 }
- #blog-listing-big .post .read-more, #blog-homepage .post .read-more {
+
+#blog-listing-big .post .read-more, #blog-homepage .post .read-more {
      text-align: right;
 }
- #blog-listing-medium .post {
-     margin-bottom: 60px;
+
+#blog-listing-medium .post {
+    margin: 60px 0;
 }
- #blog-listing-medium .post h2 {
+
+#blog-listing-medium .post h2 {
      text-transform: uppercase;
      margin: 0 0 10px;
      font-size: 24px;
@@ -300,10 +325,16 @@ code {
  #blog-homepage .post .read-more {
      margin-top: 20px;
 }
- #blog-post #post-content {
+
+#post-content {
+    margin: 60px 0;
+}
+
+#blog-post #post-content {
      margin-bottom: 20px;
 }
- #blog-post .comment {
+
+#blog-post .comment {
      margin-bottom: 25px;
 }
  #blog-post .comment:before, #blog-post .comment:after {
@@ -363,25 +394,28 @@ code {
      text-transform: uppercase;
      letter-spacing: 0.08em;
 }
- .panel.sidebar-menu h3 {
-     padding: 5px 0;
-     margin: 0;
+
+.panel.sidebar-menu h3 {
+    margin: 0;
 }
- .panel.sidebar-menu {
-     background: #fff;
-     margin: 0 0 20px;
-     -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-     box-sizing: border-box;
+
+.panel.sidebar-menu {
+    background: #fff;
+    margin: 0 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
- .panel.sidebar-menu .panel-heading {
-     text-transform: uppercase;
-     margin-bottom: 10px;
-     background: none;
-     padding: 0;
-     letter-spacing: 0.08em;
-     border-bottom: none;
+
+.panel.sidebar-menu .panel-heading {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background: none;
+    padding: 0;
+    letter-spacing: 0.08em;
+    border-bottom: none;
 }
+
  .panel.sidebar-menu .panel-heading h1, .panel.sidebar-menu .panel-heading h2, .panel.sidebar-menu .panel-heading h3, .panel.sidebar-menu .panel-heading h4, .panel.sidebar-menu .panel-heading h5 {
      display: inline-block;
      border-bottom: solid 5px #000;
@@ -454,17 +488,21 @@ code {
      font-size: 12px;
      color: #999999;
 }
- .panel.sidebar-menu ul.nav ul li a:hover, .panel.sidebar-menu ul.nav ul li a:focus {
-     text-decoration: none;
-     background-color: #eeeeee;
+
+.panel.sidebar-menu ul.nav ul li a:hover, .panel.sidebar-menu ul.nav ul li a:focus {
+    text-decoration: none;
+    background-color: #eeeeee;
 }
- .panel.sidebar-menu ul.tag-cloud {
-     list-style: none;
-     padding-left: 0;
+
+.panel.sidebar-menu ul.tag-cloud {
+    list-style: none;
+    margin-left: 0;
 }
- .panel.sidebar-menu ul.tag-cloud li {
-     display: inline-block;
+
+.panel.sidebar-menu ul.tag-cloud li {
+    display: inline-block;
 }
+
  .panel.sidebar-menu ul.tag-cloud li a {
      display: inline-block;
      padding: 5px;
@@ -533,4 +571,14 @@ code {
      position: relative;
      top: 0;
      float: right;
+}
+
+div.post-categories {
+    margin-top: 60px;
+}
+
+div.post-categories > .panel {
+    width: 50%;
+    float: left;
+    margin-bottom: 60px;
 }
