@@ -582,3 +582,53 @@ div.post-categories > .panel {
     float: left;
     margin-bottom: 60px;
 }
+
+ul.nav-products > li:first-child,
+ul.nav-about > li:first-child,
+ul.nav-engage > li:last-child {
+    background-color: #FFAA00;
+}
+
+.pricing-table .price {
+    padding: 32px 0;
+}
+
+.pricing-table .cta-button div {
+    padding: 24px 0;
+}
+
+.pricing-table .cta-button a {
+    color:#fff;
+    font-size:16px;
+    font-weight:800;
+    background: #595959;
+    padding: 9px 27px;
+    border-radius: 6px;
+}
+
+.pricing-table .price div {
+    background-color: #37485C;
+    color: #EAEAEA;
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.pricing-table .price div.price-product {
+    font-weight: 900;
+    font-size: 30px;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.pricing-table .price div.price-amount {
+    padding: 0;
+    margin-bottom: 4px;
+}
+
+.pricing-table li.price-license {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+}
