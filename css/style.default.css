@@ -1,19 +1,17 @@
-/*  ---akb---  */
-pre code{
-    text-shadow: 0 1px white;
+pre code {
     line-height: 1.3;
-    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
     font-size: smaller;
-    font-weight:normal;
+    font-weight: normal;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     white-space: -o-pre-wrap;
     background: #F5F5F5;
     display: block;
-    padding: 1px;
-    margin: 8px 0;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 8px;
     color:#303038;
-    /*color:#c7254e;*/
     border: 1px solid #ccc;
     border-radius:4px;
 }
@@ -28,8 +26,6 @@ code {
     border: 0;
     display: unset;
 }
-/*  ---akb---  */
-
 
 /* pager */
 
