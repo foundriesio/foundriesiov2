@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on Foundries.io</title>
-    <link>/categories/blockchain/</link>
+    <link>https://foundriesio.github.io/foundriesiov2/categories/blockchain/</link>
     <description>Recent content in Blockchain on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2018 13:07:31 +0200</lastBuildDate>
     
-	<atom:link href="/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/categories/blockchain/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blockchain for the Internet of Things</title>
-      <link>/insights/2018/02/23/20180223-blockchain-for-iot/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/02/23/20180223-blockchain-for-iot/</link>
       <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
       
-      <guid>/insights/2018/02/23/20180223-blockchain-for-iot/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/02/23/20180223-blockchain-for-iot/</guid>
       <description>It seems every industry is placing bets on how blockchain technologies will revolutionize the way they do business. The internet of things is not immune to this hype, but the fundamental question remains. How can it be useful?
 Centralized vs Decentralized Trust Models The flow of data, that is what the internet of things is all about. How to retrieve it, where to store it, and who can access it.</description>
     </item>

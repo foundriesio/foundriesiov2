@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zephyr on Foundries.io</title>
-    <link>/categories/zephyr/</link>
+    <link>https://foundriesio.github.io/foundriesiov2/categories/zephyr/</link>
     <description>Recent content in Zephyr on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/zephyr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/categories/zephyr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Zephyr Logging Survival Guide, Part 1: SYS_LOG</title>
-      <link>/insights/2018/07/24/zephyr-logging-part-1/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/24/zephyr-logging-part-1/</link>
       <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/07/24/zephyr-logging-part-1/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/24/zephyr-logging-part-1/</guid>
       <description>&lt;p&gt;An overview of Zephyr&amp;rsquo;s longstanding SYS_LOG API, or: &lt;em&gt;Blog Drops
 Zephyr Log Bombs Without Qualms&lt;/em&gt;.&lt;/p&gt;
 
@@ -25,10 +25,10 @@ Zephyr Log Bombs Without Qualms&lt;/em&gt;.&lt;/p&gt;
     
     <item>
       <title>ELC / Open IoT Summit 2018 Slides now available</title>
-      <link>/insights/2018/03/15/20180315-iotsummit/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/03/15/20180315-iotsummit/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</guid>
       <description>&lt;p&gt;Foundries.io presented 4 sessions at this year&amp;rsquo;s IoT Summit and Embedded
 Linux Conference and the slides are now available.&lt;/p&gt;
 
@@ -37,10 +37,10 @@ Linux Conference and the slides are now available.&lt;/p&gt;
     
     <item>
       <title>Foundries.io at ELC / Open IoT Summit 2018</title>
-      <link>/insights/2018/01/26/20180126-iotsummit/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</link>
       <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/01/26/20180126-iotsummit/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</guid>
       <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
 our end to end IoT microPlatforms at this years Embedded Linux Conference and
 the Open IoT Summit alongside the Zephry project.&lt;/p&gt;
@@ -54,10 +54,10 @@ on 4 topics at this year&amp;rsquo;s IoT Summit.&lt;/p&gt;
     
     <item>
       <title>Update an embedded device with LwM2M</title>
-      <link>/insights/2018/01/17/20180117-lwm2m-update/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-lwm2m-update/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/01/17/20180117-lwm2m-update/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-lwm2m-update/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://openmobilealliance.org/iot/lightweight-m2m-lwm2m&#34;&gt;OMA Lightweight M2M&lt;/a&gt; (LWM2M) offers a firmware object interface for directing client devices to download and apply firmware updates.  Using the Zephyr microPlaform and Eclipse&amp;rsquo;s &lt;a href=&#34;https://www.eclipse.org/leshan/&#34;&gt;Leshan Demo Server&lt;/a&gt;, this seemingly complex process can be demonstrated in a few easy steps.&lt;/p&gt;
 
 &lt;p&gt;To illustrate how a firmware update is delivered via LwM2M, you will make a small change to the Zephyr microPlatform (ZMP) LwM2M sample project which disables the Light Control object.  When flashed to an embedded device, the Leshan UI will be missing the &amp;ldquo;Light Control&amp;rdquo; portion near the bottom of the client detail page.  Once this &amp;ldquo;bug&amp;rdquo; is found, you will fix the LwM2M sample, recompile and deliver your updated firmware as an over the air (OTA) update.  The new firmware can be confirmed by locating the &amp;ldquo;Light Control&amp;rdquo; object in the Leshan UI.

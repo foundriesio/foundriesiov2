@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Labs on Foundries.io</title>
-    <link>/labs/</link>
+    <link>https://foundriesio.github.io/foundriesiov2/labs/</link>
     <description>Recent content in Labs on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/labs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/labs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bluetooth Low Energy USB Dongle</title>
-      <link>/labs/ble-dongle/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/labs/ble-dongle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/labs/ble-dongle/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/labs/ble-dongle/</guid>
       <description>&lt;p&gt;Foundries.io has released binaries and source code for a Zephyr-based Bluetooth Low Energy USB dongle to the public.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>Jobserv CI</title>
-      <link>/labs/jobserv/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/labs/jobserv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/labs/jobserv/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/labs/jobserv/</guid>
       <description>&lt;p&gt;lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -34,10 +34,10 @@
     
     <item>
       <title>Portainer-based app store</title>
-      <link>/labs/portainer-appstore/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/labs/portainer-appstore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/labs/portainer-appstore/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/labs/portainer-appstore/</guid>
       <description>&lt;p&gt;lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

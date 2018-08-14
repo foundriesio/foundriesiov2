@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Containers on Foundries.io</title>
-    <link>/tags/containers/</link>
+    <link>https://foundriesio.github.io/foundriesiov2/tags/containers/</link>
     <description>Recent content in Containers on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 May 2018 06:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/containers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using docker-compose.yml with Portainer</title>
-      <link>/insights/2018/05/08/using-docker-compose.yml-with-portainer/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/08/using-docker-compose.yml-with-portainer/</link>
       <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/08/using-docker-compose.yml-with-portainer/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/08/using-docker-compose.yml-with-portainer/</guid>
       <description>Portainer has been a great asset and we have started to rely on it for single-container image management. Unfortunately, Portainer has been designed for 2 key use-cases. single containers and &amp;ldquo;stacks&amp;rdquo; that are meant to be deployed onto Kubernetes or Swarm orchestrators. For many of our demos we want to manage a suite of containers and orchestrate their startup so we can manage large container suites like the 9+ container-based micro-services that comprise the Edge-X project.</description>
     </item>
     
     <item>
       <title>Portainer Container Management on Linux microPlatform </title>
-      <link>/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</link>
       <pubDate>Mon, 07 May 2018 06:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</guid>
       <description>&lt;p&gt;At Foundries.io, we are constantly looking across the ecosystem  for the best projects to complement the microPlatforms.  One such project is &lt;a href=&#34;https://portainer.io&#34; title=&#34;Portainer&#34;&gt;Portainer&lt;/a&gt;. &amp;ldquo;Portainer is an open-source lightweight management UI which allows you to easily manage your Docker hosts or swarm clusters.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -33,10 +33,10 @@
     
     <item>
       <title>Simplify your life: multi-architecture docker containers</title>
-      <link>/insights/2018/01/17/20180117-multi-arch-containers/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-multi-arch-containers/</link>
       <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
       
-      <guid>/insights/2018/01/17/20180117-multi-arch-containers/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-multi-arch-containers/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;“The great thing about Docker is that your developers run the exact same container as what runs in production.”&lt;/p&gt;
 &lt;/blockquote&gt;

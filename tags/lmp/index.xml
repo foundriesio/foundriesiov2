@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lmp on Foundries.io</title>
-    <link>/tags/lmp/</link>
+    <link>https://foundriesio.github.io/foundriesiov2/tags/lmp/</link>
     <description>Recent content in Lmp on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/lmp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/lmp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux microPlatform, now with OTA updates (beta)</title>
-      <link>/insights/2018/04/11/20180411-over-the-air/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-over-the-air/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/04/11/20180411-over-the-air/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-over-the-air/</guid>
       <description>&lt;p&gt;Starting with Linux microPlatform update 0.13, we are including support for over-the-air (OTA) updates.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

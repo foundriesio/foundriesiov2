@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux Mp on Foundries.io</title>
-    <link>/categories/linux-mp/</link>
+    <link>https://foundriesio.github.io/foundriesiov2/categories/linux-mp/</link>
     <description>Recent content in Linux Mp on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/linux-mp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundriesio.github.io/foundriesiov2/categories/linux-mp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>microPlatform update 0.25</title>
-      <link>/insights/2018/07/27/blog-post-update-0.25/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/27/blog-post-update-0.25/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/07/27/blog-post-update-0.25/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/27/blog-post-update-0.25/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-25&#34;&gt;Zephyr microPlatform changes for 0.25&lt;/h2&gt;
@@ -35,11 +35,11 @@ Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
     
     <item>
       <title>Securing OTA Community Edition</title>
-      <link>/insights/2018/07/12/ota-part-4/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/ota-part-4/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/07/12/ota-part-4/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;/insights/2018/06/27/ota-part-3/&#34;&gt;Part three&lt;/a&gt; of this blog series showed how to
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/ota-part-4/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/&#34;&gt;Part three&lt;/a&gt; of this blog series showed how to
 deploy an OTA Community Edition server in Google Kubernetes Engine that had
 a few security holes. This article will describe how to secure it.
 &lt;/p&gt;</description>
@@ -47,10 +47,10 @@ a few security holes. This article will describe how to secure it.
     
     <item>
       <title>microPlatform update 0.24</title>
-      <link>/insights/2018/07/12/blog-post-update-0.24/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/blog-post-update-0.24/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/07/12/blog-post-update-0.24/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/12/blog-post-update-0.24/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-24&#34;&gt;Zephyr microPlatform changes for 0.24&lt;/h2&gt;
@@ -69,10 +69,10 @@ URL used for authentication in lmp-device-register was updated.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.23</title>
-      <link>/insights/2018/06/29/blog-post-update-0.23/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/29/blog-post-update-0.23/</link>
       <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/06/29/blog-post-update-0.23/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/29/blog-post-update-0.23/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-23&#34;&gt;Zephyr microPlatform changes for 0.23&lt;/h2&gt;
@@ -90,20 +90,20 @@ Default GCC version was updated to the latest upstream 8.1 release.&lt;/p&gt;
     
     <item>
       <title>Deploying OTA Community Edition</title>
-      <link>/insights/2018/06/27/ota-part-3/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/06/27/ota-part-3/</guid>
-      <description>&lt;p&gt;Continuing with the OTA blog series &lt;a href=&#34;/insights/2018/05/25/ota-part-1/&#34;&gt;part one&lt;/a&gt; and &lt;a href=&#34;/insights/2018/06/14/ota-part-2/&#34;&gt;part two&lt;/a&gt;, this article shows you how to deploy OTA Community Edition inside Google&amp;rsquo;s Kubernetes Engine (GKE). After completion of these instructions, you&amp;rsquo;ll have an OTA server available on the internet with a single QEMU device registered to it.
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/27/ota-part-3/</guid>
+      <description>&lt;p&gt;Continuing with the OTA blog series &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/&#34;&gt;part one&lt;/a&gt; and &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/&#34;&gt;part two&lt;/a&gt;, this article shows you how to deploy OTA Community Edition inside Google&amp;rsquo;s Kubernetes Engine (GKE). After completion of these instructions, you&amp;rsquo;ll have an OTA server available on the internet with a single QEMU device registered to it.
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>microPlatform update 0.22</title>
-      <link>/insights/2018/06/21/blog-post-update-0.22/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/21/blog-post-update-0.22/</link>
       <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/06/21/blog-post-update-0.22/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/21/blog-post-update-0.22/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-22&#34;&gt;Zephyr microPlatform changes for 0.22&lt;/h2&gt;
@@ -122,10 +122,10 @@ Zephyr microPlatform update 0.21.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.21</title>
-      <link>/insights/2018/06/18/blog-post-update-0.21/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/18/blog-post-update-0.21/</link>
       <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/06/18/blog-post-update-0.21/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/18/blog-post-update-0.21/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-21&#34;&gt;Zephyr microPlatform changes for 0.21&lt;/h2&gt;
@@ -143,20 +143,20 @@ Core layer updates based on the latest Yocto master changes.&lt;/p&gt;
     
     <item>
       <title>What Is OTA Community Edition</title>
-      <link>/insights/2018/06/14/ota-part-2/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/</link>
       <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/06/14/ota-part-2/</guid>
-      <description>&lt;p&gt;Continuing with the &lt;a href=&#34;/insights/2018/05/25/ota-part-1/&#34;&gt;OTA blog series&lt;/a&gt;, this article will explain what &lt;a href=&#34;https://github.com/advancedtelematic/ota-community-edition&#34;&gt;OTA Community Edition&lt;/a&gt; is and how it implements the TUF/Uptane/OSTree specifications.
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/14/ota-part-2/</guid>
+      <description>&lt;p&gt;Continuing with the &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/&#34;&gt;OTA blog series&lt;/a&gt;, this article will explain what &lt;a href=&#34;https://github.com/advancedtelematic/ota-community-edition&#34;&gt;OTA Community Edition&lt;/a&gt; is and how it implements the TUF/Uptane/OSTree specifications.
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>microPlatform update 0.20</title>
-      <link>/insights/2018/06/08/blog-post-update-0.20/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/06/08/blog-post-update-0.20/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/06/08/blog-post-update-0.20/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/06/08/blog-post-update-0.20/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-20&#34;&gt;Zephyr microPlatform changes for 0.20&lt;/h2&gt;
@@ -176,20 +176,20 @@ Core layer updates based on the latest changes for the Yocto Thud (2.6) release.
     
     <item>
       <title>How We Chose a Software Update System</title>
-      <link>/insights/2018/05/25/ota-part-1/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/25/ota-part-1/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/ota-part-1/</guid>
       <description>&lt;p&gt;One of the first big decisions we had to make for the Linux microPlatform was our Over-The-Air Update (OTA) strategy. This decision required a lot of time, meetings, beer, and coffee. This article is the first of a small series explaining our recommended approach to OTA for the LMP. This article explains how and why we ultimately chose &lt;a href=&#34;https://github.com/advancedtelematic/ota-community-edition&#34;&gt;OTA Community Edition&lt;/a&gt;.
 &lt;/p&gt;</description>
     </item>
     
     <item>
       <title>microPlatform update 0.19</title>
-      <link>/insights/2018/05/25/blog-post-update-0.19/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/blog-post-update-0.19/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/25/blog-post-update-0.19/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/25/blog-post-update-0.19/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-19&#34;&gt;Zephyr microPlatform changes for 0.19&lt;/h2&gt;
@@ -205,10 +205,10 @@ carries many important new features.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.18</title>
-      <link>/insights/2018/05/18/blog-post-update-0.18/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/18/blog-post-update-0.18/</link>
       <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/18/blog-post-update-0.18/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/18/blog-post-update-0.18/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-18&#34;&gt;Zephyr microPlatform changes for 0.18&lt;/h2&gt;
@@ -225,10 +225,10 @@ updates for new Bluetooth APIs.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.17</title>
-      <link>/insights/2018/05/10/blog-post-update-0.17/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/10/blog-post-update-0.17/</link>
       <pubDate>Thu, 10 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/10/blog-post-update-0.17/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/10/blog-post-update-0.17/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-17&#34;&gt;Zephyr microPlatform changes for 0.17&lt;/h2&gt;
@@ -244,10 +244,10 @@ heading towards 1.2.0 release, samples compatibility updates.&lt;/p&gt;
     
     <item>
       <title>Google Assistant on the LmP</title>
-      <link>/insights/2018/05/09/google-assistant-on-the-lmp/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/09/google-assistant-on-the-lmp/</link>
       <pubDate>Wed, 09 May 2018 19:48:23 +0000</pubDate>
       
-      <guid>/insights/2018/05/09/google-assistant-on-the-lmp/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/09/google-assistant-on-the-lmp/</guid>
       <description>&lt;p&gt;In this blog, I describe how to run the Google Assistant SDK on a Raspberry Pi with an external speaker and microphone.  After you get things configured and gather key pieces of information you&amp;rsquo;ll have a simple, portable and easy to reproduce Google Assistant appliance.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -255,19 +255,19 @@ heading towards 1.2.0 release, samples compatibility updates.&lt;/p&gt;
     
     <item>
       <title>Using docker-compose.yml with Portainer</title>
-      <link>/insights/2018/05/08/using-docker-compose.yml-with-portainer/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/08/using-docker-compose.yml-with-portainer/</link>
       <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/08/using-docker-compose.yml-with-portainer/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/08/using-docker-compose.yml-with-portainer/</guid>
       <description>Portainer has been a great asset and we have started to rely on it for single-container image management. Unfortunately, Portainer has been designed for 2 key use-cases. single containers and &amp;ldquo;stacks&amp;rdquo; that are meant to be deployed onto Kubernetes or Swarm orchestrators. For many of our demos we want to manage a suite of containers and orchestrate their startup so we can manage large container suites like the 9+ container-based micro-services that comprise the Edge-X project.</description>
     </item>
     
     <item>
       <title>microPlatform update 0.16</title>
-      <link>/insights/2018/05/04/blog-post-update-0.16/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/04/blog-post-update-0.16/</link>
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/05/04/blog-post-update-0.16/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/04/blog-post-update-0.16/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-16&#34;&gt;Zephyr microPlatform changes for 0.16&lt;/h2&gt;
@@ -283,10 +283,10 @@ heading towards 1.2.0 release, samples compatibility updates.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.15</title>
-      <link>/insights/2018/04/26/blog-post-update-0.15/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/26/blog-post-update-0.15/</link>
       <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/04/26/blog-post-update-0.15/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/26/blog-post-update-0.15/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-15&#34;&gt;Zephyr microPlatform changes for 0.15&lt;/h2&gt;
@@ -303,10 +303,10 @@ headed towards 1.2.0, LWM2M usability improvements.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.14</title>
-      <link>/insights/2018/04/18/blog-post-update-0.14/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/18/blog-post-update-0.14/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/04/18/blog-post-update-0.14/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/18/blog-post-update-0.14/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-14&#34;&gt;Zephyr microPlatform changes for 0.14&lt;/h2&gt;
@@ -322,10 +322,10 @@ headed towards 1.2.0, LWM2M usability improvements.&lt;/p&gt;
     
     <item>
       <title>Linux microPlatform, now with OTA updates (beta)</title>
-      <link>/insights/2018/04/11/20180411-over-the-air/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-over-the-air/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/04/11/20180411-over-the-air/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/20180411-over-the-air/</guid>
       <description>&lt;p&gt;Starting with Linux microPlatform update 0.13, we are including support for over-the-air (OTA) updates.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -333,10 +333,10 @@ headed towards 1.2.0, LWM2M usability improvements.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.13</title>
-      <link>/insights/2018/04/11/blog-post-update-0.13/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/blog-post-update-0.13/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/04/11/blog-post-update-0.13/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/11/blog-post-update-0.13/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-13&#34;&gt;Zephyr microPlatform changes for 0.13&lt;/h2&gt;
@@ -363,10 +363,10 @@ Garage and ATS OTA Community Edition services.&lt;/p&gt;
     
     <item>
       <title>180 days</title>
-      <link>/insights/2018/03/30/20180330_goodfriday_180days/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/30/20180330_goodfriday_180days/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/03/30/20180330_goodfriday_180days/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/30/20180330_goodfriday_180days/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s March 30, 2018, Good Friday, and it has been 180 days since we started Foundries.io.  In this time, we established our initial infrastructure, created the first microPlatform products and, on March 27, we produced our 12th update to the microPlatforms, roughly 1 update every 2 weeks.  When we started the microPlatforms, we wanted to get our systems and processes running smooth enough to provide meaningful software updates that could be integrated into products by our subscribers.&lt;/p&gt;
 
 &lt;p&gt;You may think that consuming software updates every 2 weeks is daunting, however, the upstream projects are ever-evolving and in this same period, Zephyr has seen 3,385 commits and the Linux Kernel has seen 28,876 commits and we aren’t even listing the changes of the other software projects.  Long story short, with all this activity, there are new features and fixes that affect all aspects of computing that your products may have missed out on.  With the microPlatforms we have created a product that not only keeps you close to the latest software, but standards-based and fully tested end-to-end for use within connected IoT products.
@@ -375,10 +375,10 @@ Garage and ATS OTA Community Edition services.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.12</title>
-      <link>/insights/2018/03/27/blog-post-update-0.12/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/27/blog-post-update-0.12/</link>
       <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/03/27/blog-post-update-0.12/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/27/blog-post-update-0.12/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-12&#34;&gt;Zephyr microPlatform changes for 0.12&lt;/h2&gt;
@@ -401,10 +401,10 @@ advantage of in the reference applications.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.11</title>
-      <link>/insights/2018/03/20/blog-post-update-0.11/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/20/blog-post-update-0.11/</link>
       <pubDate>Tue, 20 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/03/20/blog-post-update-0.11/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/20/blog-post-update-0.11/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-11&#34;&gt;Zephyr microPlatform changes for 0.11&lt;/h2&gt;
@@ -424,10 +424,10 @@ options, saving approximately 4 KB.&lt;/p&gt;
     
     <item>
       <title>ELC / Open IoT Summit 2018 Slides now available</title>
-      <link>/insights/2018/03/15/20180315-iotsummit/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/03/15/20180315-iotsummit/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</guid>
       <description>&lt;p&gt;Foundries.io presented 4 sessions at this year&amp;rsquo;s IoT Summit and Embedded
 Linux Conference and the slides are now available.&lt;/p&gt;
 
@@ -436,10 +436,10 @@ Linux Conference and the slides are now available.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.10</title>
-      <link>/insights/2018/03/13/blog-post-update-0.10/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/13/blog-post-update-0.10/</link>
       <pubDate>Tue, 13 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/03/13/blog-post-update-0.10/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/13/blog-post-update-0.10/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-10&#34;&gt;Zephyr microPlatform changes for 0.10&lt;/h2&gt;
@@ -458,20 +458,20 @@ is now enabled by default in LMP.&lt;/p&gt;
     
     <item>
       <title>Blockchain for the Internet of Things</title>
-      <link>/insights/2018/02/23/20180223-blockchain-for-iot/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/02/23/20180223-blockchain-for-iot/</link>
       <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
       
-      <guid>/insights/2018/02/23/20180223-blockchain-for-iot/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/02/23/20180223-blockchain-for-iot/</guid>
       <description>It seems every industry is placing bets on how blockchain technologies will revolutionize the way they do business. The internet of things is not immune to this hype, but the fundamental question remains. How can it be useful?
 Centralized vs Decentralized Trust Models The flow of data, that is what the internet of things is all about. How to retrieve it, where to store it, and who can access it.</description>
     </item>
     
     <item>
       <title>microPlatform update 0.9</title>
-      <link>/insights/2018/02/21/blog-post-update-0.9/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/02/21/blog-post-update-0.9/</link>
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/02/21/blog-post-update-0.9/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/02/21/blog-post-update-0.9/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-9&#34;&gt;Zephyr microPlatform changes for 0.9&lt;/h2&gt;
@@ -490,10 +490,10 @@ Default GCC version was updated to the latest upstream 7.3 release.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.8</title>
-      <link>/insights/2018/02/02/blog-post-update-0.8/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/02/02/blog-post-update-0.8/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/02/02/blog-post-update-0.8/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/02/02/blog-post-update-0.8/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-8&#34;&gt;Zephyr microPlatform changes for 0.8&lt;/h2&gt;
@@ -511,10 +511,10 @@ Default GCC version was changed from the 7.1-Linaro to the latest OpenEmbedded 7
     
     <item>
       <title>Foundries.io at Embedded World 2018</title>
-      <link>/insights/2018/01/27/20180127-embeddedworld/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/27/20180127-embeddedworld/</link>
       <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/01/27/20180127-embeddedworld/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/27/20180127-embeddedworld/</guid>
       <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
 our end to end IoT microPlatforms at this years Embedded World conference in
 Nuremburg, Germany.  The Embedded World conference takes place between
@@ -527,10 +527,10 @@ OSF will be presenting in the Zephyr booth, located in
     
     <item>
       <title>Foundries.io at ELC / Open IoT Summit 2018</title>
-      <link>/insights/2018/01/26/20180126-iotsummit/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</link>
       <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/01/26/20180126-iotsummit/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</guid>
       <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
 our end to end IoT microPlatforms at this years Embedded Linux Conference and
 the Open IoT Summit alongside the Zephry project.&lt;/p&gt;
@@ -544,10 +544,10 @@ on 4 topics at this year&amp;rsquo;s IoT Summit.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.7</title>
-      <link>/insights/2018/01/25/blog-post-update-0.7/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/25/blog-post-update-0.7/</link>
       <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/01/25/blog-post-update-0.7/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/25/blog-post-update-0.7/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-7&#34;&gt;Zephyr microPlatform changes for 0.7&lt;/h2&gt;
@@ -571,10 +571,10 @@ D6:E7 in the MAC addresses must be changed to D4:E7.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.6</title>
-      <link>/insights/2018/01/10/blog-post-update-0.6/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/10/blog-post-update-0.6/</link>
       <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/01/10/blog-post-update-0.6/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/10/blog-post-update-0.6/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-6&#34;&gt;Zephyr microPlatform changes for 0.6&lt;/h2&gt;
@@ -600,10 +600,10 @@ NET_L2_BT_ZEP1656 Zephyr workaround (required for kernels older than 4.12).&lt;/
     
     <item>
       <title>microPlatform update 0.5</title>
-      <link>/insights/2018/01/04/blog-post-update-0.5/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/04/blog-post-update-0.5/</link>
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2018/01/04/blog-post-update-0.5/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/04/blog-post-update-0.5/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-5&#34;&gt;Zephyr microPlatform changes for 0.5&lt;/h2&gt;
@@ -621,10 +621,10 @@ fragment as used by the other machines.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.4</title>
-      <link>/insights/2017/12/13/blog-post-update-0.4/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/12/13/blog-post-update-0.4/</link>
       <pubDate>Wed, 13 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2017/12/13/blog-post-update-0.4/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/12/13/blog-post-update-0.4/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-4&#34;&gt;Zephyr microPlatform changes for 0.4&lt;/h2&gt;
@@ -643,10 +643,10 @@ repository, to begin development based on the v1.11 master branch.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.3</title>
-      <link>/insights/2017/12/07/blog-post-update-0.3/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/12/07/blog-post-update-0.3/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2017/12/07/blog-post-update-0.3/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/12/07/blog-post-update-0.3/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-3&#34;&gt;Zephyr microPlatform changes for 0.3&lt;/h2&gt;
@@ -669,10 +669,10 @@ Validated with Minnowboard Turbot and NUC variants.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.2</title>
-      <link>/insights/2017/11/16/blog-post-update-0.2/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/11/16/blog-post-update-0.2/</link>
       <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2017/11/16/blog-post-update-0.2/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/11/16/blog-post-update-0.2/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-2&#34;&gt;Zephyr microPlatform changes for 0.2&lt;/h2&gt;
@@ -698,10 +698,10 @@ and openembedded-core and meta-linaro.&lt;/p&gt;
     
     <item>
       <title>microPlatform update 0.1</title>
-      <link>/insights/2017/11/08/blog-post-update-0.1/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/11/08/blog-post-update-0.1/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2017/11/08/blog-post-update-0.1/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/11/08/blog-post-update-0.1/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-0-1&#34;&gt;Zephyr microPlatform changes for 0.1&lt;/h2&gt;
@@ -730,10 +730,10 @@ on the latest Rocko (2.4) baseline (which is in the process to be released).&lt;
     
     <item>
       <title>microPlatform update 17.10.1</title>
-      <link>/insights/2017/10/13/blog-post-update-17.10.1/</link>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2017/10/13/blog-post-update-17.10.1/</link>
       <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/insights/2017/10/13/blog-post-update-17.10.1/</guid>
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2017/10/13/blog-post-update-17.10.1/</guid>
       <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
 
 &lt;h2 id=&#34;zephyr-microplatform-changes-for-17-10-1&#34;&gt;Zephyr microPlatform changes for 17.10.1&lt;/h2&gt;
