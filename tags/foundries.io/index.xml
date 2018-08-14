@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/tags/foundries.io/</link>
+    <link>/tags/foundries.io/</link>
     <description>Recent content on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/foundries.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/foundries.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>180 days</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/30/20180330_goodfriday_180days/</link>
+      <link>/insights/2018/03/30/20180330_goodfriday_180days/</link>
       <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/30/20180330_goodfriday_180days/</guid>
+      <guid>/insights/2018/03/30/20180330_goodfriday_180days/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s March 30, 2018, Good Friday, and it has been 180 days since we started Foundries.io.  In this time, we established our initial infrastructure, created the first microPlatform products and, on March 27, we produced our 12th update to the microPlatforms, roughly 1 update every 2 weeks.  When we started the microPlatforms, we wanted to get our systems and processes running smooth enough to provide meaningful software updates that could be integrated into products by our subscribers.&lt;/p&gt;
 
 &lt;p&gt;You may think that consuming software updates every 2 weeks is daunting, however, the upstream projects are ever-evolving and in this same period, Zephyr has seen 3,385 commits and the Linux Kernel has seen 28,876 commits and we aren’t even listing the changes of the other software projects.  Long story short, with all this activity, there are new features and fixes that affect all aspects of computing that your products may have missed out on.  With the microPlatforms we have created a product that not only keeps you close to the latest software, but standards-based and fully tested end-to-end for use within connected IoT products.

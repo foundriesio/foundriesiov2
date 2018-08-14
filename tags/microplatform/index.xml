@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Microplatform on Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/tags/microplatform/</link>
+    <link>/tags/microplatform/</link>
     <description>Recent content in Microplatform on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/microplatform/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/microplatform/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ELC / Open IoT Summit 2018 Slides now available</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</link>
+      <link>/insights/2018/03/15/20180315-iotsummit/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/03/15/20180315-iotsummit/</guid>
+      <guid>/insights/2018/03/15/20180315-iotsummit/</guid>
       <description>&lt;p&gt;Foundries.io presented 4 sessions at this year&amp;rsquo;s IoT Summit and Embedded
 Linux Conference and the slides are now available.&lt;/p&gt;
 
@@ -25,10 +25,10 @@ Linux Conference and the slides are now available.&lt;/p&gt;
     
     <item>
       <title>Foundries.io at Embedded World 2018</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/27/20180127-embeddedworld/</link>
+      <link>/insights/2018/01/27/20180127-embeddedworld/</link>
       <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/27/20180127-embeddedworld/</guid>
+      <guid>/insights/2018/01/27/20180127-embeddedworld/</guid>
       <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
 our end to end IoT microPlatforms at this years Embedded World conference in
 Nuremburg, Germany.  The Embedded World conference takes place between
@@ -41,10 +41,10 @@ OSF will be presenting in the Zephyr booth, located in
     
     <item>
       <title>Foundries.io at ELC / Open IoT Summit 2018</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</link>
+      <link>/insights/2018/01/26/20180126-iotsummit/</link>
       <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/26/20180126-iotsummit/</guid>
+      <guid>/insights/2018/01/26/20180126-iotsummit/</guid>
       <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
 our end to end IoT microPlatforms at this years Embedded Linux Conference and
 the Open IoT Summit alongside the Zephry project.&lt;/p&gt;
@@ -58,10 +58,10 @@ on 4 topics at this year&amp;rsquo;s IoT Summit.&lt;/p&gt;
     
     <item>
       <title>How To Manage LMP Containers</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-container-management/</link>
+      <link>/insights/2018/01/17/20180117-container-management/</link>
       <pubDate>Wed, 17 Jan 2018 13:50:46 +0200</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-container-management/</guid>
+      <guid>/insights/2018/01/17/20180117-container-management/</guid>
       <description>&lt;p&gt;The Linux microPlatform uses a set of Docker containers to provide end-to-end
 services used by the Zephyr microPlatform. The containers and their
 configurations are deployed using a simple &lt;a href=&#34;https://github.com/OpenSourceFoundries/gateway-ansible&#34;&gt;shell script&lt;/a&gt; that wraps

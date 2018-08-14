@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Keys on Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/tags/keys/</link>
+    <link>/tags/keys/</link>
     <description>Recent content in Keys on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/keys/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/keys/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using your own firmware signing keys with MCUBoot</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-mcuboot-keys/</link>
+      <link>/insights/2018/01/17/20180117-mcuboot-keys/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-mcuboot-keys/</guid>
-      <description>&lt;p&gt;Secure firmware over the air (FOTA) updates are a key &lt;a href=&#34;https://foundriesio.github.io/foundriesiov2/products/&#34;&gt;Zephyr microPlatform&lt;/a&gt; feature. This post explains how to use your own firmware signing key pair to secure the boot process on your devices.
+      <guid>/insights/2018/01/17/20180117-mcuboot-keys/</guid>
+      <description>&lt;p&gt;Secure firmware over the air (FOTA) updates are a key &lt;a href=&#34;/products/&#34;&gt;Zephyr microPlatform&lt;/a&gt; feature. This post explains how to use your own firmware signing key pair to secure the boot process on your devices.
 &lt;/p&gt;</description>
     </item>
     
