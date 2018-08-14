@@ -139,6 +139,23 @@
         });
     });
 
+    // Move to anchor on page load
+    $(function() {
+        var hash = window.location.hash;
+        if (hash) {
+            // these gave different offset values for some reason
+            if (['#e2e', '#zephyr'].indexOf(hash) !== -1) {
+                hash = '#linux';
+            }
+            var target = $(hash + 'Anchor');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top - 90
+                }, 600);
+            }
+        }
+    });
+
     // ______________ BACK TO TOP BUTTON
 
     $(window).scroll(function() {
