@@ -6,10 +6,22 @@
     <description>Recent content in Zmp on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/zmp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Zephyr Logging Survival Guide, Part 2: Logger Subsystem</title>
+      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/08/14/zephyr-logging-part-2/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/08/14/zephyr-logging-part-2/</guid>
+      <description>&lt;p&gt;An overview of the new logging system merged for v1.13, or: &lt;em&gt;Can&amp;rsquo;t Get
+Enough of your Logs, Zephyr&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Zephyr Logging Survival Guide, Part 1: SYS_LOG</title>
