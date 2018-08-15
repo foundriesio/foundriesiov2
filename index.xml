@@ -1150,25 +1150,25 @@ If you want to be part of our team and love the thrill of a startup, we&#39;d lo
     </item>
     
     <item>
-      <title>Jobserv CI</title>
+      <title>JobServ CI</title>
       <link>https://foundriesio.github.io/foundriesiov2/labs/jobserv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://foundriesio.github.io/foundriesiov2/labs/jobserv/</guid>
-      <description>&lt;p&gt;lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Automation is paramount to our success and to meet our ambitious goals we built
+the horizontally scalable open source CI system called JobServ.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Portainer-based app store</title>
+      <title>Portainer-based App Store</title>
       <link>https://foundriesio.github.io/foundriesiov2/labs/portainer-appstore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://foundriesio.github.io/foundriesiov2/labs/portainer-appstore/</guid>
-      <description>&lt;p&gt;lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Portainer is an open-source lightweight management UI which allows you
+to easily manage your docker hosts or swarm clusters.
+&lt;/p&gt;</description>
     </item>
     
   </channel>

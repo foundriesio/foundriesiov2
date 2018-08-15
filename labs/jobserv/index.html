@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jobserv CI | Foundries.io</title>
+  <title>JobServ CI | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundriesio.github.io/foundriesiov2/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -124,7 +124,7 @@
                     <p>FOUNDRIES.IO LABS</p>
                     <span class="message-line"></span>
                 </div>
-                <h1 style="color: white">Jobserv CI</h1>
+                <h1 style="color: white">JobServ CI</h1>
             </div>
         </div>
     </div>
@@ -136,13 +136,35 @@
             <div class="row">
                 <div class="small-10 columns small-offset-1" id="labs-post">
                     <div id="post-content">
-                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                        <p>Automation is paramount to our success and to meet our ambitious goals we built
+the horizontally scalable open source CI system called JobServ.
+</p>
 
-<p></p>
+<p>Somewhere in the last 10 years CI went from &ldquo;nice-to-have&rdquo; to
+&ldquo;business-critical&rdquo;. CI servers can&rsquo;t suffer from down time and CI workers
+must be fault tolerant so that users don&rsquo;t spend their day clicking &ldquo;re-build&rdquo;.</p>
 
-<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+<p><a href="https://github.com/OpenSourceFoundries/jobserv">JobServ</a>
+can be thought of at a high level as something similar to Jenkins.
+However, several design decisions have been made to make sure the service can
+be highly available and horizontally scalable. The public facing APIs are
+based on stateless HTTP calls which means:</p>
 
-<p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+<ul>
+<li><p>Multiple instances of the API can run and have rolling updates deployed
+behind a load-balancer without existing CI builds noticing.</p></li>
+
+<li><p>Workers have a simple way to connect and can retry status updates if
+something unexpected happens.</p></li>
+</ul>
+
+<p>We also built in a &ldquo;simulator&rdquo; so that users can re-create failed builds
+from their desk or develop new changes without having to repeatedly push
+<code>&quot;oops - Fix typo&quot;</code> changes to the production CI repository.</p>
+
+<p>To learn more about JobServ take a look at project&rsquo;s
+<a href="https://github.com/OpenSourceFoundries/jobserv/blob/master/README.md">README</a>
+and our <a href="https://github.com/doanac/gavel-ci/">customization example</a>.</p>
                     </div>
                 </div>
             </div>
