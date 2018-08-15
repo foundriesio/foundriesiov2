@@ -205,9 +205,9 @@ for securing calls to reverse proxy servers. The approach taken in this
 blog is to create an authentication service to handle <code>auth_requests</code>.</p>
 
 <p>The ota-blog-part4 GitHub
-<a href="https://github.com/OpenSourceFoundries/ota-community-edition/tree/ota-blog-part4">branch</a>
+<a href="https://github.com/foundriesio/ota-community-edition/tree/ota-blog-part4">branch</a>
 includes a new service called <code>oauthful</code> (oauth + awful). It&rsquo;s
-<a href="https://github.com/OpenSourceFoundries/ota-community-edition/blob/ota-blog-part4/oauthful/app.py">terribly insecure</a>,
+<a href="https://github.com/foundriesio/ota-community-edition/blob/ota-blog-part4/oauthful/app.py">terribly insecure</a>,
 but shows in the fewest lines of code possible what you need to secure
 in your deployment. Deploying this is easy:</p>
 
@@ -219,7 +219,7 @@ in your deployment. Deploying this is easy:</p>
   git checkout ota-blog-part4
 
   # To look at the diffs between the 2 blogs visit:
-  # https://github.com/OpenSourceFoundries/ota-community-edition/compare/ota-blog-part3...ota-blog-part4
+  # https://github.com/foundriesio/ota-community-edition/compare/ota-blog-part3...ota-blog-part4
 
   # Deploy changes with:
   ./contrib/gke/make start-services
