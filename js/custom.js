@@ -131,7 +131,7 @@
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length && ($(document).scrollTop() !== target.offset().top)) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top - 80
+                        scrollTop: target.offset().top - 153
                     }, 1000);
                     return false;
                 }

@@ -619,7 +619,8 @@ ul.nav-engage > li:last-child {
 
 .pricing-table .price div.price-amount {
     padding: 0;
-    margin-bottom: 4px;
+    margin: 0;
+    font-weight: 700;
 }
 
 .pricing-table li.price-license {
@@ -627,4 +628,15 @@ ul.nav-engage > li:last-child {
     text-align: center;
     font-size: 17px;
     font-style: italic;
+}
+
+.company-cta-links a:not(:last-child) {
+    margin-right: 50px;
+}
+
+.home-caption-link p,
+.home-caption-link,
+.home-caption-link:hover,
+.home-caption-link:focus {
+    color: #000000;
 }
