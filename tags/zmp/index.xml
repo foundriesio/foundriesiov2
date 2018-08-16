@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zmp on Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/tags/zmp/</link>
+    <link>https://foundries.io/tags/zmp/</link>
     <description>Recent content in Zmp on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/zmp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundries.io/tags/zmp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Zephyr Logging Survival Guide, Part 2: Logger Subsystem</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/08/14/zephyr-logging-part-2/</link>
+      <link>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</link>
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/08/14/zephyr-logging-part-2/</guid>
+      <guid>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</guid>
       <description>&lt;p&gt;An overview of the new logging system merged for v1.13, or: &lt;em&gt;Can&amp;rsquo;t Get
 Enough of your Logs, Zephyr&lt;/em&gt;.&lt;/p&gt;
 
@@ -25,10 +25,10 @@ Enough of your Logs, Zephyr&lt;/em&gt;.&lt;/p&gt;
     
     <item>
       <title>Zephyr Logging Survival Guide, Part 1: SYS_LOG</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/07/24/zephyr-logging-part-1/</link>
+      <link>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</link>
       <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/07/24/zephyr-logging-part-1/</guid>
+      <guid>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</guid>
       <description>&lt;p&gt;An overview of Zephyr&amp;rsquo;s longstanding SYS_LOG API, or: &lt;em&gt;Blog Drops
 Zephyr Log Bombs Without Qualms&lt;/em&gt;.&lt;/p&gt;
 
@@ -37,10 +37,10 @@ Zephyr Log Bombs Without Qualms&lt;/em&gt;.&lt;/p&gt;
     
     <item>
       <title>Zephyr microPlatform, Zephyr OTA via DFU/mcumgr</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/04/17/20180417-mcumgr-dfu/</link>
+      <link>https://foundries.io/insights/2018/04/17/20180417-mcumgr-dfu/</link>
       <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/04/17/20180417-mcumgr-dfu/</guid>
+      <guid>https://foundries.io/insights/2018/04/17/20180417-mcumgr-dfu/</guid>
       <description>&lt;p&gt;In this blog we describe how to use the Zephyr microPlatform and the in-tree
 Zephyr samples to build, flash and perform an over the air (OTA) update of a
 Zephyr application over Bluetooth Low Energy (BLE).  This demonstration uses the

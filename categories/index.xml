@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/categories/</link>
+    <link>https://foundries.io/categories/</link>
     <description>Recent content in Categories on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Feb 2018 13:07:31 +0200</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundries.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blockchain</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/blockchain/</link>
+      <link>https://foundries.io/categories/blockchain/</link>
       <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/blockchain/</guid>
+      <guid>https://foundries.io/categories/blockchain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conferences</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/conferences/</link>
+      <link>https://foundries.io/categories/conferences/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/conferences/</guid>
+      <guid>https://foundries.io/categories/conferences/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Demos</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/demos/</link>
+      <link>https://foundries.io/categories/demos/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/demos/</guid>
+      <guid>https://foundries.io/categories/demos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fota</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/fota/</link>
+      <link>https://foundries.io/categories/fota/</link>
       <pubDate>Thu, 09 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/fota/</guid>
+      <guid>https://foundries.io/categories/fota/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux Mp</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/linux-mp/</link>
+      <link>https://foundries.io/categories/linux-mp/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/linux-mp/</guid>
+      <guid>https://foundries.io/categories/linux-mp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mp Containers</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/mp-containers/</link>
+      <link>https://foundries.io/categories/mp-containers/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/mp-containers/</guid>
+      <guid>https://foundries.io/categories/mp-containers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Updates</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/updates/</link>
+      <link>https://foundries.io/categories/updates/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/updates/</guid>
+      <guid>https://foundries.io/categories/updates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zephyr</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/zephyr/</link>
+      <link>https://foundries.io/categories/zephyr/</link>
       <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/zephyr/</guid>
+      <guid>https://foundries.io/categories/zephyr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zephyr Mp</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/zephyr-mp/</link>
+      <link>https://foundries.io/categories/zephyr-mp/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/zephyr-mp/</guid>
+      <guid>https://foundries.io/categories/zephyr-mp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zephyr News</title>
-      <link>https://foundriesio.github.io/foundriesiov2/categories/zephyr-news/</link>
+      <link>https://foundries.io/categories/zephyr-news/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/categories/zephyr-news/</guid>
+      <guid>https://foundries.io/categories/zephyr-news/</guid>
       <description></description>
     </item>
     

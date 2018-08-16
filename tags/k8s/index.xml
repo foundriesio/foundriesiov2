@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>K8s on Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/tags/k8s/</link>
+    <link>https://foundries.io/tags/k8s/</link>
     <description>Recent content in K8s on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jan 2018 13:07:31 +0200</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundries.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Simplify your life: multi-architecture docker containers</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-multi-arch-containers/</link>
+      <link>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</link>
       <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/01/17/20180117-multi-arch-containers/</guid>
+      <guid>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;“The great thing about Docker is that your developers run the exact same container as what runs in production.”&lt;/p&gt;
 &lt;/blockquote&gt;

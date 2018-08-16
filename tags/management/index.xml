@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Management on Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/tags/management/</link>
+    <link>https://foundries.io/tags/management/</link>
     <description>Recent content in Management on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 May 2018 06:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/management/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundries.io/tags/management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Portainer Container Management on Linux microPlatform </title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</link>
+      <link>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</link>
       <pubDate>Mon, 07 May 2018 06:00:00 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</guid>
+      <guid>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</guid>
       <description>&lt;p&gt;At Foundries.io, we are constantly looking across the ecosystem  for the best projects to complement the microPlatforms.  One such project is &lt;a href=&#34;https://portainer.io&#34; title=&#34;Portainer&#34;&gt;Portainer&lt;/a&gt;. &amp;ldquo;Portainer is an open-source lightweight management UI which allows you to easily manage your Docker hosts or swarm clusters.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

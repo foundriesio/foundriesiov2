@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google on Foundries.io</title>
-    <link>https://foundriesio.github.io/foundriesiov2/tags/google/</link>
+    <link>https://foundries.io/tags/google/</link>
     <description>Recent content in Google on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 May 2018 19:48:23 +0000</lastBuildDate>
     
-	<atom:link href="https://foundriesio.github.io/foundriesiov2/tags/google/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foundries.io/tags/google/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Assistant on the LmP</title>
-      <link>https://foundriesio.github.io/foundriesiov2/insights/2018/05/09/google-assistant-on-the-lmp/</link>
+      <link>https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/</link>
       <pubDate>Wed, 09 May 2018 19:48:23 +0000</pubDate>
       
-      <guid>https://foundriesio.github.io/foundriesiov2/insights/2018/05/09/google-assistant-on-the-lmp/</guid>
+      <guid>https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/</guid>
       <description>&lt;p&gt;In this blog, I describe how to run the Google Assistant SDK on a Raspberry Pi with an external speaker and microphone.  After you get things configured and gather key pieces of information you&amp;rsquo;ll have a simple, portable and easy to reproduce Google Assistant appliance.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
