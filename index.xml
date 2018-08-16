@@ -6,10 +6,31 @@
     <description>Recent content on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Aug 2018 20:18:42 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 0.26</title>
+      <link>https://foundries.io/insights/2018/08/15/blog-post-update-0.26/</link>
+      <pubDate>Wed, 15 Aug 2018 20:18:42 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/08/15/blog-post-update-0.26/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-26&#34;&gt;Zephyr microPlatform changes for 0.26&lt;/h2&gt;
+
+&lt;p&gt;This update only contains an MCUboot history update on the 1.2.0
+upstream release.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-26&#34;&gt;Linux microPlatform changes for 0.26&lt;/h2&gt;
+
+&lt;p&gt;Default GCC version was updated to the latest upstream 8.2 release.
+Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Zephyr Logging Survival Guide, Part 2: Logger Subsystem</title>
