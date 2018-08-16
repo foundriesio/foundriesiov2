@@ -3,13 +3,13 @@
 }
 
 a {
-    color: #042246;
+    color: #00326D;
 }
 
 a:hover,
 a:focus {
     text-decoration: underline;
-    color: #37485C;
+    color: #00418E;
 }
 
 .sf-menu li a:hover,
