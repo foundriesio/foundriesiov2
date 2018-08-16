@@ -22,7 +22,7 @@ body.login-page {background:url(images/login_page_bg.jpg);}
 .row {max-width:1170px;}
 iframe {margin: 0 0 40px; border:0; width:100%;}
 code { text-shadow: 0 1px white; line-height:1.3;  font-family: Consolas, Monaco, 'Andale Mono', monospace; font-weight:normal; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; background: #F5F2F0;display: block; padding: 12px; margin: 8px 0; color:#303038; border: 0; border-radius:6px;}
-h1, h2, h3, h4, h5, h6 { font-family: 'Lato', Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-weight: 700; color: #5A5A5A; text-rendering: optimizeLegibility; line-height: 1.1; margin-bottom: 12px; margin-top: 12px;  }
+h1, h2, h3, h4, h5, h6 {font-family: 'Lato', Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;font-weight: 700;color: #5A5A5A;text-rendering: optimizeLegibility;line-height: 1.1;margin-bottom: 12px;margin-top: 12px;}
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; }
 h1 { font-size: 44px; }
 h2 { font-size: 34px; }
@@ -91,8 +91,6 @@ header.alt-5 {background:url(images/header_labs_bg.jpg) bottom center no-repeat;
 header.alt-6 {background:url(images/header_insights_bg.jpg) bottom center no-repeat; background-size: cover; min-height:490px; position: relative;}
 header.alt-7 {background:url(images/header_about_bg.jpg) bottom center no-repeat; background-size: cover; min-height:490px; position: relative;}
 header.login {background:transparent; min-height:1px;}
-
-header.alt-1 .message h1, header.alt-2 .message h1, header.alt-3 .message h1, header.alt-4 .message h1, header.alt-5 .message h1, header.alt-6 .message h1 {color: #D7D7D7;}
 
 /* Video Header */
 header.video {background:#f2f2f2;  min-height:1px; }
@@ -438,7 +436,6 @@ ul.connecticons li i:hover {background:#37485C; -webkit-transform:scale(1.2);tra
 /* Infrastructure */
 .infrastructure-subheader {padding:50px 0; overflow:hidden;}
 .infrastructure-subheader h2 {text-align: center; font-weight: 900;}
-.infrastructure-subheader p {text-align: center;}
 #map_wrapper { height: 550px; margin-top:25px;}
 #map_canvas {width: 100%;    height: 100%;}
 .info_content h5 {font-weight: 900; font-size:18px; color:#C66C66;}

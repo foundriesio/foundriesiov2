@@ -1092,8 +1092,7 @@ If you want to be part of our team and love the thrill of a startup, we&#39;d lo
       
       <guid>https://foundriesio.github.io/foundriesiov2/hardware/</guid>
       <description>{{ partial &#34;head.html&#34; . }}  {{ partial &#34;navbar.html&#34; . }}  HARDWARE
-  SUPPORTED DEVICES AND PLATFORMS     The microPlatforms are portable and architecture independent. There are three levels of hardware support:
- Reference devices: thorough device-specific documentation and builds, extensive automated end-to-end testing, globally available, low-cost hardware Community devices: device-specific documentation and builds, best-effort testing, and community support Upstream-supported devices: reference documentation for using any hardware with upstream support   Foundries.</description>
+  SUPPORTED DEVICES AND PLATFORMS      The microPlatforms are portable and architecture independent. There are three levels of hardware support:   Reference devices: thorough device-specific documentation and builds, extensive automated end-to-end testing, globally available, low-cost hardware   Community devices: device-specific documentation and builds, best-effort testing, and community support   Upstream-supported devices: reference documentation for using any hardware with upstream support    Foundries.</description>
     </item>
     
     <item>
@@ -1114,8 +1113,7 @@ If you want to be part of our team and love the thrill of a startup, we&#39;d lo
       
       <guid>https://foundriesio.github.io/foundriesiov2/pricing/</guid>
       <description>{{ partial &#34;head.html&#34; . }}  {{ partial &#34;navbar.html&#34; . }}  OUR PRICING
-  TRANSPARENT AND PER-PRODUCT     PRICING For evaluation or demonstration, as well as personal or educational use, we provide a low-cost non-commercial license.  Enterprise subscriptions are available for commercial use. You only need a single subscription for each end product - there are no per unit royalties or charges.
-   PERSONAL Evaluation Subscription For evaluation and non-commercial use Access to continuous updates Open Source Complete end-to-end software Protected by comprehensive continuous integration Smaller merges for highly dynamic projects Access to demo OTA server Expert help and community support $10 /MO &amp;#183; $89 /YR    GET STARTED   View Evaluation License Agreement     ENTERPRISE Product Subscription For commercial use Access to continuous updates Open Source Complete end-to-end software Protected by comprehensive continuous integration Smaller merges for highly dynamic projects Access to demo OTA server Expert help and community support Priority support Per-product unlimited redistribution Zephyr $1,000 /MO &amp;#183; $10,000 /YR    Linux $2,500 /MO &amp;#183; $25,000 /YR     GET STARTED   View Enterprise License Agreement       GET STARTED EXPLORE OUR PRODUCTS HARDWARE SUPPORT SIGN UP NOW     {{ partial &#34;</description>
+  TRANSPARENT AND PER-PRODUCT     PRICING  For evaluation or demonstration, as well as personal or educational use, we provide a low-cost non-commercial license.  Enterprise subscriptions are available for commercial use. You only need a single subscription for each end product - there are no per unit royalties or charges.    PERSONAL Evaluation Subscription For evaluation and non-commercial use Access to continuous updates Open Source Complete end-to-end software Protected by comprehensive continuous integration Smaller merges for highly dynamic projects Access to demo OTA server Expert help and community support $10 /MO &amp;#183; $89 /YR    GET STARTED   View Evaluation License Agreement     ENTERPRISE Product Subscription For commercial use Access to continuous updates Open Source Complete end-to-end software Protected by comprehensive continuous integration Smaller merges for highly dynamic projects Access to demo OTA server Expert help and community support Priority support Per-product unlimited redistribution Zephyr $1,000 /MO &amp;#183; $10,000 /YR    Linux $2,500 /MO &amp;#183; $25,000 /YR     GET STARTED   View Enterprise License Agreement       GET STARTED EXPLORE OUR PRODUCTS HARDWARE SUPPORT SIGN UP NOW     {{ partial &#34;</description>
     </item>
     
     <item>
@@ -1125,7 +1123,7 @@ If you want to be part of our team and love the thrill of a startup, we&#39;d lo
       
       <guid>https://foundriesio.github.io/foundriesiov2/products/</guid>
       <description>{{ partial &#34;head.html&#34; . }}  {{ partial &#34;navbar.html&#34; . }}  OUR PRODUCTS
-  EMBEDDED&#39;S NEXT GENERATION PLATFORMS     YOUR PRODUCTS. BUILT ON OUR PLATFORMS.  The Linux and Zephyr microPlatforms are configurable, small footprint, open source software platforms for building secure, connected, over-the-air updatable embedded products.   Open/No Lock-in We regularly upstream our open source work; you can end your subscription any time and keep using the software</description>
+  EMBEDDED&#39;S NEXT GENERATION PLATFORMS     YOUR PRODUCTS. BUILT ON OUR PLATFORMS.  The Linux and Zephyr microPlatforms are configurable, small footprint, open source software platforms for building secure, connected, over-the-air updatable embedded products.   Open / No Lock-in We regularly upstream our open source work; you can end your subscription any time and keep using the software</description>
     </item>
     
     <item>
