@@ -135,18 +135,6 @@ on 4 topics at this year&amp;rsquo;s IoT Summit.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Update an embedded device with LwM2M</title>
-      <link>https://foundries.io/insights/2018/01/17/20180117-lwm2m-update/</link>
-      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/01/17/20180117-lwm2m-update/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://openmobilealliance.org/iot/lightweight-m2m-lwm2m&#34;&gt;OMA Lightweight M2M&lt;/a&gt; (LWM2M) offers a firmware object interface for directing client devices to download and apply firmware updates.  Using the Zephyr microPlaform and Eclipse&amp;rsquo;s &lt;a href=&#34;https://www.eclipse.org/leshan/&#34;&gt;Leshan Demo Server&lt;/a&gt;, this seemingly complex process can be demonstrated in a few easy steps.&lt;/p&gt;
-
-&lt;p&gt;To illustrate how a firmware update is delivered via LwM2M, you will make a small change to the Zephyr microPlatform (ZMP) LwM2M sample project which disables the Light Control object.  When flashed to an embedded device, the Leshan UI will be missing the &amp;ldquo;Light Control&amp;rdquo; portion near the bottom of the client detail page.  Once this &amp;ldquo;bug&amp;rdquo; is found, you will fix the LwM2M sample, recompile and deliver your updated firmware as an over the air (OTA) update.  The new firmware can be confirmed by locating the &amp;ldquo;Light Control&amp;rdquo; object in the Leshan UI.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Using your own firmware signing keys with MCUBoot</title>
       <link>https://foundries.io/insights/2018/01/17/20180117-mcuboot-keys/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
