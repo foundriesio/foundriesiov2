@@ -364,13 +364,13 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/blockchain/</loc>
+    <loc>https://foundries.io/categories/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/blockchain/</loc>
+    <loc>https://foundries.io/tags/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -551,14 +551,14 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/microplatform/</loc>
-    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/categories/microplatform/</loc>
+    <lastmod>2018-08-15T20:18:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/microplatform/</loc>
-    <lastmod>2018-08-15T20:18:42+00:00</lastmod>
+    <loc>https://foundries.io/tags/microplatform/</loc>
+    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -645,14 +645,14 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/zephyr/</loc>
-    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/categories/zephyr/</loc>
+    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/zephyr/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/tags/zephyr/</loc>
+    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
