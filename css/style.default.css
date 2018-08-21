@@ -759,3 +759,7 @@ nav#TableOfContents {
 nav#TableOfContents > ul > li > ul {
     list-style: circle;
 }
+
+a.home-btn {
+    text-decoration: none;
+}
