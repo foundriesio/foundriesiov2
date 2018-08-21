@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foundries.io/insights/2018/08/21/whitepaper-2018-08-21/</loc>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foundries.io/insights/2018/08/21/press-release-2018-08-21/</loc>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://foundries.io/insights/2018/08/20/zephyr-news-20180820/</loc>
     <lastmod>2018-08-20T00:00:00+00:00</lastmod>
   </url>
@@ -437,7 +447,7 @@
   
   <url>
     <loc>https://foundries.io/</loc>
-    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -455,7 +465,7 @@
   
   <url>
     <loc>https://foundries.io/insights/</loc>
-    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -535,6 +545,12 @@
   </url>
   
   <url>
+    <loc>https://foundries.io/tags/media/</loc>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://foundries.io/tags/microplatform/</loc>
     <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -549,6 +565,12 @@
   <url>
     <loc>https://foundries.io/categories/mp-containers/</loc>
     <lastmod>2018-07-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://foundries.io/categories/news-and-media/</loc>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -572,6 +594,12 @@
   
   <url>
     <loc>https://foundries.io/labs/portainer-appstore/</loc>
+  </url>
+  
+  <url>
+    <loc>https://foundries.io/tags/press/</loc>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -607,6 +635,12 @@
   <url>
     <loc>https://foundries.io/categories/updates/</loc>
     <lastmod>2018-08-15T20:18:42+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://foundries.io/tags/whitepaper/</loc>
+    <lastmod>2018-08-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
