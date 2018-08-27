@@ -179,10 +179,10 @@ of flash pages, rather than a single mass-erase.</p>
 
 <h4 id="bugs">Bugs</h4>
 
-<h5 id="progressive-erase-of-serial-bootloader-flash-pages-1">Progressive erase of serial bootloader flash pages</h5>
+<h5 id="serial-bootloader-interrupt-fix">Serial bootloader interrupt fix</h5>
 
-<p>The serial bootloader now supports progressive erasing
-of flash pages, rather than a single mass-erase.</p>
+<p>The serial bootloader saw a fix to a UART ISR&rsquo;s
+behavior.</p>
 
 <h3 id="zephyr">Zephyr</h3>
 
@@ -800,104 +800,129 @@ several of the new features discussed above.</p>
 
 <h4 id="bugs-1">Bugs</h4>
 
-<h5 id="testing-rtm-continuation-1">Testing RTM continuation</h5>
+<h5 id="arches">Arches</h5>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>A bug in the ARC MPU driver stack guard implementation
+was fixed.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>The POSIX pseudo-architecture saw fixes related to,
+and stopped silencing, the undef and implicit-
+function-declaration GCC warnings.</p>
 
-<h5 id="testing-rtm-continuation-2">Testing RTM continuation</h5>
+<h5 id="bluetooth">Bluetooth</h5>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>A variety of fixes were merged, including a Mesh
+SeqAuth calculation fix, increased robustness during
+pairing, the set PHY command status response, the
+existence of keying material before doing encryption,
+and storage of the Bluetooth device name in via the
+settings subsystem.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<h5 id="build">Build</h5>
 
-<h5 id="testing-rtm-continuation-3">Testing RTM continuation</h5>
+<p>A bug causing corrupt data copying into RAM during
+RISC-V initialization was fixed.</p>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>The build system generator&rsquo;s Kconfig logic would
+previously get confused if kconfig.py failed after
+creating the .config file. This confusion has been
+resolved.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>The continued removal of redundant default n
+introduced into Zephyr&rsquo;s Kconfig continues.</p>
 
-<h5 id="testing-rtm-continuation-4">Testing RTM continuation</h5>
+<p>Various Kconfig patterns for describing the type (int,
+bool, etc.) and prompt (&ldquo;help string for the option&rdquo;)
+were merged into a single line: <type> &ldquo;prompt&rdquo;. This
+improves concision and avoids potential confusion
+about (nonexistent) differences between the other
+styles.</p>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<h5 id="documentation">Documentation</h5>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>A variety of errors and misspellings were corrected.
+The installation documentation on Linux was cleaned up
+for readability.</p>
 
-<h5 id="testing-rtm-continuation-5">Testing RTM continuation</h5>
+<h5 id="drivers">Drivers</h5>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>The POSIX Ethernet driver got a fix for an unlikely
+memory leak.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>The nRFx clock control driver saw some fixes related
+to clock status checking.</p>
 
-<h5 id="testing-rtm-continuation-6">Testing RTM continuation</h5>
+<p>The nRF5 entropy driver got a fix for an infinite
+loop.</p>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>The FXOS8700 and FXAS21002 sensor drivers (these
+peripherals are available on some NXP FRDM boards) got
+fixes for initialization race conditions.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>Various issues in the CAN driver were fixed.</p>
 
-<h5 id="testing-rtm-continuation-7">Testing RTM continuation</h5>
+<h5 id="external">External</h5>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>The STM32F2 USB OTG HAL received a local patch to fix
+VBUS sensing deactivation.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>The STM32 HAL CAN APIs were switched to the legacy
+versions, restoring Zephyr CAN functionality.</p>
 
-<h5 id="testing-rtm-continuation-8">Testing RTM continuation</h5>
+<h5 id="kernel">Kernel</h5>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>A kernel bug which allowed dynamically allocated
+thread objects to potentially masquerade as other
+threads has been fixed.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>A schedule bug affecting time slice update has been
+fixed. As part of this effort, all scheduler time
+slices are now measured in ticks rather than
+milliseconds.</p>
 
-<h5 id="testing-rtm-continuation-9">Testing RTM continuation</h5>
+<p>The kernel&rsquo;s support for shared memory between threads
+was fixed; users affected by the previous incorrect
+implementation include systems using an ARM MPU.</p>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<h5 id="calloc-now-zeroes-memory">calloc() now zeroes memory</h5>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>The calloc() implementation in Zephyr&rsquo;s libc was
+failing to live up to its contract to return zeroed
+memory; this has been fixed.</p>
 
-<h5 id="testing-rtm-continuation-10">Testing RTM continuation</h5>
+<h5 id="logging-1">Logging</h5>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>A few fixes were merged, affecting modules which span
+multiple files, runtime filtering, and compilation on
+non-GCC toolchains.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<h5 id="networking">Networking</h5>
 
-<h5 id="testing-rtm-continuation-11">Testing RTM continuation</h5>
+<p>VLAN tags are now properly set for ARP messages.</p>
 
-<p>As has become usual, a great number of tests have
-increased Doxygen grouping and requirements
-traceability matrix annotations.</p>
+<p>TCP servers now have their disconnection callbacks
+invoked correctly.</p>
 
-<p>A variety of other test cases were added to cover
-several of the new features discussed above.</p>
+<p>A couple of memory leaks were fixed, along with a TCP
+RST edge case.</p>
+
+<p>The MQTT parser now properly handles UNSUBACK packets.</p>
+
+<p>A couple of OpenThread addressing issues were
+resolved: duplicate multicast addresses are no longer
+registered with their network interfaces, and unicast
+addresses are now also registered with their Zephyr
+network interfaces. The latter fix resolves an issue
+preventing use of mesh-local endpoint identifiers.</p>
+
+<h5 id="scripts">Scripts</h5>
+
+<p>The device tree management scripts were fixed to avoid
+destroying shared data due to a shallow copy of a data
+structure.</p>
+
+<p>Zephyr&rsquo;s Kconfig generation script no longer ignores
+warnings generated during symbol evaluation.</p>
 
 <h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
 
@@ -916,22 +941,17 @@ build system changes.</p>
 
 <h4 id="bugs-2">Bugs</h4>
 
-<h5 id="build-system-treadmill-1">Build system treadmill</h5>
+<h5 id="ble-node-name-update">BLE node name update</h5>
 
-<p>Various changes were made to keep up with Zephyr&rsquo;s
-build system changes.</p>
-
-<ul>
-<li>Kconfig: &ldquo;net-config&rdquo; renaming</li>
-<li>Kconfig: move zephyr include to bottom</li>
-<li>CMakeLists.txt: add minimum cmake version</li>
-</ul>
+<p>The BLE node name changed from &ldquo;Linaro IPSP Node&rdquo; to &ldquo;ZMP
+IPSP Node&rdquo;, following the move of this code from Linaro to
+Foundries.io.</p>
 
 <h3 id="lwm2m-sample-application">LWM2M sample application</h3>
 
 <h4 id="features-3">Features</h4>
 
-<h5 id="build-system-treadmill-2">Build system treadmill</h5>
+<h5 id="build-system-treadmill-1">Build system treadmill</h5>
 
 <p>Various changes were made to keep up with Zephyr&rsquo;s
 build system changes.</p>
@@ -945,17 +965,11 @@ build system changes.</p>
 
 <h4 id="bugs-3">Bugs</h4>
 
-<h5 id="build-system-treadmill-3">Build system treadmill</h5>
+<h5 id="ble-node-name-update-1">BLE node name update</h5>
 
-<p>Various changes were made to keep up with Zephyr&rsquo;s
-build system changes.</p>
-
-<ul>
-<li>CMakeLists.txt: make app link with mbedtls PRIVATE</li>
-<li>Kconfig: &ldquo;net-config&rdquo; renaming</li>
-<li>Kconfig: move zephyr include to bottom</li>
-<li>CMakeLists.txt: add minimum cmake version</li>
-</ul>
+<p>The BLE node name changed from &ldquo;Linaro IPSP Node&rdquo; to &ldquo;ZMP
+IPSP Node&rdquo;, following the move of this code from Linaro to
+Foundries.io.</p>
 
 <h1 id="linux-microplatform">Linux microPlatform</h1>
 
