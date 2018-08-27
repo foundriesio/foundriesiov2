@@ -226,6 +226,7 @@ brevity):</p>
 <li><code>SETTINGS</code>, <code>AUTO_INIT</code>, <code>INIT_TIMEOUT</code></li>
 <li><code>NEED_IPV4</code>, <code>MY_IPV4_ADDR</code>, <code>PEER_IPV4_ADDR</code></li>
 <li><code>NEED_IPV6</code>, <code>NEED_IPV6_ROUTER</code>, <code>MY_IPV6_ADDR</code>, <code>PEER_IPV6_ADDR</code></li>
+<li><code>BT_NODE</code></li>
 <li><code>IEEE802154_DEV_NAME</code>, <code>IEEE802154_PAN_ID</code>, <code>IEEE802154_CHANNEL</code>,
 <code>IEEE802154_RADIO_TX_POWER</code>, <code>IEEE802154_SECURITY_KEY</code>,
 <code>IEEE802154_SECURITY_KEY_MODE</code>, <code>IEEE802154_SECURITY_LEVEL</code></li>
@@ -234,7 +235,8 @@ brevity):</p>
 <p>Out of tree applications will need to perform the appropriate
 renames. The default settings of the Kconfig library will cause fatal
 errors on attempts to assign to the old names in <code>.conf</code> fragments,
-which should help find any uses.</p>
+which should help find any uses. Be wary of <code>select NET_APP_xxx</code>
+statements, however, as those don&rsquo;t generate errors.</p>
 
 <p>This completes the work of splitting network configuration from the
 net-app library, which is in the process of being replaced and
@@ -767,9 +769,7 @@ subsystem.</p>
 initialization was fixed.</p>
 
 <p>The build system generator&rsquo;s Kconfig logic would previously get
-confused if kconfig.py failed after creating the <code>.config</code> file. Since
-has become more common since the addition of several helpful errors
-which are emitted in response to malformed Kconfig fragments, the
+confused if kconfig.py failed after creating the <code>.config</code> file. This
 confusion has been resolved.</p>
 
 <p>The continued removal of redundant <code>default n</code> introduced into
