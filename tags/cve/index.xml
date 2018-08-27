@@ -6,10 +6,32 @@
     <description>Recent content in Cve on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Aug 2018 20:18:42 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Aug 2018 22:35:04 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/tags/cve/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 0.27</title>
+      <link>https://foundries.io/insights/2018/08/27/blog-post-update-0.27/</link>
+      <pubDate>Mon, 27 Aug 2018 22:35:04 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/08/27/blog-post-update-0.27/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-27&#34;&gt;Zephyr microPlatform changes for 0.27&lt;/h2&gt;
+
+&lt;p&gt;Zephyr towards the end of the v1.13 cycle, and application updates
+to keep up with incompatible changes.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-27&#34;&gt;Linux microPlatform changes for 0.27&lt;/h2&gt;
+
+&lt;p&gt;Always boot latest OSTree rootfs revision on RISC-V as there is no
+traditional bootloader support (e.g. u-boot) for Freedom-U540 and
+QEMU RISCV64 yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 0.26</title>

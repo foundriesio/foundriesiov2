@@ -1,0 +1,1346 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>microPlatform update 0.27 | Foundries.io</title>
+
+  <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://foundries.io/css/foundation.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/animate.min.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/morphext.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/owl.carousel.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/owl.theme.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/owl.transitions.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/slicknav.css" />
+  <link rel="stylesheet" href="https://foundries.io/style.css" />
+  <link rel="stylesheet" href="https://foundries.io/css/style.default.css" />
+
+</head>
+
+
+<body>
+    
+<div class="top sticky">
+    <div class="row">
+        <div class="small-12 large-3 medium-3 columns">
+            <div class="logo">
+                <a href="https://foundries.io/" title="">
+                    <img src="https://foundries.io/images/logo.png" alt="Foundries.io logo"/>
+                </a>
+            </div>
+        </div>
+
+        <div class="small-12 large-9 medium-9 columns">
+
+            <nav class="desktop-menu">
+                <ul class="sf-menu" id="navigation">
+                    <li>
+                        <a href="https://foundries.io/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="https://foundries.io/products/">
+                            PRODUCTS
+                        </a>
+                        <ul class="nav-products">
+                            <li><a href="https://foundries.io/products/">MICROPLATFORMS</a></li>
+                            <li><a href="https://foundries.io/pricing/">PRICING</a></li>
+                            <li><a href="https://foundries.io/hardware/">HARDWARE</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="https://foundries.io/partners/">PARTNERS</a>
+                    </li>
+                    <li>
+                        <a href="https://foundries.io/insights/">INSIGHTS</a>
+                    </li>
+                    <li>
+                        <a href="https://foundries.io/company/">ABOUT</a>
+                        <ul class="nav-about">
+                            <li>
+                                <a href="https://foundries.io/company/">COMPANY</a>
+                            </li>
+                            <li>
+                                <a href="https://foundries.io/labs/">LABS</a>
+                            </li>
+                            <li>
+                                <a href="https://foundries.io/careers/">CAREERS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://app.foundries.io/login/?next=/">
+                            <i class="fa fa-cloud-upload"></i>&nbsp;ENGAGE
+                        </a>
+                        <ul class="nav-engage">
+                            <li>
+                                <a href="https://app.foundries.io/login/?next=/">
+                                    DASHBOARD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://forums.foundries.io">FORUMS</a>
+                            </li>
+                            <li>
+                                <a href="https://support.foundries.io">SUPPORT</a>
+                            </li>
+                            <li>
+                                <a href="https://join.slack.com/t/foundriesio/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE">
+                                    SLACK
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://app.foundries.io/login/?next=/">
+                                    GET STARTED
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+</div>
+
+
+
+    
+    <header class="alt-6">
+        <div class="message">
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="message-intro">
+                        <span class="message-line"></span>
+                        <p>FOUNDRIES.IO INSIGHTS</p>
+                        <span class="message-line"></span>
+                    </div>
+                    <h1>microPlatform update 0.27</h1>
+                    <p class="text-muted text-uppercase mb-small text-right color-white">
+                        
+                        August 27, 2018
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <div id="content">
+        <div class="container">
+
+            <div class="row">
+
+                
+
+                <div class="small-12 columns" id="insights-post">
+
+                    <div id="post-content">
+                        <h1 id="summary">Summary</h1>
+
+<h2 id="zephyr-microplatform-changes-for-0-27">Zephyr microPlatform changes for 0.27</h2>
+
+<p>Zephyr towards the end of the v1.13 cycle, and application updates
+to keep up with incompatible changes.</p>
+
+<h2 id="linux-microplatform-changes-for-0-27">Linux microPlatform changes for 0.27</h2>
+
+<p>Always boot latest OSTree rootfs revision on RISC-V as there is no
+traditional bootloader support (e.g. u-boot) for Freedom-U540 and
+QEMU RISCV64 yet.</p>
+
+<p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Various significant Zephyr changes</li>
+<li>Reference application updates to keep pace with Zephyr</li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<h5 id="progressive-erase-of-serial-bootloader-flash-pages">Progressive erase of serial bootloader flash pages</h5>
+
+<p>The serial bootloader now supports progressive erasing
+of flash pages, rather than a single mass-erase.</p>
+
+<h4 id="bugs">Bugs</h4>
+
+<h5 id="progressive-erase-of-serial-bootloader-flash-pages-1">Progressive erase of serial bootloader flash pages</h5>
+
+<p>The serial bootloader now supports progressive erasing
+of flash pages, rather than a single mass-erase.</p>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="various-net-app-settings-renamed">Various net app settings renamed</h5>
+
+<p>Various Kconfig variables that were formerly in the
+CONFIG_NET<em>APP</em> namespace were moved into
+CONFIG_NET<em>CONFIG</em>. For example,
+CONFIG_NET_APP_SETTINGS is now
+CONFIG_NET_CONFIG_SETTINGS.</p>
+
+<p>The affected variables are (without the
+CONFIG_NET<em>APP</em> prefix, for brevity):</p>
+
+<ul>
+<li>SETTINGS, AUTO_INIT, INIT_TIMEOUT</li>
+<li>NEED_IPV4, MY_IPV4_ADDR, PEER_IPV4_ADDR</li>
+<li>NEED_IPV6, NEED_IPV6_ROUTER, MY_IPV6_ADDR, PEER_IPV6_ADDR</li>
+<li>IEEE802154_DEV_NAME, IEEE802154_PAN_ID,
+IEEE802154_CHANNEL, IEEE802154_RADIO_TX_POWER,
+IEEE802154_SECURITY_KEY, IEEE802154_SECURITY_KEY_MODE,
+IEEE802154_SECURITY_LEVEL</li>
+</ul>
+
+<p>Out of tree applications will need to perform the
+appropriate renames. The default settings of the
+Kconfig library will cause fatal errors on attempts to
+assign to the old names in .conf fragments, which
+should help find any uses.</p>
+
+<p>This completes the work of splitting network
+configuration from the net-app library, which is in
+the process of being replaced and deprecated, into a
+new net-config library.</p>
+
+<h5 id="network-interfaces-now-require-flags">Network interfaces now require flags</h5>
+
+<p>Layer 2 objects must now declare supported features
+via a new flags field. Initial flags declare support
+for multicast and promiscuous mode, and whether or not
+to join a solicited node multicast group. Existing in-
+tree users have been updated; out of tree
+implementations will need to take care of build errors
+in the changed NET_L2_INIT.</p>
+
+<h5 id="kconfig-now-prefers-first-default">Kconfig now prefers first default</h5>
+
+<p>The Kconfig library used by Zephyr no longer carries a
+local patch to make it prefer later default settings
+in Kconfig option definitions.  The application
+boilerplate.cmake file thankfully emits a loud warning
+about this, which can be silenced by creating a file
+named &ldquo;hide-defaults-note&rdquo; in the Zephyr build
+directory.</p>
+
+<p>This change is likely to bite any out of tree
+applications which define their own default settings
+for Zephyr&rsquo;s Kconfig options and expect them to
+override Zephyr&rsquo;s.</p>
+
+<p>Affected applications should change from this pattern
+in their application&rsquo;s KCONFIG_ROOT:</p>
+
+<pre><code>\# OLD STYLE, for older Zephyr versions
+source &quot;$ZEPHYR_BASE/Kconfig.zephyr&quot;
+
+config SOME_OPTION_IN_KCONFIG_DOT_ZEPHYR
+    default your_value
+</code></pre>
+
+<p>to this:</p>
+
+<pre><code># NEW STYLE, use this from now on
+config SOME_OPTION_IN_KCONFIG_DOT_ZEPHYR
+    default your_value
+
+source &quot;$ZEPHYR_BASE/Kconfig.zephyr&quot;
+</code></pre>
+
+<h5 id="kconfig-gsource-is-gone-use-source-osource-or-orsource">Kconfig gsource is gone; use source, osource, or orsource</h5>
+
+<p>The Zephyr dialect of the Kconfig language previously
+featured a gsource extension, which, like source,
+worked to include a Kconfig file within another one,
+but also supported shell-like glob patterns. However,
+gsource did not check if any files matched the
+pattern. This has been replaced with a scheme in which
+source is globbing, and requires at least one file to
+match. A new osource (optional source) works the way
+gsource used to, and orsource is an optional source
+included by relative path (rsource, to include another
+source by relative path, already existed).</p>
+
+<h5 id="nvs-rewritten">NVS rewritten</h5>
+
+<p>The NVS storage layer has been completely rewritten,
+and has what appears to be a backwards-incompatible
+format on the storage medium. Any applications using
+this layer will likely need to have their storage
+partitions set up anew.</p>
+
+<p>In the new version, the storage medium can become
+&ldquo;locked&rdquo; in case of fatal errors. When this occurs,
+writes are prevented, but the user can read existing
+data which has been stored without error before re-
+initializing the flash device.</p>
+
+<p>In the previous version, metadata and user data were
+placed together on the storage medium. This has been
+replaced with a new layout, which separates data from
+metadata. The data layout has also been changed in
+ways which reduces overhead on some flash devices, and
+allows for the latest items to be searched first on
+reads, improving performance in some workloads.</p>
+
+<h5 id="bluetooth-id-changes">Bluetooth ID changes</h5>
+
+<p>Bluetooth LE peripherals built with Zephyr can now
+support multiple identity addresses.</p>
+
+<p>This new feature seems to have brought incompatible
+API changes, as various functions now take u8_t id
+parameters which index into the array of IDs returned
+by bt_id_get(). If broken by this change and in doubt
+about what to do, BT_ID_DEFAULT (0) is provided as a
+recommended value.</p>
+
+<p>The number of supported identities can be controlled
+with CONFIG_BT_ID_MAX, and several routines (with
+documentation!) were added to manage them:</p>
+
+<ul>
+<li>int bt_id_create(bt_addr_le_t *addr, u8_t *irk)</li>
+<li>int bt_id_get(bt_addr_le_t *addrs, size_t *count)</li>
+<li>int bt_id_reset(u8_t id, bt_addr_le_t *addr, u8_t *irk)</li>
+<li>int bt_id_delete(u8_t id)</li>
+</ul>
+
+<p>There are new Bluetooth shell commands related to
+these as well: id-create, id-delete, id-reset, id-
+show, and id-select.</p>
+
+<p>The Bluetooth Settings API takes multiple identities
+into account.</p>
+
+<h5 id="bluetooth-dynamic-device-name-changes">Bluetooth dynamic device name changes</h5>
+
+<p>Dynamic setting of the Bluetooth device name is now
+disabled unless CONFIG_BT_DEVICE_NAME_DYNAMIC=y.</p>
+
+<h5 id="build-system-use-of-target-link-libraries-changed">Build system use of target_link_libraries changed</h5>
+
+<p>The build system&rsquo;s internals now use the CMake
+target_link_libraries() signature which includes
+PRIVATE/PUBLIC/INTERFACE keywords.</p>
+
+<p>This is incompatible with the &ldquo;plain&rdquo; signature, which
+does not use these keywords.</p>
+
+<p>This change was made for good reasons, but has the
+rather unpleasant side effect of breaking the build in
+cases where the application CMakeLists.txt used the
+&ldquo;plain&rdquo; signature, as Zephyr&rsquo;s build system internals
+tend to get included into the top level file. Affected
+application developers are advised that adding PUBLIC
+after the target name restores the same behavior as
+the &ldquo;plain&rdquo; signature.</p>
+
+<h5 id="arm-toolchain-renamed">Arm toolchain renamed</h5>
+
+<p>The Zephyr environment and CMake variables used to
+select the GNU toolchain provided by Arm have changed;
+the old usage is now deprecated. Users of this
+toolchain should make the following changes:</p>
+
+<ul>
+<li>Change the value of ZEPHYR_TOOLCHAIN_VARIANT from
+gccarmemb to gnuarmemb</li>
+<li>The GCCARMEMB_TOOLCHAIN_PATH variable is now
+GNUARMEMB_TOOLCHAIN_PATH</li>
+</ul>
+
+<p>This follows the replacement of the GCC ARM Embedded
+toolchain page with the GNU Arm Embedded version:</p>
+
+<p><a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm">https://developer.arm.com/open-source/gnu-toolchain/gnu-rm</a></p>
+
+<h5 id="pyocd-on-python-3-now-with-zephyr-thread-awareness">PyOCD on Python 3, now with Zephyr thread awareness</h5>
+
+<p>Thankfully, this is not a breaking change, but it is
+welcome news.</p>
+
+<p>The PyOCD project, used for flashing and debugging
+several Zephyr boards, now supports Python 3.  It&rsquo;s
+now possible to remove any Python 2 PyOCD install and
+re-install it with pip3 install &ndash;user pyOCD (perhaps
+after updating applications and toolchain
+configurations to handle the changes discussed above.)</p>
+
+<p>To add a carrot of incentive to upgrade, PyOCD has
+also now learned Zephyr thread awareness. To play
+along at home:</p>
+
+<ol>
+<li>Add CONFIG_OPENOCD_SUPPORT=y to samples/synchronization/prj.conf</li>
+<li>Build the sample for any board which uses PyOCD (like frdm_k64f)</li>
+<li>ninja debug</li>
+<li>Type continue at the (gdb) prompt</li>
+<li>Hit control-C to halt execution</li>
+<li>Run info threads at the (gdb) prompt.</li>
+</ol>
+
+<p>Example output:</p>
+
+<pre><code>(gdb) info threads
+  Id   Target Id         Frame
+* 2    Thread 536874280 (Unnamed; Running; Priority 15) k_cpu_idle () at /home/mbolivar/src/zephyr/arch/arm/core/cpu_idle.S:135
+  3    Thread 536870912 (Unnamed; Ready; Priority 7) __swap (key=key@entry=0) at /home/mbolivar/src/zephyr/arch/arm/core/swap.c:69
+  4    Thread 536874544 (Unnamed; Pending; Priority 7) __swap (key=0) at /home/mbolivar/src/zephyr/arch/arm/core/swap.c:69
+  5    Thread 536875032 (Unnamed; Pending; Priority 255) __swap (key=key@entry=0) at /home/mbolivar/src/zephyr/arch/arm/core/swap.c:69
+</code></pre>
+
+<h5 id="socket-based-dtls-support">Socket-based DTLS support</h5>
+
+<p>The new sockets layer now has experimental support for
+the DTLS protocol. It can be enabled with
+CONFIG_NET_SOCKETS_ENABLE_DTLS.  Support for creation
+of DTLS sockets, DTLS handshaking, send()/sendto(),
+and recv()/recvfrom() is included.  Demonstration code
+illustrating usage was added to the echo_client and
+echo_server pair of samples.</p>
+
+<p>This continues the work of remaking Zephyr&rsquo;s secure
+networking code as a socket-based implementation, with
+TLS managed via a set of nonstandard setsockopt()
+calls.</p>
+
+<h5 id="syscall-support-for-sockets">Syscall support for sockets</h5>
+
+<p>The following socket-related APIs are now accessible
+from Zephyr user space, if that is enabled: socket(),
+close(), bind(), connect(), listen(), accept(),
+send()/sendto(), recv()/recvfrom(), fcntl(), poll(),
+inet_pton(), and getaddrinfo().</p>
+
+<h5 id="cmsis-rtos-v1-support">CMSIS RTOS v1 support</h5>
+
+<p>Zephyr now supports version 1 of the CMSIS RTOS API.
+This is a common API defined by Arm for Cortex
+microcontrollers, which provides abstractions for
+common RTOS interfaces, such as multi-threading,
+mutual exclusion, CPU time, memory pools, etc. At time
+of writing, official documentation on usage within
+Zephyr mostly refers users to the KEIL CMSIS-RTOS v1
+reference page:</p>
+
+<p><a href="http://www.keil.com/pack/doc/CMSIS/RTOS/html/index.html">http://www.keil.com/pack/doc/CMSIS/RTOS/html/index.html</a></p>
+
+<p>Support for this API can be included within a Zephyr
+application by enabling CONFIG_CMSIS_RTOS_V1. The main
+header is <cmsis_os.h>, which is a shim between the
+abstractions presented by the CMSIS RTOS API and
+Zephyr&rsquo;s own kernel APIs. There is also a new
+lib/cmsis_rtos_v1 directory, which contains the
+implementation. A variety of test cases were added to
+tests/cmsis_rtos_v1.</p>
+
+<h5 id="arm-v8-m-additions">ARM v8-M additions</h5>
+
+<p>The effort to support Arm v8-M&rsquo;s secure and non-secure
+worlds continues with the building blocks necessary to
+transfer control flow between the &ldquo;secure&rdquo; and
+&ldquo;insecure&rdquo; worlds. Zephyr has gained support for
+building secure world images which export entry points
+as a library that non-secure images can be linked
+against to call into, as well as invocation of
+function pointers to non-trusted code from the secure
+world. Support for this feature can be enabled with
+CONFIG_ARM_FIRMWARE_HAS_SECURE_ENTRY_FUNCS. A variety
+of other related changes allow for controlling secure
+and non-secure world exceptions, system reset
+behavior, and stack management.</p>
+
+<h5 id="user-settable-posix-scripts">User-settable POSIX scripts</h5>
+
+<p>The native POSIX pseudo-architecture now supports a
+mechanism for executing code at various points in its
+initialization, power management sequence, and
+shutdown.  It can also dynamically manage command line
+options with native_add_command_line_opts() and
+native_cleanup_cmd_line(). See the NATIVE_TASK() macro
+defined in its soc.h header for details. There appears
+to be some overlap here with Zephyr&rsquo;s existing
+<init.h> APIs, but those do not allow for task
+execution at sleep or exit times.</p>
+
+<h5 id="buffer-copying-between-kernel-and-userspace">Buffer copying between kernel and userspace</h5>
+
+<p>The x86, Arm, and ARC architectures grew the
+architecture-specific code needed to implement safe
+copying to and from userspace discussed in the kernel
+features below.</p>
+
+<h5 id="bluetooth-pairing-improvements">Bluetooth pairing improvements</h5>
+
+<p>New APIs include:</p>
+
+<ul>
+<li><p>An int bt_passkey_set(unsigned int passkey) routine,
+which can set a passkey to be used during pairing,
+and can be enabled with CONFIG_BT_FIXED_PASSKEY.</p></li>
+
+<li><p>The bt_conn_auth_cb struct, which contains
+application callbacks for events of interest during
+authenticated pairing, now has documentation for all
+of its fields. It also gained new callbacks for
+learning the results of the pairing process, with
+signatures:</p></li>
+</ul>
+
+<p>void (*pairing_complete)(struct bt_conn *conn, bool bonded);</p>
+
+<p>void (*pairing_failed)(struct bt_conn *conn);</p>
+
+<h5 id="bluetooth-shell-extensions">Bluetooth shell extensions</h5>
+
+<p>The Bluetooth shell sports some new commands, mainly
+to exercise the above new features:</p>
+
+<ul>
+<li>hci-cmd: this Swiss Army knife can be used to inject
+arbitrary HCI commands into the system</li>
+<li>fixed-passkey: sets a fixed passkey to be used during
+pairing using bt_passkey_set()</li>
+<li>the auth command now takes confirm as an authentication
+method, which can be used to test passkey support</li>
+</ul>
+
+<p>When Zephyr&rsquo;s Bluetooth stack is being built in a
+&ldquo;combined&rdquo; configuration (i.e. host and controller on
+the same chip), the default for
+CONFIG_BT_TINYCRYPT_ECC is now y. This implements
+elliptic curve cryptography related HCI commands
+required to support LE Secure Connections in software,
+using the TinyCrypt library. (This of course implies a
+footprint penalty.)</p>
+
+<h5 id="coded-phy-address-generation-for-bluetooth">Coded PHY address generation for Bluetooth</h5>
+
+<p>Access address generation now supports Coded
+PHY requirements.</p>
+
+<h5 id="board-improvements">Board improvements</h5>
+
+<p>New board-specific peripheral and shield enablement includes:</p>
+
+<ul>
+<li>frdm_k64f now supports uart2, and has device tree
+settings for the Wistron WNC-M14A2A LTE-M modem,
+which can be connected as a shield</li>
+<li>frdm_kl25z now supports the the MMA8451Q accelerometer
+attached to i2c0</li>
+<li>nrf52840_pca10056 also now supports the
+WNC-M14A2A</li>
+<li>nucleo_f207zg now supports USB and Ethernet</li>
+<li>up_squared now has I2C support (the Zephyr board configuration
+also now works on all the marketed variants of the board
+hardware)</li>
+</ul>
+
+<h5 id="kconfig-dialect-default-types">Kconfig dialect default types</h5>
+
+<p>The Kconfig dialect also now features def_int,
+def_hex, and def_string keywords, which specify the
+type of a config option and set its default value in a
+single line.</p>
+
+<h5 id="zephyr-sdk-packaged-for-arch">Zephyr SDK packaged for Arch</h5>
+
+<p>The Zephyr SDK has been packaged for Arch Linux, and
+is available as zephyr-sdk in the AUR:</p>
+
+<p><a href="https://aur.archlinux.org/packages/zephyr-sdk">https://aur.archlinux.org/packages/zephyr-sdk</a></p>
+
+<h5 id="risc-v-boards-converted-to-device-tree">RISC-V boards converted to device tree</h5>
+
+<p>The RISC-V boards were all converted to use device
+tree.</p>
+
+<h5 id="resource-sharing-for-i-mx-cortex-m-cores">Resource sharing for i.MX Cortex-M cores</h5>
+
+<p>Cortex M4 cores on i.MX devices which have a Cortex A
+core on the same die now have device tree bindings and
+support for the Resource Domain Controller (RDC),
+which allows safe sharing of other peripherals between
+the cores. A variety of i.MX peripheral bindings now
+contain a required rdc property, through which the
+relevant permissions can be configured.</p>
+
+<h5 id="documentation-re-themed">Documentation re-themed</h5>
+
+<p>Zephyr&rsquo;s documentation was re-themed to use the
+popular Read the Docs Sphinx theme. Zephyr&rsquo;s
+documentation continues to be hosted at
+docs.zephyrproject.org; just the theme was changed.</p>
+
+<h5 id="atmel-sam-gmac-driver-extravaganza">Atmel SAM GMAC driver extravaganza</h5>
+
+<p>About 30% of the total driver commits in this period
+affected a single driver, for the Atmel SAM GMAC
+Ethernet peripheral. This now supports the gPTP
+protocol which Zephyr learned about during the v1.13
+cycle, multiple transmit and receive queues, and
+802.1Qav support. Whew.</p>
+
+<h5 id="modem-drivers">Modem drivers</h5>
+
+<p>Zephyr received initial support for modem drivers,
+which can be enabled by setting CONFIG_MODEM=y. Modem-
+specific shell commands can be enabled with
+CONFIG_MODEM_SHELL. There is a new &ldquo;modem receiver&rdquo;
+API and driver which can be enabled using
+CONFIG_MODEM_RECEIVER; its purpose is to allow modem
+drivers to communicate via a UART using custom
+protocols. The initial device is the Wistron
+WNC-M14A2A (LTE / LTE-M) modem.</p>
+
+<h5 id="uart-isr-callback-context-data">UART ISR callback context data</h5>
+
+<p>The UART driver core now supports registering user-
+specified callbacks with arbitrary callback data via
+uart_irq_callback_user_data_set.  This is a backwards-
+compatible change; existing callbacks registered with
+uart_irq_callback_set() will continue to work in the
+same way.</p>
+
+<h5 id="mma8451q-accelerometer-support">MMA8451Q accelerometer support</h5>
+
+<p>Support was added for the MMA8451Q accelerometer.</p>
+
+<h5 id="userspace-for-i2s">Userspace for I2S</h5>
+
+<p>The I2S API is now userspace-aware. All memory buffers
+are copied.</p>
+
+<h5 id="additional-i2c-controller-support">Additional I2C controller support</h5>
+
+<p>The I2C driver core now supports up to 8 controllers.
+The initial user is the DesignWare I2C driver.</p>
+
+<h5 id="uart-and-i2c-for-x86-apollo-lake">UART and I2C for x86 Apollo Lake</h5>
+
+<p>On x86, the Apollo Lake SoCs now have PCI-based UART
+and I2C device support.</p>
+
+<h5 id="stm32f2-ethernet">STM32F2 Ethernet</h5>
+
+<p>STM32F2 devices now support Ethernet and USB OTG FS.</p>
+
+<h5 id="ti-lp5562-led-driver">TI LP5562 LED driver</h5>
+
+<p>There is a new LED driver for the TI LP5562 device.</p>
+
+<h5 id="lldp-support">LLDP support</h5>
+
+<p>The SLIP and POSIX ethernet networking drivers now
+have LLDP support, following addition of that protocol
+to Zephyr.</p>
+
+<h5 id="glimmerings-of-a-tty-driver">Glimmerings of a TTY driver</h5>
+
+<p>The console driver is starting to be refactored to
+more closely resemble a UNIX-like TTY layer. Somewhat
+ominously, its APIs have been marked &ldquo;experimental&rdquo; in
+Kconfig.</p>
+
+<h5 id="k-cycle-get-32-optimization-for-nordic-devices">k_cycle_get_32() optimization for Nordic devices</h5>
+
+<p>Nordic devices have an optimized implementation for
+the clock control driver which provides
+k_cycle_get_32(). (This is important for users of the
+new Logger subsystem on those devices, as Logger
+relies on this routine being fast to retrieve
+timestamps with minimum overhead. This propagated into
+the real time clock driver.)</p>
+
+<h5 id="tinycrypt-update">TinyCrypt update</h5>
+
+<p>TinyCrypt was updated to revision 3ea1a60.</p>
+
+<h5 id="kernel-object-recycling">Kernel object recycling</h5>
+
+<p>There is a new _k_object_recycle() routine, which can
+be used to re-initialize a kernel object with
+permissions that only allow access by the caller. This
+is intended for scenarios in which objects are
+allocated and released to a shared pool.</p>
+
+<h5 id="logging">Logging</h5>
+
+<p>Since its initial merge, the Logger hexdump macros
+(LOG_HEXDUMP_INF() and friends) now take an additional
+parameter. Their revised &ldquo;signature&rdquo; is now:</p>
+
+<pre><code>/* Likewise for DBG, WRN, and ERR. */
+void LOG_HEXDUMP_INF(void *data, size_t size, const char *metadata);
+</code></pre>
+
+<p>The final &ldquo;metadata&rdquo; parameter is new; any out of tree
+applications using the API will need changes. The
+expected value is a string literal which can be used
+to describe the data being printed. Presumably, this
+makes it easier to distinguish the origin of multiple
+different types of hexdump coming from the same
+module.</p>
+
+<h5 id="ipv4-link-local-ip-addresses">IPv4 link-local IP addresses</h5>
+
+<p>Experimental support for auto-configuration of link-
+local IPv4 addresses was added, per RFC 3927. It can
+be enabled with CONFIG_NET_IPV4_AUTO (and extra
+debugging can be enabled with
+NET_DEBUG_IPV4_AUTOCONF). A sample application is in
+samples/net/ipv4_autoconf.</p>
+
+<h5 id="lldp-network-protocol-support">LLDP network protocol support</h5>
+
+<p>Support for the Link Layer Discovery Protocol (LLDP)
+was added, per 802.1AB. It can be enabled using
+CONFIG_NET_LLDP.  Only support for transmission of
+LLDP frames is included; received LLDP frames are
+dropped. Sample code is in samples/net/lldp.</p>
+
+<h5 id="ethernet-improvements">Ethernet improvements</h5>
+
+<p>The network management layer for Ethernet gained
+support for device-specific enable and disable
+routines in struct ethernet_api. Ethernet also gained
+support for 802.1Qav (priority routing for audio-video
+streams) requests; when Ethernet management is
+enabled, the iface network shell command now prints
+Qav status.</p>
+
+<p>The networking shell iface command now prints the
+supported hardware capabilities for Ethernet
+interfaces.</p>
+
+<h5 id="configurable-traffic-class-priorities">Configurable traffic class priorities</h5>
+
+<p>The existing traffic class support saw the addition of
+a new choice for the mapping between priority and
+traffic class. See this choice option for details:</p>
+
+<p><a href="http://docs.zephyrproject.org/reference/kconfig/choice_174.html">http://docs.zephyrproject.org/reference/kconfig/choice_174.html</a></p>
+
+<h5 id="network-buffer-api-lowering">Network buffer API &ldquo;lowering&rdquo;</h5>
+
+<p>The net_pkt structure used to store network packets
+has had routines for linearizing data into a
+contiguous array, as well as appending bytes. However,
+the underlying net_buf struct, which actually
+implements the buffer management, was lacking in this
+regard. As part of the modem support work, the
+relevant routines were moved into the net_buf layer,
+with net_pkt wrappers left behind to avoid API
+breakage.</p>
+
+<h5 id="ethernet-hardware-configuration-and-statistics">Ethernet hardware configuration and statistics</h5>
+
+<p>Ethernet devices saw continued feature additions. They
+can now report hardware-specific configuration. The
+initial user is a getter for the number of priority
+queues. Support for MAC-based incoming packet filters
+was also added.</p>
+
+<p>If the (new) CONFIG_NET_STATISTICS_ETHERNET_VENDOR
+Kconfig option is enabled, the stats command can now
+include vendor-specific statistics in its output.</p>
+
+<h5 id="dhcpv4-optimizations">DHCPv4 optimizations</h5>
+
+<p>The DHCPv4 implementation got some love, reducing
+footprint through increasing code reuse and cleaning
+up the code.</p>
+
+<h5 id="new-samples">New samples</h5>
+
+<p>New sample support includes samples/sensor/mma8451q
+for MMA8451Q accelerometers, WNC-M14A2A LTE-M modem
+support in lwm2m_client, a variety of new features in
+the Bluetooth Mesh samples, and LP5562 LED support in
+samples/drivers/led_lp5562.</p>
+
+<h5 id="nrfjprog-erase-configuration">nrfjprog erase configuration</h5>
+
+<p>The West implementation for flashing with nrfjprog can
+now configurably mass erase or sector erase the
+underlying flash device.</p>
+
+<h5 id="menuconfig-improvements">menuconfig improvements</h5>
+
+<p>The menuconfig script displays symbols in a more
+compact format, among other improvements.</p>
+
+<h5 id="testing-rtm-continuation">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="testing-rtm-continuation-1">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-2">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-3">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-4">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-5">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-6">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-7">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-8">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-9">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-10">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h5 id="testing-rtm-continuation-11">Testing RTM continuation</h5>
+
+<p>As has become usual, a great number of tests have
+increased Doxygen grouping and requirements
+traceability matrix annotations.</p>
+
+<p>A variety of other test cases were added to cover
+several of the new features discussed above.</p>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<h5 id="build-system-treadmill">Build system treadmill</h5>
+
+<p>Various changes were made to keep up with Zephyr&rsquo;s
+build system changes.</p>
+
+<ul>
+<li>Kconfig: &ldquo;net-config&rdquo; renaming</li>
+<li>Kconfig: move zephyr include to bottom</li>
+<li>CMakeLists.txt: add minimum cmake version</li>
+</ul>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<h5 id="build-system-treadmill-1">Build system treadmill</h5>
+
+<p>Various changes were made to keep up with Zephyr&rsquo;s
+build system changes.</p>
+
+<ul>
+<li>Kconfig: &ldquo;net-config&rdquo; renaming</li>
+<li>Kconfig: move zephyr include to bottom</li>
+<li>CMakeLists.txt: add minimum cmake version</li>
+</ul>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<h5 id="build-system-treadmill-2">Build system treadmill</h5>
+
+<p>Various changes were made to keep up with Zephyr&rsquo;s
+build system changes.</p>
+
+<ul>
+<li>CMakeLists.txt: make app link with mbedtls PRIVATE</li>
+<li>Kconfig: &ldquo;net-config&rdquo; renaming</li>
+<li>Kconfig: move zephyr include to bottom</li>
+<li>CMakeLists.txt: add minimum cmake version</li>
+</ul>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<h5 id="build-system-treadmill-3">Build system treadmill</h5>
+
+<p>Various changes were made to keep up with Zephyr&rsquo;s
+build system changes.</p>
+
+<ul>
+<li>CMakeLists.txt: make app link with mbedtls PRIVATE</li>
+<li>Kconfig: &ldquo;net-config&rdquo; renaming</li>
+<li>Kconfig: move zephyr include to bottom</li>
+<li>CMakeLists.txt: add minimum cmake version</li>
+</ul>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<ul>
+<li>Always boot latest OSTree rootfs revision on RISC-V</li>
+</ul>
+
+<h2 id="components-1">Components</h2>
+
+<h3 id="meta-lmp-layer">Meta LMP Layer</h3>
+
+<h4 id="features-4">Features</h4>
+
+<h5 id="layer-update">Layer Update</h5>
+
+<p>Prefer disabling null pointer optimization on mozjs.
+Always fetch OSTree hash from the last entry on RISC-V.</p>
+
+<h4 id="bugs-4">Bugs</h4>
+
+<p>Not addressed in this update</p>
+                    </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                
+
+                
+
+                
+
+                <div class="small-12 columns">
+
+                    <div class="post-categories">
+                        
+
+                        
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="https://foundries.io/categories/blockchain">blockchain (1)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/conferences">conferences (3)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/demos">demos (3)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/fota">fota (11)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/linux-mp">linux-mp (38)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/microplatform">microplatform (2)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/mp-containers">mp-containers (31)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/news-and-media">news-and-media (2)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/updates">updates (28)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/zephyr">zephyr (5)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/zephyr-mp">zephyr-mp (35)</a>
+            </li>
+            
+            <li><a href="https://foundries.io/categories/zephyr-news">zephyr-news (11)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="https://foundries.io/tags/assistant"><i class="fa fa-tags"></i> assistant</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/att"><i class="fa fa-tags"></i> att</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/ble"><i class="fa fa-tags"></i> ble</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/blockchain"><i class="fa fa-tags"></i> blockchain</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/bugs"><i class="fa fa-tags"></i> bugs</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/containers"><i class="fa fa-tags"></i> containers</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/crypto"><i class="fa fa-tags"></i> crypto</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/cve"><i class="fa fa-tags"></i> cve</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/decentralized"><i class="fa fa-tags"></i> decentralized</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/docker"><i class="fa fa-tags"></i> docker</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/docker-compose"><i class="fa fa-tags"></i> docker-compose</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/foundries.io"><i class="fa fa-tags"></i> foundries.io</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/google"><i class="fa fa-tags"></i> google</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/iot"><i class="fa fa-tags"></i> iot</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/k8s"><i class="fa fa-tags"></i> k8s</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/keys"><i class="fa fa-tags"></i> keys</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/kubernetes"><i class="fa fa-tags"></i> kubernetes</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/linux"><i class="fa fa-tags"></i> linux</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/lmp"><i class="fa fa-tags"></i> lmp</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/lte"><i class="fa fa-tags"></i> lte</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/lwm2m"><i class="fa fa-tags"></i> lwm2m</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/management"><i class="fa fa-tags"></i> management</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/mcuboot"><i class="fa fa-tags"></i> mcuboot</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/media"><i class="fa fa-tags"></i> media</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/microplatform"><i class="fa fa-tags"></i> microplatform</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/open-source"><i class="fa fa-tags"></i> open-source</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/ota"><i class="fa fa-tags"></i> ota</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/portainer"><i class="fa fa-tags"></i> portainer</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/press"><i class="fa fa-tags"></i> press</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/radio"><i class="fa fa-tags"></i> radio</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/resin"><i class="fa fa-tags"></i> resin</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/security"><i class="fa fa-tags"></i> security</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/update"><i class="fa fa-tags"></i> update</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/whitepaper"><i class="fa fa-tags"></i> whitepaper</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/zephyr"><i class="fa fa-tags"></i> zephyr</a>
+            </li>
+            
+            <li><a href="https://foundries.io/tags/zmp"><i class="fa fa-tags"></i> zmp</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+                    </div>
+
+                </div>
+                
+
+                
+
+            </div>
+            
+
+        </div>
+        
+    </div>
+    
+
+    
+<footer>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="contacts">
+                <div class="row">
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-map-marker"></i>
+                        CAMBRIDGE, UK
+                    </div>
+                    <div class="small-12 large-6 medium-6 columns">
+                        <i class="fa fa-map-marker"></i>
+                        SEATTLE, WA USA
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="footerlinks" data-equalizer>
+                <div class="small-12 large-3 medium-3 columns border-right" data-equalizer-watch>
+                    <h2>About Foundries.io</h2>
+                    <p>
+                        Foundries.io is changing the IoT landscape by delivering continuously
+                        updated software platforms for a secure, connected world.
+                    </p>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right" data-equalizer-watch>
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="https://foundries.io/company/">About</a></li>
+                        <li><a href="https://foundries.io/careers/">Careers</a></li>
+                        <li><a href="https://support.foundries.io/">Support</a></li>
+                        <li><a href="https://foundries.io/labs/">Labs</a></li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns border-right" data-equalizer-watch>
+                    <h2>Connect</h2>
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://twitter.com/foundriesio">
+                                <i class="fa fa-twitter fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/foundriesio">
+                                <i class="fa fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/foundriesio">
+                                <i class="fa fa-github fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://foundriesio.slack.com/join/shared_invite/enQtMjUwNzA1MTc4NzA4LTI2YTc4YjUyMTY2NWE3NTQxOTJjYjY3M2NkNTVmYjM2M2JhZGYzNDM1Mzk4MzkxMDI5ZWNhOWUzMWVlYmI4NDE">
+                                <i class="fa fa-slack fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small-12 large-3 medium-3 columns" data-equalizer-watch>
+                    <h2>Get Started Today</h2>
+                    <p>
+                        Get immediate access to microPlatform source and binary builds for
+                        today's most popular development boards by starting your evaluation subscription.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">Copyright 2018 Foundries.io All rights reserved</p>
+</footer>
+
+
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-111281311-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="https://foundries.io/js/vendor/jquery.js"></script>
+<script src="https://foundries.io/js/vendor/what-input.min.js"></script>
+<script src="https://foundries.io/js/foundation.min.js"></script>
+<script src="https://foundries.io/js/vendor/hoverIntent.js"></script>
+<script src="https://foundries.io/js/vendor/superfish.min.js"></script>
+<script src="https://foundries.io/js/vendor/morphext.min.js"></script>
+<script src="https://foundries.io/js/vendor/wow.min.js"></script>
+<script src="https://foundries.io/js/vendor/jquery.slicknav.min.js"></script>
+<script src="https://foundries.io/js/vendor/waypoints.min.js"></script>
+<script src="https://foundries.io/js/vendor/jquery.animateNumber.min.js"></script>
+<script src="https://foundries.io/js/vendor/owl.carousel.min.js"></script>
+<script src="https://foundries.io/js/vendor/jquery.responsiveTabs.js"></script>
+<script src="https://foundries.io/js/custom.js"></script>
+<script>
+jQuery(function($) {
+    
+    $('#responsiveTabsDemo').responsiveTabs({
+    startCollapsed: 'accordion'
+    });
+});
+</script>
+
+
+</body>
+</html>
