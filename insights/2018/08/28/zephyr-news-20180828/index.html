@@ -313,17 +313,17 @@ and I2S, as well as power gating and clock configuration, at SoC init
 time.</p>
 
 <p>The Arm MPU driver framework was refactored and extended to add
-support for V8-M SoCs.</p>
+support for v8-M SoCs.</p>
 
 <p>Various internals were refactored for generic tracing support across
-architectures</p>
+architectures.</p>
 
 <h3 id="bluetooth">Bluetooth</h3>
 
-<p>The controller implementation now defaults to <code>y</code> when <code>CONFIG_BT</code> is
-selected.</p>
+<p>The controller implementation (<code>CONFIG_BT_CTLR</code>) is now included by
+default when <code>CONFIG_BT</code> is selected.</p>
 
-<p>Zephyr&rsquo;s PHY update handler more gracefully managese protocol
+<p>Zephyr&rsquo;s PHY update handler more gracefully manages protocol
 violations observed with some cell phones available on the market.</p>
 
 <h3 id="boards">Boards</h3>
@@ -347,13 +347,13 @@ its device tree.</p>
 <p>Bindings were added for STM32 real time clocks (RTCs) in
 <code>dts/bindings/rtc/st,stm32-rtc.yaml</code>.</p>
 
-<p>The first audio codec binding for the TI TLV320DAC was added in
+<p>The first audio codec binding (for the TI TLV320DAC) was added in
 <code>dts/bindings/audio/ti,tlv320dac.yaml</code>.</p>
 
 <h3 id="documentation">Documentation</h3>
 
 <p>The Kconfig documentation now makes it clearer which symbols are
-selected by any Kconfig option, and under what conditions. Here is an
+selected by an option, and under what conditions. Here is an
 example for
 <a href="http://docs.zephyrproject.org/reference/kconfig/CONFIG_SEGGER_SYSTEMVIEW.html#symbols-selected-by-this-symbol">CONFIG_SEGGER_SYSTEMVIEW</a>.</p>
 
@@ -363,7 +363,7 @@ example for
 
 <ul>
 <li>Analog devices ADXL372 3-axis accelerometer</li>
-<li>Avago APDS9960 digital proximity, ambient light, RGB and gesture sensorp</li>
+<li>Avago APDS9960 digital proximity, ambient light, RGB and gesture sensor</li>
 <li>TI TLV320DAC310x audio DAC (this is the first audio driver, which has
 spawned a <code>drivers/audio</code> directory)</li>
 <li>TI HDC1008 temperature and humidity sensor</li>
@@ -372,7 +372,7 @@ spawned a <code>drivers/audio</code> directory)</li>
 </ul>
 
 <p>STM32 devices now include support for the RTC peripheral; it was
-tested on STM32L4 devices.</p>
+tested on STM32L4.</p>
 
 <p>The SiFive GPIO driver&rsquo;s IRQ bindings now respect the configured
 number of pins.</p>
@@ -441,7 +441,7 @@ Kconfig symbols for external projects.</p>
 <p><code>sanitycheck</code> internals related to job management were fixed and
 cleaned up.</p>
 
-<p>The Shippable configuration exits when <code>sanitycheck</code> exits with an
+<p>The Shippable configuration now fails when <code>sanitycheck</code> exits with an
 error code, which it now does when Python exceptions are raised.</p>
 
 <p><strong>Drivers:</strong></p>
@@ -457,7 +457,7 @@ transaction.</p>
 <p><strong>External:</strong></p>
 
 <p>Kconfiglib was updated to a new version, fixing an issue related to
-the top-level Kconfig file.</p>
+parsing the top-level Kconfig file.</p>
 
 <p><strong>Kernel:</strong></p>
 
@@ -467,7 +467,7 @@ macros were fixed.</p>
 <p>Various bitwise operations now correctly use unsigned integers. This
 is an example of an emerging pattern of using the
 <a href="http://coccinelle.lip6.fr/">Coccinelle</a> tool used in the Linux kernel
-to perform automatic refactoring Zephyr code; the relevant script is
+to perform automatic refactoring of Zephyr code; the relevant script is
 <code>scripts/coccinelle/unsigned_shift.cocci</code>.</p>
 
 <p>Thread-specific data is reserved at the top of the stack when
@@ -490,7 +490,7 @@ fixed, also using a Cocinelle script,
 <p><strong>Networking:</strong></p>
 
 <p>Renewed IPv6 addresses are now available for reuse. IPv6 addresses
-related to a removed network prefix are also removed.</p>
+related to a removed network prefix are now also removed.</p>
 
 <p>The newly-merged LLDP support saw a timeout-related fix.</p>
 
