@@ -1,9 +1,14 @@
+.sidebar-menu a:hover,
+.sidebar-menu a:focus,
 .post-categories a:hover,
 .post-categories a:focus,
 a {
     text-decoration: underline;
 }
 
+.pager a,
+.date-comments a,
+.sidebar-menu a,
 .post-categories a,
 footer a,
 nav a,
@@ -11,9 +16,4 @@ p.author-category a,
 p.read-more a,
 h2 a {
     text-decoration: none;
-}
-
-a:hover,
-a:focus {
-    color: #157FFF;
 }
