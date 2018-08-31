@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Categories | Foundries.io</title>
+  <title>microPlatform update 0.28 | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -122,7 +122,11 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Technologies, News and Demonstrations</h1>
+                    <h1>microPlatform update 0.28</h1>
+                    <p class="text-muted text-uppercase mb-small text-right color-white">
+                        
+                        August 31, 2018
+                    </p>
                 </div>
             </div>
         </div>
@@ -131,35 +135,469 @@
 
     <div id="content">
         <div class="container">
-            <div class="row">
-                
-                <div class="small-12 medium-8 large-9 columns" id="blog-listing-medium">
-                     
 
-                    <div class="row">
-                        <ul class="pager">
-                            <div class="previous">
-                                
-                                <li class="previous disabled">
-                                    <a class="medium radius button" href="#">&larr; Newer</a></li>
-                                
-                            </div>
-                            
-                                <li class="next disabled">
-                                    <a class="medium radius button" href="#">Older &rarr;</a>
-                                </li>
-                                
-                            </div>
-                        </ul>
+            <div class="row">
+
+                
+
+                <div class="small-12 columns" id="insights-post">
+
+                    <div id="post-content">
+                        <h1 id="summary">Summary</h1>
+
+<h2 id="zephyr-microplatform-changes-for-0-28">Zephyr microPlatform changes for 0.28</h2>
+
+<p>This update includes Zephyr v1.13.0-rc1.</p>
+
+<h2 id="linux-microplatform-changes-for-0-28">Linux microPlatform changes for 0.28</h2>
+
+<p>Always boot latest OSTree rootfs revision on RISC-V as there is no
+traditional bootloader support (e.g. u-boot) for Freedom-U540 and
+QEMU RISCV64 yet.</p>
+
+<p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Zephyr v1.13.0-rc1</li>
+<li>No MCUboot changes</li>
+<li>No reference application changes</li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="tracing-framework">Tracing Framework</h5>
+
+<p>Zephyr has long supported tool-specific means for
+tracing execution, particularly support for Segger&rsquo;s
+(proprietary, and popular) tools. It now includes an
+initial tool-agnostic trace framework.</p>
+
+<p>Official documentation is a bit thin, but the relevant
+header (<include/tracing.h>) is essentially a shim
+layer which allows implementing additional tracing
+mechanisms. These will receive the same trace
+notifications that Zephyr&rsquo;s Segger SystemView
+integration supports. This replaces the old &ldquo;event
+logger&rdquo; mechanism as well as other SoC-specific
+tracing code (so long, CONFIG_SOC_WATCH) in a unified
+framework.</p>
+
+<p>Support can be enabled via CONFIG_TRACING and enabling
+a backend (or, cutting to the chase, by setting
+CONFIG_SEGGER_SYSTEMVIEW=y, which is the only backend
+and selects CONFIG_TRACING). Here is an example of the
+dining philosophers sample run under SystemView,
+showing the types of events that are generated and
+associated metadata:</p>
+
+<p><a href="https://foundries.io/uploads/2018/08/28/segger_systemview_zephyr.png">https://foundries.io/uploads/2018/08/28/segger_systemview_zephyr.png</a></p>
+
+<p>Some of the edges are still a bit rough (the tracing
+API is not set in stone, and details like thread IDs
+shown in the timeline view are not especially human-
+readable), but it seems that with the addition of this
+framework, generic and improving support for tracing
+is arriving in Zephyr.</p>
+
+<h5 id="semi-automated-benchmarking">(Semi-)Automated Benchmarking</h5>
+
+<p>Zephyr now supports gathering data for a variety of
+benchmarking results, including for userspace
+operations. Support for benchmarking implies a
+footprint and execution time penalty, so it must be
+enabled with CONFIG_EXECUTION_BENCHMARKING. Test
+suites exercising this are part of Zephyr&rsquo;s CI, and
+can also be run locally using sanitycheck.</p>
+
+<p>Here are results and steps to reproduce a userspace-
+enabled benchmark test suite on the frdm_k64f board:</p>
+
+<p><a href="https://gist.github.com/mbolivar/ff6db89181bde285f52ab32d5393f4e0">https://gist.github.com/mbolivar/ff6db89181bde285f52ab32d5393f4e0</a></p>
+
+<p>(Note that some userspace-specific issues are still
+being ironed out on nRF devices; see issue 9676.)
+Unfortunately, the generated result files are in
+(various different) custom text file formats, rather
+than something like CSV or JSON. Thus, some extra
+parsing has to be done to process the results.</p>
+
+<p>To run benchmarks on a QEMU x86 Zephyr target (Linux
+hosts only), use these instead:</p>
+
+<pre><code>\# Run timing benchmarks:
+$ sanitycheck -N -p qemu_x86 --test tests/benchmarks/timing_info/benchmark.timing.userspace
+
+\# Run all tests with the &quot;benchmark&quot; tag:
+$ sanitycheck -N -p qemu_x86 -t benchmark
+</code></pre>
+
+<p>As in the &ldquo;real hardware&rdquo; case, QEMU results are
+printed out in various handler.log files in per-test
+sanity-out subdirectories.</p>
+
+<h5 id="nordic-gpio-gpiote-changes">Nordic GPIO/GPIOTE Changes</h5>
+
+<p>The GPIO driver (drivers/gpio/gpio_nrfx.c) for Nordic
+nRF SoCs was reimplemented as a shim over the nrfx
+vendor HAL, replacing the old driver
+(drivers/gpio/gpio_nrf5.c).</p>
+
+<p>Device tree GPIO nodes for nRF51 devices were added,
+affecting board device trees.</p>
+
+<p>These changes implied renaming of various GPIO-related
+Kconfig options.</p>
+
+<p>Out of tree boards will need updates.</p>
+
+<h5 id="power-management-improvements">Power Management Improvements</h5>
+
+<p>Zephyr has had power management support for quite some
+time (<a href="http://docs.zephyrproject.org/subsystems/power_management.html">http://docs.zephyrproject.org/subsystems/power_management.html</a>),
+but up until now, it has essentially
+been entirely up to the application to manage power
+states in response to events. This is in contrast to
+other operating systems, where the kernel can
+automatically initiate device and SoC power state
+changes, often as a result of updating data it&rsquo;s
+already using to track system state.</p>
+
+<p>Needless to say, &ldquo;do it yourself, have fun&rdquo; tends to
+be less turnkey than &ldquo;the OS handles it for you&rdquo;, so
+it&rsquo;s a welcome sight to see the initial merge of an
+&ldquo;OS-managed&rdquo; extension to Zephyr&rsquo;s power management
+subsystem, which can be enabled by setting
+CONFIG_PM_CONTROL_OS=y.</p>
+
+<p>Like much else in Zephyr, support is currently limited
+to nRF devices. There also appear to be a few
+hard-coded data structures in the initial commit
+limiting the available peripherals and supported
+functionality.  However, we&rsquo;re excited to see this new
+addition.</p>
+
+<h5 id="arches">Arches</h5>
+
+<p>The intel_s1000 target now initializes resource
+ownership for DMA and I2S, as well as power gating and
+clock configuration, at SoC init time.</p>
+
+<p>The Arm MPU driver framework was refactored and
+extended to add support for v8-M SoCs.</p>
+
+<p>Various internals were refactored for generic tracing
+support across architectures.</p>
+
+<h5 id="bluetooth">Bluetooth</h5>
+
+<p>The controller implementation (CONFIG_BT_CTLR) is now
+included by default when CONFIG_BT is selected.</p>
+
+<p>Zephyr&rsquo;s PHY update handler more gracefully manages
+protocol violations observed with some cell phones
+available on the market.</p>
+
+<h5 id="boards">Boards</h5>
+
+<p>Support for the nRF-based board to be used at an
+upcoming Zephyr hackathon was added as the reel_board
+configuration.</p>
+
+<p>Support was added for the i.MX7 Solo WaRP7 board (as
+warp7_m4), with the initial commit including GPIO,
+UART, and I2C support.</p>
+
+<p>The intel_s1000_crb board now supports the TLV320DAC
+audio codec in its device tree.</p>
+
+<p>STM32L4 boards now support the RTC peripheral in their
+DTs.</p>
+
+<p>nRF51 boards were refactored for DT-based GPIO
+support.</p>
+
+<h5 id="device-tree">Device Tree</h5>
+
+<p>Bindings were added for STM32 real time clocks (RTCs)
+in dts/bindings/rtc/st,stm32-rtc.yaml.</p>
+
+<p>The first audio codec binding (for the TI TLV320DAC)
+was added in dts/bindings/audio/ti,tlv320dac.yaml.</p>
+
+<h5 id="documentation">Documentation</h5>
+
+<p>The Kconfig documentation now makes it clearer which
+symbols are selected by an option, and under what
+conditions. Here is an example for CONFIG_SEGGER_SYSTEMVIEW:</p>
+
+<p><a href="http://docs.zephyrproject.org/reference/kconfig/CONFIG_SEGGER_SYSTEMVIEW.html#symbols-selected-by-this-symbol">http://docs.zephyrproject.org/reference/kconfig/CONFIG_SEGGER_SYSTEMVIEW.html#symbols-selected-by-this-symbol</a></p>
+
+<h5 id="drivers">Drivers</h5>
+
+<h5 id="new-external-device-drivers-apis">New external device drivers/APIs</h5>
+
+<ul>
+<li>Analog devices ADXL372 3-axis accelerometer - Avago
+APDS9960 digital proximity, ambient light, RGB and
+gesture   sensor - TI TLV320DAC310x audio DAC (this is
+the first audio driver, which   has spawned a
+drivers/audio directory) - TI HDC1008 temperature and
+humidity sensor - A new driver API for digital
+microphone controllers was added as
+include/audio/dmic.h.</li>
+</ul>
+
+<p>STM32 devices now include support for the RTC
+peripheral; it was tested on STM32L4.</p>
+
+<p>The SiFive GPIO driver&rsquo;s IRQ bindings now respect the
+configured number of pins.</p>
+
+<p>i.MX devices can now retrieve frequency information
+for all UARTs.</p>
+
+<h5 id="kernel">Kernel</h5>
+
+<p>Various internals were refactored for generic tracing
+support described above.</p>
+
+<h5 id="networking">Networking</h5>
+
+<p>Various areas within the networking stack were
+refactored to avoid allocating unnecessary struct
+k_delayed_work instances, resulting in memory savings
+mostly affecting IPv6.</p>
+
+<h5 id="samples">Samples</h5>
+
+<ul>
+<li>samples/sensor/adxl372, for the new ADXL372
+accelerometer driver -   samples/subsys/power, for the
+new power management framework</li>
+</ul>
+
+<h5 id="testing">Testing</h5>
+
+<p>Additional test description and requirements
+traceability matrix metadata were merged, along with
+improved test coverage in various cases.</p>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="arches-1">Arches</h5>
+
+<p>Some undefined signed integer shift operation behavior
+was corrected in Arm&rsquo;s MPU framework.</p>
+
+<p>On ARC, CONFIG_STACK_CHECK now works in secure mode as
+well, along with other fixes related to thread
+initialization.</p>
+
+<p>The SiLabs efr32fg1p SoC clock initialization code no
+longer attempts to enable external oscillators which
+are already on.</p>
+
+<p>The native_posix pseudo-architecture saw some segfault
+fixes in shell argument handling, and a trace log
+message fix related to process killing.</p>
+
+<h5 id="bluetooth-1">Bluetooth</h5>
+
+<p>Mesh PB-GATT advertising data is initialized on
+demand, rather than at initialization time, as the
+data it depends on may have changed since
+initialization. Some PTS-related fixes were also
+merged.</p>
+
+<h5 id="build">Build</h5>
+
+<p>A limitation on the number of kernel-space libraries
+to link into the final binary has been removed.</p>
+
+<h5 id="continuous-integration">Continuous Integration</h5>
+
+<p>The check-compliance.py script no longer crashes when
+checking Kconfig symbols for external projects.</p>
+
+<p>sanitycheck internals related to job management were
+fixed and cleaned up.</p>
+
+<p>The Shippable configuration now fails when sanitycheck
+exits with an error code, which it now does when
+Python exceptions are raised.</p>
+
+<h5 id="drivers-1">Drivers</h5>
+
+<p>i.MX7 platforms now support GPIO7 and UART6.</p>
+
+<p>Pinmux completions and bug fixes were merged affecting
+a variety of STM32 families.</p>
+
+<p>The i.MX I2C driver waits for the bus to be released
+before starting a transaction.</p>
+
+<h5 id="external">External</h5>
+
+<p>Kconfiglib was updated to a new version, fixing an
+issue related to parsing the top-level Kconfig file.</p>
+
+<h5 id="kernel-1">Kernel</h5>
+
+<p>The implementations of the
+<code>k_{enable,disable}_sys_clock_always_on()</code> macros were
+fixed.</p>
+
+<p>Various bitwise operations now correctly use unsigned
+integers. This is an example of an emerging pattern of
+using the Coccinelle tool used in the Linux kernel to
+perform automatic refactoring of Zephyr code; the
+relevant script is
+scripts/coccinelle/unsigned_shift.cocci.</p>
+
+<p>Thread-specific data is reserved at the top of the
+stack when CONFIG_THREAD_USERSPACE_LOCAL_DATA is
+enabled. The first use case is errno storage; use of
+errno from userspace now relies on this option. This
+can be extended using the new struct
+_thread_userspace_local_data.</p>
+
+<h5 id="libraries">Libraries</h5>
+
+<p>A couple of bug fixes for the recently merged CMSIS
+RTOS v1 support were merged, affecting message and
+mail queues.</p>
+
+<h5 id="miscellaneous">Miscellaneous</h5>
+
+<p>Incorrect combinations of signed integers with
+irq_lock() were fixed, also using a Cocinelle script,
+scripts/coccinelle/irq_lock.cocci.</p>
+
+<h5 id="networking-1">Networking</h5>
+
+<p>Renewed IPv6 addresses are now available for reuse.
+IPv6 addresses related to a removed network prefix are
+now also removed.</p>
+
+<p>The newly-merged LLDP support saw a timeout-related
+fix.</p>
+
+<p>A bug causing spurious transmission of TCP retries was
+fixed.</p>
+
+<h5 id="samples-1">Samples</h5>
+
+<p>The samples/drivers/watchdog application was updated
+to use the new watchdog API.</p>
+
+<h5 id="testing-1">Testing</h5>
+
+<p>Various issues identified by Coverity were fixed.</p>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<ul>
+<li>Always boot latest OSTree rootfs revision on RISC-V</li>
+</ul>
+
+<h2 id="components-1">Components</h2>
+
+<h3 id="meta-lmp-layer">Meta LMP Layer</h3>
+
+<h4 id="features-4">Features</h4>
+
+<h5 id="layer-update">Layer Update</h5>
+
+<p>Prefer disabling null pointer optimization on mozjs.
+Always fetch OSTree hash from the last entry on RISC-V.</p>
+
+<h4 id="bugs-4">Bugs</h4>
+
+<p>Not addressed in this update</p>
                     </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
 
                 </div>
 
-                <div class="small-12 medium-4 large-3 columns" id="blog-categories">
+            </div>
 
-                    
+            <div class="row">
+                
 
-                    
+                
+
+                
+
+                <div class="small-12 columns">
+
+                    <div class="post-categories">
+                        
+
+                        
 
 
 
@@ -348,11 +786,17 @@
 
 
 
-                    
+                        
+                    </div>
+
                 </div>
+                
+
+                
 
             </div>
             
+
         </div>
         
     </div>
@@ -474,5 +918,4 @@ jQuery(function($) {
 
 
 </body>
-
 </html>
