@@ -6,10 +6,24 @@
     <description>Recent content in Insights on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Aug 2018 03:28:57 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/insights/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Zephyr Development News 05 September 2018</title>
+      <link>https://foundries.io/insights/2018/09/05/zephyr-news-20180905/</link>
+      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/09/05/zephyr-news-20180905/</guid>
+      <description>&lt;p&gt;This is the 05 September 2018 newsletter tracking the latest
+&lt;a href=&#34;https://zephyrproject.org&#34;&gt;Zephyr&lt;/a&gt; development merged into the
+&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
+GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 0.28</title>
