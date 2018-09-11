@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Deploying OTA Community Edition | Foundries.io</title>
+  <title>Deploying OTA Connect | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -122,7 +122,7 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Deploying OTA Community Edition</h1>
+                    <h1>Deploying OTA Connect</h1>
                     <p class="text-muted text-uppercase mb-small text-right color-white">
                         
                             By Andy Doan&nbsp;|
@@ -145,7 +145,7 @@
                 <div class="small-12 columns" id="insights-post">
 
                     <div id="post-content">
-                        <p>Continuing with the OTA blog series <a href="https://foundries.io/insights/2018/05/25/ota-part-1/">part one</a> and <a href="https://foundries.io/insights/2018/06/14/ota-part-2/">part two</a>, this article shows you how to deploy OTA Community Edition inside Google&rsquo;s Kubernetes Engine (GKE). After completion of these instructions, you&rsquo;ll have an OTA server available on the internet with a single QEMU device registered to it.
+                        <p>Continuing with the OTA blog series <a href="https://foundries.io/insights/2018/05/25/ota-part-1/">part one</a> and <a href="https://foundries.io/insights/2018/06/14/ota-part-2/">part two</a>, this article shows you how to deploy OTA Connect using the OTA Community Edition into Google&rsquo;s Kubernetes Engine (GKE). After completion of these instructions, you&rsquo;ll have an OTA Connect server available on the internet with a single QEMU device registered to it.
 </p>
 
 <h3 id="requirements">Requirements</h3>
@@ -196,9 +196,9 @@
   ./contrib/gke/gcloud config set compute/zone us-central1-c
 </code></pre>
 
-<h3 id="deploy-ota-community-edition">Deploy OTA Community Edition</h3>
+<h3 id="deploy-ota-connect">Deploy OTA Connect</h3>
 
-<p>The ota-blog-part3 branch of OTA Community Edition includes a helper script to deploy OTA Community Edition. The script isn&rsquo;t very long and is worth taking a close look at to understand the mechanics of deploying OTA Community Edition. Deploying is as simple as:</p>
+<p>The ota-blog-part3 branch of OTA Community Edition includes a helper script to deploy OTA Connect. The script isn&rsquo;t very long and is worth taking a close look at to understand the mechanics of deploying OTA Connect. Deploying is as simple as:</p>
 
 <pre><code>  ./create-cluster.sh example.com
 </code></pre>
@@ -232,7 +232,7 @@
 
 <h3 id="secure-the-tuf-keys">Secure the TUF Keys</h3>
 
-<p>OTA Community Edition is running and exposed to the internet. The nginx reverse-proxy has no built-in security and the TUF private keys are available to <strong>anyone</strong>. This can be fixed even though the reverse-proxy has no authentication/authorization logic. In fact, it&rsquo;s a great example of how TUF protects you from the leaking of a private key. The ota-blog-part3 branch includes a script to make it easy:</p>
+<p>OTA Connect is running and exposed to the internet. The nginx reverse-proxy has no built-in security and the TUF private keys are available to <strong>anyone</strong>. This can be fixed even though the reverse-proxy has no authentication/authorization logic. In fact, it&rsquo;s a great example of how TUF protects you from the leaking of a private key. The ota-blog-part3 branch includes a script to make it easy:</p>
 
 <pre><code>  ./rotate-keys.sh example.com
 </code></pre>
@@ -250,7 +250,7 @@
 
 <h3 id="register-a-device">Register a Device</h3>
 
-<p>OTA Community Edition requires <a href="https://github.com/advancedtelematic/aktualizr/blob/master/docs/implicit-provisioning.adoc">implicit provisioning</a>. Creating a device is fairly easy:</p>
+<p>OTA Connect requires <a href="https://github.com/advancedtelematic/aktualizr/blob/master/docs/implicit-provisioning.adoc">implicit provisioning</a>. Creating a device is fairly easy:</p>
 
 <pre><code>  # DEVICE_ID = The name of the device to appear in OTA Community Edition
   # SERVER_NAME = Your gateway server. eg SERVER_NAME=ota-ce.example.com

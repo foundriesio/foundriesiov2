@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Securing OTA Community Edition | Foundries.io</title>
+  <title>Securing OTA Connect | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -122,7 +122,7 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Securing OTA Community Edition</h1>
+                    <h1>Securing OTA Connect</h1>
                     <p class="text-muted text-uppercase mb-small text-right color-white">
                         
                             By Andy Doan&nbsp;|
@@ -146,7 +146,7 @@
 
                     <div id="post-content">
                         <p><a href="https://foundries.io/insights/2018/06/27/ota-part-3/">Part three</a> of this blog series showed how to
-deploy an OTA Community Edition server in Google Kubernetes Engine that had
+deploy an OTA Connect service in Google Kubernetes Engine that had
 a few security holes. This article will describe how to secure it.
 </p>
 
@@ -155,19 +155,19 @@ updates in the Linux microPlatform:</p>
 
 <ul>
 <li><a href="https://foundries.io/insights/2018/05/25/ota-part-1/">Part 1</a> - How we choose a software update system</li>
-<li><a href="https://foundries.io/insights/2018/06/14/ota-part-2/">Part 2</a> - What is OTA Community Edition</li>
-<li><a href="https://foundries.io/insights/2018/06/27/ota-part-3/">Part 3</a> - Deploying OTA Community Edition</li>
+<li><a href="https://foundries.io/insights/2018/06/14/ota-part-2/">Part 2</a> - What is OTA Connect</li>
+<li><a href="https://foundries.io/insights/2018/06/27/ota-part-3/">Part 3</a> - Deploying OTA Connect</li>
 </ul>
 
 <h3 id="requirements">Requirements</h3>
 
-<p>You&rsquo;ll need an OTA Community Edition server deployed into GKE as
+<p>You&rsquo;ll need an OTA Connect service deployed into GKE as
 documented in <a href="https://foundries.io/insights/2018/06/27/ota-part-3/">part three</a> of the blog series.</p>
 
 <h3 id="overview">Overview</h3>
 
-<p>As diagrammed in <a href="https://foundries.io/insights/2018/06/14/ota-part-2/">part two</a> OTA Community
-Edition has four public entry points. The device gateway is the only
+<p>As diagrammed in <a href="https://foundries.io/insights/2018/06/14/ota-part-2/">part two</a> OTA Connect
+has four public entry points. The device gateway is the only
 one of those that is secured by default. The web app, repo server, and
 treehub all require custom code to be secured. There are many ways this
 can be done and they ultimately depend on how you authenticate and
@@ -200,7 +200,7 @@ entry for an &ldquo;oauth2&rdquo; server. In short:</p>
 
 <h3 id="secure-the-reverse-proxy">Secure the Reverse Proxy</h3>
 
-<p>OTA Community Edition has no authentication support built into it, so
+<p>OTA Community Edition deployments have no authentication support built into it, so
 securing it requires making changes to the reverse proxy we created in
 the previous blog. Nginx includes the
 <a href="http://nginx.org/en/docs/http/ngx_http_auth_request_module.html">ngx_http_auth_request_module</a>

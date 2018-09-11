@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>What Is OTA Community Edition | Foundries.io</title>
+  <title>What Is OTA Connect | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -122,7 +122,7 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>What Is OTA Community Edition</h1>
+                    <h1>What Is OTA Connect</h1>
                     <p class="text-muted text-uppercase mb-small text-right color-white">
                         
                         June 14, 2018
@@ -143,10 +143,10 @@
                 <div class="small-12 columns" id="insights-post">
 
                     <div id="post-content">
-                        <p>Continuing with the <a href="https://foundries.io/insights/2018/05/25/ota-part-1/">OTA blog series</a>, this article will explain what <a href="https://github.com/advancedtelematic/ota-community-edition">OTA Community Edition</a> is and how it implements the TUF/Uptane/OSTree specifications.
+                        <p>Continuing with the <a href="https://foundries.io/insights/2018/05/25/ota-part-1/">OTA blog series</a>, this article will explain what <a href="https://github.com/advancedtelematic/ota-community-edition">OTA Connect</a> is and how it implements the TUF/Uptane/OSTree specifications.
 </p>
 
-<p>OTA Community Edition is open-source server software that supports devices compatible with <a href="https://github.com/advancedtelematic/aktualizr/">Aktualizr</a>. It has a micro-service architecture that&rsquo;s designed to be deployed inside Kubernetes. This article will explain the main micro-services, how they are related, and how easy they&rsquo;d be to replace with another implementation. The services described are:</p>
+<p>OTA Connect is open-source server software that supports devices compatible with <a href="https://github.com/advancedtelematic/aktualizr/">Aktualizr</a>. It has a micro-service architecture that&rsquo;s designed to be deployed inside Kubernetes. This article will explain the main micro-services, how they are related, and how easy they&rsquo;d be to replace with another implementation. The services described are:</p>
 
 <ul>
 <li><a href="https://github.com/advancedtelematic/treehub">TreeHub</a></li>
@@ -193,7 +193,7 @@
 
 <h3 id="ota-web">OTA+ Web</h3>
 
-<p>OTA+ Web provides a web front-end to the OTA Community Edition components. The web interface shows information about devices and images and allows a user to update a device. This service is stateless and can be scaled out horizontally to provide high availability.</p>
+<p>OTA+ Web provides a web front-end to the OTA Connect components. The web interface shows information about devices and images and allows a user to update a device. This service is stateless and can be scaled out horizontally to provide high availability.</p>
 
 <p>The default configuration supports no authentication and is single-user only. However, there are a few <a href="https://github.com/advancedtelematic/ota-plus-server#authentication">authentication options</a>.</p>
 
