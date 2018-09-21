@@ -6,10 +6,34 @@
     <description>Recent content in Updates on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Aug 2018 03:28:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Sep 2018 16:09:36 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/categories/updates/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 0.29</title>
+      <link>https://foundries.io/insights/2018/09/21/blog-post-update-0.29/</link>
+      <pubDate>Fri, 21 Sep 2018 16:09:36 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/09/21/blog-post-update-0.29/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-29&#34;&gt;Zephyr microPlatform changes for 0.29&lt;/h2&gt;
+
+&lt;p&gt;Zephyr v1.13 rc, improved sample board support&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-29&#34;&gt;Linux microPlatform changes for 0.29&lt;/h2&gt;
+
+&lt;p&gt;Similarly as how Yocto upstream manages the multiple configuration fragments
+via the yocto-kernel-cache repository, Linux microPlatform now supports its
+own metadata repository for kernel configuration fragments, reducing the
+amount of machine-specific configuration from the meta-lmp layer.
+Check &lt;a href=&#34;https://www.yoctoproject.org/docs/2.5/kernel-dev/kernel-dev.html#kernel-dev-advanced&#34;&gt;https://www.yoctoproject.org/docs/2.5/kernel-dev/kernel-dev.html#kernel-dev-advanced&lt;/a&gt;
+for more information on how to manage and work with the fragments metadata.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 0.28</title>

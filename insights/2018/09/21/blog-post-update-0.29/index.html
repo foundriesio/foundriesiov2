@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tags | Foundries.io</title>
+  <title>microPlatform update 0.29 | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -122,7 +122,11 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Technologies, News and Demonstrations</h1>
+                    <h1>microPlatform update 0.29</h1>
+                    <p class="text-muted text-uppercase mb-small text-right color-white">
+                        
+                        September 21, 2018
+                    </p>
                 </div>
             </div>
         </div>
@@ -131,35 +135,448 @@
 
     <div id="content">
         <div class="container">
-            <div class="row">
-                
-                <div class="small-12 medium-8 large-9 columns" id="blog-listing-medium">
-                     
 
-                    <div class="row">
-                        <ul class="pager">
-                            <div class="previous">
-                                
-                                <li class="previous disabled">
-                                    <a class="medium radius button" href="#">&larr; Newer</a></li>
-                                
-                            </div>
-                            
-                                <li class="next disabled">
-                                    <a class="medium radius button" href="#">Older &rarr;</a>
-                                </li>
-                                
-                            </div>
-                        </ul>
+            <div class="row">
+
+                
+
+                <div class="small-12 columns" id="insights-post">
+
+                    <div id="post-content">
+                        <h1 id="summary">Summary</h1>
+
+<h2 id="zephyr-microplatform-changes-for-0-29">Zephyr microPlatform changes for 0.29</h2>
+
+<p>Zephyr v1.13 rc, improved sample board support</p>
+
+<h2 id="linux-microplatform-changes-for-0-29">Linux microPlatform changes for 0.29</h2>
+
+<p>Similarly as how Yocto upstream manages the multiple configuration fragments
+via the yocto-kernel-cache repository, Linux microPlatform now supports its
+own metadata repository for kernel configuration fragments, reducing the
+amount of machine-specific configuration from the meta-lmp layer.
+Check <a href="https://www.yoctoproject.org/docs/2.5/kernel-dev/kernel-dev.html#kernel-dev-advanced">https://www.yoctoproject.org/docs/2.5/kernel-dev/kernel-dev.html#kernel-dev-advanced</a>
+for more information on how to manage and work with the fragments metadata.</p>
+
+<p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Zephyr from the v1.13 rc period</li>
+<li>Minor MCUboot updates</li>
+<li>Sample application board support generalization</li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs">Bugs</h4>
+
+<h5 id="build-system-cleanups">Build system cleanups</h5>
+
+<p>Two patches cleaning up build system warnings were merged.</p>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="new-adc-framework">New ADC Framework</h5>
+
+<p>Zephyr&rsquo;s ADC support has been heavily reworked, with
+new device drivers, DT bindings, and board support.</p>
+
+<p>New features include asynchronous usage, channel
+configuration, and multi-channel sampling.</p>
+
+<p>This significant change past the release candidate
+period was approved by the technical steering
+committee on the grounds that the pull request which
+included it has been open for several months. (It
+wasn&rsquo;t merged in time for rc1 due to a few remaining
+issues which have since been fixed.)</p>
+
+<p>The new ADC framework includes support for Nordic- and
+NXP Kinetis-based devices and boards, ARC devices
+using DesignWare ADC IP blocks, Atmel SAM devices,
+and the quark_d2000_crb board.</p>
+
+<p>In-tree sample applications were updated, showing how
+to use the new API, which is still defined in
+include/adc.h and was introduced in commit f1891e9</p>
+
+<p>One notable (and late-breaking) review comment, while
+agreeing that the new API is a definite improvement,
+lamented the lack of trigger support.</p>
+
+<h5 id="arches">Arches</h5>
+
+<p>Instruction and data caches were enabled on STM32F7
+SoCs.</p>
+
+<h5 id="bluetooth">Bluetooth</h5>
+
+<p>Mirroring a change made to the PHY update code merged
+earlier in the cycle, the connection update procedure
+now avoids an assert when confronted with protocol
+errors related to procedure collision rules observed
+in certain cell phones. In a related change, a new
+Kconfig option, CONFIG_BT_AUTO_PHY_UPDATE, was added,
+which can be disabled to allow the remote device to
+initiate PHY update, rather than doing so at
+connection establishment time.</p>
+
+<h5 id="boards">Boards</h5>
+
+<p>The nrf52840_pca10059 and nrf52_adafruit_feather
+boards now support flashing and debugging with PyOCD.</p>
+
+<p>The efr32_slwstk6061a can now be flashed with OpenOCD.
+However, reports indicate its name still cannot be
+said three times fast.</p>
+
+<p>The nucleo_l432kc now has a flash storage partition.</p>
+
+<h5 id="build">Build</h5>
+
+<p>Users can now set QEMU_BIN_PATH in their environment
+to specify the path to their own QEMU binaries, rather
+than using those provided by the Zephyr SDK.</p>
+
+<p>They can also set the CMake variable DTS_APP_BINDINGS
+to specify a directory containing out-of-tree DTS
+bindings.</p>
+
+<p>The build system no longer respects the environment
+variable CFLAGS, as this was set by some Linux
+distributions for native builds, and was incorrectly
+affecting Zephyr builds.</p>
+
+<h5 id="drivers">Drivers</h5>
+
+<p>A new CONFIG_ENABLE_HID_INT_OUT_EP option was added,
+which adds support for an OUT interrupt endpoint in
+the USB HID driver. It is disabled by default, so its
+merge should not affect applications using this
+driver.</p>
+
+<p>The sensor subsystem&rsquo;s Kconfig choice options now have
+names. This allowed board-specific support files to
+enable available sensors using Kconfig default
+settings for these choices, instead of setting them
+explicitly in defconfigs. This is useful as defaults
+can be easily overridden by applications.</p>
+
+<h5 id="scripts">Scripts</h5>
+
+<p>Piggy-backing on the Kconfiglib update discussed
+below, the ninja menuconfig interface now shows how
+the Kconfig file of each symbol was sourced in its
+help for each symbol</p>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="arches-1">Arches</h5>
+
+<p>GPIO interrupt handling on STM32L4 SoCs now works
+properly.</p>
+
+<p>Build breaks on xtensa were fixed.</p>
+
+<h5 id="bluetooth-1">Bluetooth</h5>
+
+<p>A fix to an internal procedure affecting
+configurations which use the (new to v1.13) feature
+enabling multiple identities was merged.</p>
+
+<p>Mesh fixes:</p>
+
+<ul>
+<li>build break in health_srv.c</li>
+<li>invalid restoration of stored state (App Key) from flash</li>
+</ul>
+
+<h5 id="boards-1">Boards</h5>
+
+<p>Documentation was added for qemu_nios2.</p>
+
+<p>ARC boards&rsquo; Kconfig files were cleaned up and updated.</p>
+
+<p>The nrf52_pca10040 board now declare Flash erase block
+sizes properly in DTS.</p>
+
+<p>The arduino_101 Kconfig default for
+CONFIG_DISK_FLASH_MAX_RW_SIZE was fixed.</p>
+
+<p>The mimxrt1050_evk and udoo_neo_full_m4 got Kconfig
+warning fixes.</p>
+
+<h5 id="build-1">Build</h5>
+
+<p>Documentation for Kconfig symbols now includes the
+path to access the symbol in ninja menuconfig.</p>
+
+<h5 id="continuous-integration">Continuous Integration</h5>
+
+<p>An issue causing CI to miss fault-related output was
+fixed.</p>
+
+<h5 id="device-tree">Device Tree</h5>
+
+<p>The STM32L4 SoC family got several fixes</p>
+
+<ul>
+<li>a missing flash erase block size is now declared</li>
+<li>the fixup file now includes the necessary definitions for using I2C3</li>
+<li>the gpioh and gpioi node addresses were fixed</li>
+</ul>
+
+<h5 id="documentation">Documentation</h5>
+
+<p>The documentation itself can now be generated in PDF
+form if a LaTeX installation is found.</p>
+
+<h5 id="drivers-1">Drivers</h5>
+
+<p>The Kconfig options for the SX1509B I2C GPIO chip got
+dependency fixes.</p>
+
+<p>Two bugs affecting the nRF GPIO driver were fixed.</p>
+
+<p>The &ldquo;v1&rdquo; I2C driver available for some STM32 SoC
+families now properly handles NACKed transactions.
+(The &ldquo;v1&rdquo; refers to the I2C IP block itself, not a
+software version.)</p>
+
+<p>Miscellaneous fixes:</p>
+
+<ul>
+<li>bit resolution on ADC-based Grove sensor drivers (twelve is the number of bits thou shalt count)</li>
+<li>an RX FIFO error in the enc28j60 Ethernet driver</li>
+<li>hanging when collecting entropy with ENTROPY_BUSYWAIT on nRF5</li>
+<li>high-frequency clock enable checks in the nRF5 USB device driver</li>
+<li>a xoroshiro128 random number driver initialization fault</li>
+</ul>
+
+<h5 id="external">External</h5>
+
+<p>Kconfiglib was updated to upstream a28bc4da9762e,
+which was used to add menu path information to the
+documentation and fix some bugs.</p>
+
+<h5 id="kernel">Kernel</h5>
+
+<p>Fixes were merged for</p>
+
+<ul>
+<li>a significant bug affecting timeout handling memory pools (mempool) for pools with large numbers of maximum-size blocks</li>
+<li>use of interrupts when CONFIG_MULTITHREADING=n</li>
+<li>time slice accounting in tickless mode (with a band-aid; more changes affecting the interaction of these two areas are expected)</li>
+<li>k_pipe_block_put() behavior when memory runs out</li>
+<li>k_poll() behavior when waiting on queues that subsequently have waiting canceled</li>
+</ul>
+
+<p>Precision issues were improved in the conversion
+between ticks and milliseconds.</p>
+
+<p>The SYS_MEM_POOL_KERNEL and SYS_MEM_POOL_USER macros
+are now properly defined as bit masks.</p>
+
+<h5 id="libraries">Libraries</h5>
+
+<p>Some null dereferences in the CMSIS RTOS v1 driver
+were fixed. Support for the the osWait feature was
+removed, presumably due to an issue with the
+implementation.</p>
+
+<p>Several fixes were merged for Zephyr&rsquo;s CMSIS RTOS
+support shim.</p>
+
+<h5 id="logging">Logging</h5>
+
+<p>Fixes for out-of-bounds reads and null dereferences
+were merged.</p>
+
+<h5 id="networking">Networking</h5>
+
+<p>Fixes were merged affecting</p>
+
+<ul>
+<li>net_udp_append_raw() timeout handling</li>
+<li>LWM2M formatter usage</li>
+<li>memory exhaustion during TCP segment creation</li>
+<li>retransmission of FIN packets</li>
+<li>handling of multiple hop-by-hop option headers</li>
+<li>DTLS connection closure</li>
+<li>polling on sockets</li>
+</ul>
+
+<p>The gPTP thread&rsquo;s stack size was incorrectly
+initialized; this is fixed. This type of bug &ndash; use of
+sizeof(stack_object) instead of
+K_THREAD_STACK_SIZEOF(stack_object) &ndash; might be a good
+target for a Coccinelle script in the future.</p>
+
+<h5 id="samples">Samples</h5>
+
+<p>Individual fixes include:</p>
+
+<ul>
+<li>peripheral_hids: connection with a previously bonded device</li>
+<li>nvs: interoperation with MPUs, flash block erase size</li>
+<li>grove_light, grove_temperature: printing floats with newlib, missing respect for CONFIG_GROVE_LIGHT_SENSOR_NAME</li>
+<li>coap_server: memory overrun fix</li>
+</ul>
+
+<p>All samples using mbedTLS directly were removed. These
+were mbedtls_sslclient, mbedtls_dtlsserver,
+mbedtls_dtlsclient, coaps_client, and
+coaps_server. This follows from the move to
+socket-based TLS support.</p>
+
+<h5 id="scripts-1">Scripts</h5>
+
+<p>A menuconfig fix for visible symbols not being shown
+was merged.</p>
+
+<p>In the device tree scripts, an interoperability issue
+with dtc 1.4.7 was fixed, and node alias names are now
+applied to all property names.</p>
+
+<p>Various Kconfig cleanups and usability issues were
+also merged.</p>
+
+<h5 id="storage">Storage</h5>
+
+<p>NVS writes now work when the underlying flash device
+cannot be written with byte-level granularity.</p>
+
+<h5 id="testing">Testing</h5>
+
+<p>Numerous enhancements and fixes were merged as the
+testing period continued; refer to the individual
+changes for details.</p>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<h5 id="nrf-support-consolidation">nRF support consolidation</h5>
+
+<p>MCUboot board support for various nRF-based devices
+was significantly generalized using common device tree
+overlays, Kconfig fragments, and new zmp build features.</p>
+
+<p>It is now likely that additional nRF52832 and nRF52840
+based boards will simply work out of the box, unless
+they have board-specific hardware features like
+inverted LEDs.</p>
+
+<h5 id="reel-board-support">reel_board support</h5>
+
+<p>The sample now works on the reel_board device.</p>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<h5 id="nrf-support-consolidation-1">nRF support consolidation</h5>
+
+<p>MCUboot board support for various nRF-based devices
+was significantly generalized using common device tree
+overlays, Kconfig fragments, and new zmp build features.</p>
+
+<p>It is now likely that additional nRF52832 and nRF52840
+based boards will simply work out of the box, unless
+they have board-specific hardware features like
+inverted LEDs.</p>
+
+<h5 id="reel-board-support-1">reel_board support</h5>
+
+<p>The sample now works on the reel_board device.</p>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<ul>
+<li>Linux LMP config fragments now available via external lmp-kernel-cache metadata repository</li>
+</ul>
+
+<h2 id="components-1">Components</h2>
+
+<h3 id="meta-lmp-layer">Meta LMP Layer</h3>
+
+<h4 id="features-4">Features</h4>
+
+<h5 id="layer-update">Layer Update</h5>
+
+<p>Kernel configuration fragments now available via external
+lmp-kernel-cache metadata repository.
+Linux LMP recipe clean ups.</p>
+
+<h4 id="bugs-4">Bugs</h4>
+
+<p>Not addressed in this update</p>
                     </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
 
                 </div>
 
-                <div class="small-12 medium-4 large-3 columns" id="blog-categories">
+            </div>
 
-                    
+            <div class="row">
+                
 
-                    
+                
+
+                
+
+                <div class="small-12 columns">
+
+                    <div class="post-categories">
+                        
+
+                        
 
 
 
@@ -348,11 +765,17 @@
 
 
 
-                    
+                        
+                    </div>
+
                 </div>
+                
+
+                
 
             </div>
             
+
         </div>
         
     </div>
@@ -474,5 +897,4 @@ jQuery(function($) {
 
 
 </body>
-
 </html>
