@@ -130,6 +130,20 @@ Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Zephyr Development News 02 October 2018</title>
+      <link>https://foundries.io/insights/2018/10/02/zephyr-news-20181002/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/10/02/zephyr-news-20181002/</guid>
+      <description>&lt;p&gt;This is the 02 October 2018 newsletter tracking the latest
+&lt;a href=&#34;https://zephyrproject.org&#34;&gt;Zephyr&lt;/a&gt; development merged into the
+&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
+GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>microPlatform update 0.29</title>
       <link>https://foundries.io/insights/2018/09/21/blog-post-update-0.29/</link>
       <pubDate>Fri, 21 Sep 2018 16:09:36 +0000</pubDate>
