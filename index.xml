@@ -6,10 +6,128 @@
     <description>Recent content on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Sep 2018 16:09:36 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Oct 2018 16:35:48 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 0.30</title>
+      <link>https://foundries.io/insights/2018/10/02/blog-post-update-0.30/</link>
+      <pubDate>Tue, 02 Oct 2018 16:35:48 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/10/02/blog-post-update-0.30/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-30&#34;&gt;Zephyr microPlatform changes for 0.30&lt;/h2&gt;
+
+&lt;p&gt;Zephyr&amp;rsquo;s v1.13 release and improvements to the reference
+applications.
+    This includes the Zephyr v1.13 release. As such, this is the
+    last Zephyr microPlatform update from the v1.13 development
+    branch. As usual, the next microPlatform update will include a
+    rewritten history on top of the Zephyr v1.14 development
+    branch.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;The sample applications saw various improvements to their
+helper scripts which make it easier to test the systems.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;projects:
+    - name: MCUboot
+      manifest_project: mcuboot
+    - name: Zephyr
+      manifest_project: zephyr
+      bug_fixes:
+        - heading: Documentation
+          summary: |
+            The release&amp;rsquo;s documentation was finalized.
+        - heading: Drivers
+          summary: |
+            A fix was merged for ADC on SAM E70.
+        - heading: External
+          summary: |
+            mbedTLS was updated to version 2.12.0 from 2.9.0. This
+            includes various security fixes and functional
+            improvements. These come at the cost of increased
+            resource requirements.
+        - heading: Kernel
+          summary: |
+            Various attempts to support interrupts when
+            CONFIG_MULTITHREADING=n were postponed until after
+            v1.13.0, resolving some observed scheduler issues.
+        - heading: Libraries
+          summary: |
+            A couple of fixes were made to Zephyr&amp;rsquo;s CMSIS RTOS v1
+            support shim.
+        - heading: Miscellaneous
+          summary: |
+            A C++-related warning fix was merged to the stack
+            checking feature.
+        - heading: Samples
+          summary: |
+            The latest mbedTLS increased resource requirements;
+            the drivers/crypto sample was adjusted. The main stack
+            size was increased to a rather large 4096 B; the
+            minimum target RAM required to run the sample
+            increased from 16 KB to 20 KB.
+        - heading: Testing
+          summary: |
+            Various final adjustments and fixes were made to the
+            tests to get to release readiness.
+      features:
+        - heading: Bluetooth
+          summary: |
+            Support for the Central Address Resolution
+            characteristic was added.
+        - heading: Continuous Integration
+          summary: |
+            Sanitycheck footprint data for the v1.13.0 release was
+            added.
+        - heading: Cryptography
+          summary: |
+            The crypto tests were converted to use config-tls-
+            generic.h, an mbedTLS configuration file that is part
+            of Zephyr which is configurable with Kconfig.
+    - name: hawkBit and MQTT sample application
+      manifest_project: dm-hawkbit-mqtt
+      bug_fixes:
+        - heading: Helper script fixes
+          summary: |
+            The help text for the hawkbit.py script was fixed,
+            along with internal fixes for control of hawkBit&amp;rsquo;s
+            REST API.
+      features:
+        - heading: Helper script improvements
+          summary: |
+            The helper hawkbit.py script now supports Python 3,
+            has &amp;ldquo;rollout&amp;rdquo; parameters for controlling a
+            hawkBit-based firmware update to multiple devices, was
+            updated for compatibility with the latest hawkBit
+            release, and has improved help text.
+    - name: LWM2M sample application
+      manifest_project: dm-lwm2m
+      bug_fixes:
+        - heading: Helper script fixes
+          summary: |
+            Numerous fixes for error handling were merged to the
+            leshan.py helper script.
+      features:
+        - heading: Helper script improvements
+          summary: |
+            The helper script now uses mgmt.foundries.io as the
+            default host, supports multithreading with a &amp;ndash;threads
+            option, device type filtering with a &amp;ndash;device option,
+            logs with the standard logging module, updating of all
+            connected clients, and has quieter output.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-30&#34;&gt;Linux microPlatform changes for 0.30&lt;/h2&gt;
+
+&lt;p&gt;OSF Unified Linux Kernel updated to the 4.18.10 stable release.
+Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 0.29</title>
