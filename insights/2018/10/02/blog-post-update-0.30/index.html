@@ -148,104 +148,7 @@
 <h2 id="zephyr-microplatform-changes-for-0-30">Zephyr microPlatform changes for 0.30</h2>
 
 <p>Zephyr&rsquo;s v1.13 release and improvements to the reference
-applications.
-    This includes the Zephyr v1.13 release. As such, this is the
-    last Zephyr microPlatform update from the v1.13 development
-    branch. As usual, the next microPlatform update will include a
-    rewritten history on top of the Zephyr v1.14 development
-    branch.</p>
-
-<pre><code>The sample applications saw various improvements to their
-helper scripts which make it easier to test the systems.
-</code></pre>
-
-<p>projects:
-    - name: MCUboot
-      manifest_project: mcuboot
-    - name: Zephyr
-      manifest_project: zephyr
-      bug_fixes:
-        - heading: Documentation
-          summary: |
-            The release&rsquo;s documentation was finalized.
-        - heading: Drivers
-          summary: |
-            A fix was merged for ADC on SAM E70.
-        - heading: External
-          summary: |
-            mbedTLS was updated to version 2.12.0 from 2.9.0. This
-            includes various security fixes and functional
-            improvements. These come at the cost of increased
-            resource requirements.
-        - heading: Kernel
-          summary: |
-            Various attempts to support interrupts when
-            CONFIG_MULTITHREADING=n were postponed until after
-            v1.13.0, resolving some observed scheduler issues.
-        - heading: Libraries
-          summary: |
-            A couple of fixes were made to Zephyr&rsquo;s CMSIS RTOS v1
-            support shim.
-        - heading: Miscellaneous
-          summary: |
-            A C++-related warning fix was merged to the stack
-            checking feature.
-        - heading: Samples
-          summary: |
-            The latest mbedTLS increased resource requirements;
-            the drivers/crypto sample was adjusted. The main stack
-            size was increased to a rather large 4096 B; the
-            minimum target RAM required to run the sample
-            increased from 16 KB to 20 KB.
-        - heading: Testing
-          summary: |
-            Various final adjustments and fixes were made to the
-            tests to get to release readiness.
-      features:
-        - heading: Bluetooth
-          summary: |
-            Support for the Central Address Resolution
-            characteristic was added.
-        - heading: Continuous Integration
-          summary: |
-            Sanitycheck footprint data for the v1.13.0 release was
-            added.
-        - heading: Cryptography
-          summary: |
-            The crypto tests were converted to use config-tls-
-            generic.h, an mbedTLS configuration file that is part
-            of Zephyr which is configurable with Kconfig.
-    - name: hawkBit and MQTT sample application
-      manifest_project: dm-hawkbit-mqtt
-      bug_fixes:
-        - heading: Helper script fixes
-          summary: |
-            The help text for the hawkbit.py script was fixed,
-            along with internal fixes for control of hawkBit&rsquo;s
-            REST API.
-      features:
-        - heading: Helper script improvements
-          summary: |
-            The helper hawkbit.py script now supports Python 3,
-            has &ldquo;rollout&rdquo; parameters for controlling a
-            hawkBit-based firmware update to multiple devices, was
-            updated for compatibility with the latest hawkBit
-            release, and has improved help text.
-    - name: LWM2M sample application
-      manifest_project: dm-lwm2m
-      bug_fixes:
-        - heading: Helper script fixes
-          summary: |
-            Numerous fixes for error handling were merged to the
-            leshan.py helper script.
-      features:
-        - heading: Helper script improvements
-          summary: |
-            The helper script now uses mgmt.foundries.io as the
-            default host, supports multithreading with a &ndash;threads
-            option, device type filtering with a &ndash;device option,
-            logs with the standard logging module, updating of all
-            connected clients, and has quieter output.</p>
+applications.</p>
 
 <h2 id="linux-microplatform-changes-for-0-30">Linux microPlatform changes for 0.30</h2>
 
@@ -265,6 +168,121 @@ Core layer updates based on the latest OE/Yocto master changes.</p>
 
 <h2 id="components">Components</h2>
 
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="bluetooth">Bluetooth</h5>
+
+<p>Support for the Central Address Resolution
+characteristic was added.</p>
+
+<h5 id="continuous-integration">Continuous Integration</h5>
+
+<p>Sanitycheck footprint data for the v1.13.0 release was
+added.</p>
+
+<h5 id="cryptography">Cryptography</h5>
+
+<p>The crypto tests were converted to use config-tls-
+generic.h, an mbedTLS configuration file that is part
+of Zephyr which is configurable with Kconfig.</p>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="documentation">Documentation</h5>
+
+<p>The release&rsquo;s documentation was finalized.</p>
+
+<h5 id="drivers">Drivers</h5>
+
+<p>A fix was merged for ADC on SAM E70.</p>
+
+<h5 id="external">External</h5>
+
+<p>mbedTLS was updated to version 2.12.0 from 2.9.0. This
+includes various security fixes and functional
+improvements. These come at the cost of increased
+resource requirements.</p>
+
+<h5 id="kernel">Kernel</h5>
+
+<p>Various attempts to support interrupts when
+CONFIG_MULTITHREADING=n were postponed until after
+v1.13.0, resolving some observed scheduler issues.</p>
+
+<h5 id="libraries">Libraries</h5>
+
+<p>A couple of fixes were made to Zephyr&rsquo;s CMSIS RTOS v1
+support shim.</p>
+
+<h5 id="miscellaneous">Miscellaneous</h5>
+
+<p>A C++-related warning fix was merged to the stack
+checking feature.</p>
+
+<h5 id="samples">Samples</h5>
+
+<p>The latest mbedTLS increased resource requirements;
+the drivers/crypto sample was adjusted. The main stack
+size was increased to a rather large 4096 B; the
+minimum target RAM required to run the sample
+increased from 16 KB to 20 KB.</p>
+
+<h5 id="testing">Testing</h5>
+
+<p>Various final adjustments and fixes were made to the
+tests to get to release readiness.</p>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<h5 id="helper-script-improvements">Helper script improvements</h5>
+
+<p>The helper hawkbit.py script now supports Python 3,
+has &ldquo;rollout&rdquo; parameters for controlling a
+hawkBit-based firmware update to multiple devices, was
+updated for compatibility with the latest hawkBit
+release, and has improved help text.</p>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<h5 id="helper-script-fixes">Helper script fixes</h5>
+
+<p>The help text for the hawkbit.py script was fixed,
+along with internal fixes for control of hawkBit&rsquo;s
+REST API.</p>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<h5 id="helper-script-improvements-1">Helper script improvements</h5>
+
+<p>The helper script now uses mgmt.foundries.io as the
+default host, supports multithreading with a &ndash;threads
+option, device type filtering with a &ndash;device option,
+logs with the standard logging module, updating of all
+connected clients, and has quieter output.</p>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<h5 id="helper-script-fixes-1">Helper script fixes</h5>
+
+<p>Numerous fixes for error handling were merged to the
+leshan.py helper script.</p>
+
 <h1 id="linux-microplatform">Linux microPlatform</h1>
 
 <h2 id="highlights-1">Highlights</h2>
@@ -282,7 +300,7 @@ Core layer updates based on the latest OE/Yocto master changes.</p>
 
 <h3 id="openembedded-core-layer">OpenEmbedded-Core Layer</h3>
 
-<h4 id="features">Features</h4>
+<h4 id="features-4">Features</h4>
 
 <h5 id="layer-update">Layer Update</h5>
 
@@ -333,7 +351,7 @@ Util-linux updated to 2.32.1.
 Vala updated to 0.42.0.
 Yasm removed from OE-core.</p>
 
-<h4 id="bugs">Bugs</h4>
+<h4 id="bugs-4">Bugs</h4>
 
 <h5 id="libxml2">libxml2</h5>
 
@@ -510,7 +528,7 @@ leak information to receiver.</p>
 
 <h3 id="meta-openembedded-layer">Meta OpenEmbedded Layer</h3>
 
-<h4 id="features-1">Features</h4>
+<h4 id="features-5">Features</h4>
 
 <h5 id="layer-update-1">Layer Update</h5>
 
@@ -521,7 +539,7 @@ Python3-certifi updated to 2018.8.13.
 Python3-cython updated to 0.28.5.
 Python3-pip updated to 18.0.</p>
 
-<h4 id="bugs-1">Bugs</h4>
+<h4 id="bugs-5">Bugs</h4>
 
 <h5 id="hostapd">hostapd</h5>
 
@@ -534,7 +552,7 @@ is not checked, leading to a decryption oracle.</p>
 
 <h3 id="meta-freescale">Meta Freescale</h3>
 
-<h4 id="features-2">Features</h4>
+<h4 id="features-6">Features</h4>
 
 <h5 id="layer-update-2">Layer Update</h5>
 
@@ -551,62 +569,62 @@ Kernel-module-imx-gpu-viv updated to 6.2.4.p1.6.
 New machine definition for imx8mqevk, imx8qmmek and imx8qxpmek.
 U-boot-fslc updated to the 1e13b91a revision.</p>
 
-<h4 id="bugs-2">Bugs</h4>
+<h4 id="bugs-6">Bugs</h4>
 
 <p>Not addressed in this update</p>
 
 <h3 id="meta-intel">Meta Intel</h3>
 
-<h4 id="features-3">Features</h4>
+<h4 id="features-7">Features</h4>
 
 <h5 id="layer-update-3">Layer Update</h5>
 
 <p>Intel-microcode updated to 20180807.</p>
 
-<h4 id="bugs-3">Bugs</h4>
+<h4 id="bugs-7">Bugs</h4>
 
 <p>Not addressed in this update</p>
 
 <h3 id="meta-qualcomm">Meta Qualcomm</h3>
 
-<h4 id="features-4">Features</h4>
+<h4 id="features-8">Features</h4>
 
 <h5 id="layer-update-4">Layer Update</h5>
 
 <p>Updated bootrr, qmic, qrtr and rmtfs to the latest revision available.</p>
 
-<h4 id="bugs-4">Bugs</h4>
+<h4 id="bugs-8">Bugs</h4>
 
 <p>Not addressed in this update</p>
 
 <h3 id="meta-raspberrypi">Meta RaspberryPi</h3>
 
-<h4 id="features-5">Features</h4>
+<h4 id="features-9">Features</h4>
 
 <h5 id="layer-update-5">Layer Update</h5>
 
 <p>Firmware updated to 20180817.</p>
 
-<h4 id="bugs-5">Bugs</h4>
+<h4 id="bugs-9">Bugs</h4>
 
 <p>Not addressed in this update</p>
 
 <h3 id="meta-risc-v">Meta RISC-V</h3>
 
-<h4 id="features-6">Features</h4>
+<h4 id="features-10">Features</h4>
 
 <h5 id="layer-update-6">Layer Update</h5>
 
 <p>Gdb updated to the latest RISC-V fork.
 Qemu-riscv removed in favor of the upstream version.</p>
 
-<h4 id="bugs-6">Bugs</h4>
+<h4 id="bugs-10">Bugs</h4>
 
 <p>Not addressed in this update</p>
 
 <h3 id="meta-lmp-layer">Meta LMP Layer</h3>
 
-<h4 id="features-7">Features</h4>
+<h4 id="features-11">Features</h4>
 
 <h5 id="layer-update-7">Layer Update</h5>
 
@@ -614,7 +632,7 @@ Qemu-riscv removed in favor of the upstream version.</p>
 U-boot autoboot disabled for DragonBoard 410c and 820c to avoid boot
 failures caused by serial noise without the UART adapter.</p>
 
-<h4 id="bugs-7">Bugs</h4>
+<h4 id="bugs-11">Bugs</h4>
 
 <p>Not addressed in this update</p>
                     </div>
