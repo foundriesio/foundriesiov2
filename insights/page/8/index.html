@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>microPlatform update 0.4 | Foundries.io</title>
+  <title>Insights | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -122,11 +122,7 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>microPlatform update 0.4</h1>
-                    <p class="text-muted text-uppercase mb-small text-right color-white">
-                        
-                        December 13, 2017
-                    </p>
+                    <h1>Technologies, News and Demonstrations</h1>
                 </div>
             </div>
         </div>
@@ -135,171 +131,93 @@
 
     <div id="content">
         <div class="container">
-
             <div class="row">
-
                 
+                <div class="small-12 medium-8 large-9 columns" id="blog-listing-medium">
+                     
+                    <section class="post">
+                        <div class="row">
+                            <div class="small-12 medium-2 large-2 columns hide-for-small-only">
+                                <div class="image">
+                                    <a href="https://foundries.io/insights/2017/10/13/blog-post-update-17.10.1/">
+                                      
+                                      <img src="https://foundries.io/img/banners/update.png" class="img-responsive" alt="">
+                                      
+                                  </a>
+                                </div>
+                            </div>
+                            <div class="small-12 medium-8 large-9 columns">
+                                <h2>
+                                    <a href="https://foundries.io/insights/2017/10/13/blog-post-update-17.10.1/">microPlatform update 17.10.1</a>
+                                </h2>
+                                <div class="clearfix">
+                                    <p class="author-category">
+                                           in <a href="https://foundries.io/categories/updates">updates</a>  
+                                    </p>
+                                    <p class="date-comments">
+                                        <a href="https://foundries.io/insights/2017/10/13/blog-post-update-17.10.1/">
+                                            <i class="fa fa-calendar-o"></i>
+                                            October 13, 2017
+                                        </a>
+                                    </p>
+                                </div>
+                                <p class="intro"><h1 id="summary">Summary</h1>
 
-                <div class="small-12 columns" id="insights-post">
+<h2 id="zephyr-microplatform-changes-for-17-10-1">Zephyr microPlatform changes for 17.10.1</h2>
 
-                    <div id="post-content">
-                        <h1 id="summary">Summary</h1>
+<p>This release includes MCUBoot version 1.0.0, and a Zephyr tree that
+is based on 1.10. It also includes a new IoT Foundry application.</p>
 
-<h2 id="zephyr-microplatform-changes-for-0-4">Zephyr microPlatform changes for 0.4</h2>
+<p>The Zephyr tree includes many new features and bug fixes. Notable
+improvements for the Zephyr microPlatform include LWM2M protocol
+support, mainline support for 96Boards Carbon networking, DTLS
+support for the net_app library, and various Bluetooth and networking
+fixes.</p>
 
-<p>This is the final update for the Zephyr v1.10 development cycle.</p>
+<p>A new IoT Foundry application was added for a demonstration system
+providing firmware update and device communication via LWM2M.</p>
 
-<p>The next update will be non-fast-forward update to the Zephyr
-repository, to begin development based on the v1.11 master branch.</p>
+<h2 id="linux-microplatform-changes-for-17-10-1">Linux microPlatform changes for 17.10.1</h2>
 
-<h2 id="linux-microplatform-changes-for-0-4">Linux microPlatform changes for 0.4</h2>
+<p>This is the first Linux microPlatform release created by Foundries.io.</p>
 
-<p>No changes have gone into the LMP since 0.3.</p>
+<p></p></p>
+                                <p class="read-more">
+                                    <a href="https://foundries.io/insights/2017/10/13/blog-post-update-17.10.1/" class="btn btn-template-main">
+                                        Continue reading
+                                    </a>
+                                </p>
+                            </div>
+                            <hr>
+                        </div>
+                    </section>
+                    
 
-<p></p>
-
-<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
-
-<h2 id="summary-1">Summary</h2>
-
-<p>This is the final update for the Zephyr v1.10 development cycle.</p>
-
-<p>The next update will be non-fast-forward update to the Zephyr
-repository, to begin development based on the v1.11 master branch.</p>
-
-<h2 id="highlights">Highlights</h2>
-
-<ul>
-<li>Zephyr tree based on v1.10</li>
-</ul>
-
-<h2 id="components">Components</h2>
-
-<h3 id="mcuboot">MCUBoot</h3>
-
-<h4 id="features">Features</h4>
-
-<ul>
-<li>Not addressed in this update</li>
-</ul>
-
-<h4 id="bugs">Bugs</h4>
-
-<ul>
-<li>Not addressed in this update</li>
-</ul>
-
-<h3 id="zephyr">Zephyr</h3>
-
-<h4 id="features-1">Features</h4>
-
-<ul>
-<li>Not addressed in this update</li>
-</ul>
-
-<h4 id="bugs-1">Bugs</h4>
-
-<h5 id="bluetooth-fixes">Bluetooth fixes:</h5>
-
-<ul>
-<li>Notable fixes include over ten patches to Bluetooth
-Mesh, along with two fixes to the core BT controller
-code.</li>
-</ul>
-
-<h5 id="cmake-fixes">CMake fixes:</h5>
-
-<ul>
-<li>The CMake build system received several fixes for
-various issues.</li>
-</ul>
-
-<h5 id="ipv6-nd-fix">IPv6 ND fix:</h5>
-
-<ul>
-<li>A fix to the core IPv6 networking code was merged which
-fixes how random timers are initialized during neighbor
-discovery, eliminating erroneous traffic on the network.</li>
-</ul>
-
-<h3 id="zephyr-fota-samples">Zephyr FOTA Samples</h3>
-
-<h4 id="features-2">Features</h4>
-
-<h5 id="hawkbit-switches-to-new-http-library">hawkBit switches to new HTTP library:</h5>
-
-<ul>
-<li>The hawkBit demo has been updated to use the new HTTP
-library. This eliminates various deprecation-related
-warnings in the build.</li>
-</ul>
-
-<h4 id="bugs-2">Bugs</h4>
-
-<h5 id="fixes-for-local-conf-files">Fixes for local.conf files:</h5>
-
-<ul>
-<li>The build has been fixed for users who have a local.conf
-in one of their application directories.</li>
-</ul>
-
-<h1 id="linux-microplatform">Linux microPlatform</h1>
-
-<h2 id="summary-2">Summary</h2>
-
-<p>No changes have gone into the LMP since 0.3.</p>
-
-<h2 id="highlights-1">Highlights</h2>
-
-<ul>
-<li>No changes were made since 0.3</li>
-</ul>
-
-<h2 id="components-1">Components</h2>
+                    <div class="row">
+                        <ul class="pager">
+                            <div class="previous">
+                                
+                                <li class="previous">
+                                    <a class="medium radius button" href="/insights/page/7/">&larr; Newer</a>
+                                </li>
+                                
+                            </div>
+                            
+                                <li class="next disabled">
+                                    <a class="medium radius button" href="#">Older &rarr;</a>
+                                </li>
+                                
+                            </div>
+                        </ul>
                     </div>
-                    
-                    
-                    <div id="comments">
-                        <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                    </div>
-                    
 
                 </div>
 
-            </div>
+                <div class="small-12 medium-4 large-3 columns" id="blog-categories">
 
-            <div class="row">
-                
+                    
 
-                
-
-                
-
-                <div class="small-12 columns">
-
-                    <div class="post-categories">
-                        
-
-                        
+                    
 
 
 
@@ -488,17 +406,11 @@ in one of their application directories.</li>
 
 
 
-                        
-                    </div>
-
+                    
                 </div>
-                
-
-                
 
             </div>
             
-
         </div>
         
     </div>
@@ -620,4 +532,5 @@ jQuery(function($) {
 
 
 </body>
+
 </html>

@@ -6,10 +6,32 @@
     <description>Recent content in Linux on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Oct 2018 16:35:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Oct 2018 15:16:35 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 0.31</title>
+      <link>https://foundries.io/insights/2018/10/19/blog-post-update-0.31/</link>
+      <pubDate>Fri, 19 Oct 2018 15:16:35 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/10/19/blog-post-update-0.31/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-31&#34;&gt;Zephyr microPlatform changes for 0.31&lt;/h2&gt;
+
+&lt;p&gt;Zephyr&amp;rsquo;s v1.13 release and improvements to the reference
+applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-31&#34;&gt;Linux microPlatform changes for 0.31&lt;/h2&gt;
+
+&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.13 stable release.
+Meta-lmp now supports upstream-based Linux Kernel trees, facilitating upstream CI/CD and development.
+Core layer updates based on the latest OE/Yocto master changes (just before transitioning to thud).&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 0.30</title>
