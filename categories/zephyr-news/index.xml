@@ -68,6 +68,18 @@ GitHub&lt;/a&gt;.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Zephyr Logging Survival Guide, Part 2: Logger Subsystem</title>
+      <link>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</link>
+      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</guid>
+      <description>&lt;p&gt;An overview of the new logging system merged for v1.13, or: &lt;em&gt;Can&amp;rsquo;t Get
+Enough of your Logs, Zephyr&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Zephyr Development News 26 July 2018</title>
       <link>https://foundries.io/insights/2018/07/26/zephyr-news-20180726/</link>
       <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
@@ -77,6 +89,18 @@ GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
 GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Zephyr Logging Survival Guide, Part 1: SYS_LOG</title>
+      <link>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</link>
+      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</guid>
+      <description>&lt;p&gt;An overview of Zephyr&amp;rsquo;s longstanding SYS_LOG API, or: &lt;em&gt;Blog Drops
+Zephyr Log Bombs Without Qualms&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

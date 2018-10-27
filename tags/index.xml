@@ -93,6 +93,15 @@
     </item>
     
     <item>
+      <title>Demos</title>
+      <link>https://foundries.io/tags/demos/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/tags/demos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Docker</title>
       <link>https://foundries.io/tags/docker/</link>
       <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
@@ -107,6 +116,15 @@
       <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
       
       <guid>https://foundries.io/tags/docker-compose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fota</title>
+      <link>https://foundries.io/tags/fota/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/tags/fota/</guid>
       <description></description>
     </item>
     
@@ -174,15 +192,6 @@
     </item>
     
     <item>
-      <title>Lmp</title>
-      <link>https://foundries.io/tags/lmp/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/tags/lmp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Lte</title>
       <link>https://foundries.io/tags/lte/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
@@ -230,7 +239,7 @@
     <item>
       <title>Microplatform</title>
       <link>https://foundries.io/tags/microplatform/</link>
-      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 09 May 2018 19:48:23 +0000</pubDate>
       
       <guid>https://foundries.io/tags/microplatform/</guid>
       <description></description>

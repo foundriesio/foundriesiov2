@@ -404,13 +404,13 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/blockchain/</loc>
+    <loc>https://foundries.io/tags/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/blockchain/</loc>
+    <loc>https://foundries.io/categories/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -462,6 +462,12 @@
   </url>
   
   <url>
+    <loc>https://foundries.io/tags/demos/</loc>
+    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://foundries.io/categories/demos/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -476,6 +482,12 @@
   <url>
     <loc>https://foundries.io/tags/docker-compose/</loc>
     <lastmod>2018-05-08T06:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://foundries.io/tags/fota/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -549,18 +561,6 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/linux-mp/</loc>
-    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://foundries.io/tags/lmp/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://foundries.io/tags/lte/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -591,20 +591,20 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/microplatform/</loc>
-    <lastmod>2018-10-19T15:16:35+00:00</lastmod>
+    <loc>https://foundries.io/tags/microplatform/</loc>
+    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/microplatform/</loc>
-    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/categories/microplatforms/</loc>
+    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://foundries.io/categories/mp-containers/</loc>
-    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -685,12 +685,6 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/zephyr/</loc>
-    <lastmod>2018-08-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://foundries.io/tags/zephyr/</loc>
     <lastmod>2018-10-19T15:16:35+00:00</lastmod>
     <priority>0</priority>
@@ -698,7 +692,7 @@
   
   <url>
     <loc>https://foundries.io/categories/zephyr-mp/</loc>
-    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

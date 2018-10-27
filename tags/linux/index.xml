@@ -332,6 +332,17 @@ heading towards 1.2.0 release, samples compatibility updates.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Google Assistant on the LmP</title>
+      <link>https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/</link>
+      <pubDate>Wed, 09 May 2018 19:48:23 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/</guid>
+      <description>&lt;p&gt;In this blog, I describe how to run the Google Assistant SDK on a Raspberry Pi with an external speaker and microphone.  After you get things configured and gather key pieces of information you&amp;rsquo;ll have a simple, portable and easy to reproduce Google Assistant appliance.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>microPlatform update 0.16</title>
       <link>https://foundries.io/insights/2018/05/04/blog-post-update-0.16/</link>
       <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
@@ -385,6 +396,17 @@ headed towards 1.2.0, LWM2M usability improvements.&lt;/p&gt;
 &lt;h2 id=&#34;linux-microplatform-changes-for-0-14&#34;&gt;Linux microPlatform changes for 0.14&lt;/h2&gt;
 
 &lt;p&gt;OSF Unified Linux Kernel updated to the 4.14.33 stable release.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux microPlatform, now with OTA updates (beta)</title>
+      <link>https://foundries.io/insights/2018/04/11/20180411-over-the-air/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/04/11/20180411-over-the-air/</guid>
+      <description>&lt;p&gt;Starting with Linux microPlatform update 0.13, we are including support for over-the-air (OTA) updates.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -500,6 +522,16 @@ UsrMerge (&lt;a href=&#34;https://www.freedesktop.org/wiki/Software/systemd/TheC
 is now enabled by default in LMP.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blockchain for the Internet of Things</title>
+      <link>https://foundries.io/insights/2018/02/23/20180223-blockchain-for-iot/</link>
+      <pubDate>Fri, 23 Feb 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/02/23/20180223-blockchain-for-iot/</guid>
+      <description>It seems every industry is placing bets on how blockchain technologies will revolutionize the way they do business. The internet of things is not immune to this hype, but the fundamental question remains. How can it be useful?
+Centralized vs Decentralized Trust Models The flow of data, that is what the internet of things is all about. How to retrieve it, where to store it, and who can access it.</description>
     </item>
     
     <item>

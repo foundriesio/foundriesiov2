@@ -93,48 +93,6 @@ DFU support within Zephyr provided by
     </item>
     
     <item>
-      <title>Using AT&amp;T&#39;s IoT Dev Kit</title>
-      <link>https://foundries.io/insights/2018/04/11/20180411-iot-dev-kit/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/04/11/20180411-iot-dev-kit/</guid>
-      <description>&lt;p&gt;In the Zephyr microPlatform update 0.13, we have released support for the
-&lt;a href=&#34;https://marketplace.att.com/products/att-iot-starter-kit-lte-m&#34;&gt;AT&amp;amp;T IoT Starter Kit (LTE-M)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With the following instructions, you can start using Zephyr and the IoT Starter Kit with LWM2M in a matter of minutes.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ELC / Open IoT Summit 2018 Slides now available</title>
-      <link>https://foundries.io/insights/2018/03/15/20180315-iotsummit/</link>
-      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/03/15/20180315-iotsummit/</guid>
-      <description>&lt;p&gt;Foundries.io presented 4 sessions at this year&amp;rsquo;s IoT Summit and Embedded
-Linux Conference and the slides are now available.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Foundries.io at ELC / Open IoT Summit 2018</title>
-      <link>https://foundries.io/insights/2018/01/26/20180126-iotsummit/</link>
-      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/01/26/20180126-iotsummit/</guid>
-      <description>&lt;p&gt;Foundries.io is excited to have an opportunity to demonstrate
-our end to end IoT microPlatforms at this years Embedded Linux Conference and
-the Open IoT Summit alongside the Zephry project.&lt;/p&gt;
-
-&lt;p&gt;This year, the events will take place in Portland Oregon, at the downtown
-Portland Hilton from March 12-15.  Foundries.io will be presenting
-on 4 topics at this year&amp;rsquo;s IoT Summit.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Using your own firmware signing keys with MCUBoot</title>
       <link>https://foundries.io/insights/2018/01/17/20180117-mcuboot-keys/</link>
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>

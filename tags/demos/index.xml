@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demos on Foundries.io</title>
+    <link>https://foundries.io/tags/demos/</link>
+    <description>Recent content in Demos on Foundries.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://foundries.io/tags/demos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ELC / Open IoT Summit 2018 Slides now available</title>
+      <link>https://foundries.io/insights/2018/03/15/20180315-iotsummit/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/03/15/20180315-iotsummit/</guid>
+      <description>&lt;p&gt;Foundries.io presented 4 sessions at this year&amp;rsquo;s IoT Summit and Embedded
+Linux Conference and the slides are now available.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
