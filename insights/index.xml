@@ -6,10 +6,31 @@
     <description>Recent content in Insights on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Oct 2018 15:16:35 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Oct 2018 23:54:39 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/insights/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 0.32</title>
+      <link>https://foundries.io/insights/2018/10/29/blog-post-update-0.32/</link>
+      <pubDate>Mon, 29 Oct 2018 23:54:39 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/10/29/blog-post-update-0.32/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-32&#34;&gt;Zephyr microPlatform changes for 0.32&lt;/h2&gt;
+
+&lt;p&gt;The push towards v1.14 continues; MCUboot supports encrypted images.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-32&#34;&gt;Linux microPlatform changes for 0.32&lt;/h2&gt;
+
+&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.16 stable release.
+Core layer updates based on the latest OE/Yocto master/thud changes.
+Initial support for the 96Boards HiKey960 board.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 0.31</title>
