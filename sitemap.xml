@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foundries.io/insights/2018/11/08/blog-post-update-33/</loc>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://foundries.io/insights/2018/10/29/blog-post-update-0.32/</loc>
     <lastmod>2018-10-29T23:54:39+00:00</lastmod>
   </url>
@@ -426,7 +431,7 @@
   
   <url>
     <loc>https://foundries.io/tags/bugs/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -456,7 +461,7 @@
   
   <url>
     <loc>https://foundries.io/tags/cve/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -504,7 +509,7 @@
   
   <url>
     <loc>https://foundries.io/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -522,7 +527,7 @@
   
   <url>
     <loc>https://foundries.io/insights/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -561,7 +566,7 @@
   
   <url>
     <loc>https://foundries.io/tags/linux/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -603,7 +608,7 @@
   
   <url>
     <loc>https://foundries.io/categories/microplatform/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -679,13 +684,13 @@
   
   <url>
     <loc>https://foundries.io/tags/update/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://foundries.io/categories/updates/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -697,7 +702,7 @@
   
   <url>
     <loc>https://foundries.io/tags/zephyr/</loc>
-    <lastmod>2018-10-29T23:54:39+00:00</lastmod>
+    <lastmod>2018-11-08T02:01:34+00:00</lastmod>
     <priority>0</priority>
   </url>
   

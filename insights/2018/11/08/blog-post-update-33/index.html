@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Assistant | Foundries.io</title>
+  <title>microPlatform update 33 | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -131,7 +131,11 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Technologies, News and Demonstrations</h1>
+                    <h1>microPlatform update 33</h1>
+                    <p class="text-muted text-uppercase mb-small text-right color-white">
+                        
+                        November 8, 2018
+                    </p>
                 </div>
             </div>
         </div>
@@ -140,86 +144,458 @@
 
     <div id="content">
         <div class="container">
+
             <div class="row">
+
                 
-                <div class="small-12 medium-8 large-9 columns" id="blog-listing-medium">
-                    
-                    
-                    
-                    
-                    
-                    <section class="post">
-                        <div class="row">
-                            <div class="small-12 medium-2 large-2 columns hide-for-small-only">
-                                <div class="image">
-                                    <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/">
-                                        
-                                        <img src="https://foundries.io/img/banners/linux.png" class="img-responsive" alt="">
-                                        
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="small-12 medium-8 large-9 columns">
-                                <h2>
-                                    <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/">Google Assistant on the LmP</a>
-                                </h2>
-                                <div class="clearfix">
-                                    <p class="author-category">
-                                        
-                                            By Alan Bennett
-                                        
-                                        
-                                             in <a href="https://foundries.io/categories/mp-containers">mp containers</a>
-                                            
-                                        
-                                    </p>
-                                    <p class="date-comments">
-                                        <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/">
-                                            <i class="fa fa-calendar-o"></i>
-                                            May 9, 2018
-                                        </a>
-                                    </p>
-                                </div>
-                                <p class="intro"><p>In this blog, I describe how to run the Google Assistant SDK on a Raspberry Pi with an external speaker and microphone.  After you get things configured and gather key pieces of information you&rsquo;ll have a simple, portable and easy to reproduce Google Assistant appliance.</p>
 
-<p></p></p>
-                                <p class="read-more">
-                                    <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/" class="btn btn-template-main">
-                                        Continue reading
-                                    </a>
-                                </p>
-                            </div>
-                            <hr>
-                        </div>
-                    </section>
-                    
+                <div class="small-12 columns" id="insights-post">
 
-                    <div class="row">
-                        <ul class="pager">
-                            <div class="previous">
-                                
-                                <li class="previous disabled">
-                                    <a class="medium radius button" href="#">&larr; Newer</a></li>
-                                
-                            </div>
-                            <div class="next">
-                                
-                                <li class="next disabled">
-                                    <a class="medium radius button" href="#">Older &rarr;</a>
-                                </li>
-                                
-                            </div>
-                        </ul>
+                    <div id="post-content">
+                        <h1 id="summary">Summary</h1>
+
+<h2 id="zephyr-microplatform-changes-for-33">Zephyr microPlatform changes for 33</h2>
+
+<p>The push towards v1.14 continues; MCUboot supports nRF52840 Dongle.</p>
+
+<h2 id="linux-microplatform-changes-for-33">Linux microPlatform changes for 33</h2>
+
+<p>LMP Unified Linux Kernel updated to the 4.18.16 stable release.
+Core layer updates based on the latest OE/Yocto master/thud changes.
+Initial support for the 96Boards HiKey960 board.</p>
+
+<p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Zephyr v1.14 development snapshot</li>
+<li>MCUboot with support for the nRF52840 PCA10059 Dongle</li>
+<li>Sample applications get some binary size reduction</li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<h5 id="nrf52840-pca10059-dongle-support">nRF52840 PCA10059 Dongle support</h5>
+
+<p>Support for the nRF52840 PCA10059 Dongle was added which allows
+users to update their devices w/o the use of a SEGGER J-Link.</p>
+
+<h4 id="bugs">Bugs</h4>
+
+<h5 id="zephyr-build-fix-due-to-upstream-changes">Zephyr build fix due to upstream changes</h5>
+
+<p>Due to a change in upstream Zephyr a missing declaration
+for sys_clock_disable was added.</p>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="segger-rtt-support-arrives-for-logger-and-new-shell-subsystem">Segger RTT support arrives for Logger and new shell subsystem</h5>
+
+<p>Previously supported with SYS_LOG, we now have Segger
+RTT support as a backend for Logger as well as the new
+shell subsystem.  There are a few CONFIG knobs worth
+researching if you plan on using this feature:</p>
+
+<p><a href="https://github.com/zephyrproject-rtos/zephyr/blob/master/subsys/logging/Kconfig#L297">https://github.com/zephyrproject-rtos/zephyr/blob/master/subsys/logging/Kconfig#L297</a></p>
+
+<h5 id="logger-migration-continues">Logger migration continues</h5>
+
+<p>The Bluetooth subsystem and related samples/tests were
+notably missing from the last update with regard to
+Logger changes.  That has been remedied. Also migrated
+were the qdex_nrfx sensor, ms5837 sample, and the net
+subsystem removed the last of the SYS_LOG usage.</p>
+
+<h5 id="sockets-migration-for-coap">Sockets migration for CoAP</h5>
+
+<p>A POSIX socket friendly implementation of the CoAP
+library was introduced. This new implementation uses
+fixed size &ldquo;flat buffers&rdquo; instead of the net_pkt /
+net_buf structures.  It simplifies the code and makes
+it easier to maintain in the future.  Also added were
+socket-based samples for coap_client and coap_server
+along with related tests.  CONFIG_COAP_SOCK is the
+enabler config for this new implementation.</p>
+
+<h5 id="getting-started-documentation-overhaul">\&ldquo;Getting Started\&rdquo; documentation overhaul</h5>
+
+<p>The getting started documentation at
+<a href="https://docs.zephyrproject.org/latest/getting_started/getting_started.html">https://docs.zephyrproject.org/latest/getting_started/getting_started.html</a>
+saw an overhaul to fix the following issues and clean the language.</p>
+
+<ul>
+<li>Reader needed to jump forward and backward in the documents
+depending on what their system already has installed.</li>
+<li>Several sections such as operating setup guides and toolchain
+setup instructions had duplicated content.</li>
+<li>Linux documentation across several distros was incomplete.</li>
+<li>The requirements for building the documentation was not
+clearly separated from the requirements to build Zephyr.</li>
+<li>The toolchain setup documenation is confusing, incomplete and
+scattered.</li>
+</ul>
+
+<h5 id="more-misra-c-compliance-work">More MISRA C compliance work</h5>
+
+<p>Continuing the push towards meeting MISRA (Motor
+Industry Software Reliability Association) C
+compliance, several kernel areas received changes
+including kernel device, queue, alert, mutex and
+include/dlist.h areas.</p>
+
+<h5 id="new-reel-board-bluetooth-mesh-sample">New reel_board Bluetooth Mesh sample</h5>
+
+<p>At the ELC-Europe Zephyr Hackathon, a mesh badge
+sample was demonstrated on the reel_board
+(nRF52840-based HW) showing off some of the badge&rsquo;s
+capabilities along with Bluetooth Mesh.  The source
+lives under samples/boards/reel_board/mesh_badge.</p>
+
+<h5 id="nrf5-entropy-driver-rework">nRF5 entropy driver rework</h5>
+
+<p>This update sees some significant rework of the nRF5
+entropy driver.  The changes include:</p>
+
+<ul>
+<li>Move to HAL functions for register access vs.
+accessing the HW registers directly as the HAL
+includes barriers where needed to ensure changes are
+reflected immediately.</li>
+<li>A HW access race condition was addressed.</li>
+<li>Function names were cleaned up to be more accurate.</li>
+<li>Random number pool implementation was replaced to improve
+efficiency and eliminate race conditions.</li>
+<li>Implemented several optimizations to elminiate excessive
+dereferences.</li>
+</ul>
+
+<h5 id="frdm-kw41z-ble-low-energy-development-kit-enabled-as-a-shield">FRDM-KW41Z BLE low energy development kit enabled as a &ldquo;shield&rdquo;</h5>
+
+<p>NXP added a shield configuration to support the FRDM-
+KW41Z BLE low energy development kit which can be
+stacked onto other boards via Arduino compatible
+headers.  Support can be enabled via the
+CONFIG_SHIELD_FRDM_KW41Z=y config.</p>
+
+<h5 id="other-board-enablement-news">Other board enablement news</h5>
+
+<ul>
+<li>disco_l475_iot1 now supports the es-WiFi module</li>
+<li>Added a new ST board: nucleo_f746zg</li>
+</ul>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="usbd-regression-fixed">USBD regression fixed</h5>
+
+<p>USBD rework for nRF52 SoCs introduced a TX timeout bug which is now fixed.
+This affected such samples as bluetooth/hci_usb and net/wpanusb.</p>
+
+<h5 id="handful-of-bluetooth-subsystem-fixes">Handful of Bluetooth subsystem fixes</h5>
+
+<p>The bluetooth subsystem saw a few fixes involving out-of-scope pointer usage,
+an integer overflow and uninitialized scalar variables in the shell.</p>
+
+<h5 id="nrf52-bsim-avoids-a-null-pointer-issue">nrf52_bsim avoids a NULL pointer issue</h5>
+
+<p>The nrf52_bsim board fixed a possible NULL pointer dereference.</p>
+
+<h5 id="logger-out-of-bounds-write-issue">Logger out-of-bounds write issue</h5>
+
+<p>Logger had an out-of-bounds write in log_strdup which was fixed.</p>
+
+<h5 id="various-fixes-to-the-shell-subsystem">Various fixes to the shell subsystem</h5>
+
+<p>Shell subsystem saw various fixes to the history feature, assert in wildcard
+plugin, TXDONE signal not being cleared and some typos.</p>
+
+<h5 id="network-subsystem-discards-various-kinds-of-bad-packets">Network subsystem discards various kinds of &ldquo;bad&rdquo; packets</h5>
+
+<p>The network subsystem saw several patches to weed out various kinds of
+packets under certain circumstances.  Examples are:</p>
+
+<ul>
+<li>IPv4: drop packet if source address is broadcast one</li>
+<li>IPv6: interface scope multicast destination address packet</li>
+<li>IPv6: zero scope multicast packet</li>
+<li>IPv6: site scope multicast destination address packet</li>
+<li>IPv6: organisation scope multicast destination address packet</li>
+<li>ICMPv6: verify checksum before accepting packet</li>
+</ul>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<h5 id="binary-size-reduction">Binary size reduction</h5>
+
+<p>With the changes to Logger upstream, the binary size of the
+Hawkbit-MQTT sample had grown quite shockingly.  We&rsquo;ve toned
+down that growth via the CONFIG_LOG_DEFAULT_LEVEL=0 setting.</p>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<h5 id="added-a-script-to-perform-automated-reboot-testing-via-leshan">Added a script to perform automated reboot testing via Leshan</h5>
+
+<p>Example to setup reboot testing for 6 devices connected to a
+Leshan server running on 192.168.0.1 port 8081:
+python3 zephyr-fota-samples/dm-lwm2m/scripts/reset_targets.py -l 50 -t 6 -host 192.168.0.1 -port 8081</p>
+
+<p>See &ldquo;python3 zephyr-fota-samples/dm-lwm2m/scripts/reset_targets.py &ndash;help&rdquo;
+for more information.</p>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<h5 id="binary-size-reduction-1">Binary size reduction</h5>
+
+<p>With the changes to Logger upstream, the binary size of the
+LwM2M sample had grown quite shockingly.  We&rsquo;ve toned
+down that growth via the CONFIG_LOG_DEFAULT_LEVEL=0 setting.</p>
+
+<h5 id="leshan-script-cleanup">Leshan script cleanup</h5>
+
+<p>To avoid copy/paste errors in the future, several differences
+in the reset_targets script were applied to the Leshan script:</p>
+
+<ul>
+<li>Call the interrupt handler setup in main()</li>
+<li>Check for 200 and 201 response.status consistently</li>
+<li>Use sys.exit() instead of exit()</li>
+<li>Use response.json() instead of json.loads(response.content)</li>
+<li>In &ldquo;put&rdquo; method use json parameter instead of data=json.dumps(data)</li>
+</ul>
+
+<h5 id="re-enabled-the-modem-shell">Re-enabled the Modem shell</h5>
+
+<p>In our last update the modem shell driver was in the process of
+being converted to the new subsystem.  That&rsquo;s now been merged
+and the modem shell is re-enabled for the dm-lwm2m sample.</p>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<ul>
+<li>LMP Unified Linux Kernel updated to 4.18.16.</li>
+<li>Core layer series now compatible with the OE/Yocto thud release.</li>
+<li>OE-Core build security flags are now enabled by default in LMP.</li>
+<li>Initial support for the HiKey960 board.</li>
+</ul>
+
+<h2 id="components-1">Components</h2>
+
+<h3 id="meta-freescale">Meta Freescale</h3>
+
+<h4 id="features-4">Features</h4>
+
+<h5 id="layer-update">Layer Update</h5>
+
+<p>Linux-fslc updated to 4.18.
+NXP BSP updated to L4.9.123-2.3.0_8mm_ga.
+New machine definition for for imx8mmevk.
+Qoriq BSP updated to LSK v18.09.
+U-boot-fslc updated to the 2018.09-based fork.</p>
+
+<h4 id="bugs-4">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-virtualization">Meta Virtualization</h3>
+
+<h4 id="features-5">Features</h4>
+
+<h5 id="layer-update-1">Layer Update</h5>
+
+<p>LXC updated to 3.0.2.</p>
+
+<h4 id="bugs-5">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-risc-v">Meta RISC-V</h3>
+
+<h4 id="features-6">Features</h4>
+
+<h5 id="layer-update-2">Layer Update</h5>
+
+<p>Initial u-boot support for qemuriscv64.</p>
+
+<h4 id="bugs-6">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-yocto">Meta Yocto</h3>
+
+<h4 id="features-7">Features</h4>
+
+<h5 id="layer-update-3">Layer Update</h5>
+
+<p>Linux-yocto updated to 4.18.</p>
+
+<h4 id="bugs-7">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="openembedded-core-layer">OpenEmbedded-Core Layer</h3>
+
+<h4 id="features-8">Features</h4>
+
+<h5 id="layer-update-4">Layer Update</h5>
+
+<p>Bash updated to 4.4.23.
+Go 1.10 recipes removed in favor of 1.11.1.
+Glibc updated to the 2.8-044c96f0d5 revision.
+Valgrind updated to 3.14.0.</p>
+
+<h4 id="bugs-8">Bugs</h4>
+
+<h5 id="elfutils">elfutils</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16402">CVE-2018-16402</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16403">CVE-2018-16403</a></li>
+</ul>
+
+<h5 id="libsndfile1">libsndfile1</h5>
+
+<p>Stack-based buffer overflow in psf_memset in common.c in libsndfile 1.0.28.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13139">CVE-2018-13139</a></li>
+</ul>
+
+<h5 id="qemu">qemu</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17958">CVE-2018-17958</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17962">CVE-2018-17962</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17963">CVE-2018-17963</a></li>
+</ul>
+
+<h5 id="binutils">binutils</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17358">CVE-2018-17358</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17359">CVE-2018-17359</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17360">CVE-2018-17360</a></li>
+</ul>
+
+<h3 id="meta-openembedded-layer">Meta OpenEmbedded Layer</h3>
+
+<h4 id="features-9">Features</h4>
+
+<h5 id="layer-update-5">Layer Update</h5>
+
+<p>Dracut updated to 049.
+Hwdata updated to 0.316.
+Udisks2 updated to 2.7.8.
+Wireshark updated to 2.6.4.</p>
+
+<h4 id="bugs-9">Bugs</h4>
+
+<h5 id="python3-requests">python3-requests</h5>
+
+<p>The Requests package before 2.20.0 for Python sends an HTTP Authorization
+header to an http URI upon receiving a same-hostname https-to-http redirect,
+which makes it easier for remote attackers to discover credentials by
+sniffing the network.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16402">CVE-2018-16402</a></li>
+</ul>
+
+<h3 id="meta-updater-layer">Meta Updater Layer</h3>
+
+<h4 id="features-10">Features</h4>
+
+<h5 id="layer-update-6">Layer Update</h5>
+
+<p>Added support for setting custom OSTree commit subject and body.
+Aktualizr updated to the 39acfec48d revision.
+Otaimg image renamed to ota-ext4 in order to simplify the image build process.</p>
+
+<h4 id="bugs-10">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-lmp-layer">Meta LMP Layer</h3>
+
+<h4 id="features-11">Features</h4>
+
+<h5 id="layer-update-7">Layer Update</h5>
+
+<p>Added initial support for the HiKey960 board.
+LMP Unified Linux Kernel updated to 4.18.16.
+OE-Core security flags are now enabled by default in LMP.</p>
+
+<h4 id="bugs-11">Bugs</h4>
+
+<p>Not addressed in this update</p>
                     </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
 
                 </div>
 
+            </div>
+
+            <div class="row">
                 
-                <div class="small-12 medium-4 large-3 columns" id="blog-categories">
 
-                    
+                
 
-                    
+                
+
+                <div class="small-12 columns">
+
+                    <div class="post-categories">
+                        
+
+                        
 
 
 
@@ -408,11 +784,17 @@
 
 
 
-                    
+                        
+                    </div>
+
                 </div>
+                
+
+                
 
             </div>
             
+
         </div>
         
     </div>
@@ -534,5 +916,4 @@ jQuery(function($) {
 
 
 </body>
-
 </html>
