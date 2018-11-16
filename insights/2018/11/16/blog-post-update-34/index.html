@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>K8s | Foundries.io</title>
+  <title>microPlatform update 34 | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -131,7 +131,11 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Technologies, News and Demonstrations</h1>
+                    <h1>microPlatform update 34</h1>
+                    <p class="text-muted text-uppercase mb-small text-right color-white">
+                        
+                        November 16, 2018
+                    </p>
                 </div>
             </div>
         </div>
@@ -140,87 +144,446 @@
 
     <div id="content">
         <div class="container">
+
             <div class="row">
+
                 
-                <div class="small-12 medium-8 large-9 columns" id="blog-listing-medium">
-                    
-                    
-                    
-                    
-                    
-                    <section class="post">
-                        <div class="row">
-                            <div class="small-12 medium-2 large-2 columns hide-for-small-only">
-                                <div class="image">
-                                    <a href="https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/">
-                                        
-                                        <img src="https://foundries.io/img/banners/docker.png" class="img-responsive" alt="">
-                                        
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="small-12 medium-8 large-9 columns">
-                                <h2>
-                                    <a href="https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/">Simplify your life: multi-architecture docker containers</a>
-                                </h2>
-                                <div class="clearfix">
-                                    <p class="author-category">
-                                        
-                                        
-                                             in <a href="https://foundries.io/categories/mp-containers">mp containers</a>
-                                            
-                                        
-                                    </p>
-                                    <p class="date-comments">
-                                        <a href="https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/">
-                                            <i class="fa fa-calendar-o"></i>
-                                            January 17, 2018
-                                        </a>
-                                    </p>
-                                </div>
-                                <p class="intro"><blockquote>
-<p>“The great thing about Docker is that your developers run the exact same container as what runs in production.”</p>
-</blockquote>
 
-<p>This is what the Docker hype is about, creating reproducibile environments for applications. The technology enables us to create lightweight, secure microservices which run on an array of SoCs that can be updated over the air in a matter of seconds. We believe that accelerating code delivery will ultimately reduce time to market. Hype aside, Docker has matured and has become a foundational building block of our microPlatforms.
-</p></p>
-                                <p class="read-more">
-                                    <a href="https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/" class="btn btn-template-main">
-                                        Continue reading
-                                    </a>
-                                </p>
-                            </div>
-                            <hr>
-                        </div>
-                    </section>
-                    
+                <div class="small-12 columns" id="insights-post">
 
-                    <div class="row">
-                        <ul class="pager">
-                            <div class="previous">
-                                
-                                <li class="previous disabled">
-                                    <a class="medium radius button" href="#">&larr; Newer</a></li>
-                                
-                            </div>
-                            <div class="next">
-                                
-                                <li class="next disabled">
-                                    <a class="medium radius button" href="#">Older &rarr;</a>
-                                </li>
-                                
-                            </div>
-                        </ul>
+                    <div id="post-content">
+                        <h1 id="summary">Summary</h1>
+
+<h2 id="zephyr-microplatform-changes-for-34">Zephyr microPlatform changes for 34</h2>
+
+<p>A somewhat smaller update of Zephyr as part of the v1.14 development
+cycle &ndash; no changes to MCUboot or the sample applications.</p>
+
+<h2 id="linux-microplatform-changes-for-34">Linux microPlatform changes for 34</h2>
+
+<p>LMP Unified Linux Kernel updated to the 4.18.18 stable release.
+Core layer updates based on the latest OE/Yocto master/thud changes.</p>
+
+<p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Zephyr v1.14 development snapshot</li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="zephyr-sdk-0-9-5-is-now-required">Zephyr SDK 0.9.5 is now required</h5>
+
+<p>All Zephyr SDK users must update to version 0.9.5.
+Here is a summary of changes between 0.9.3 and 0.9.5:</p>
+
+<ul>
+<li>New QEMU release (based on 3.0.0+git
+19b599f7664b2ebfd0f405fb79c14dd241557452)</li>
+<li>New OpenOCD based master with Zephyr related changes
+(commit: 05e0d633)</li>
+<li>New DTC version 1.4.7+git (commit 2e930b7f8f6421638869a04b00297034c42e1a82)</li>
+<li>Upgrade arc binutils to 2018.03-rc2</li>
+<li>Added Qemu ROMs to support E1000 ethernet.</li>
+</ul>
+
+<p>Download the new SDK at:
+<a href="https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/tag/0.9.5">https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/tag/0.9.5</a></p>
+
+<h5 id="build-will-abort-if-python3-is-not-found">Build will abort if Python3 is not found</h5>
+
+<p>Previously, users who didn&rsquo;t have Python3 installed
+would receive a warning and the build would continue.
+This has been changed: the build now aborts instead,
+avoiding any confusing error messages later in the
+build.</p>
+
+<h5 id="support-out-of-tree-shield-configurations">Support out-of-tree shield configurations</h5>
+
+<p>Out-of-tree shields can now be stored in out-of-tree
+board directories under boards/shields/*.  Using this
+configuration, Zephyr will look for shields in both the
+normal location as well as the out-of-tree location.</p>
+
+<h5 id="console-subsystem-receives-posix-like-read-write-interfaces">Console subsystem receives POSIX-like read/write interfaces</h5>
+
+<p>For now the TTY device gets read/write calls, but the
+getchar/putchar calls will stay for convenience.  The
+console subsystem also added the ability to set
+receive and transmit timeouts.</p>
+
+<h5 id="mcumgr-library-updated-to-latest-master">MCUMGR library updated to latest master</h5>
+
+<p>MCUMGR was updated to the latest master at
+<a href="https://github.com/apache/mynewt-mcumgr">https://github.com/apache/mynewt-mcumgr</a> at commit 62516893.
+This adds the following support:</p>
+
+<ul>
+<li>ability to resume partial upload</li>
+<li>option to not compile taskstat and echo commands</li>
+</ul>
+
+<h5 id="posix-generic-file-descriptor-table-support">POSIX generic file descriptor table support</h5>
+
+<p>Zephyr sees the addition of a table to maintain file
+descriptors across several POSIX-compatible objects
+using I/O (fd-based read/write operations).  This
+unified file descriptor is intended for use with files,
+sockets, special devices, etc.  It is currently implemented
+by the sockets layer.</p>
+
+<h5 id="new-pci-shell">New PCI shell</h5>
+
+<p>A basic &lsquo;lspci&rsquo; command was added to the shell to list
+PCI devices. This command can be enabled with the new
+Kconfig PCI_SHELL.  Example below:</p>
+
+<p>uart:~$ lspci 0:1
+8086:7010 class: 0x1, 1, 4, I/O, addrs: 0xC000-0xC00F, IRQ -1</p>
+
+<h5 id="coccinelle-improvements">Coccinelle improvements</h5>
+
+<p>Zephyr uses the Coccinelle tool (which can do pattern matching
+and text transformation) for static code analysis. The
+scripts live under scripts/coccinelle/ and saw these
+improvements:</p>
+
+<ul>
+<li>Use BIT() helper macro instead of hardcoding using
+bitshifting</li>
+<li>Added cases of NULL dereference checks</li>
+<li>Make sure memset has a (void) cast to ignore its
+return value</li>
+<li>Use unsigned int as the return value for irq_lock()</li>
+<li>Find cases of missing locks</li>
+<li>Find cases of unsigned &lt; 0</li>
+<li>Remove redundant semicolons</li>
+<li>Check legal usage of sizeof expression</li>
+</ul>
+
+<h5 id="several-device-tree-improvements">Several device tree improvements</h5>
+
+<ul>
+<li>Binding added for pwm-leds</li>
+<li>Kinetis saw basic DTS support for RNGA and TRNG</li>
+<li>cc3220sf_launchxl added support for leds / buttons</li>
+<li>hexiwear_k64: added PWM LED to DTS</li>
+</ul>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="several-bugs-were-squashed-in-this-latest-merge-up">Several bugs were squashed in this latest merge-up</h5>
+
+<p>The qemu_riscv32 configuration broke during the move
+to QEMU 3.0.  The fix changes the RISC-V QEMU to use
+the hifive1 board configuration.</p>
+
+<p>The apollo_lake board was seeing build errors related
+to GPIO and DTS changes. These were fixed.</p>
+
+<p>The size of the Arm MPU thread user stack region was fixed.</p>
+
+<p>Several fixes to the NVS subsystem related to write block size:</p>
+
+<ul>
+<li>Error out if write block size is not supported</li>
+<li>Fix ATE read/write when write block size &gt; 8 bytes</li>
+<li>increase NVS_BLOCK_SIZE to help support hardware with
+16-byte write block size.</li>
+</ul>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<ul>
+<li>LMP Unified Linux Kernel updated to 4.18.18.</li>
+<li>Docker updated to the 18.09.0 release.</li>
+<li>Docker Compose updated to the 1.23.1 release.</li>
+<li>Default golang version updated to the 1.11 series.</li>
+<li>Support for the official Raspberry Pi Touch Display.</li>
+<li>Core layer series now fully based on the OE/Yocto thud release.</li>
+</ul>
+
+<h2 id="components-1">Components</h2>
+
+<h3 id="meta-freescale">Meta Freescale</h3>
+
+<h4 id="features-4">Features</h4>
+
+<h5 id="layer-update">Layer Update</h5>
+
+<p>Linux-fslc updated to 4.18.12.
+Initial NXP BSP support for i.MX 8.</p>
+
+<h4 id="bugs-4">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-risc-v">Meta RISC-V</h3>
+
+<h4 id="features-5">Features</h4>
+
+<h5 id="layer-update-1">Layer Update</h5>
+
+<p>Riscv-pk updated to the latest revision (7bee30c1ff).</p>
+
+<h4 id="bugs-5">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-virtualization">Meta Virtualization</h3>
+
+<h4 id="features-6">Features</h4>
+
+<h5 id="layer-update-2">Layer Update</h5>
+
+<p>Ceph update to 13.2.2.
+Cri-o updated to 1.12.
+Docker updated to 18.09.0.
+Kubernetes updated to v1.12.</p>
+
+<h4 id="bugs-6">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-openembedded-layer">Meta OpenEmbedded Layer</h3>
+
+<h4 id="features-7">Features</h4>
+
+<h5 id="layer-update-3">Layer Update</h5>
+
+<p>Adduser updated to 3.118.
+Libgit2 updated to 0.27.5.
+Libssh updated to 0.8.4.
+Mbedtls updated to 2.13.0.</p>
+
+<h4 id="bugs-7">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="openembedded-core-layer">OpenEmbedded-Core Layer</h3>
+
+<h4 id="features-8">Features</h4>
+
+<h5 id="layer-update-4">Layer Update</h5>
+
+<p>Default golang version updated to the 1.11 series.
+Elfutils updated to 0.174.
+Git updated to 2.18.1.
+Glide updated to 0.13.2.
+Tzcode and tzdata updated to 2018g.</p>
+
+<h4 id="bugs-8">Bugs</h4>
+
+<h5 id="binutils">binutils</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18309">CVE-2018-18309</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18605">CVE-2018-18605</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18606">CVE-2018-18606</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18607">CVE-2018-18607</a></li>
+</ul>
+
+<h5 id="curl">curl</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16839">CVE-2018-16839</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16840">CVE-2018-16840</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16842">CVE-2018-16842</a></li>
+</ul>
+
+<h5 id="qemu">qemu</h5>
+
+<p>Qemu emulator built with the NE2000 NIC emulation support is vulnerable
+to an integer overflow, which could lead to buffer overflow issue.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-10839">CVE-2018-10839</a></li>
+</ul>
+
+<h5 id="systemd">systemd</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15686">CVE-2018-15686</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15687">CVE-2018-15687</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15688">CVE-2018-15688</a></li>
+</ul>
+
+<h5 id="unzip">unzip</h5>
+
+<p>Buffer overflow in list.c, when a ZIP archive has a crafted relationship
+between the compressed-size value and the uncompressed-size value.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18384">CVE-2018-18384</a></li>
+</ul>
+
+<h5 id="nasm">nasm</h5>
+
+<p>Memory corruption (crashed) of nasm when handling a crafted file due to
+function assemble_file(inname, depend_ptr) at asm/nasm.c:482.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1000667">CVE-2018-1000667</a></li>
+</ul>
+
+<h5 id="elfutils">elfutils</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18520">CVE-2018-18520</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18521">CVE-2018-18521</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18310">CVE-2018-18310</a></li>
+</ul>
+
+<h5 id="ghostscript">ghostscript</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17961">CVE-2018-17961</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18073">CVE-2018-18073</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18284">CVE-2018-18284</a></li>
+</ul>
+
+<h5 id="openssl">openssl</h5>
+
+<p>Multiple issues.</p>
+
+<ul>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0734">CVE-2018-0734</a></li>
+<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-0735">CVE-2018-0735</a></li>
+</ul>
+
+<h3 id="meta-updater-layer">Meta Updater Layer</h3>
+
+<h4 id="features-9">Features</h4>
+
+<h5 id="layer-update-5">Layer Update</h5>
+
+<p>Aktualizr updated to the 3c1c77c005 revision.</p>
+
+<h4 id="bugs-9">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-linaro">Meta Linaro</h3>
+
+<h4 id="features-10">Features</h4>
+
+<h5 id="layer-update-6">Layer Update</h5>
+
+<p>Optee OS, client and test updated to v3.3.0.</p>
+
+<h4 id="bugs-10">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-lmp-layer">Meta LMP Layer</h3>
+
+<h4 id="features-11">Features</h4>
+
+<h5 id="layer-update-7">Layer Update</h5>
+
+<p>LMP Unified Linux Kernel updated to 4.18.18.
+Python3-docker updated to 3.5.1.
+Python3-docker-compose updated to 1.23.1.
+Python3-requests updated to 2.20.
+Support for the official Raspberry Pi Touch Display.</p>
+
+<h4 id="bugs-11">Bugs</h4>
+
+<p>Not addressed in this update</p>
                     </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
 
                 </div>
 
+            </div>
+
+            <div class="row">
                 
-                <div class="small-12 medium-4 large-3 columns" id="blog-categories">
 
-                    
+                
 
-                    
+                
+
+                <div class="small-12 columns">
+
+                    <div class="post-categories">
+                        
+
+                        
 
 
 
@@ -409,11 +772,17 @@
 
 
 
-                    
+                        
+                    </div>
+
                 </div>
+                
+
+                
 
             </div>
             
+
         </div>
         
     </div>
@@ -535,5 +904,4 @@ jQuery(function($) {
 
 
 </body>
-
 </html>
