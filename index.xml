@@ -6,10 +6,31 @@
     <description>Recent content on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Nov 2018 19:07:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 21:30:45 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 35</title>
+      <link>https://foundries.io/insights/2018/11/29/blog-post-update-35/</link>
+      <pubDate>Thu, 29 Nov 2018 21:30:45 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/11/29/blog-post-update-35/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-35&#34;&gt;Zephyr microPlatform changes for 35&lt;/h2&gt;
+
+&lt;p&gt;A very active snapshot from Zephyr as part of the v1.14 development
+cycle.  Tree-wide refactoring for DTS, board.h include removal and more
+logging changes.  MCUboot and sample applications updated as a result.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-35&#34;&gt;Linux microPlatform changes for 35&lt;/h2&gt;
+
+&lt;p&gt;Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 34</title>
