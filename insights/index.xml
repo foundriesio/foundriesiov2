@@ -6,10 +6,32 @@
     <description>Recent content in Insights on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Nov 2018 21:30:45 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Dec 2018 02:01:39 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/insights/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 36</title>
+      <link>https://foundries.io/insights/2018/12/07/blog-post-update-36/</link>
+      <pubDate>Fri, 07 Dec 2018 02:01:39 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/12/07/blog-post-update-36/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-36&#34;&gt;Zephyr microPlatform changes for 36&lt;/h2&gt;
+
+&lt;p&gt;Busy portion of the Zephyr v1.14 development cycle, with some regressions
+needing to be weeded out. No changes to MCUboot, but the samples saw
+adjustments for API movement, progressive erase addition and Kconfig
+changes to allow for OpenThread and 802.15.4 configurations.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-36&#34;&gt;Linux microPlatform changes for 36&lt;/h2&gt;
+
+&lt;p&gt;Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 35</title>

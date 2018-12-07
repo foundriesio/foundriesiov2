@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Google | Foundries.io</title>
+  <title>microPlatform update 36 | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -131,7 +131,11 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Technologies, News and Demonstrations</h1>
+                    <h1>microPlatform update 36</h1>
+                    <p class="text-muted text-uppercase mb-small text-right color-white">
+                        
+                        December 7, 2018
+                    </p>
                 </div>
             </div>
         </div>
@@ -140,86 +144,363 @@
 
     <div id="content">
         <div class="container">
+
             <div class="row">
+
                 
-                <div class="small-12 medium-8 large-9 columns" id="blog-listing-medium">
-                    
-                    
-                    
-                    
-                    
-                    <section class="post">
-                        <div class="row">
-                            <div class="small-12 medium-2 large-2 columns hide-for-small-only">
-                                <div class="image">
-                                    <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/">
-                                        
-                                        <img src="https://foundries.io/img/banners/linux.png" class="img-responsive" alt="">
-                                        
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="small-12 medium-8 large-9 columns">
-                                <h2>
-                                    <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/">Google Assistant on the LmP</a>
-                                </h2>
-                                <div class="clearfix">
-                                    <p class="author-category">
-                                        
-                                            By Alan Bennett
-                                        
-                                        
-                                             in <a href="https://foundries.io/categories/mp-containers">mp containers</a>
-                                            
-                                        
-                                    </p>
-                                    <p class="date-comments">
-                                        <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/">
-                                            <i class="fa fa-calendar-o"></i>
-                                            May 9, 2018
-                                        </a>
-                                    </p>
-                                </div>
-                                <p class="intro"><p>In this blog, I describe how to run the Google Assistant SDK on a Raspberry Pi with an external speaker and microphone.  After you get things configured and gather key pieces of information you&rsquo;ll have a simple, portable and easy to reproduce Google Assistant appliance.</p>
 
-<p></p></p>
-                                <p class="read-more">
-                                    <a href="https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/" class="btn btn-template-main">
-                                        Continue reading
-                                    </a>
-                                </p>
-                            </div>
-                            <hr>
-                        </div>
-                    </section>
-                    
+                <div class="small-12 columns" id="insights-post">
 
-                    <div class="row">
-                        <ul class="pager">
-                            <div class="previous">
-                                
-                                <li class="previous disabled">
-                                    <a class="medium radius button" href="#">&larr; Newer</a></li>
-                                
-                            </div>
-                            <div class="next">
-                                
-                                <li class="next disabled">
-                                    <a class="medium radius button" href="#">Older &rarr;</a>
-                                </li>
-                                
-                            </div>
-                        </ul>
+                    <div id="post-content">
+                        <h1 id="summary">Summary</h1>
+
+<h2 id="zephyr-microplatform-changes-for-36">Zephyr microPlatform changes for 36</h2>
+
+<p>Busy portion of the Zephyr v1.14 development cycle, with some regressions
+needing to be weeded out. No changes to MCUboot, but the samples saw
+adjustments for API movement, progressive erase addition and Kconfig
+changes to allow for OpenThread and 802.15.4 configurations.</p>
+
+<h2 id="linux-microplatform-changes-for-36">Linux microPlatform changes for 36</h2>
+
+<p>Core layer updates based on the latest OE/Yocto master changes.</p>
+
+<p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Zephyr v1.14 development snapshot with fixes for a regression and a build break</li>
+<li>Samples have progressive erase functionality added for nRF52840 HW</li>
+</ul>
+
+<h2 id="components">Components</h2>
+
+<h3 id="mcuboot">MCUboot</h3>
+
+<h4 id="features">Features</h4>
+
+<p>Not addressed in this update</p>
+
+<h4 id="bugs">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="zephyr">Zephyr</h3>
+
+<h4 id="features-1">Features</h4>
+
+<h5 id="mqtt-library-receives-socket-support">MQTT library receives socket support</h5>
+
+<p>A new socket-based MQTT implementation was added to Zephyr
+including support for TLS transport.</p>
+
+<p>The existing net_buf-based implementation was marked as
+legacy.  Part of this transition changed the net_pkt-related
+MQTT Kconfig options from CONFIG<em>MQTT</em>* to CONFIG_MQTT<em>LEGACY</em>*.
+This will affect out-of-tree samples.</p>
+
+<p>The in-tree MQTT publisher sample and related tests were
+transitioned to the socket-based implementation.</p>
+
+<h5 id="coap-library-plays-nice-with-sockets">CoAP library plays nice with sockets</h5>
+
+<p>The CoAP library was split into 2 implementations chosen via Kconfig for
+net_pkt and socket-friendly (flat buffers are used) support.
+The net_pkt support was marked as deprecated which causes
+all sorts of warnings during the build.  Samples continuing to
+use net_pkt support must explicitly choose the
+CONFIG_COAP_NET_PKT=y config.</p>
+
+<p>New CoAP samples demonstrating socket support were added to
+samples/net/sockets/*.</p>
+
+<h5 id="so-long-rpl-and-thanks-for-all-the-fish">So long RPL and thanks for all the fish</h5>
+
+<p>RPL support has been deprecated due to the maintainer being
+unable to continue supporting the protocol.  It&rsquo;s possible
+that another maintainer can be found in the future, in which
+case, the protocol will be &hellip; un-deprecated.</p>
+
+<h5 id="cmake-support-for-images-without-gaps">CMake support for images without gaps</h5>
+
+<p>User can now specify a Kconfig variable CONFIG_BUILD_NO_GAP_FILL
+to eliminate gaps in any generated hex/bin/s19 files.</p>
+
+<p>This is done to support building in a multi image context,
+where several image files will be merged together.</p>
+
+<h5 id="additional-soc-and-board-support">Additional SoC and board support</h5>
+
+<p>ST&rsquo;s STM32L471xG SoC is now supported in Zephyr as well as
+Silicon Labs EFM32PG12B.  The EFM32PG-STK3402A board
+demonstrates the EFM32PG12B SoC.</p>
+
+<h4 id="bugs-1">Bugs</h4>
+
+<h5 id="kernel-clock-timeout-race-condition-and-regression-fix">Kernel clock timeout race condition and regression fix</h5>
+
+<p>Near the end of this cycle, a patch was merged to fix a race
+condition in the clock timeout code.  This introduced a
+regression for some Nordic HW.  We&rsquo;ve taken an upstream
+patch to fix this regression.</p>
+
+<h5 id="nrf-i2c-speed-configuration-from-dts-and-build-break-fix-for-newlibc">nRF I2C speed configuration from dts and build break fix for newlibc</h5>
+
+<p>Another patch near the end of the cycle added DTS configuration
+of I2C speed for nRF.  However, the use of static_assert fails
+when compiling with NEWLIBC.  We pulled an upstream patch
+to fix this issue.</p>
+
+<h5 id="python-version-detection-on-windows-fixed">Python version detection on Windows fixed</h5>
+
+<p>When a Windows-user had both Python2 and Python3 in their path,
+and Python2 was earlier, the wrong python would be detected.</p>
+
+<p>To fix this until CMake 3.13 release, Zephyr now has a copy of
+&lsquo;FindPythonInterp&rsquo; which has been fixed.</p>
+
+<h5 id="shell-support-still-evolving">shell support still evolving</h5>
+
+<p>Several shell-related issues were addressed in this cycle:</p>
+
+<ul>
+<li>Handle RX ring buffer full case</li>
+<li>Add initial log level for rtt and uart backends</li>
+<li>fix RTT backend not returning TX amount</li>
+<li>Fix log messages queueing for multiple instances</li>
+<li>migrate tests to the new shell</li>
+</ul>
+
+<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
+
+<h4 id="features-2">Features</h4>
+
+<h5 id="introduce-erase-progressively-config">introduce ERASE_PROGRESSIVELY config</h5>
+
+<p>Some hardware may have very long flash erase times, and this
+affects the stability of many samples which perform large
+erases.  This can be fixed by progressively erasing blocks as
+needed.  Currently, this config is enabled for nRF52840 HW.</p>
+
+<h4 id="bugs-2">Bugs</h4>
+
+<h5 id="only-enable-bluetooth-if-802-15-4-and-openthread-aren-t">Only enable Bluetooth if 802.15.4 and OpenThread aren&rsquo;t</h5>
+
+<p>Allow for OpenThread and 802.15.4 configuration by not enabling
+Bluetooth unconditionally.</p>
+
+<h5 id="fix-mqtt-config-selections">fix MQTT config selections</h5>
+
+<p>The net_pkt-based MQTT APIs are now deprecated and moved to
+MQTT<em>LEGACY</em>* style config settings.  Adjust our sample to
+match that upstream change.</p>
+
+<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
+
+<h4 id="features-3">Features</h4>
+
+<h5 id="introduce-erase-progressively-config-1">introduce ERASE_PROGRESSIVELY config</h5>
+
+<p>Some hardware may have very long flash erase times, and this
+affects the stability of many samples which perform large
+erases.  This can be fixed by progressively erasing blocks as
+needed.  Currently, this config is enabled for nRF52840 HW.</p>
+
+<h4 id="bugs-3">Bugs</h4>
+
+<h5 id="only-enable-bluetooth-if-802-15-4-and-openthread-aren-t-1">Only enable Bluetooth if 802.15.4 and OpenThread aren&rsquo;t</h5>
+
+<p>Allow for OpenThread and 802.15.4 configuration by not enabling
+Bluetooth unconditionally.</p>
+
+<h5 id="make-sure-we-disable-bt-ctlr-when-802-15-4-is-used">Make sure we disable BT_CTLR when 802.15.4 is used</h5>
+
+<p>Many of the nRF52 boards automatically enable BT_CTLR.  This
+conflicts directly with 802.15.4, so we need to disable it
+explicitly in the 802.15.4 sample overlay.</p>
+
+<h5 id="fix-legacy-coap-api-selection">Fix legacy CoAP API selection</h5>
+
+<p>Due to the way CoAP now works, the sample needs to explicitly
+select it and choose what kind of support (net_pkt or sockets).</p>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h2 id="highlights-1">Highlights</h2>
+
+<ul>
+<li>U-Boot updated to the 2018.11 release.</li>
+<li>U-Boot-Fslc updated to the 2018.11-based release.</li>
+<li>Docker Compose updated to the 1.23.2 release.</li>
+<li>Core layer updates based on the latest OE/Yocto master changes.</li>
+</ul>
+
+<h2 id="components-1">Components</h2>
+
+<h3 id="meta-freescale">Meta Freescale</h3>
+
+<h4 id="features-4">Features</h4>
+
+<h5 id="layer-update">Layer Update</h5>
+
+<p>Linux-fslc updated to the 4.19-based fork.
+U-boot-fslc updated to the 2018.11-based fork.</p>
+
+<h4 id="bugs-4">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-freescale-3rdparty">Meta Freescale 3rdparty</h3>
+
+<h4 id="features-5">Features</h4>
+
+<h5 id="layer-update-1">Layer Update</h5>
+
+<p>Baseboard support for PICO-Pi and PICO-Hobbit.</p>
+
+<h4 id="bugs-5">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-intel">Meta Intel</h3>
+
+<h4 id="features-6">Features</h4>
+
+<h5 id="layer-update-2">Layer Update</h5>
+
+<p>Ixgbe updated to 5.5.2.</p>
+
+<h4 id="bugs-6">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-risc-v">Meta RISC-V</h3>
+
+<h4 id="features-7">Features</h4>
+
+<h5 id="layer-update-3">Layer Update</h5>
+
+<p>Gdb updated to use the mainline tree.
+Machine support for qemuriscv32.</p>
+
+<h4 id="bugs-7">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-updater-layer">Meta Updater Layer</h3>
+
+<h4 id="features-8">Features</h4>
+
+<h5 id="layer-update-4">Layer Update</h5>
+
+<p>Sota.conf now requires usrmerge.</p>
+
+<h4 id="bugs-8">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-96boards">Meta 96boards</h3>
+
+<h4 id="features-9">Features</h4>
+
+<h5 id="layer-update-5">Layer Update</h5>
+
+<p>Ptable generation fixed for HiKey.</p>
+
+<h4 id="bugs-9">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-virtualization">Meta Virtualization</h3>
+
+<h4 id="features-10">Features</h4>
+
+<h5 id="layer-update-6">Layer Update</h5>
+
+<p>Lxc updated to 3.0.3.
+Libvirt updated to v4.9.0.
+Openvswitch updated to 2.10.1.</p>
+
+<h4 id="bugs-10">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="openembedded-core-layer">OpenEmbedded-Core Layer</h3>
+
+<h4 id="features-11">Features</h4>
+
+<h5 id="layer-update-7">Layer Update</h5>
+
+<p>Gstreamer1.0 updated to 1.14.4.
+Libva-utils updated to 2.3.0.
+Openssl updated to 1.1.1a.
+U-Boot updated to the 2018.11 release.</p>
+
+<h4 id="bugs-11">Bugs</h4>
+
+<p>Not addressed in this update</p>
+
+<h3 id="meta-lmp-layer">Meta LMP Layer</h3>
+
+<h4 id="features-12">Features</h4>
+
+<h5 id="layer-update-8">Layer Update</h5>
+
+<p>Python3-docker updated to 3.6.0.
+Python3-docker-compose updated to 1.23.2.
+Python3-docker-pycreds updated to 0.4.0.
+Python3-requests updated to 2.20.1.</p>
+
+<h4 id="bugs-12">Bugs</h4>
+
+<p>Not addressed in this update</p>
                     </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
 
                 </div>
 
+            </div>
+
+            <div class="row">
                 
-                <div class="small-12 medium-4 large-3 columns" id="blog-categories">
 
-                    
+                
 
-                    
+                
+
+                <div class="small-12 columns">
+
+                    <div class="post-categories">
+                        
+
+                        
 
 
 
@@ -408,11 +689,17 @@
 
 
 
-                    
+                        
+                    </div>
+
                 </div>
+                
+
+                
 
             </div>
             
+
         </div>
         
     </div>
@@ -534,5 +821,4 @@ jQuery(function($) {
 
 
 </body>
-
 </html>
