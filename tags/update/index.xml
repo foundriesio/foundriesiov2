@@ -6,10 +6,22 @@
     <description>Recent content in Update on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Dec 2018 02:01:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Dec 2018 20:22:14 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/tags/update/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 37</title>
+      <link>https://foundries.io/insights/2018/12/20/blog-post-update-37/</link>
+      <pubDate>Thu, 20 Dec 2018 20:22:14 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/12/20/blog-post-update-37/</guid>
+      <description>Summary Zephyr microPlatform Zephyr 397 patches total:
+ start commit: f1377a73 (&amp;rdquo;[FIO mergeup] Merge &amp;lsquo;zephyrproject-rtos/master&amp;rsquo; into &amp;lsquo;osf-dev/master&amp;rsquo;&amp;ldquo;). end commit: dbf405ab (&amp;ldquo;power: Move application level API&amp;rsquo;s to public header&amp;rdquo;).  MCUboot 7 patches total:
+ start commit: 06faca8c (&amp;rdquo;[FIO mergeup] Merge &amp;lsquo;JuulLabs-OSS/master&amp;rsquo; into osf-dev/master&amp;rdquo;). end commit: a3c2f057 (&amp;ldquo;Fix main github repo links in docs&amp;rdquo;).  dm-hawkbit-mqtt 2 patches total:
+ start commit: 70a4f825 (&amp;ldquo;lwm2m.c: s/osf/zmp/&amp;ldquo;). end commit: 702d563a (&amp;ldquo;dm-lwm2m: make sure log level for bluetooth is off&amp;rdquo;).</description>
+    </item>
     
     <item>
       <title>microPlatform update 36</title>
