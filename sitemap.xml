@@ -434,13 +434,13 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/blockchain/</loc>
+    <loc>https://foundries.io/tags/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/blockchain/</loc>
+    <loc>https://foundries.io/categories/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -492,14 +492,14 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/demos/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/tags/demos/</loc>
+    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/demos/</loc>
-    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/categories/demos/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -516,14 +516,14 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/fota/</loc>
-    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/tags/fota/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/fota/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/categories/fota/</loc>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -621,14 +621,14 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/microplatform/</loc>
-    <lastmod>2018-12-20T20:22:14+00:00</lastmod>
+    <loc>https://foundries.io/tags/microplatform/</loc>
+    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/microplatform/</loc>
-    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
+    <loc>https://foundries.io/categories/microplatform/</loc>
+    <lastmod>2018-12-20T20:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
