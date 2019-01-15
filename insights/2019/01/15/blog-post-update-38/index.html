@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>microPlatform update 0.11 | Foundries.io</title>
+  <title>microPlatform update 38 | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -131,10 +131,10 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>microPlatform update 0.11</h1>
+                    <h1>microPlatform update 38</h1>
                     <p class="text-muted text-uppercase mb-small text-right color-white">
                         
-                        March 20, 2018
+                        January 15, 2019
                     </p>
                 </div>
             </div>
@@ -152,163 +152,332 @@
                 <div class="small-12 columns" id="insights-post">
 
                     <div id="post-content">
-                        <h1 id="summary">Summary</h1>
-
-<h2 id="zephyr-microplatform-changes-for-0-11">Zephyr microPlatform changes for 0.11</h2>
-
-<p>This update includes Zephyr&rsquo;s official v1.11 release, along with
-some MCUboot changes which are required to keep compatibility with
-a Zephyr API change.</p>
-
-<p>The sample applications have turned off some unnecessary Bluetooth
-options, saving approximately 4 KB.</p>
-
-<h2 id="linux-microplatform-changes-for-0-11">Linux microPlatform changes for 0.11</h2>
-
-<p>No changes have gone into the LMP since 0.10.
-</p>
+                        <p></p>
 
 <h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
 
-<h2 id="summary-1">Summary</h2>
+<h2 id="zephyr">Zephyr</h2>
 
-<p>This update includes Zephyr&rsquo;s official v1.11 release, along with
-some MCUboot changes which are required to keep compatibility with
-a Zephyr API change.</p>
-
-<p>The sample applications have turned off some unnecessary Bluetooth
-options, saving approximately 4 KB.</p>
-
-<h2 id="highlights">Highlights</h2>
+<p>393 patches total:</p>
 
 <ul>
-<li>Zephyr version 1.11</li>
-<li>Compatibility updates to MCUboot</li>
-<li>Flash savings in the sample applications</li>
+<li>start commit: 766cc504 (&ldquo;net: l2: openthread: correct get_best_match logic for source IP&rdquo;).</li>
+<li>end commit: 2d2a0452 (&ldquo;doc: efr32_slwstk6061a: update paragraph &lsquo;Flashing&rsquo;&ldquo;).</li>
 </ul>
 
-<h2 id="components">Components</h2>
+<h2 id="mcuboot">MCUboot</h2>
 
-<h3 id="mcuboot">MCUboot</h3>
-
-<h4 id="features">Features</h4>
-
-<h5 id="zephyr-api-change">Zephyr API change:</h5>
+<p>32 patches total:</p>
 
 <ul>
-<li>The main stack pointer on ARM targets is now set with
-__set_MSP instead of _MspSet. The latter has been
-removed from Zephyr; the former is available from
-CMSIS and will work with new and old Zephyr trees.</li>
+<li>start commit: 9d1dc1c2 (&rdquo;[FIO mergeup] Merge &lsquo;JuulLabs-OSS/master&rsquo; into foundriesio/master&rdquo;).</li>
+<li>end commit: 71a697a4 (&ldquo;Add minimum size validation for header parameter&rdquo;).</li>
 </ul>
 
-<h4 id="bugs">Bugs</h4>
+<h2 id="dm-lwm2m">dm-lwm2m</h2>
 
-<h5 id="arduino-101-build-fix">Arduino 101 build fix:</h5>
+<p>8 patches total:</p>
 
 <ul>
-<li>The arduino_101 build was fixed by fixing the .conf
-overlay directory on Zephyr targets.</li>
+<li>start commit: 15cf0dc3 (&ldquo;dm-lwm2m: add OpenThread configuration changes&rdquo;).</li>
+<li>end commit: 611d761c (&ldquo;dm-lwm2m: fix OpenThread / 802.15.4 check&rdquo;).</li>
 </ul>
 
-<h3 id="zephyr">Zephyr</h3>
+<h2 id="dm-hawkbit-mqtt">dm-hawkbit-mqtt</h2>
 
-<h4 id="features-1">Features</h4>
-
-<h5 id="version-1-11-0">Version 1.11.0:</h5>
+<p>6 patches total:</p>
 
 <ul>
-<li>This merges the Zephyr v1.11.0 release into the OSF
-tree. This is the last commit which will be drawn from
-the v1.11 development series. The next commit in this
-tree will be a non-fast-forward update to the v1.12
-development series. Since the previous mergeup was
-based on a v1.11 release candidate, only stabilization
-changes and fixes have been merged.</li>
+<li>start commit: 9cb0e9ea (&ldquo;dm-hawkbit-mqtt: add OpenThread configuration changes&rdquo;).</li>
+<li>end commit: 27ba0c9a (&ldquo;dm-hawkbit-mqtt: fix OpenThread / 802.15.4 check&rdquo;).</li>
 </ul>
 
-<h5 id="frdm-k64f-testing">FRDM-K64F testing:</h5>
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h1 id="highlights">Highlights</h1>
 
 <ul>
-<li>The ARM based FRDM-K64F board is now build-tested by
-default in sanitycheck. This will help avoid build
-regressions for more complex features, such as those
-used by Zephyr&rsquo;s userspace support.</li>
+<li>Aktualizr is now able to detect reboots and retry failed downloads</li>
+<li>Linux-firmware updated to the 1baa348 revision</li>
+<li>WL8 firmware updated to service pack v4.3</li>
+<li>Qemu updated to the 3.1 release</li>
 </ul>
 
-<h5 id="linux-foundation-bluetooth-company-id">Linux Foundation Bluetooth company ID:</h5>
+<h1 id="layer-updates">Layer Updates</h1>
+
+<h2 id="meta-freescale">Meta Freescale</h2>
 
 <ul>
-<li>Bluetooth Mesh now uses the Linux Foundation company
-ID.</li>
+<li>Firmware-imx updated to 7.8, adding i.MX 8MM support</li>
 </ul>
 
-<h5 id="uart6-for-96b-carbon">UART6 for 96b_carbon:</h5>
+<h2 id="meta-freescale-3rdparty">Meta Freescale 3rdparty</h2>
 
 <ul>
-<li>UART6 support was added to 96b_carbon.</li>
+<li>Added board configuration for ccimx6ulsbcexpress</li>
+<li>New recipe: u-boot-toradex-fw-utils</li>
 </ul>
 
-<h5 id="posix-semaphore-api">POSIX semaphore API:</h5>
+<h2 id="meta-intel">Meta Intel</h2>
 
 <ul>
-<li>A POSIX API for semaphores was merged, continuing the
-POSIX API compatibility support effort.</li>
+<li>New recipe: linux-intel/4.19</li>
 </ul>
 
-<h4 id="bugs-1">Bugs</h4>
+<h2 id="meta-raspberrypi">Meta RaspberryPi</h2>
 
 <ul>
-<li>Not addressed in this update</li>
+<li>Firmware updated to 20181211</li>
+<li>Linux-raspberrypi updated to 4.14.87</li>
 </ul>
 
-<h3 id="hawkbit-and-mqtt-sample-application">hawkBit and MQTT sample application</h3>
-
-<h4 id="features-2">Features</h4>
-
-<h5 id="flash-savings">Flash savings:</h5>
+<h2 id="meta-risc-v">Meta RISC-V</h2>
 
 <ul>
-<li>Unnecessary Bluetooth options were disabled, saving
-approximately 4KB of flash.</li>
+<li>New recipe: linux-riscv/4.20</li>
+<li>Riscv-pk updated to 92434c4f6975</li>
 </ul>
 
-<h4 id="bugs-2">Bugs</h4>
+<h2 id="meta-rtlwifi">Meta Rtlwifi</h2>
 
 <ul>
-<li>Not addressed in this update</li>
+<li>Rtl8723bu updated to build with linux 4.19</li>
 </ul>
 
-<h3 id="lwm2m-sample-application">LWM2M sample application</h3>
-
-<h4 id="features-3">Features</h4>
-
-<h5 id="flash-savings-1">Flash savings:</h5>
+<h2 id="meta-virtualization">Meta Virtualization</h2>
 
 <ul>
-<li>Unnecessary Bluetooth options were disabled, saving
-approximately 4KB of flash.</li>
+<li>Lxcfs updated to v3.0.3</li>
+<li>Xen updated to 4.11.1</li>
 </ul>
 
-<h4 id="bugs-3">Bugs</h4>
+<h2 id="openembedded-core">OpenEmbedded Core</h2>
 
 <ul>
-<li><p>Not addressed in this update</p>
-
-<h1 id="linux-microplatform">Linux microPlatform</h1></li>
+<li>Libsoup updated to 2.64.2</li>
+<li>Linux-firmware updated to 1baa348</li>
+<li>Musl updated to 39ef612aa193</li>
+<li>Qemu updated to 3.1</li>
+<li>Sudo updated to 1.8.26</li>
+<li>Sysstat updated to 12.1.1</li>
 </ul>
 
-<h2 id="summary-2">Summary</h2>
-
-<p>No changes have gone into the LMP since 0.10.</p>
-
-<h2 id="highlights-1">Highlights</h2>
+<h2 id="meta-openembedded">Meta OpenEmbedded</h2>
 
 <ul>
-<li>No changes have gone into the LMP since 0.10.</li>
+<li>Autofs updated to 5.1.5</li>
+<li>Dnsmasq updated to 2.80</li>
+<li>Efibootmgr updated to 17</li>
+<li>Libtinyxml2 updated to 7.0.1</li>
+<li>Wolfssl updated to 3.15.5</li>
 </ul>
 
-<h2 id="components-1">Components</h2>
+<h2 id="meta-updater">Meta Updater</h2>
+
+<ul>
+<li>Aktualizr updated to the d00d1a04cc23 revision</li>
+<li>Support for adding device-tree files as part of the OSTree rootfs</li>
+</ul>
+
+<h2 id="meta-lmp">Meta LMP</h2>
+
+<ul>
+<li>Device-tree managed as part of the OSTree rootfs on HiKey and HiKey960</li>
+
+<li><p>WL8 firmware updated to service pack v4.3</p>
+
+<h1 id="containers">Containers</h1></li>
+</ul>
+
+<h2 id="core-containers-aktualizr">core-containers/aktualizr</h2>
+
+<ul>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed libsasl 2.1.26-r13 -&gt; 2.1.26-r14</li>
+</ul>
+
+<h2 id="core-containers-hawkbit-update-server">core-containers/hawkbit-update-server</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="core-containers-leshan">core-containers/leshan</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="gateway-containers-bt-joiner">gateway-containers/bt-joiner</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="gateway-containers-cf-proxy-coap-http">gateway-containers/cf-proxy-coap-http</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="gateway-containers-mosquitto">gateway-containers/mosquitto</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="gateway-containers-nginx">gateway-containers/nginx</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-dump1090">extra-containers/dump1090</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-freeboard">extra-containers/freeboard</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-fswebcam">extra-containers/fswebcam</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-gateway-ansible">extra-containers/gateway-ansible</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="extra-containers-gpsd">extra-containers/gpsd</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-iot-edge">extra-containers/iot-edge</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="extra-containers-libcoap">extra-containers/libcoap</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-mcumgr">extra-containers/mcumgr</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-mqtt-gpsd">extra-containers/mqtt-gpsd</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="extra-containers-mqtt-iota">extra-containers/mqtt-iota</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-mqtt-lwm2m">extra-containers/mqtt-lwm2m</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="extra-containers-ota-runner">extra-containers/ota-runner</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="extra-containers-repo">extra-containers/repo</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+</ul>
+
+<h2 id="extra-containers-rtl-ais">extra-containers/rtl-ais</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-rtl-sdr">extra-containers/rtl-sdr</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-tinyproxy">extra-containers/tinyproxy</h2>
+
+<ul>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-wifi-ap">extra-containers/wifi-ap</h2>
+
+<ul>
+<li>Removed libgcc</li>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
+
+<h2 id="extra-containers-x">extra-containers/x</h2>
+
+<ul>
+<li>Added mesa-dri-vc4</li>
+<li>Changed sqlite-libs 3.24.0-r0 -&gt; 3.25.3-r0</li>
+<li>Changed busybox 1.28.4-r1 -&gt; 1.28.4-r2</li>
+<li>Changed ssl_client 1.28.4-r1 -&gt; 1.28.4-r2</li>
+</ul>
                     </div>
                     
                     
