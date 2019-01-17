@@ -473,8 +473,14 @@
   </url>
   
   <url>
+    <loc>https://foundries.io/tags/container/</loc>
+    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://foundries.io/tags/containers/</loc>
-    <lastmod>2018-05-08T06:00:00+00:00</lastmod>
+    <lastmod>2018-01-17T13:50:46+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -627,24 +633,12 @@
   
   <url>
     <loc>https://foundries.io/tags/microplatform/</loc>
-    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://foundries.io/categories/microplatform/</loc>
     <lastmod>2019-01-15T20:31:47+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/microplatforms/</loc>
-    <lastmod>2018-03-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://foundries.io/categories/mp-containers/</loc>
+    <loc>https://foundries.io/categories/microplatform/</loc>
     <lastmod>2018-05-09T19:48:23+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -6,133 +6,82 @@
     <description>Recent content in Microplatform on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jan 2019 20:31:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 May 2018 19:48:23 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/categories/microplatform/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>microPlatform update 38</title>
-      <link>https://foundries.io/insights/2019/01/15/blog-post-update-38/</link>
-      <pubDate>Tue, 15 Jan 2019 20:31:47 +0000</pubDate>
+      <title>Google Assistant on the LmP</title>
+      <link>https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/</link>
+      <pubDate>Wed, 09 May 2018 19:48:23 +0000</pubDate>
       
-      <guid>https://foundries.io/insights/2019/01/15/blog-post-update-38/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>microPlatform update 37</title>
-      <link>https://foundries.io/insights/2018/12/20/blog-post-update-37/</link>
-      <pubDate>Thu, 20 Dec 2018 20:22:14 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/12/20/blog-post-update-37/</guid>
-      <description>&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>microPlatform update 36</title>
-      <link>https://foundries.io/insights/2018/12/07/blog-post-update-36/</link>
-      <pubDate>Fri, 07 Dec 2018 02:01:39 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/12/07/blog-post-update-36/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-
-&lt;h2 id=&#34;zephyr-microplatform-changes-for-36&#34;&gt;Zephyr microPlatform changes for 36&lt;/h2&gt;
-
-&lt;p&gt;Busy portion of the Zephyr v1.14 development cycle, with some regressions
-needing to be weeded out. No changes to MCUboot, but the samples saw
-adjustments for API movement, progressive erase addition and Kconfig
-changes to allow for OpenThread and 802.15.4 configurations.&lt;/p&gt;
-
-&lt;h2 id=&#34;linux-microplatform-changes-for-36&#34;&gt;Linux microPlatform changes for 36&lt;/h2&gt;
-
-&lt;p&gt;Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+      <guid>https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/</guid>
+      <description>&lt;p&gt;In this blog, I describe how to run the Google Assistant SDK on a Raspberry Pi with an external speaker and microphone.  After you get things configured and gather key pieces of information you&amp;rsquo;ll have a simple, portable and easy to reproduce Google Assistant appliance.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>microPlatform update 35</title>
-      <link>https://foundries.io/insights/2018/11/29/blog-post-update-35/</link>
-      <pubDate>Thu, 29 Nov 2018 21:30:45 +0000</pubDate>
+      <title>Using docker-compose.yml with Portainer</title>
+      <link>https://foundries.io/insights/2018/05/08/using-docker-compose.yml-with-portainer/</link>
+      <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
       
-      <guid>https://foundries.io/insights/2018/11/29/blog-post-update-35/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-
-&lt;h2 id=&#34;zephyr-microplatform-changes-for-35&#34;&gt;Zephyr microPlatform changes for 35&lt;/h2&gt;
-
-&lt;p&gt;A very active snapshot from Zephyr as part of the v1.14 development
-cycle.  Tree-wide refactoring for DTS, board.h include removal and more
-logging changes.  MCUboot and sample applications updated as a result.&lt;/p&gt;
-
-&lt;h2 id=&#34;linux-microplatform-changes-for-35&#34;&gt;Linux microPlatform changes for 35&lt;/h2&gt;
-
-&lt;p&gt;Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+      <guid>https://foundries.io/insights/2018/05/08/using-docker-compose.yml-with-portainer/</guid>
+      <description>Portainer has been a great asset and we have started to rely on it for single-container image management. Unfortunately, Portainer has been designed for 2 key use-cases. single containers and &amp;ldquo;stacks&amp;rdquo; that are meant to be deployed onto Kubernetes or Swarm orchestrators. For many of our demos we want to manage a suite of containers and orchestrate their startup so we can manage large container suites like the 9+ container-based micro-services that comprise the Edge-X project.</description>
+    </item>
+    
+    <item>
+      <title>Portainer Container Management on Linux microPlatform </title>
+      <link>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</link>
+      <pubDate>Mon, 07 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</guid>
+      <description>&lt;p&gt;At Foundries.io, we are constantly looking across the ecosystem for the best projects to complement the microPlatforms.  One such project is &lt;a href=&#34;https://portainer.io&#34; title=&#34;Portainer&#34;&gt;Portainer&lt;/a&gt;. &amp;ldquo;Portainer is an open-source lightweight management UI which allows you to easily manage your Docker hosts or swarm clusters.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>microPlatform update 34</title>
-      <link>https://foundries.io/insights/2018/11/16/blog-post-update-34/</link>
-      <pubDate>Fri, 16 Nov 2018 19:07:45 +0000</pubDate>
+      <title>180 days</title>
+      <link>https://foundries.io/insights/2018/03/30/20180330_goodfriday_180days/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://foundries.io/insights/2018/11/16/blog-post-update-34/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+      <guid>https://foundries.io/insights/2018/03/30/20180330_goodfriday_180days/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s March 30, 2018, Good Friday, and it has been 180 days since we started Foundries.io.  In this time, we established our initial infrastructure, created the first microPlatform products and, on March 27, we produced our 12th update to the microPlatforms, roughly 1 update every 2 weeks.  When we started the microPlatforms, we wanted to get our systems and processes running smooth enough to provide meaningful software updates that could be integrated into products by our subscribers.&lt;/p&gt;
 
-&lt;h2 id=&#34;zephyr-microplatform-changes-for-34&#34;&gt;Zephyr microPlatform changes for 34&lt;/h2&gt;
-
-&lt;p&gt;A somewhat smaller update of Zephyr as part of the v1.14 development
-cycle &amp;ndash; no changes to MCUboot or the sample applications.&lt;/p&gt;
-
-&lt;h2 id=&#34;linux-microplatform-changes-for-34&#34;&gt;Linux microPlatform changes for 34&lt;/h2&gt;
-
-&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.18 stable release.
-Core layer updates based on the latest OE/Yocto master/thud changes.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;You may think that consuming software updates every 2 weeks is daunting, however, the upstream projects are ever-evolving and in this same period, Zephyr has seen 3,385 commits and the Linux Kernel has seen 28,876 commits and we aren’t even listing the changes of the other software projects.  Long story short, with all this activity, there are new features and fixes that affect all aspects of computing that your products may have missed out on.  With the microPlatforms we have created a product that not only keeps you close to the latest software, but standards-based and fully tested end-to-end for use within connected IoT products.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>microPlatform update 33</title>
-      <link>https://foundries.io/insights/2018/11/08/blog-post-update-33/</link>
-      <pubDate>Thu, 08 Nov 2018 02:01:34 +0000</pubDate>
+      <title>How To Manage LMP Containers</title>
+      <link>https://foundries.io/insights/2018/01/17/20180117-container-management/</link>
+      <pubDate>Wed, 17 Jan 2018 13:50:46 +0200</pubDate>
       
-      <guid>https://foundries.io/insights/2018/11/08/blog-post-update-33/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
-
-&lt;h2 id=&#34;zephyr-microplatform-changes-for-33&#34;&gt;Zephyr microPlatform changes for 33&lt;/h2&gt;
-
-&lt;p&gt;The push towards v1.14 continues; MCUboot supports nRF52840 Dongle.&lt;/p&gt;
-
-&lt;h2 id=&#34;linux-microplatform-changes-for-33&#34;&gt;Linux microPlatform changes for 33&lt;/h2&gt;
-
-&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.16 stable release.
-Core layer updates based on the latest OE/Yocto master/thud changes.
-Initial support for the 96Boards HiKey960 board.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://foundries.io/insights/2018/01/17/20180117-container-management/</guid>
+      <description>&lt;p&gt;The Linux microPlatform uses a set of Docker containers to provide end-to-end
+services used by the Zephyr microPlatform. The containers and their
+configurations are deployed using a simple &lt;a href=&#34;https://github.com/OpenSourceFoundries/gateway-ansible&#34;&gt;shell script&lt;/a&gt; that wraps
+&lt;a href=&#34;https://www.ansible.com/&#34;&gt;Ansible&lt;/a&gt;. The scripts require a version of Ansible
+with Docker support. Some distro packages such as Ubuntu 16.04 don&amp;rsquo;t have this,
+so make sure you install Ansible from a &lt;a href=&#34;http://docs.ansible.com/ansible/latest/intro_installation.html&#34;&gt;proper source&lt;/a&gt;
+before continuing.
+&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>microPlatform update 0.32</title>
-      <link>https://foundries.io/insights/2018/10/29/blog-post-update-0.32/</link>
-      <pubDate>Mon, 29 Oct 2018 23:54:39 +0000</pubDate>
+      <title>Simplify your life: multi-architecture docker containers</title>
+      <link>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</link>
+      <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
       
-      <guid>https://foundries.io/insights/2018/10/29/blog-post-update-0.32/</guid>
-      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+      <guid>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;“The great thing about Docker is that your developers run the exact same container as what runs in production.”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-32&#34;&gt;Zephyr microPlatform changes for 0.32&lt;/h2&gt;
-
-&lt;p&gt;The push towards v1.14 continues; MCUboot supports encrypted images.&lt;/p&gt;
-
-&lt;h2 id=&#34;linux-microplatform-changes-for-0-32&#34;&gt;Linux microPlatform changes for 0.32&lt;/h2&gt;
-
-&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.16 stable release.
-Core layer updates based on the latest OE/Yocto master/thud changes.
-Initial support for the 96Boards HiKey960 board.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;This is what the Docker hype is about, creating reproducibile environments for applications. The technology enables us to create lightweight, secure microservices which run on an array of SoCs that can be updated over the air in a matter of seconds. We believe that accelerating code delivery will ultimately reduce time to market. Hype aside, Docker has matured and has become a foundational building block of our microPlatforms.
+&lt;/p&gt;</description>
     </item>
     
   </channel>

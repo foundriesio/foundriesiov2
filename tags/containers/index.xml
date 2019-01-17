@@ -6,42 +6,24 @@
     <description>Recent content in Containers on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 May 2018 06:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jan 2018 13:50:46 +0200</lastBuildDate>
     
 	<atom:link href="https://foundries.io/tags/containers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Using docker-compose.yml with Portainer</title>
-      <link>https://foundries.io/insights/2018/05/08/using-docker-compose.yml-with-portainer/</link>
-      <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
+      <title>How To Manage LMP Containers</title>
+      <link>https://foundries.io/insights/2018/01/17/20180117-container-management/</link>
+      <pubDate>Wed, 17 Jan 2018 13:50:46 +0200</pubDate>
       
-      <guid>https://foundries.io/insights/2018/05/08/using-docker-compose.yml-with-portainer/</guid>
-      <description>Portainer has been a great asset and we have started to rely on it for single-container image management. Unfortunately, Portainer has been designed for 2 key use-cases. single containers and &amp;ldquo;stacks&amp;rdquo; that are meant to be deployed onto Kubernetes or Swarm orchestrators. For many of our demos we want to manage a suite of containers and orchestrate their startup so we can manage large container suites like the 9+ container-based micro-services that comprise the Edge-X project.</description>
-    </item>
-    
-    <item>
-      <title>Portainer Container Management on Linux microPlatform </title>
-      <link>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</link>
-      <pubDate>Mon, 07 May 2018 06:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</guid>
-      <description>&lt;p&gt;At Foundries.io, we are constantly looking across the ecosystem  for the best projects to complement the microPlatforms.  One such project is &lt;a href=&#34;https://portainer.io&#34; title=&#34;Portainer&#34;&gt;Portainer&lt;/a&gt;. &amp;ldquo;Portainer is an open-source lightweight management UI which allows you to easily manage your Docker hosts or swarm clusters.&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Simplify your life: multi-architecture docker containers</title>
-      <link>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</link>
-      <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;“The great thing about Docker is that your developers run the exact same container as what runs in production.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is what the Docker hype is about, creating reproducibile environments for applications. The technology enables us to create lightweight, secure microservices which run on an array of SoCs that can be updated over the air in a matter of seconds. We believe that accelerating code delivery will ultimately reduce time to market. Hype aside, Docker has matured and has become a foundational building block of our microPlatforms.
+      <guid>https://foundries.io/insights/2018/01/17/20180117-container-management/</guid>
+      <description>&lt;p&gt;The Linux microPlatform uses a set of Docker containers to provide end-to-end
+services used by the Zephyr microPlatform. The containers and their
+configurations are deployed using a simple &lt;a href=&#34;https://github.com/OpenSourceFoundries/gateway-ansible&#34;&gt;shell script&lt;/a&gt; that wraps
+&lt;a href=&#34;https://www.ansible.com/&#34;&gt;Ansible&lt;/a&gt;. The scripts require a version of Ansible
+with Docker support. Some distro packages such as Ubuntu 16.04 don&amp;rsquo;t have this,
+so make sure you install Ansible from a &lt;a href=&#34;http://docs.ansible.com/ansible/latest/intro_installation.html&#34;&gt;proper source&lt;/a&gt;
+before continuing.
 &lt;/p&gt;</description>
     </item>
     

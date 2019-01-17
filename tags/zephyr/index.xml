@@ -1056,6 +1056,17 @@ NET_L2_BT_ZEP1656 Zephyr workaround (required for kernels older than 4.12).&lt;/
     </item>
     
     <item>
+      <title>Open Source Bluetooth Low Energy (BLE) USB dongle</title>
+      <link>https://foundries.io/insights/2018/01/08/20180110-ble-dongle/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/01/08/20180110-ble-dongle/</guid>
+      <description>&lt;p&gt;Foundries.io has released binaries and source code for a Zephyr-based Bluetooth Low Energy USB dongle to the public.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>microPlatform update 0.5</title>
       <link>https://foundries.io/insights/2018/01/04/blog-post-update-0.5/</link>
       <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>

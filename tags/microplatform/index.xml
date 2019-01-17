@@ -6,10 +6,134 @@
     <description>Recent content in Microplatform on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 May 2018 19:48:23 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Jan 2019 20:31:47 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/tags/microplatform/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 38</title>
+      <link>https://foundries.io/insights/2019/01/15/blog-post-update-38/</link>
+      <pubDate>Tue, 15 Jan 2019 20:31:47 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2019/01/15/blog-post-update-38/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 37</title>
+      <link>https://foundries.io/insights/2018/12/20/blog-post-update-37/</link>
+      <pubDate>Thu, 20 Dec 2018 20:22:14 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/12/20/blog-post-update-37/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 36</title>
+      <link>https://foundries.io/insights/2018/12/07/blog-post-update-36/</link>
+      <pubDate>Fri, 07 Dec 2018 02:01:39 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/12/07/blog-post-update-36/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-36&#34;&gt;Zephyr microPlatform changes for 36&lt;/h2&gt;
+
+&lt;p&gt;Busy portion of the Zephyr v1.14 development cycle, with some regressions
+needing to be weeded out. No changes to MCUboot, but the samples saw
+adjustments for API movement, progressive erase addition and Kconfig
+changes to allow for OpenThread and 802.15.4 configurations.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-36&#34;&gt;Linux microPlatform changes for 36&lt;/h2&gt;
+
+&lt;p&gt;Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 35</title>
+      <link>https://foundries.io/insights/2018/11/29/blog-post-update-35/</link>
+      <pubDate>Thu, 29 Nov 2018 21:30:45 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/11/29/blog-post-update-35/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-35&#34;&gt;Zephyr microPlatform changes for 35&lt;/h2&gt;
+
+&lt;p&gt;A very active snapshot from Zephyr as part of the v1.14 development
+cycle.  Tree-wide refactoring for DTS, board.h include removal and more
+logging changes.  MCUboot and sample applications updated as a result.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-35&#34;&gt;Linux microPlatform changes for 35&lt;/h2&gt;
+
+&lt;p&gt;Core layer updates based on the latest OE/Yocto master changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 34</title>
+      <link>https://foundries.io/insights/2018/11/16/blog-post-update-34/</link>
+      <pubDate>Fri, 16 Nov 2018 19:07:45 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/11/16/blog-post-update-34/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-34&#34;&gt;Zephyr microPlatform changes for 34&lt;/h2&gt;
+
+&lt;p&gt;A somewhat smaller update of Zephyr as part of the v1.14 development
+cycle &amp;ndash; no changes to MCUboot or the sample applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-34&#34;&gt;Linux microPlatform changes for 34&lt;/h2&gt;
+
+&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.18 stable release.
+Core layer updates based on the latest OE/Yocto master/thud changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 33</title>
+      <link>https://foundries.io/insights/2018/11/08/blog-post-update-33/</link>
+      <pubDate>Thu, 08 Nov 2018 02:01:34 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/11/08/blog-post-update-33/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-33&#34;&gt;Zephyr microPlatform changes for 33&lt;/h2&gt;
+
+&lt;p&gt;The push towards v1.14 continues; MCUboot supports nRF52840 Dongle.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-33&#34;&gt;Linux microPlatform changes for 33&lt;/h2&gt;
+
+&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.16 stable release.
+Core layer updates based on the latest OE/Yocto master/thud changes.
+Initial support for the 96Boards HiKey960 board.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>microPlatform update 0.32</title>
+      <link>https://foundries.io/insights/2018/10/29/blog-post-update-0.32/</link>
+      <pubDate>Mon, 29 Oct 2018 23:54:39 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/10/29/blog-post-update-0.32/</guid>
+      <description>&lt;h1 id=&#34;summary&#34;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&#34;zephyr-microplatform-changes-for-0-32&#34;&gt;Zephyr microPlatform changes for 0.32&lt;/h2&gt;
+
+&lt;p&gt;The push towards v1.14 continues; MCUboot supports encrypted images.&lt;/p&gt;
+
+&lt;h2 id=&#34;linux-microplatform-changes-for-0-32&#34;&gt;Linux microPlatform changes for 0.32&lt;/h2&gt;
+
+&lt;p&gt;LMP Unified Linux Kernel updated to the 4.18.16 stable release.
+Core layer updates based on the latest OE/Yocto master/thud changes.
+Initial support for the 96Boards HiKey960 board.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Google Assistant on the LmP</title>
@@ -18,6 +142,26 @@
       
       <guid>https://foundries.io/insights/2018/05/09/google-assistant-on-the-lmp/</guid>
       <description>&lt;p&gt;In this blog, I describe how to run the Google Assistant SDK on a Raspberry Pi with an external speaker and microphone.  After you get things configured and gather key pieces of information you&amp;rsquo;ll have a simple, portable and easy to reproduce Google Assistant appliance.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using docker-compose.yml with Portainer</title>
+      <link>https://foundries.io/insights/2018/05/08/using-docker-compose.yml-with-portainer/</link>
+      <pubDate>Tue, 08 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/05/08/using-docker-compose.yml-with-portainer/</guid>
+      <description>Portainer has been a great asset and we have started to rely on it for single-container image management. Unfortunately, Portainer has been designed for 2 key use-cases. single containers and &amp;ldquo;stacks&amp;rdquo; that are meant to be deployed onto Kubernetes or Swarm orchestrators. For many of our demos we want to manage a suite of containers and orchestrate their startup so we can manage large container suites like the 9+ container-based micro-services that comprise the Edge-X project.</description>
+    </item>
+    
+    <item>
+      <title>Portainer Container Management on Linux microPlatform </title>
+      <link>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</link>
+      <pubDate>Mon, 07 May 2018 06:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/05/07/20180508-portainer-container-management-on-linux-microplatform-/</guid>
+      <description>&lt;p&gt;At Foundries.io, we are constantly looking across the ecosystem for the best projects to complement the microPlatforms.  One such project is &lt;a href=&#34;https://portainer.io&#34; title=&#34;Portainer&#34;&gt;Portainer&lt;/a&gt;. &amp;ldquo;Portainer is an open-source lightweight management UI which allows you to easily manage your Docker hosts or swarm clusters.&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -102,6 +246,43 @@ with Docker support. Some distro packages such as Ubuntu 16.04 don&amp;rsquo;t h
 so make sure you install Ansible from a &lt;a href=&#34;http://docs.ansible.com/ansible/latest/intro_installation.html&#34;&gt;proper source&lt;/a&gt;
 before continuing.
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Simplify your life: multi-architecture docker containers</title>
+      <link>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</link>
+      <pubDate>Wed, 17 Jan 2018 13:07:31 +0200</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/01/17/20180117-multi-arch-containers/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;“The great thing about Docker is that your developers run the exact same container as what runs in production.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is what the Docker hype is about, creating reproducibile environments for applications. The technology enables us to create lightweight, secure microservices which run on an array of SoCs that can be updated over the air in a matter of seconds. We believe that accelerating code delivery will ultimately reduce time to market. Hype aside, Docker has matured and has become a foundational building block of our microPlatforms.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Update an embedded device with LwM2M</title>
+      <link>https://foundries.io/insights/2018/01/17/20180117-lwm2m-update/</link>
+      <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/01/17/20180117-lwm2m-update/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://openmobilealliance.org/iot/lightweight-m2m-lwm2m&#34;&gt;OMA Lightweight M2M&lt;/a&gt; (LWM2M) offers a firmware object interface for directing client devices to download and apply firmware updates.  Using the Zephyr microPlaform and Eclipse&amp;rsquo;s &lt;a href=&#34;https://www.eclipse.org/leshan/&#34;&gt;Leshan Demo Server&lt;/a&gt;, this seemingly complex process can be demonstrated in a few easy steps.&lt;/p&gt;
+
+&lt;p&gt;To illustrate how a firmware update is delivered via LwM2M, you will make a small change to the Zephyr microPlatform (ZMP) LwM2M sample project which disables the Light Control object.  When flashed to an embedded device, the Leshan UI will be missing the &amp;ldquo;Light Control&amp;rdquo; portion near the bottom of the client detail page.  Once this &amp;ldquo;bug&amp;rdquo; is found, you will fix the LwM2M sample, recompile and deliver your updated firmware as an over the air (OTA) update.  The new firmware can be confirmed by locating the &amp;ldquo;Light Control&amp;rdquo; object in the Leshan UI.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Source Bluetooth Low Energy (BLE) USB dongle</title>
+      <link>https://foundries.io/insights/2018/01/08/20180110-ble-dongle/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2018/01/08/20180110-ble-dongle/</guid>
+      <description>&lt;p&gt;Foundries.io has released binaries and source code for a Zephyr-based Bluetooth Low Energy USB dongle to the public.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
