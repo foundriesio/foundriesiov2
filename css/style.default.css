@@ -712,6 +712,10 @@ ul.social-links li {
     display: inline;
 }
 
+ul.social-links li:not(:last-child) {
+    margin-right: 4px;
+}
+
 ul.social-links i:hover {
     color: #ffaa00;
     text-decoration: none;
