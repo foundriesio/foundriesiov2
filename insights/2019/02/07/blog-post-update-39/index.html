@@ -6,7 +6,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Bugs | Foundries.io</title>
+  <title>microPlatform update 39 | Foundries.io</title>
 
   <link rel="shortcut icon" href="https://foundries.io/images/icons/favicon.ico" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css' />
@@ -131,7 +131,11 @@
                         <p>FOUNDRIES.IO INSIGHTS</p>
                         <span class="message-line"></span>
                     </div>
-                    <h1>Technologies, News and Demonstrations</h1>
+                    <h1>microPlatform update 39</h1>
+                    <p class="text-muted text-uppercase mb-small text-right color-white">
+                        
+                        February 7, 2019
+                    </p>
                 </div>
             </div>
         </div>
@@ -140,84 +144,321 @@
 
     <div id="content">
         <div class="container">
+
             <div class="row">
+
                 
-                <div class="small-12 medium-8 large-9 columns" id="blog-listing-medium">
-                    
-                    
-                    
-                    
-                    
-                    <section class="post">
-                        <div class="row">
-                            <div class="small-12 medium-2 large-2 columns hide-for-small-only">
-                                <div class="image">
-                                    <a href="https://foundries.io/insights/2018/01/08/20180110-ble-dongle/">
-                                        
-                                        <img src="https://foundries.io/img/banners/zephyr.png" class="img-responsive" alt="">
-                                        
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="small-12 medium-8 large-9 columns">
-                                <h2>
-                                    <a href="https://foundries.io/insights/2018/01/08/20180110-ble-dongle/">Open Source Bluetooth Low Energy (BLE) USB dongle</a>
-                                </h2>
-                                <div class="clearfix">
-                                    <p class="author-category">
-                                        
-                                        
-                                             in <a href="https://foundries.io/categories/zephyr-mp">zephyr-mp</a>
-                                            
-                                        
-                                    </p>
-                                    <p class="date-comments">
-                                        <a href="https://foundries.io/insights/2018/01/08/20180110-ble-dongle/">
-                                            <i class="fa fa-calendar-o"></i>
-                                            January 8, 2018
-                                        </a>
-                                    </p>
-                                </div>
-                                <p class="intro"><p>Foundries.io has released binaries and source code for a Zephyr-based Bluetooth Low Energy USB dongle to the public.</p>
 
-<p></p></p>
-                                <p class="read-more">
-                                    <a href="https://foundries.io/insights/2018/01/08/20180110-ble-dongle/" class="btn btn-template-main">
-                                        Continue reading
-                                    </a>
-                                </p>
-                            </div>
-                            <hr>
-                        </div>
-                    </section>
-                    
+                <div class="small-12 columns" id="insights-post">
 
-                    <div class="row">
-                        <ul class="pager">
-                            <div class="previous">
-                                
-                                <li class="previous disabled">
-                                    <a class="medium radius button" href="#">&larr; Newer</a></li>
-                                
-                            </div>
-                            <div class="next">
-                                
-                                <li class="next disabled">
-                                    <a class="medium radius button" href="#">Older &rarr;</a>
-                                </li>
-                                
-                            </div>
-                        </ul>
+                    <div id="post-content">
+                        <p></p>
+
+<h1 id="zephyr-microplatform">Zephyr microPlatform</h1>
+
+<h2 id="zephyr">Zephyr</h2>
+
+<p>393 patches total:</p>
+
+<ul>
+<li>start commit: 766cc504 (&ldquo;net: l2: openthread: correct get_best_match logic for source IP&rdquo;).</li>
+<li>end commit: 2d2a0452 (&ldquo;doc: efr32_slwstk6061a: update paragraph &lsquo;Flashing&rsquo;&ldquo;).</li>
+</ul>
+
+<h2 id="mcuboot">MCUboot</h2>
+
+<p>32 patches total:</p>
+
+<ul>
+<li>start commit: 9d1dc1c2 (&rdquo;[FIO mergeup] Merge &lsquo;JuulLabs-OSS/master&rsquo; into foundriesio/master&rdquo;).</li>
+<li>end commit: 71a697a4 (&ldquo;Add minimum size validation for header parameter&rdquo;).</li>
+</ul>
+
+<h2 id="dm-lwm2m">dm-lwm2m</h2>
+
+<p>8 patches total:</p>
+
+<ul>
+<li>start commit: 15cf0dc3 (&ldquo;dm-lwm2m: add OpenThread configuration changes&rdquo;).</li>
+<li>end commit: 611d761c (&ldquo;dm-lwm2m: fix OpenThread / 802.15.4 check&rdquo;).</li>
+</ul>
+
+<h2 id="dm-hawkbit-mqtt">dm-hawkbit-mqtt</h2>
+
+<p>6 patches total:</p>
+
+<ul>
+<li>start commit: 9cb0e9ea (&ldquo;dm-hawkbit-mqtt: add OpenThread configuration changes&rdquo;).</li>
+<li>end commit: 27ba0c9a (&ldquo;dm-hawkbit-mqtt: fix OpenThread / 802.15.4 check&rdquo;).</li>
+</ul>
+
+<h1 id="linux-microplatform">Linux microPlatform</h1>
+
+<h2 id="highlights">Highlights</h2>
+
+<ul>
+<li>Binutils updated to the latest (c909e7afdc) on the 2.31 release branch</li>
+<li>OSTree updated to the v2018.9 release</li>
+<li>U-Boot based devices now using Flat Image Tree (FIT) image for kernel, initrd, device-tree and device-tree overlays</li>
+</ul>
+
+<h2 id="breaking-changes">Breaking Changes</h2>
+
+<p>Support for U-Boot FIT images required bootloader and boot config changes
+that can&rsquo;t yet be updated via SOTA updates, all requiring a clean flash.</p>
+
+<p>Devices now supporting FIT image:</p>
+
+<ul>
+<li>Beaglebone-yocto</li>
+<li>Cl-som-imx7</li>
+<li>Colibri-imx7</li>
+<li>Cubox-i</li>
+<li>Dragonboard-410c</li>
+<li>Dragonboard-820c</li>
+<li>Raspberrypi0-wifi</li>
+<li>Raspberrypi3-64</li>
+</ul>
+
+<p>Targets using UEFI and Grub2 were not affected.</p>
+
+<h2 id="layer-updates">Layer Updates</h2>
+
+<h3 id="meta-freescale">Meta Freescale</h3>
+
+<ul>
+<li>LSDK BSP updated to the 1812 tag</li>
+<li>MX8-based machines switched to u-boot-imx and linux-imx by default</li>
+</ul>
+
+<h3 id="meta-intel">Meta Intel</h3>
+
+<ul>
+<li>Intel-vaapi-driver updated to 2.3.0</li>
+<li>Linux-intel 4.14 updated to v4.14.92</li>
+<li>Linux-intel 4.19 updated to v4.19.13</li>
+<li>New recipe: linux-intel-rt/4.19</li>
+</ul>
+
+<h3 id="meta-linaro">Meta Linaro</h3>
+
+<ul>
+<li>GCC-Linaro 4.9, 5.2, 5.3, 6.3 and 7.1 removed</li>
+<li>Initial support for external prebuilt ARM toolchain</li>
+</ul>
+
+<h3 id="meta-qualcomm">Meta Qualcomm</h3>
+
+<ul>
+<li>Linux-linaro-qcomlt updated to 4.14.96</li>
+</ul>
+
+<h3 id="meta-raspberrypi">Meta RaspberryPi</h3>
+
+<ul>
+<li>New recipe: linux-raspberrypi-rt-4.14</li>
+</ul>
+
+<h3 id="meta-risc-v">Meta RISC-V</h3>
+
+<ul>
+<li>Gdb-riscv updated to 74e3300d8a</li>
+<li>Initial support for musl</li>
+<li>MicroSemi PCIe device support added to riscv-pk</li>
+</ul>
+
+<h3 id="meta-virtualization">Meta Virtualization</h3>
+
+<ul>
+<li>Lxc updated to 3.1.0</li>
+</ul>
+
+<h3 id="openembedded-core">OpenEmbedded Core</h3>
+
+<ul>
+<li>Binutils updated to latest 2.31 release branch</li>
+<li>Boost updated to 1.69.0</li>
+<li>Createrepo-c updated to 0.12.0</li>
+<li>Curl updated to 7.63</li>
+<li>Dnf updated to 4.0.10</li>
+<li>Dpkg updated to 1.18.25</li>
+<li>Eudev updated to 3.2.7</li>
+<li>File updated to 5.35</li>
+<li>GCC 7.3 removed</li>
+<li>Gnupg updated to 2.2.12</li>
+<li>Gnutls updated to 3.6.5</li>
+<li>Go updated to 1.11.4</li>
+<li>Gobject-introspection updated to 1.58.3</li>
+<li>I2c-tools updated to 4.1</li>
+<li>Libatomic-ops updated to 7.6.8</li>
+<li>Libdnf updated to 0.24.1</li>
+<li>Libgpg-error updated to 1.33</li>
+<li>Libpng updated to 1.6.36</li>
+<li>Librepo updated to 1.9.3</li>
+<li>Libsndfile1 fixes for CVE-2017-<sup>17456</sup>&frasl;<sub>17457</sub> and CVE-2018-<sup>19661</sup>&frasl;<sub>19662</sub></li>
+<li>Libsolv updated to 0.7.2</li>
+<li>Libxcrypt updated to 4.4.1</li>
+<li>Libxcrypt updated to 4.4.2</li>
+<li>Libxslt updated to 1.1.33</li>
+<li>Linux-libc-headers updated to v4.19</li>
+<li>Linux-yocto 4.18 updated to v4.18.25</li>
+<li>Linux-yocto 4.19 updated to v4.19.14</li>
+<li>Mobile-broadband-provider-info updated to 20190116</li>
+<li>Musl updated to 1.1.21</li>
+<li>Nasm updated to 2.14.02</li>
+<li>Netbase updated to 5.5</li>
+<li>Nss updated to 3.41</li>
+<li>Opkg and opkg-utils updated to 0.4.0</li>
+<li>Perl updated to 5.28.1</li>
+<li>Polkit support is now enabled only if polkit distro feature is set</li>
+<li>Ptest-runner updated to 2.3</li>
+<li>Sqlite3 updated to 3.26.0</li>
+<li>Sstate hash equivalence support</li>
+<li>Strace updated to 4.26</li>
+<li>Subversion updated to 1.11.1</li>
+<li>Systemd fixes for CVE-2018-16864, CVE-2018-16865 and CVE-2018-16866</li>
+<li>Tzdata and tzcode updated to 2018i</li>
+<li>Vala updated to 0.42.4</li>
+<li>Wget updated to 1.20.1</li>
+</ul>
+
+<h3 id="meta-openembedded">Meta OpenEmbedded</h3>
+
+<ul>
+<li>Dhcpcd updated to 7.0.8</li>
+<li>Haveged updated to 1.9.4</li>
+<li>Opensc updated to 0.19.0</li>
+</ul>
+
+<h3 id="meta-updater">Meta Updater</h3>
+
+<ul>
+<li>Libp11 updated to git 57ca68f for EC signing support</li>
+<li>OSTree updated to v2018.9</li>
+<li>Softhsm updated to 2.5.0</li>
+</ul>
+
+<h3 id="meta-lmp">Meta LMP</h3>
+
+<ul>
+<li>Added HSM as part of the default sota features set</li>
+
+<li><p>U-Boot fitImage support added for every u-boot-based device</p>
+
+<h1 id="containers">Containers</h1></li>
+</ul>
+
+<h2 id="core-containers-aktualizr">core-containers/aktualizr</h2>
+
+<ul>
+<li>Changed openjdk8-jre-base 8.181.13-r0 -&gt; 8.191.12-r0</li>
+<li>Changed libjpeg-turbo 1.5.3-r3 -&gt; 1.5.3-r4</li>
+<li>Changed krb5-libs 1.15.3-r0 -&gt; 1.15.4-r0</li>
+<li>Changed openjdk8-jre-lib 8.181.13-r0 -&gt; 8.191.12-r0</li>
+</ul>
+
+<h2 id="core-containers-hawkbit-update-server">core-containers/hawkbit-update-server</h2>
+
+<ul>
+<li>Changed krb5-libs 1.15.3-r0 -&gt; 1.15.4-r0</li>
+<li>Changed openjdk8-jre-base 8.181.13-r0 -&gt; 8.191.12-r0</li>
+<li>Changed libjpeg-turbo 1.5.3-r3 -&gt; 1.5.3-r4</li>
+<li>Changed openjdk8-jre-lib 8.181.13-r0 -&gt; 8.191.12-r0</li>
+</ul>
+
+<h2 id="core-containers-leshan">core-containers/leshan</h2>
+
+<ul>
+<li>Changed krb5-libs 1.15.3-r0 -&gt; 1.15.4-r0</li>
+<li>Changed openjdk8-jre-base 8.181.13-r0 -&gt; 8.191.12-r0</li>
+<li>Changed libjpeg-turbo 1.5.3-r3 -&gt; 1.5.3-r4</li>
+<li>Changed openjdk8-jre-lib 8.181.13-r0 -&gt; 8.191.12-r0</li>
+</ul>
+
+<h2 id="gateway-containers-cf-proxy-coap-http">gateway-containers/cf-proxy-coap-http</h2>
+
+<ul>
+<li>Changed krb5-libs 1.15.3-r0 -&gt; 1.15.4-r0</li>
+<li>Changed openjdk8-jre-base 8.181.13-r0 -&gt; 8.191.12-r0</li>
+<li>Changed libjpeg-turbo 1.5.3-r3 -&gt; 1.5.3-r4</li>
+<li>Changed openjdk8-jre-lib 8.181.13-r0 -&gt; 8.191.12-r0</li>
+</ul>
+
+<h2 id="gateway-containers-nginx">gateway-containers/nginx</h2>
+
+<ul>
+<li>Changed libjpeg-turbo 1.5.3-r3 -&gt; 1.5.3-r4</li>
+</ul>
+
+<h2 id="extra-containers-freeboard">extra-containers/freeboard</h2>
+
+<ul>
+<li>Changed tar 1.30-r0 -&gt; 1.31-r0</li>
+<li>Changed wget 1.19.5-r0 -&gt; 1.20.1-r0</li>
+</ul>
+
+<h2 id="extra-containers-fswebcam">extra-containers/fswebcam</h2>
+
+<ul>
+<li>Changed libjpeg-turbo 1.5.3-r3 -&gt; 1.5.3-r4</li>
+</ul>
+
+<h2 id="extra-containers-wifi-ap">extra-containers/wifi-ap</h2>
+
+<ul>
+<li>Removed libgcc</li>
+</ul>
+
+<h2 id="extra-containers-x">extra-containers/x</h2>
+
+<ul>
+<li>Added mesa-dri-vc4</li>
+<li>Changed libjpeg-turbo 1.5.3-r3 -&gt; 1.5.3-r4</li>
+</ul>
                     </div>
+                    
+                    
+                    <div id="comments">
+                        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "foundriesio" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                    </div>
+                    
 
                 </div>
 
+            </div>
+
+            <div class="row">
                 
-                <div class="small-12 medium-4 large-3 columns" id="blog-categories">
 
-                    
+                
 
-                    
+                
+
+                <div class="small-12 columns">
+
+                    <div class="post-categories">
+                        
+
+                        
 
 
 
@@ -403,11 +644,17 @@
 
 
 
-                    
+                        
+                    </div>
+
                 </div>
+                
+
+                
 
             </div>
             
+
         </div>
         
     </div>
@@ -534,5 +781,4 @@ jQuery(function($) {
 
 
 </body>
-
 </html>

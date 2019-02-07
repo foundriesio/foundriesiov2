@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foundries.io/insights/2019/02/07/blog-post-update-39/</loc>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://foundries.io/insights/2019/01/15/blog-post-update-38/</loc>
     <lastmod>2019-01-15T20:31:47+00:00</lastmod>
   </url>
@@ -439,13 +444,13 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/blockchain/</loc>
+    <loc>https://foundries.io/categories/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/blockchain/</loc>
+    <loc>https://foundries.io/tags/blockchain/</loc>
     <lastmod>2018-02-23T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -456,7 +461,7 @@
   
   <url>
     <loc>https://foundries.io/tags/bugs/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -492,7 +497,7 @@
   
   <url>
     <loc>https://foundries.io/tags/cve/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -503,14 +508,14 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/demos/</loc>
-    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/categories/demos/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/demos/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <loc>https://foundries.io/tags/demos/</loc>
+    <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -527,20 +532,20 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/fota/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://foundries.io/categories/fota/</loc>
     <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://foundries.io/tags/fota/</loc>
+    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://foundries.io/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -558,7 +563,7 @@
   
   <url>
     <loc>https://foundries.io/insights/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -597,7 +602,7 @@
   
   <url>
     <loc>https://foundries.io/tags/linux/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -632,14 +637,14 @@
   </url>
   
   <url>
-    <loc>https://foundries.io/tags/microplatform/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <loc>https://foundries.io/categories/microplatform/</loc>
+    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://foundries.io/categories/microplatform/</loc>
-    <lastmod>2018-05-09T19:48:23+00:00</lastmod>
+    <loc>https://foundries.io/tags/microplatform/</loc>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -703,13 +708,13 @@
   
   <url>
     <loc>https://foundries.io/tags/update/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://foundries.io/categories/updates/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -721,7 +726,7 @@
   
   <url>
     <loc>https://foundries.io/tags/zephyr/</loc>
-    <lastmod>2019-01-15T20:31:47+00:00</lastmod>
+    <lastmod>2019-02-07T03:22:14+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,10 +6,19 @@
     <description>Recent content in Cve on Foundries.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Jan 2019 20:31:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Feb 2019 03:22:14 +0000</lastBuildDate>
     
 	<atom:link href="https://foundries.io/tags/cve/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>microPlatform update 39</title>
+      <link>https://foundries.io/insights/2019/02/07/blog-post-update-39/</link>
+      <pubDate>Thu, 07 Feb 2019 03:22:14 +0000</pubDate>
+      
+      <guid>https://foundries.io/insights/2019/02/07/blog-post-update-39/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>microPlatform update 38</title>
