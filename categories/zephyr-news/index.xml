@@ -1,244 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Zephyr News on Foundries.io</title>
-    <link>https://foundries.io/categories/zephyr-news/</link>
-    <description>Recent content in Zephyr News on Foundries.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://foundries.io/categories/zephyr-news/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Zephyr Development News 02 October 2018</title>
-      <link>https://foundries.io/insights/2018/10/02/zephyr-news-20181002/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/10/02/zephyr-news-20181002/</guid>
-      <description>&lt;p&gt;This is the 02 October 2018 newsletter tracking the latest
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Zephyr News on Foundries.io</title><link>https://foundries.io/categories/zephyr-news/</link><description>Recent content in Zephyr News on Foundries.io</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://foundries.io/categories/zephyr-news/index.xml" rel="self" type="application/rss+xml"/><item><title>Zephyr Development News 02 October 2018</title><link>https://foundries.io/insights/2018/10/02/zephyr-news-20181002/</link><pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/10/02/zephyr-news-20181002/</guid><description>&lt;p&gt;This is the 02 October 2018 newsletter tracking the latest
 &lt;a href=&#34;https://zephyrproject.org&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Development News 05 September 2018</title>
-      <link>https://foundries.io/insights/2018/09/05/zephyr-news-20180905/</link>
-      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/09/05/zephyr-news-20180905/</guid>
-      <description>&lt;p&gt;This is the 05 September 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Development News 05 September 2018</title><link>https://foundries.io/insights/2018/09/05/zephyr-news-20180905/</link><pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/09/05/zephyr-news-20180905/</guid><description>&lt;p&gt;This is the 05 September 2018 newsletter tracking the latest
 &lt;a href=&#34;https://zephyrproject.org&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Development News 28 August 2018</title>
-      <link>https://foundries.io/insights/2018/08/28/zephyr-news-20180828/</link>
-      <pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/08/28/zephyr-news-20180828/</guid>
-      <description>&lt;p&gt;This is the 28 August 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Development News 28 August 2018</title><link>https://foundries.io/insights/2018/08/28/zephyr-news-20180828/</link><pubDate>Tue, 28 Aug 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/08/28/zephyr-news-20180828/</guid><description>&lt;p&gt;This is the 28 August 2018 newsletter tracking the latest
 &lt;a href=&#34;https://zephyrproject.org&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Development News 20 August 2018</title>
-      <link>https://foundries.io/insights/2018/08/20/zephyr-news-20180820/</link>
-      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/08/20/zephyr-news-20180820/</guid>
-      <description>&lt;p&gt;This is the 20 August 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Development News 20 August 2018</title><link>https://foundries.io/insights/2018/08/20/zephyr-news-20180820/</link><pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/08/20/zephyr-news-20180820/</guid><description>&lt;p&gt;This is the 20 August 2018 newsletter tracking the latest
 &lt;a href=&#34;https://zephyrproject.org&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Logging Survival Guide, Part 2: Logger Subsystem</title>
-      <link>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</link>
-      <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</guid>
-      <description>&lt;p&gt;An overview of the new logging system merged for v1.13, or: &lt;em&gt;Can&amp;rsquo;t Get
-Enough of your Logs, Zephyr&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Development News 26 July 2018</title>
-      <link>https://foundries.io/insights/2018/07/26/zephyr-news-20180726/</link>
-      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/07/26/zephyr-news-20180726/</guid>
-      <description>&lt;p&gt;This is the 26 July 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Logging Survival Guide, Part 2: Logger Subsystem</title><link>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</link><pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/08/14/zephyr-logging-part-2/</guid><description>&lt;p&gt;An overview of the new logging system merged for v1.13, or: &lt;em&gt;Can&amp;rsquo;t Get
+Enough of your Logs, Zephyr&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Development News 26 July 2018</title><link>https://foundries.io/insights/2018/07/26/zephyr-news-20180726/</link><pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/07/26/zephyr-news-20180726/</guid><description>&lt;p&gt;This is the 26 July 2018 newsletter tracking the latest
+&lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
+&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Logging Survival Guide, Part 1: SYS_LOG</title><link>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</link><pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</guid><description>&lt;p&gt;An overview of Zephyr&amp;rsquo;s longstanding SYS_LOG API, or: &lt;em&gt;Blog Drops
+Zephyr Log Bombs Without Qualms&lt;/em&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Development News 10 July 2018</title><link>https://foundries.io/insights/2018/07/10/zephyr-news-20180710/</link><pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/07/10/zephyr-news-20180710/</guid><description>&lt;p&gt;This is the 10 July 2018 newsletter tracking the latest
+&lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
+&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Development News 19 June 2018</title><link>https://foundries.io/insights/2018/06/19/zephyr-news-20180619/</link><pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/06/19/zephyr-news-20180619/</guid><description>&lt;p&gt;This is the 19 June 2018 newsletter tracking the latest
+&lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
+&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Development News 11 June 2018</title><link>https://foundries.io/insights/2018/06/11/zephyr-news-20180611/</link><pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/06/11/zephyr-news-20180611/</guid><description>&lt;p&gt;This is the 11 June 2018 newsletter tracking the latest
 &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
 GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Logging Survival Guide, Part 1: SYS_LOG</title>
-      <link>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</link>
-      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/07/24/zephyr-logging-part-1/</guid>
-      <description>&lt;p&gt;An overview of Zephyr&amp;rsquo;s longstanding SYS_LOG API, or: &lt;em&gt;Blog Drops
-Zephyr Log Bombs Without Qualms&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Development News 10 July 2018</title>
-      <link>https://foundries.io/insights/2018/07/10/zephyr-news-20180710/</link>
-      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/07/10/zephyr-news-20180710/</guid>
-      <description>&lt;p&gt;This is the 10 July 2018 newsletter tracking the latest
-&lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
-&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Development News 19 June 2018</title>
-      <link>https://foundries.io/insights/2018/06/19/zephyr-news-20180619/</link>
-      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/06/19/zephyr-news-20180619/</guid>
-      <description>&lt;p&gt;This is the 19 June 2018 newsletter tracking the latest
-&lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
-&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Development News 11 June 2018</title>
-      <link>https://foundries.io/insights/2018/06/11/zephyr-news-20180611/</link>
-      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/06/11/zephyr-news-20180611/</guid>
-      <description>&lt;p&gt;This is the 11 June 2018 newsletter tracking the latest
-&lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
-&lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;We&amp;rsquo;ve renamed the series to &amp;ldquo;Zephyr Development News&amp;rdquo; to avoid a
-name clash with a publication produced by another entity.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Newsletter 5 June 2018</title>
-      <link>https://foundries.io/insights/2018/06/05/zephyr-news-20180605/</link>
-      <pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/06/05/zephyr-news-20180605/</guid>
-      <description>&lt;p&gt;This is the 5 June 2018 newsletter tracking the latest
+name clash with a publication produced by another entity.&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Zephyr Newsletter 5 June 2018</title><link>https://foundries.io/insights/2018/06/05/zephyr-news-20180605/</link><pubDate>Tue, 05 Jun 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/06/05/zephyr-news-20180605/</guid><description>&lt;p&gt;This is the 5 June 2018 newsletter tracking the latest
 &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Newsletter 21 May 2018</title>
-      <link>https://foundries.io/insights/2018/05/21/zephyr-news-20180521/</link>
-      <pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/05/21/zephyr-news-20180521/</guid>
-      <description>&lt;p&gt;This is the 21 May 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Newsletter 21 May 2018</title><link>https://foundries.io/insights/2018/05/21/zephyr-news-20180521/</link><pubDate>Mon, 21 May 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/05/21/zephyr-news-20180521/</guid><description>&lt;p&gt;This is the 21 May 2018 newsletter tracking the latest
 &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into the
 &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr News, 14 May 2018</title>
-      <link>https://foundries.io/insights/2018/05/14/zephyr-news-20180514/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/05/14/zephyr-news-20180514/</guid>
-      <description>&lt;p&gt;This is the 14 May 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr News, 14 May 2018</title><link>https://foundries.io/insights/2018/05/14/zephyr-news-20180514/</link><pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/05/14/zephyr-news-20180514/</guid><description>&lt;p&gt;This is the 14 May 2018 newsletter tracking the latest
 &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into
 the &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr News, 4 May 2018</title>
-      <link>https://foundries.io/insights/2018/05/04/zephyr-news-20180504/</link>
-      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/05/04/zephyr-news-20180504/</guid>
-      <description>&lt;p&gt;This is the 4 May 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr News, 4 May 2018</title><link>https://foundries.io/insights/2018/05/04/zephyr-news-20180504/</link><pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/05/04/zephyr-news-20180504/</guid><description>&lt;p&gt;This is the 4 May 2018 newsletter tracking the latest
 &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into
 the &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr News, 18 April 2018</title>
-      <link>https://foundries.io/insights/2018/04/18/zephyr-news-20180418/</link>
-      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/04/18/zephyr-news-20180418/</guid>
-      <description>&lt;p&gt;This is the 18 April 2018 newsletter tracking the latest
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr News, 18 April 2018</title><link>https://foundries.io/insights/2018/04/18/zephyr-news-20180418/</link><pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/04/18/zephyr-news-20180418/</guid><description>&lt;p&gt;This is the 18 April 2018 newsletter tracking the latest
 &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged into
 the &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
-GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Zephyr Newsletter 11 April 2018</title>
-      <link>https://foundries.io/insights/2018/04/11/zephyr-news-20180411/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/04/11/zephyr-news-20180411/</guid>
-      <description>&lt;h1 id=&#34;zephyr-news&#34;&gt;Zephyr News&lt;/h1&gt;
-
+GitHub&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Zephyr Newsletter 11 April 2018</title><link>https://foundries.io/insights/2018/04/11/zephyr-news-20180411/</link><pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/04/11/zephyr-news-20180411/</guid><description>&lt;h1 id=&#34;zephyr-news&#34;&gt;Zephyr News&lt;/h1&gt;
 &lt;p&gt;This is the first of a periodic (weekly-ish) newsletter tracking the
 latest &lt;a href=&#34;https://www.zephyrproject.org/&#34;&gt;Zephyr&lt;/a&gt; development merged
 into the &lt;a href=&#34;https://github.com/zephyrproject-rtos/zephyr&#34;&gt;mainline tree on
 GitHub&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;The goals are to give a human-readable summary of what&amp;rsquo;s been merged
 into master, breaking it down as follows:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Highlights&lt;/strong&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Important changes&lt;/li&gt;
 &lt;li&gt;New features&lt;/li&gt;
@@ -246,17 +57,10 @@ into master, breaking it down as follows:&lt;/p&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Individual changes&lt;/strong&gt;: a complete list of patches, sorted chronologically
 and categorized into areas, like:
-
 &lt;ul&gt;
 &lt;li&gt;Architectures&lt;/li&gt;
 &lt;li&gt;Kernel&lt;/li&gt;
 &lt;li&gt;Drivers&lt;/li&gt;
 &lt;li&gt;etc.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;/ul&gt;</description></item></channel></rss>

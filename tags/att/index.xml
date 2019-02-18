@@ -1,28 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Att on Foundries.io</title>
-    <link>https://foundries.io/tags/att/</link>
-    <description>Recent content in Att on Foundries.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://foundries.io/tags/att/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Using AT&amp;T&#39;s IoT Dev Kit</title>
-      <link>https://foundries.io/insights/2018/04/11/20180411-iot-dev-kit/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://foundries.io/insights/2018/04/11/20180411-iot-dev-kit/</guid>
-      <description>&lt;p&gt;In the Zephyr microPlatform update 0.13, we have released support for the
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Att on Foundries.io</title><link>https://foundries.io/tags/att/</link><description>Recent content in Att on Foundries.io</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://foundries.io/tags/att/index.xml" rel="self" type="application/rss+xml"/><item><title>Using AT&amp;T&#39;s IoT Dev Kit</title><link>https://foundries.io/insights/2018/04/11/20180411-iot-dev-kit/</link><pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2018/04/11/20180411-iot-dev-kit/</guid><description>&lt;p&gt;In the Zephyr microPlatform update 0.13, we have released support for the
 &lt;a href=&#34;https://marketplace.att.com/products/att-iot-starter-kit-lte-m&#34;&gt;AT&amp;amp;T IoT Starter Kit (LTE-M)&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;With the following instructions, you can start using Zephyr and the IoT Starter Kit with LWM2M in a matter of minutes.
-&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+&lt;p&gt;With the following instructions, you can start using Zephyr and the IoT Starter Kit with LWM2M in a matter of minutes.&lt;/p&gt;</description></item></channel></rss>
