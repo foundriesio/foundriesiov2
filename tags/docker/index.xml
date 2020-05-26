@@ -3,7 +3,10 @@
 Then the dust settled from the &lt;a href=&#34;https://techcrunch.com/2019/11/13/mirantis-acquires-docker-enterprise/&#34;&gt;Docker spinoff&lt;/a&gt;.
 What we now know is that Docker Apps is an inactive project. tldr; It&amp;rsquo;s not
 a big deal for our customers and they are going to automagically get
-something better very soon:&lt;/p&gt;</description></item><item><title>Building 32-bit Arm Containers</title><link>https://foundries.io/insights/2020/02/25/20200226-armh-contatiners/</link><pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2020/02/25/20200226-armh-contatiners/</guid><description>&lt;p&gt;We strongly believe in the power of containers for embedded development at
+something better very soon:&lt;/p&gt;</description></item><item><title>FoundriesFactory TUF Keys Rotation</title><link>https://foundries.io/insights/2020/03/05/20200305-key-rotation/</link><pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2020/03/05/20200305-key-rotation/</guid><description>&lt;p&gt;Built on a vision that the latest software is the most secure, software
+updates are central to the FoundriesFactory security story. What happens,
+however, when software delivery is compromised? Is recovery complicated?
+Enter TUF key rotation!&lt;/p&gt;</description></item><item><title>Building 32-bit Arm Containers</title><link>https://foundries.io/insights/2020/02/25/20200226-armh-contatiners/</link><pubDate>Tue, 25 Feb 2020 00:00:00 +0000</pubDate><guid>https://foundries.io/insights/2020/02/25/20200226-armh-contatiners/</guid><description>&lt;p&gt;We strongly believe in the power of containers for embedded development at
 Foundries.io. However, in a world of buzzword bingo like Kubernetes,
 serverless, and Edge, people working on 32 bit Arm hardware would be right
 to feel neglected. This article discusses one way we are helping: building
