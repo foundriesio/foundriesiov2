@@ -11,7 +11,7 @@ before continuing.</p><pre><code>		+------------+      +-------------+
 		|            |      | (eg laptop) |
 		+------------+      +-------------+
 
-</code></pre><h2 id=the-simple-case>The Simple Case</h2><p>In the most simple scenario, your device management system (<a href=https://app.foundries.io/docs/latest/iotfoundry/hawkbit-howto.html>Hawkbit</a> or <a href=https://app.foundries.io/docs/latest/iotfoundry/lwm2m-howto.html>Leshan</a>)
+</code></pre><h2 id=the-simple-case>The Simple Case</h2><p>In the most simple scenario, your device management system (Hawkbit or Leshan)
 will be running on your host system. In this case the script only needs to know
 the IP address of your LMP device to set it up:</p><pre><code>REGISTRY=hub.docker.com GW_HOSTNAME=10.10.0.10 ./iot-gateway.sh
 </code></pre><h2 id=specifying-the-device-management-server-s-ip>Specifying The Device Management Server&rsquo;s IP</h2><p>The previous script works by trying to guess the externally routable IP of your
